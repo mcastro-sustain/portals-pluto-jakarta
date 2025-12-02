@@ -737,6 +737,7 @@ generate mailto links. -->
 			<modules>
 				<module>pluto-container-api</module>
 				<module>pluto-container</module>
+			    <module>pluto-container-driver-api</module>
 				<module>pluto-taglib</module>
                 <module>portlet-api</module>
 			</modules>
@@ -746,6 +747,7 @@ generate mailto links. -->
 			<modules>
 				<module>pluto-container-api</module>
 				<module>pluto-container</module>
+			<module>pluto-container-driver-api</module>
 				<module>pluto-taglib</module>
 			</modules>
 		</profile>

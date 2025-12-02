@@ -560,7 +560,7 @@ public class PortletServlet3 extends HttpServlet {
          // take portlet out of service
          isOutOfService = true;
 
-         throw new javax.servlet.UnavailableException(ex.getMessage());
+         throw new jakarta.servlet.UnavailableException(ex.getMessage());
 
       } catch (PortletException ex) {
          notify(event, false, ex);
