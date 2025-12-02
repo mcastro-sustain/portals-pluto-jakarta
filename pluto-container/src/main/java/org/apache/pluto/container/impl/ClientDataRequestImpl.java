@@ -25,8 +25,8 @@ import java.util.Collection;
 
 import javax.portlet.ClientDataRequest;
 import javax.portlet.PortletException;
-import javax.servlet.ServletException;
-import javax.servlet.http.Part;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.Part;
 
 import org.apache.pluto.container.PortletRequestContext;
 import org.apache.pluto.container.PortletResponseContext;

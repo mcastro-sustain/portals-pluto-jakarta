@@ -158,7 +158,7 @@ public interface PortletResponse {
      * @since 2.0
      */
 
-    public void addProperty(javax.servlet.http.Cookie cookie);
+    public void addProperty(jakarta.servlet.http.Cookie cookie);
 
 
     /**

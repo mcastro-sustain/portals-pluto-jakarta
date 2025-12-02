@@ -25,9 +25,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import javax.enterprise.inject.spi.AnnotatedType;
-import javax.enterprise.inject.spi.BeanManager;
-import javax.enterprise.inject.spi.ProcessAnnotatedType;
+import jakarta.enterprise.inject.spi.AnnotatedType;
+import jakarta.enterprise.inject.spi.BeanManager;
+import jakarta.enterprise.inject.spi.ProcessAnnotatedType;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -86,7 +86,7 @@ public abstract class AnnotationRecognizer {
     * 
     * A class can have multiple portlet annotations, but they all must be for the same portlet.
     *  
-    * @param   aType    The type to check
+    * @param   pat    The type to check
     * @throws  InvalidAnnotationException    If multiple portlet annotations don't have 
     *                                        the same portlet names.   
     */

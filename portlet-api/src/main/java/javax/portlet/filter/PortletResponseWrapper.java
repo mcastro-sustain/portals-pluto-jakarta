@@ -27,7 +27,7 @@ package javax.portlet.filter;
 import java.util.Collection;
 
 import javax.portlet.PortletResponse;
-import javax.servlet.http.Cookie;
+import jakarta.servlet.http.Cookie;
 
 /**
  * <span class="changed_modified_3_0">The</span> <code>PortletResponseWrapper</code> provides a convenient
@@ -129,7 +129,7 @@ public class PortletResponseWrapper implements PortletResponse {
    }
 
    /* (non-Javadoc)
-    * @see javax.portlet.PortletResponse#addProperty(javax.servlet.http.Cookie)
+    * @see javax.portlet.PortletResponse#addProperty(jakarta.servlet.http.Cookie)
     */
    @Override
    public void addProperty(Cookie cookie) {

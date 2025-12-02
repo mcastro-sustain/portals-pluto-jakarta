@@ -27,7 +27,7 @@ import javax.portlet.MimeResponse.Copy;
 import javax.portlet.BaseURL;
 import javax.portlet.MutableRenderParameters;
 import javax.portlet.RenderURL;
-import javax.servlet.jsp.JspException;
+import jakarta.servlet.jsp.JspException;
 
 /**
  * A tag handler for the <CODE>renderURL</CODE> tag as defined in the JSR 362. Creates a url that points to the current

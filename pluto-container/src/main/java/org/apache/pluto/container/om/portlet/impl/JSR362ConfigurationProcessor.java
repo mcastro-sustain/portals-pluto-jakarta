@@ -45,7 +45,7 @@ import javax.portlet.filter.EventFilter;
 import javax.portlet.filter.HeaderFilter;
 import javax.portlet.filter.RenderFilter;
 import javax.portlet.filter.ResourceFilter;
-import javax.xml.bind.JAXBElement;
+import jakarta.xml.bind.JAXBElement;
 import javax.xml.namespace.QName;
 
 import org.apache.pluto.container.om.portlet.ContainerRuntimeOption;

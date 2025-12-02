@@ -21,7 +21,7 @@ import java.util.Set;
 
 import javax.portlet.PortletConfig;
 import javax.portlet.PortletRequest;
-import javax.servlet.jsp.JspException;
+import jakarta.servlet.jsp.JspException;
 
 /**
  * Abstract supporting class for the JSR 286 actionURL 

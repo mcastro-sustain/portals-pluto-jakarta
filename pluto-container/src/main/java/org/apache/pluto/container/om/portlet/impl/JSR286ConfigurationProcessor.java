@@ -27,7 +27,7 @@ import javax.portlet.PortletURLGenerationListener;
 import javax.portlet.PreferencesValidator;
 import javax.portlet.filter.PortletFilter;
 import javax.xml.XMLConstants;
-import javax.xml.bind.JAXBElement;
+import jakarta.xml.bind.JAXBElement;
 import javax.xml.namespace.QName;
 
 import org.apache.pluto.container.om.portlet.ContainerRuntimeOption;

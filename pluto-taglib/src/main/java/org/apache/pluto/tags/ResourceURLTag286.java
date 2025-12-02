@@ -32,7 +32,7 @@ import javax.portlet.PortletResponse;
 import javax.portlet.RenderResponse;
 import javax.portlet.ResourceResponse;
 import javax.portlet.ResourceURL;
-import javax.servlet.jsp.JspException;
+import jakarta.servlet.jsp.JspException;
 
 
 /**

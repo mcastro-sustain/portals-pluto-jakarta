@@ -27,8 +27,8 @@ import static org.junit.Assert.assertTrue;
 import java.util.List;
 import java.util.Set;
 
-import javax.enterprise.inject.spi.BeanManager;
-import javax.inject.Inject;
+import jakarta.enterprise.inject.spi.BeanManager;
+import jakarta.inject.Inject;
 
 import org.apache.pluto.container.bean.processor.AnnotatedConfigBean;
 import org.apache.pluto.container.bean.processor.AnnotatedMethodStore;
@@ -38,9 +38,9 @@ import org.apache.pluto.container.bean.processor.PortletStateScopedConfig;
 import org.apache.pluto.container.bean.processor.fixtures.PortletStateScopedBadClass;
 import org.apache.pluto.container.bean.processor.fixtures.PortletStateScopedClass;
 import org.apache.pluto.container.bean.processor.fixtures.PortletStateScopedNoParamNameClass;
-import org.jglue.cdiunit.AdditionalClasses;
-import org.jglue.cdiunit.AdditionalPackages;
-import org.jglue.cdiunit.CdiRunner;
+import io.github.cdiunit.AdditionalClasses;
+import io.github.cdiunit.AdditionalPackages;
+import io.github.cdiunit.CdiRunner;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

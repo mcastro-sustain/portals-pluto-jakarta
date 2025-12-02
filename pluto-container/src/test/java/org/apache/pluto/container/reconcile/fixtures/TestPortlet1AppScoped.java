@@ -19,7 +19,7 @@
 
 package org.apache.pluto.container.reconcile.fixtures;
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 import javax.portlet.GenericPortlet;
 
 /**

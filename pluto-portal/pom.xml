@@ -48,7 +48,7 @@
 					<artifactId>tomcat-servlet-api</artifactId>
 				</exclusion>
 				<exclusion>
-					<groupId>javax.portlet</groupId>
+					<groupId>com.journaltech</groupId>
 					<artifactId>portlet-api</artifactId>
 				</exclusion>
 				<exclusion>
@@ -108,7 +108,7 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>javax.portlet</groupId>
+			<groupId>com.journaltech</groupId>
 			<artifactId>portlet-api</artifactId>
 			<scope>provided</scope>
 		</dependency>

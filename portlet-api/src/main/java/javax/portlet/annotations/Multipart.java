@@ -37,12 +37,12 @@ import static java.lang.annotation.RetentionPolicy.*;
  * This annotation is used within composite portlet configuration annotations to
  * add multipart configuration information. 
  * This is the portlet analog of the
- * <code>javax.servlet.annotation.MultipartConfig</code> annotation.
+ * <code>jakarta.servlet.annotation.MultipartConfig</code> annotation.
  * <p> 
  * This annotation cannot be used as a stand-alone portlet annotation.
  * </div>
  * 
- * @see     javax.servlet.annotation.MultipartConfig
+ * @see     jakarta.servlet.annotation.MultipartConfig
  * 
  * @since 3.0
  */

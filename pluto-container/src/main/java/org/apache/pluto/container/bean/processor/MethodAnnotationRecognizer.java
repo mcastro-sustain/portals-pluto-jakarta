@@ -34,7 +34,7 @@ import javax.portlet.annotations.HeaderMethod;
 import javax.portlet.annotations.InitMethod;
 import javax.portlet.annotations.RenderMethod;
 import javax.portlet.annotations.ServeResourceMethod;
-import javax.servlet.ServletContext;
+import jakarta.servlet.ServletContext;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

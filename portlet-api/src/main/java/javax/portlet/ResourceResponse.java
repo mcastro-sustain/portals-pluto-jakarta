@@ -122,14 +122,14 @@ public interface ResourceResponse extends MimeResponse {
      * IETF <a href="http://tools.ietf.org/html/rfc2616">
      * rfc2616 "Hypertext Transfer Protocol -- HTTP/1.1"
      * </a>. The status code constants "SC_*" defined in 
-     * {@link javax.servlet.http.HttpServletResponse} may be used.
+     * {@link jakarta.servlet.http.HttpServletResponse} may be used.
      * <p>
      * This method has no effect if it is called
      * after the response has been committed.
      * </div>
      * 
-     * @see javax.servlet.http.HttpServletResponse
-     * @see javax.servlet.http.HttpServletResponse#setStatus
+     * @see jakarta.servlet.http.HttpServletResponse
+     * @see jakarta.servlet.http.HttpServletResponse#setStatus
      * 
      * @since 3.0
      * 
@@ -145,8 +145,8 @@ public interface ResourceResponse extends MimeResponse {
      * 
      * @return    The HTTP status code
      * 
-     * @see javax.servlet.http.HttpServletResponse
-     * @see javax.servlet.http.HttpServletResponse#getStatus
+     * @see jakarta.servlet.http.HttpServletResponse
+     * @see jakarta.servlet.http.HttpServletResponse#getStatus
      * 
      * @since 3.0
      */

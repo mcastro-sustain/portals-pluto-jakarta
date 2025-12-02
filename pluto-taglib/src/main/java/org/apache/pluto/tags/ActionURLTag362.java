@@ -29,7 +29,7 @@ import javax.portlet.MimeResponse;
 import javax.portlet.MutableActionParameters;
 import javax.portlet.MutableRenderParameters;
 import javax.portlet.MimeResponse.Copy;
-import javax.servlet.jsp.JspException;
+import jakarta.servlet.jsp.JspException;
 
 /**
  * 

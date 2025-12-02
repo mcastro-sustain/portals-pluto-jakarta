@@ -19,7 +19,7 @@
 
 package org.apache.pluto.container.bean.processor.fixtures.resource;
 
-import javax.activity.InvalidActivityException;
+import java.rmi.RemoteException;
 import javax.portlet.ResourceRequest;
 import javax.portlet.ResourceResponse;
 import javax.portlet.annotations.ServeResourceMethod;
@@ -59,7 +59,7 @@ public class Resource2 {
    
    // invalid signature, bad exception
    @ServeResourceMethod(portletNames="portlet8")
-   public String resource8(ResourceRequest req, ResourceResponse resp) throws InvalidActivityException {
+   public String resource8(ResourceRequest req, ResourceResponse resp) throws RemoteException {
       meths.addMethod(this.getClass().getSimpleName() + "#resource8");
       return null;
    }

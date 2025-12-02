@@ -18,7 +18,7 @@ package org.apache.pluto.container.impl;
 
 import java.util.Enumeration;
 
-import javax.enterprise.inject.spi.Bean;
+import jakarta.enterprise.inject.spi.Bean;
 import javax.portlet.MimeResponse.Copy;
 import javax.portlet.MutableRenderParameters;
 import javax.portlet.PortletMode;

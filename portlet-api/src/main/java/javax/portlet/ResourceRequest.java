@@ -24,7 +24,7 @@
 
 package javax.portlet;
 
-import javax.servlet.DispatcherType;
+import jakarta.servlet.DispatcherType;
 
 /**
  * <span class="changed_modified_3_0">The</span>
@@ -277,8 +277,8 @@ public interface ResourceRequest extends ClientDataRequest {
     *          already been closed
     * 
     * @since   3.0
-    * @see     javax.servlet.ServletRequest#startAsync()
-    * @see     javax.servlet.AsyncContext
+    * @see     jakarta.servlet.ServletRequest#startAsync()
+    * @see     jakarta.servlet.AsyncContext
     * @see     #isAsyncStarted() 
     * @see     #getDispatcherType()
     * @see     javax.portlet.filter.ResourceFilter
@@ -354,8 +354,8 @@ public interface ResourceRequest extends ClientDataRequest {
     *          already been closed
     * 
     * @since   3.0
-    * @see     javax.servlet.ServletRequest#startAsync()
-    * @see     javax.servlet.AsyncContext 
+    * @see     jakarta.servlet.ServletRequest#startAsync()
+    * @see     jakarta.servlet.AsyncContext 
     * @see     #isAsyncStarted() 
     * @see     #getDispatcherType()
     * @see     javax.portlet.filter.ResourceFilter
@@ -417,8 +417,8 @@ public interface ResourceRequest extends ClientDataRequest {
     *          false), or if asynchronous processing has not yet been started.
     *          
     * @since    3.0
-    * @see      javax.servlet.ServletRequest#startAsync()
-    * @see      javax.servlet.AsyncContext 
+    * @see      jakarta.servlet.ServletRequest#startAsync()
+    * @see      jakarta.servlet.AsyncContext 
     */
    
    public PortletAsyncContext getPortletAsyncContext();
@@ -437,7 +437,7 @@ public interface ResourceRequest extends ClientDataRequest {
     * 
     * @return   the dispatcher type of this request
     * @since    3.0
-    * @see      javax.servlet.DispatcherType
+    * @see      jakarta.servlet.DispatcherType
     */
 
    public DispatcherType getDispatcherType();

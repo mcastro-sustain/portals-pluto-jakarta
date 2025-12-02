@@ -42,9 +42,9 @@ import javax.portlet.ResourceParameters;
 import javax.portlet.ResourceRequest;
 import javax.portlet.StateAwareResponse;
 import javax.portlet.WindowState;
-import javax.servlet.http.Cookie;
-import javax.servlet.jsp.tagext.TagData;
-import javax.servlet.jsp.tagext.VariableInfo;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.jsp.tagext.TagData;
+import jakarta.servlet.jsp.tagext.VariableInfo;
 
 
 /**

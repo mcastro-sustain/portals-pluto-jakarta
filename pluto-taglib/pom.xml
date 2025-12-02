@@ -20,9 +20,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.apache.portals.pluto</groupId>
+		<groupId>com.journaltech</groupId>
 		<artifactId>pluto</artifactId>
-		<version>3.1.3-SNAPSHOT</version>
+		<version>3.1.3-jakarta-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>pluto-taglib</artifactId>
@@ -31,8 +31,9 @@
 	<description>Apache Pluto's Java Portlet Specification Tag Library implementation</description>
 	<dependencies>
 		<dependency>
-			<groupId>javax.portlet</groupId>
+			<groupId>com.journaltech</groupId>
 			<artifactId>portlet-api</artifactId>
+			<version>3.0.2-jakarta-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -57,7 +58,7 @@
 				<artifactId>maven-bundle-plugin</artifactId>
 				<configuration>
 					<instructions>
-						<Import-Package>javax.el,
+						<Import-Package>jakarta.el,
               *
             </Import-Package>
 					</instructions>

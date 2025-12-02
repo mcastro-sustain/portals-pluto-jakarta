@@ -19,7 +19,7 @@
 
 package org.apache.pluto.container.bean.processor.fixtures.header;
 
-import javax.activity.InvalidActivityException;
+import java.rmi.RemoteException;
 import javax.portlet.HeaderRequest;
 import javax.portlet.HeaderResponse;
 import javax.portlet.annotations.HeaderMethod;
@@ -59,7 +59,7 @@ public class Header2 {
    
    // invalid signature, bad exception
    @HeaderMethod(portletNames="portlet8")
-   public String header8(HeaderRequest req, HeaderResponse resp) throws InvalidActivityException {
+   public String header8(HeaderRequest req, HeaderResponse resp) throws RemoteException {
       meths.addMethod(this.getClass().getSimpleName() + "#header8");
       return null;
    }

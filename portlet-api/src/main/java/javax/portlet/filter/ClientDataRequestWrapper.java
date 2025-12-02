@@ -26,7 +26,7 @@ import java.util.Collection;
 
 import javax.portlet.ClientDataRequest;
 import javax.portlet.PortletException;
-import javax.servlet.http.Part;
+import jakarta.servlet.http.Part;
 
 /**
  * <div class="changed_added_3_0"> The <code>ClientDataRequestWrapper</code>

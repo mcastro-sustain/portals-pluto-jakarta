@@ -47,7 +47,7 @@ import javax.portlet.ResourceServingPortlet;
 import javax.portlet.annotations.HeaderMethod;
 import javax.portlet.annotations.RenderMethod;
 import javax.portlet.annotations.ServeResourceMethod;
-import javax.servlet.DispatcherType;
+import jakarta.servlet.DispatcherType;
 import javax.xml.namespace.QName;
 
 import org.apache.pluto.container.PortletInvokerService;

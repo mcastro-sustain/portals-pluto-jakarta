@@ -29,7 +29,7 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>javax.portlet</groupId>
+			<groupId>com.journaltech</groupId>
 			<artifactId>portlet-api</artifactId>
 			<version>3.0.0</version>
 			<scope>provided</scope>

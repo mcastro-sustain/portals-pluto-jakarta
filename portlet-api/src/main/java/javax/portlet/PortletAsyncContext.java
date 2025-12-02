@@ -43,7 +43,7 @@ package javax.portlet;
  * complete the request on behalf of the application and may respond with error information.
  * </div>
  * 
- * @see     javax.servlet.AsyncContext
+ * @see     jakarta.servlet.AsyncContext
  * @see     PortletAsyncListener
  * @see     PortletAsyncEvent
  * 

@@ -31,8 +31,8 @@ import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Set;
 
-import javax.enterprise.context.SessionScoped;
-import javax.inject.Inject;
+import jakarta.enterprise.context.SessionScoped;
+import jakarta.inject.Inject;
 import javax.portlet.annotations.PortletSessionScoped;
 
 import org.apache.pluto.container.bean.processor.AnnotatedConfigBean;
@@ -44,9 +44,9 @@ import org.apache.pluto.container.bean.processor.PortletSessionScopedConfig;
 import org.apache.pluto.container.bean.processor.PortletStateScopedConfig;
 import org.apache.pluto.container.bean.processor.fixtures.PortletStateScopedClass;
 import org.apache.pluto.container.bean.processor.fixtures.SessionScopedApp2;
-import org.jglue.cdiunit.AdditionalClasses;
-import org.jglue.cdiunit.AdditionalPackages;
-import org.jglue.cdiunit.CdiRunner;
+import io.github.cdiunit.AdditionalClasses;
+import io.github.cdiunit.AdditionalPackages;
+import io.github.cdiunit.CdiRunner;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

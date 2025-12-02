@@ -24,9 +24,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
-import javax.enterprise.inject.Produces;
-import javax.enterprise.inject.Typed;
-import javax.inject.Named;
+import jakarta.enterprise.inject.Produces;
+import jakarta.enterprise.inject.Typed;
+import jakarta.inject.Named;
 import javax.portlet.ActionParameters;
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
@@ -57,7 +57,7 @@ import javax.portlet.annotations.Namespace;
 import javax.portlet.annotations.PortletName;
 import javax.portlet.annotations.PortletRequestScoped;
 import javax.portlet.annotations.WindowId;
-import javax.servlet.http.Cookie;
+import jakarta.servlet.http.Cookie;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -25,15 +25,15 @@ import org.apache.pluto.container.bean.processor.ConfigSummary;
 import org.apache.pluto.container.bean.processor.PortletCDIExtension;
 import org.apache.pluto.container.bean.processor.RedirectScopedConfig;
 import org.apache.pluto.container.bean.processor.fixtures.RedirectScopedClass;
-import org.jglue.cdiunit.AdditionalClasses;
-import org.jglue.cdiunit.AdditionalPackages;
-import org.jglue.cdiunit.CdiRunner;
+import io.github.cdiunit.AdditionalClasses;
+import io.github.cdiunit.AdditionalPackages;
+import io.github.cdiunit.CdiRunner;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import javax.enterprise.inject.spi.BeanManager;
-import javax.inject.Inject;
+import jakarta.enterprise.inject.spi.BeanManager;
+import jakarta.inject.Inject;
 import java.util.List;
 import java.util.Set;
 

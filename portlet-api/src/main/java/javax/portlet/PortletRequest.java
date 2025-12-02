@@ -947,7 +947,7 @@ public interface PortletRequest extends RenderState
    *          <code>null</code> if no cookies exist.
    * @see PortletResponse#addProperty(Cookie) 
    */
-  public javax.servlet.http.Cookie[] getCookies();
+  public jakarta.servlet.http.Cookie[] getCookies();
 
   
   /**

@@ -18,7 +18,7 @@ package org.apache.pluto.container;
 
 import java.io.IOException;
 
-import javax.enterprise.inject.spi.BeanManager;
+import jakarta.enterprise.inject.spi.BeanManager;
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
 import javax.portlet.EventPortlet;

@@ -23,7 +23,7 @@
 	<dependencies>
 		<!-- Specification Libraries =========================================== -->
 		<dependency>
-			<groupId>javax.portlet</groupId>
+			<groupId>com.journaltech</groupId>
 			<artifactId>portlet-api</artifactId>
 			<scope>provided</scope>
 		</dependency>

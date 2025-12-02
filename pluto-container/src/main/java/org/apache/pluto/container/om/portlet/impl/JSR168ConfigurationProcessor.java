@@ -24,7 +24,7 @@ import java.util.Locale;
 
 import javax.portlet.Portlet;
 import javax.portlet.PreferencesValidator;
-import javax.xml.bind.JAXBElement;
+import jakarta.xml.bind.JAXBElement;
 
 import org.apache.pluto.container.om.portlet.CustomPortletMode;
 import org.apache.pluto.container.om.portlet.CustomWindowState;

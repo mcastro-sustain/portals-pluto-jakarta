@@ -21,8 +21,8 @@ package org.apache.pluto.container.bean.processor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.enterprise.context.spi.Contextual;
-import javax.enterprise.context.spi.CreationalContext;
+import jakarta.enterprise.context.spi.Contextual;
+import jakarta.enterprise.context.spi.CreationalContext;
 import javax.portlet.PortletRequest;
 import javax.portlet.PortletSession;
 import java.io.Serializable;

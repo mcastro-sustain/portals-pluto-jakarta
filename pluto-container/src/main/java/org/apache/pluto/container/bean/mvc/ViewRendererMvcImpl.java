@@ -20,18 +20,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.inject.spi.BeanManager;
-import javax.inject.Inject;
-import javax.mvc.Models;
-import javax.mvc.binding.ParamError;
-import javax.mvc.engine.ViewEngine;
-import javax.mvc.engine.ViewEngineException;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.inject.spi.BeanManager;
+import jakarta.inject.Inject;
+import jakarta.mvc.Models;
+import jakarta.mvc.binding.ParamError;
+import jakarta.mvc.engine.ViewEngine;
+import jakarta.mvc.engine.ViewEngineException;
 import javax.portlet.MimeResponse;
 import javax.portlet.PortletConfig;
 import javax.portlet.PortletException;
 import javax.portlet.PortletRequest;
-import javax.ws.rs.core.Configuration;
+import jakarta.ws.rs.core.Configuration;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -98,12 +98,12 @@ public class ViewRendererMvcImpl implements ViewRenderer {
 			}
 
 			try {
-				beanManager.fireEvent(new BeforeProcessViewEventImpl(viewName, supportingViewEngine.getClass()));
+				beanManager.getEvent().fire(new BeforeProcessViewEventImpl(viewName, supportingViewEngine.getClass()));
 
 				supportingViewEngine.processView(new ViewEngineContextImpl(configuration, portletRequest, mimeResponse,
 						models, portletRequest.getLocale()));
 
-				beanManager.fireEvent(new AfterProcessViewEventImpl(viewName, supportingViewEngine.getClass()));
+				beanManager.getEvent().fire(new AfterProcessViewEventImpl(viewName, supportingViewEngine.getClass()));
 			}
 			catch (ViewEngineException vee) {
 				throw new PortletException(vee);

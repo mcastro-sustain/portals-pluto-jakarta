@@ -29,7 +29,7 @@ import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import javax.enterprise.context.NormalScope;
+import jakarta.enterprise.context.NormalScope;
 import javax.portlet.PortletSession;
 
 import static java.lang.annotation.ElementType.*;

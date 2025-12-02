@@ -20,7 +20,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>javax.portlet</groupId>
+		<groupId>com.journaltech</groupId>
 		<artifactId>portlet-tck</artifactId>
 		<version>3.0.4-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
@@ -58,7 +58,7 @@
 		</dependency>
 		<!-- Dependency on common module for element ID suffixes -->
 		<dependency>
-			<groupId>javax.portlet</groupId>
+			<groupId>com.journaltech</groupId>
 			<artifactId>tck-common</artifactId>
 			<version>${project.version}</version>
 			<scope>compile</scope>

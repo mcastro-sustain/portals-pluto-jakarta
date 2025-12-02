@@ -27,7 +27,7 @@ package javax.portlet;
 import java.io.IOException;
 import java.util.Collection;
 
-import javax.servlet.http.Part;
+import jakarta.servlet.http.Part;
 
 /**
  * <span class="changed_modified_3_0">The</span>

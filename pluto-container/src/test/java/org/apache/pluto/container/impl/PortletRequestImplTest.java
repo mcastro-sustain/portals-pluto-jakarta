@@ -20,8 +20,8 @@ import javax.portlet.CacheControl;
 import javax.portlet.PortalContext;
 import javax.portlet.PortletContext;
 import javax.portlet.PortletSession;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 
 import org.apache.pluto.container.CCPPProfileService;
 import org.apache.pluto.container.ContainerServices;

@@ -27,7 +27,7 @@ import java.util.Set;
 
 import javax.portlet.PortletContext;
 import javax.portlet.PortletRequestDispatcher;
-import javax.servlet.ServletContext;
+import jakarta.servlet.ServletContext;
 
 import org.apache.pluto.container.ContainerInfo;
 import org.apache.pluto.container.RequestDispatcherService;

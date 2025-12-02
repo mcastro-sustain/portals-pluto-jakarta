@@ -27,11 +27,11 @@ import javax.portlet.MimeResponse;
 import javax.portlet.PortletRequest;
 import javax.portlet.PortletResponse;
 import javax.portlet.ResourceResponse;
-import javax.servlet.ServletOutputStream;
-import javax.servlet.WriteListener;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpServletResponseWrapper;
+import jakarta.servlet.ServletOutputStream;
+import jakarta.servlet.WriteListener;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponseWrapper;
 
 import org.apache.pluto.container.util.DummyPrintWriter;
 import org.apache.pluto.container.util.DummyServletOutputStream;
@@ -87,18 +87,8 @@ public class HttpServletPortletResponseWrapper extends HttpServletResponseWrappe
    }
 
    @Override
-   public String encodeRedirectUrl(String url) {
-      return null;
-   }
-
-   @Override
    public String encodeRedirectURL(String url) {
       return null;
-   }
-
-   @Override
-   public String encodeUrl(String url) {
-      return encodeURL(url);
    }
 
    @Override
@@ -142,7 +132,7 @@ public class HttpServletPortletResponseWrapper extends HttpServletResponseWrappe
       }
    }
 
-   @Override
+   // @Override - Removed: deprecated method removed in Jakarta Servlet 6.x
    public void setStatus(int sc, String sm) {
       setStatus(sc);
    }

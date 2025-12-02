@@ -32,7 +32,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
-import javax.enterprise.inject.spi.BeanManager;
+import jakarta.enterprise.inject.spi.BeanManager;
 import javax.portlet.annotations.ActionMethod;
 import javax.portlet.annotations.EventMethod;
 import javax.portlet.annotations.PortletQName;

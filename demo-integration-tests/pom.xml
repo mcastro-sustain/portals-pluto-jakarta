@@ -25,7 +25,7 @@
 		<version>3.1.3-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>javax.portlet</groupId>
+	<groupId>com.journaltech</groupId>
 	<artifactId>demo-integration-tests</artifactId>
 	<description>Integration Tests for the Pluto Demos</description>
 	<packaging>jar</packaging>
