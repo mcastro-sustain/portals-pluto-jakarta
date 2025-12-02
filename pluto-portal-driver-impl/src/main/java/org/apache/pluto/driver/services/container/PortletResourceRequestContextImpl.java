@@ -20,18 +20,18 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import javax.enterprise.inject.spi.BeanManager;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletRequest;
-import javax.portlet.ResourceParameters;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.servlet.AsyncContext;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import jakarta.enterprise.inject.spi.BeanManager;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.ResourceParameters;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.servlet.AsyncContext;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import org.apache.pluto.container.PortletAsyncManager;
 import org.apache.pluto.container.PortletContainer;
@@ -318,14 +318,14 @@ public class PortletResourceRequestContextImpl extends PortletRequestContextImpl
 
    // For use within the wrapper.
    // PLT.10.4.3. Proxied session is created and passed if
-   // javax.portlet.servletDefaultSessionScope == PORTLET_SCOPE
+   // jakarta.portlet.servletDefaultSessionScope == PORTLET_SCOPE
    @Override
    public HttpSession getSession() {
       HttpSession sess = null;
 
       PortletConfig portletConfig = getPortletConfig();
       Map<String, String[]> containerRuntimeOptions = portletConfig.getContainerRuntimeOptions();
-      String[] values = containerRuntimeOptions.get("javax.portlet.servletDefaultSessionScope");
+      String[] values = containerRuntimeOptions.get("jakarta.portlet.servletDefaultSessionScope");
 
       if ((values != null) && (values.length > 0) && "PORTLET_SCOPE".equals(values[0])) {
          String portletWindowId = getPortletWindow().getId().getStringId();

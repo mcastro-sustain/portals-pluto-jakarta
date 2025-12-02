@@ -18,11 +18,11 @@
     under the License.     
 -->
 <web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-   <display-name>javax.portlet-tck-DispatcherTests6</display-name>
+   <display-name>jakarta.portlet-tck-DispatcherTests6</display-name>
 
    <servlet>
       <servlet-name>DispatcherTests6_SPEC2_19_FwdThenIncludeServletAction_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenIncludeServletAction_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenIncludeServletAction_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -35,7 +35,7 @@
 
    <servlet>
       <servlet-name>DispatcherTests6_SPEC2_19_FwdThenIncludeServletEvent_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenIncludeServletEvent_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenIncludeServletEvent_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -48,7 +48,7 @@
 
    <servlet>
       <servlet-name>DispatcherTests6_SPEC2_19_FwdThenIncludeServletRender_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenIncludeServletRender_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenIncludeServletRender_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -61,7 +61,7 @@
 
    <servlet>
       <servlet-name>DispatcherTests6_SPEC2_19_FwdThenIncludeServletResource_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenIncludeServletResource_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenIncludeServletResource_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -74,7 +74,7 @@
 
    <servlet>
       <servlet-name>DispatcherTests6_SPEC2_19_FwdThenForwardServletAction_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenForwardServletAction_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenForwardServletAction_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -87,7 +87,7 @@
 
    <servlet>
       <servlet-name>DispatcherTests6_SPEC2_19_FwdThenForwardServletEvent_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenForwardServletEvent_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenForwardServletEvent_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -100,7 +100,7 @@
 
    <servlet>
       <servlet-name>DispatcherTests6_SPEC2_19_FwdThenForwardServletRender_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenForwardServletRender_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenForwardServletRender_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -113,7 +113,7 @@
 
    <servlet>
       <servlet-name>DispatcherTests6_SPEC2_19_FwdThenForwardServletResource_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenForwardServletResource_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherTests6_SPEC2_19_FwdThenForwardServletResource_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -126,7 +126,7 @@
 
    <servlet>
       <servlet-name>IncluderForwarderServlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.IncluderForwarderServlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.IncluderForwarderServlet</servlet-class>
    </servlet>
    <servlet-mapping>
       <servlet-name>IncluderForwarderServlet</servlet-name>

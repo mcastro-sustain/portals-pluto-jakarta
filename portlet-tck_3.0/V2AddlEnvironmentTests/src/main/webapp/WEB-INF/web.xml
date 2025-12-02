@@ -21,10 +21,10 @@
 	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 	
-	<display-name>javax.portlet-tck-AddlEnvironmentTests</display-name>
+	<display-name>jakarta.portlet-tck-AddlEnvironmentTests</display-name>
 	<servlet>
 		<servlet-name>AddlEnvironmentTests_SPEC2_18_Sessions_servlet</servlet-name>
-		<servlet-class>javax.portlet.tck.servlets.AddlEnvironmentTests_SPEC2_18_Sessions_servlet</servlet-class>
+		<servlet-class>jakarta.portlet.tck.servlets.AddlEnvironmentTests_SPEC2_18_Sessions_servlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AddlEnvironmentTests_SPEC2_18_Sessions_servlet</servlet-name>
@@ -33,7 +33,7 @@
 	
 	<servlet>
 		<servlet-name>AddlEnvironmentTests_SPEC2_18_Sessions_invalidate1</servlet-name>
-		<servlet-class>javax.portlet.tck.servlets.AddlEnvironmentTests_SPEC2_18_Sessions_invalidate1</servlet-class>
+		<servlet-class>jakarta.portlet.tck.servlets.AddlEnvironmentTests_SPEC2_18_Sessions_invalidate1</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AddlEnvironmentTests_SPEC2_18_Sessions_invalidate1</servlet-name>
@@ -42,7 +42,7 @@
 	
 	<servlet>
 		<servlet-name>AddlEnvironmentTests_SPEC2_18_Sessions_invalidate2</servlet-name>
-		<servlet-class>javax.portlet.tck.servlets.AddlEnvironmentTests_SPEC2_18_Sessions_invalidate2</servlet-class>
+		<servlet-class>jakarta.portlet.tck.servlets.AddlEnvironmentTests_SPEC2_18_Sessions_invalidate2</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AddlEnvironmentTests_SPEC2_18_Sessions_invalidate2</servlet-name>
@@ -66,6 +66,6 @@
 		<param-value></param-value>
 	</context-param>
 	<listener>
-		<listener-class>javax.portlet.tck.servlet.StartupListener</listener-class>
+		<listener-class>jakarta.portlet.tck.servlet.StartupListener</listener-class>
 	</listener>
 </web-app>

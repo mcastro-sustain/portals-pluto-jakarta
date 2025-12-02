@@ -25,7 +25,7 @@ import jakarta.enterprise.context.ContextNotActiveException;
 import jakarta.enterprise.context.spi.Context;
 import jakarta.enterprise.context.spi.Contextual;
 import jakarta.enterprise.context.spi.CreationalContext;
-import javax.portlet.annotations.PortletSessionScoped;
+import jakarta.portlet.annotations.PortletSessionScoped;
 
 /**
  * This is the Context implementation for the PortletSessionScoped custom CDI scope.

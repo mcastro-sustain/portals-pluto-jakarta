@@ -33,7 +33,7 @@ import java.util.Set;
 
 import jakarta.enterprise.context.SessionScoped;
 import jakarta.inject.Inject;
-import javax.portlet.annotations.PortletSessionScoped;
+import jakarta.portlet.annotations.PortletSessionScoped;
 
 import org.apache.pluto.container.bean.processor.AnnotatedConfigBean;
 import org.apache.pluto.container.bean.processor.AnnotatedMethodStore;

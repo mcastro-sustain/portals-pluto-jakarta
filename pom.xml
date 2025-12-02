@@ -225,8 +225,8 @@ generate mailto links. -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<pluto.container.name>Pluto</pluto.container.name>
-		<javax.portlet.version.major>3</javax.portlet.version.major>
-		<javax.portlet.version.minor>0</javax.portlet.version.minor>
+		<jakarta.portlet.version.major>3</jakarta.portlet.version.major>
+		<jakarta.portlet.version.minor>0</jakarta.portlet.version.minor>
 		<portals.portlet-api.version>3.0.2-jakarta-SNAPSHOT</portals.portlet-api.version>
 		<!-- Jakarta EE 11 versions -->
 		<servlet-api.version>6.1.0</servlet-api.version>

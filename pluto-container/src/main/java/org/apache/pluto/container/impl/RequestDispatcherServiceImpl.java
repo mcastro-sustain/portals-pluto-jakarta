@@ -16,7 +16,7 @@
  */
 package org.apache.pluto.container.impl;
 
-import javax.portlet.PortletRequestDispatcher;
+import jakarta.portlet.PortletRequestDispatcher;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletContext;
 

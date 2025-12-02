@@ -19,8 +19,8 @@ package org.apache.pluto.tags;
 import java.util.Map;
 import java.util.Set;
 
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletRequest;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletRequest;
 import jakarta.servlet.jsp.JspException;
 
 /**

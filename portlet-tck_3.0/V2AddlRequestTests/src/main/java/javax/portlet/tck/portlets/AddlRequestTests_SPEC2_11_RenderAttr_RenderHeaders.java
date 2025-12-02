@@ -13,26 +13,26 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequest;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.JSR286SpecTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES3;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES4;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES5;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES3;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES4;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES5;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined
@@ -84,7 +84,7 @@ public class AddlRequestTests_SPEC2_11_RenderAttr_RenderHeaders implements Portl
 
     /* TestCase: V2AddlRequestTests_SPEC2_11_RenderAttr_attributes3 */
     /* Details: "If the portlet container runtime option */
-    /* javax.portlet.renderHeaders is set to TRUE, the RENDER_PART */
+    /* jakarta.portlet.renderHeaders is set to TRUE, the RENDER_PART */
     /* attribute will be set when the render method is called" */
     TestResult tr2 = tcd.getTestResultFailed(V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES3);
     if (!streamingPortal || "RENDER_MARKUP".equals(renderPartAttribute)) {
@@ -97,7 +97,7 @@ public class AddlRequestTests_SPEC2_11_RenderAttr_RenderHeaders implements Portl
 
     /* TestCase: V2AddlRequestTests_SPEC2_11_RenderAttr_attributes4 */
     /* Details: "If the portlet container runtime option */
-    /* javax.portlet.renderHeaders is set to TRUE, render method will be */
+    /* jakarta.portlet.renderHeaders is set to TRUE, render method will be */
     /* called first with the RENDER_PART attribute set to */
     /* \"RENDER_HEADERS\"" */
     TestResult tr3 = tcd.getTestResultFailed(V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES4);
@@ -118,7 +118,7 @@ public class AddlRequestTests_SPEC2_11_RenderAttr_RenderHeaders implements Portl
 
     /* TestCase: V2AddlRequestTests_SPEC2_11_RenderAttr_attributes5 */
     /* Details: "If the portlet container runtime option */
-    /* javax.portlet.renderHeaders is set to TRUE, render method will be */
+    /* jakarta.portlet.renderHeaders is set to TRUE, render method will be */
     /* called a second time with the RENDER_PART attribute set to */
     /* \"RENDER_MARKUP\"" */
     TestResult tr4 = tcd.getTestResultFailed(V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES5);

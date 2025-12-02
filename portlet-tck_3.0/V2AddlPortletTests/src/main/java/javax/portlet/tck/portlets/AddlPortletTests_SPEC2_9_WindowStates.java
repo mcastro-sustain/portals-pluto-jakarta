@@ -13,31 +13,31 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.WindowState;
-import javax.portlet.WindowStateException;
-import javax.portlet.tck.beans.JSR286SpecTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.WindowState;
+import jakarta.portlet.WindowStateException;
+import jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES3;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES5;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES6;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES7;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES3;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES5;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES6;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES7;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined

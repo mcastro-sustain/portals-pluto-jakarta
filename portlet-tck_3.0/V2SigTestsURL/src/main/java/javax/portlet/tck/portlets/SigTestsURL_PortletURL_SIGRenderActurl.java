@@ -13,40 +13,40 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.BaseURL;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletMode;
-import javax.portlet.PortletModeException;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.WindowState;
-import javax.portlet.WindowStateException;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.BaseURL;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletMode;
+import jakarta.portlet.PortletModeException;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.WindowState;
+import jakarta.portlet.WindowStateException;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASGETPORTLETMODE;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASGETPORTLETMODERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASGETWINDOWSTATE;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASGETWINDOWSTATERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASREMOVEPUBLICRENDERPARAMETER;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASREMOVEPUBLICRENDERPARAMETERRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASSETPORTLETMODE;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASSETPORTLETMODERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASSETWINDOWSTATE;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASSETWINDOWSTATERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_IMPLEMENTSBASEURL;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASGETPORTLETMODE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASGETPORTLETMODERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASGETWINDOWSTATE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASGETWINDOWSTATERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASREMOVEPUBLICRENDERPARAMETER;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASREMOVEPUBLICRENDERPARAMETERRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASSETPORTLETMODE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASSETPORTLETMODERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASSETWINDOWSTATE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_HASSETWINDOWSTATERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_PORTLETURL_SIGRENDERACTURL_IMPLEMENTSBASEURL;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined

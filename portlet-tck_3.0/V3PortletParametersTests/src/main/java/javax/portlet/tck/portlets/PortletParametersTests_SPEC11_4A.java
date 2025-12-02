@@ -16,53 +16,53 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import javax.portlet.ActionParameters;
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.ActionURL;
-import javax.portlet.HeaderPortlet;
-import javax.portlet.HeaderRequest;
-import javax.portlet.HeaderResponse;
-import javax.portlet.MutableActionParameters;
-import javax.portlet.MutableRenderParameters;
-import javax.portlet.MutableResourceParameters;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletSession;
-import javax.portlet.RenderParameters;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceParameters;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceServingPortlet;
-import javax.portlet.ResourceURL;
-import javax.portlet.annotations.PortletConfiguration;
-import javax.portlet.tck.beans.TestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.beans.TestSetupButton;
-import javax.portlet.tck.beans.TestSetupLink;
-import javax.portlet.tck.util.ModuleTestCaseDetails;
+import jakarta.portlet.ActionParameters;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.ActionURL;
+import jakarta.portlet.HeaderPortlet;
+import jakarta.portlet.HeaderRequest;
+import jakarta.portlet.HeaderResponse;
+import jakarta.portlet.MutableActionParameters;
+import jakarta.portlet.MutableRenderParameters;
+import jakarta.portlet.MutableResourceParameters;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.RenderParameters;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceParameters;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceServingPortlet;
+import jakarta.portlet.ResourceURL;
+import jakarta.portlet.annotations.PortletConfiguration;
+import jakarta.portlet.tck.beans.TestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.beans.TestSetupButton;
+import jakarta.portlet.tck.beans.TestSetupLink;
+import jakarta.portlet.tck.util.ModuleTestCaseDetails;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Set;
 
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_ACTION_PHASE_GETNAMES;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_ACTION_PHASE_GETVALUES;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_ACTION_PHASE_SIZE;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_HEADER_PHASE_GETNAMES;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_HEADER_PHASE_SIZE;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_HEADER_PHASE_GETVALUES;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_RENDER_PHASE_GETNAMES;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_RENDER_PHASE_SIZE;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_RENDER_PHASE_GETVALUES;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_RESOURCE_PHASE_GETNAMES;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_RESOURCE_PHASE_GETVALUES;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_RESOURCE_PHASE_SIZE;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_ACTION_PHASE_GETNAMES;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_ACTION_PHASE_GETVALUES;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_ACTION_PHASE_SIZE;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_HEADER_PHASE_GETNAMES;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_HEADER_PHASE_SIZE;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_HEADER_PHASE_GETVALUES;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_RENDER_PHASE_GETNAMES;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_RENDER_PHASE_SIZE;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_RENDER_PHASE_GETVALUES;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_RESOURCE_PHASE_GETNAMES;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_RESOURCE_PHASE_GETVALUES;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETPARAMETERSTESTS_SPEC11_4A_RESOURCE_PHASE_SIZE;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names

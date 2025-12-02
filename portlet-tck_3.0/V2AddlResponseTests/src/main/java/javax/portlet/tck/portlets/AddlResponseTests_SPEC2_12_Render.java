@@ -13,40 +13,40 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
-import static javax.portlet.ResourceURL.PAGE;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_CHARACTERENCODING4;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_CONTENTTYPE5;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_COOKIE10;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_COOKIE11;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_COOKIE12;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_COOKIE8;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_COOKIE9;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.ResourceURL.PAGE;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_CHARACTERENCODING4;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_CONTENTTYPE5;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_COOKIE10;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_COOKIE11;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_COOKIE12;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_COOKIE8;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_RENDER_COOKIE9;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.GenericPortlet;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletSession;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceURL;
-import javax.portlet.tck.beans.JSR286SpecTestCaseDetails;
-import javax.portlet.tck.beans.TestButton;
-import javax.portlet.tck.beans.TestResult;
-import javax.servlet.http.Cookie;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.GenericPortlet;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceURL;
+import jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails;
+import jakarta.portlet.tck.beans.TestButton;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.servlet.http.Cookie;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined

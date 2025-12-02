@@ -17,12 +17,12 @@
  */
 
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 
-import javax.portlet.PortletAsyncEvent;
-import javax.portlet.PortletAsyncListener;
+import jakarta.portlet.PortletAsyncEvent;
+import jakarta.portlet.PortletAsyncListener;
 
 /**
  * @author Scott Nicklous
@@ -35,28 +35,28 @@ public class BadAsyncListener implements PortletAsyncListener {
    }
 
    /* (non-Javadoc)
-    * @see javax.portlet.PortletAsyncListener#onComplete(javax.portlet.PortletAsyncEvent)
+    * @see jakarta.portlet.PortletAsyncListener#onComplete(jakarta.portlet.PortletAsyncEvent)
     */
    @Override
    public void onComplete(PortletAsyncEvent evt) throws IOException {
    }
 
    /* (non-Javadoc)
-    * @see javax.portlet.PortletAsyncListener#onError(javax.portlet.PortletAsyncEvent)
+    * @see jakarta.portlet.PortletAsyncListener#onError(jakarta.portlet.PortletAsyncEvent)
     */
    @Override
    public void onError(PortletAsyncEvent evt) throws IOException {
    }
 
    /* (non-Javadoc)
-    * @see javax.portlet.PortletAsyncListener#onStartAsync(javax.portlet.PortletAsyncEvent)
+    * @see jakarta.portlet.PortletAsyncListener#onStartAsync(jakarta.portlet.PortletAsyncEvent)
     */
    @Override
    public void onStartAsync(PortletAsyncEvent evt) throws IOException {
    }
 
    /* (non-Javadoc)
-    * @see javax.portlet.PortletAsyncListener#onTimeout(javax.portlet.PortletAsyncEvent)
+    * @see jakarta.portlet.PortletAsyncListener#onTimeout(jakarta.portlet.PortletAsyncEvent)
     */
    @Override
    public void onTimeout(PortletAsyncEvent evt) throws IOException {

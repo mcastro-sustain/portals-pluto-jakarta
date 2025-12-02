@@ -16,47 +16,47 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_FLUSHBUFFER;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETBUFFERSIZE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETCHARACTERENCODING;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETCONTENTTYPE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETLOCALE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETPORTLETOUTPUTSTREAM;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETWRITER;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_ISCOMMITTED;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_RESET;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_RESETBUFFER;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_SETBUFFERSIZE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_SETCONTENTTYPE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_SETTITLE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETCACHECONTROL;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_SETNEXTPOSSIBLEPORTLETMODES;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETRESPONSE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_SETRESPONSE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_CREATEACTIONURL;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_CREATERENDERURL;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_CREATERESOURCEURL;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_FLUSHBUFFER;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETBUFFERSIZE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETCHARACTERENCODING;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETCONTENTTYPE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETLOCALE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETPORTLETOUTPUTSTREAM;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETWRITER;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_ISCOMMITTED;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_RESET;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_RESETBUFFER;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_SETBUFFERSIZE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_SETCONTENTTYPE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_SETTITLE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETCACHECONTROL;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_SETNEXTPOSSIBLEPORTLETMODES;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_GETRESPONSE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_SETRESPONSE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_CREATEACTIONURL;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_CREATERENDERURL;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_RENDERRESPONSEWRAPPER_APIRENDER_CREATERESOURCEURL;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletMode;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.filter.RenderResponseWrapper;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.RenderResponseWrapperChecker;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletMode;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.filter.RenderResponseWrapper;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.RenderResponseWrapperChecker;
+import jakarta.portlet.tck.beans.TestResult;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case

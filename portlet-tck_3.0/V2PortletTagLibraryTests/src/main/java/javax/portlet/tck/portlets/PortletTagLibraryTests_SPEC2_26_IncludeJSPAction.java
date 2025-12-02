@@ -13,38 +13,38 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequestDispatcher;
-import javax.portlet.PortletSession;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.TestButton;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequestDispatcher;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.TestButton;
 
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS3;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS4;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS5;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS6;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS7;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS8;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS9;
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
-import static javax.portlet.tck.constants.Constants.JSP_PREFIX;
-import static javax.portlet.tck.constants.Constants.JSP_SUFFIX;
-import static javax.portlet.tck.constants.Constants.QUERY_STRING;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS3;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS4;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS5;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS6;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS7;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS8;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS9;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.JSP_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.JSP_SUFFIX;
+import static jakarta.portlet.tck.constants.Constants.QUERY_STRING;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined

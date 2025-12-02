@@ -24,12 +24,12 @@ import java.io.InputStream;
 import java.util.Set;
 
 import jakarta.enterprise.inject.spi.BeanManager;
-import javax.portlet.annotations.PortletApplication;
-import javax.portlet.annotations.PortletConfiguration;
-import javax.portlet.annotations.PortletConfigurations;
-import javax.portlet.annotations.PortletListener;
-import javax.portlet.annotations.PortletPreferencesValidator;
-import javax.portlet.annotations.PortletLifecycleFilter;
+import jakarta.portlet.annotations.PortletApplication;
+import jakarta.portlet.annotations.PortletConfiguration;
+import jakarta.portlet.annotations.PortletConfigurations;
+import jakarta.portlet.annotations.PortletListener;
+import jakarta.portlet.annotations.PortletPreferencesValidator;
+import jakarta.portlet.annotations.PortletLifecycleFilter;
 import jakarta.servlet.ServletContext;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBElement;

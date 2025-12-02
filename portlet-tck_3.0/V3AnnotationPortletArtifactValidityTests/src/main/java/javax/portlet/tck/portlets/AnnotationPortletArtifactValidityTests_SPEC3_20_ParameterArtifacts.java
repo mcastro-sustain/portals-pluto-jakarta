@@ -16,57 +16,57 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.inject.Inject;
-import javax.portlet.ActionParameters;
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.ActionURL;
-import javax.portlet.EventRequest;
-import javax.portlet.EventResponse;
-import javax.portlet.HeaderRequest;
-import javax.portlet.HeaderResponse;
-import javax.portlet.MutableRenderParameters;
-import javax.portlet.PortletException;
-import javax.portlet.PortletSession;
-import javax.portlet.RenderParameters;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceParameters;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceURL;
-import javax.portlet.annotations.ActionMethod;
-import javax.portlet.annotations.EventDefinition;
-import javax.portlet.annotations.EventMethod;
-import javax.portlet.annotations.HeaderMethod;
-import javax.portlet.annotations.PortletApplication;
-import javax.portlet.annotations.PortletQName;
-import javax.portlet.annotations.RenderMethod;
-import javax.portlet.annotations.ServeResourceMethod;
-import javax.portlet.tck.beans.TestButton;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.util.ModuleTestCaseDetails;
+import jakarta.inject.Inject;
+import jakarta.portlet.ActionParameters;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.ActionURL;
+import jakarta.portlet.EventRequest;
+import jakarta.portlet.EventResponse;
+import jakarta.portlet.HeaderRequest;
+import jakarta.portlet.HeaderResponse;
+import jakarta.portlet.MutableRenderParameters;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.RenderParameters;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceParameters;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceURL;
+import jakarta.portlet.annotations.ActionMethod;
+import jakarta.portlet.annotations.EventDefinition;
+import jakarta.portlet.annotations.EventMethod;
+import jakarta.portlet.annotations.HeaderMethod;
+import jakarta.portlet.annotations.PortletApplication;
+import jakarta.portlet.annotations.PortletQName;
+import jakarta.portlet.annotations.RenderMethod;
+import jakarta.portlet.annotations.ServeResourceMethod;
+import jakarta.portlet.tck.beans.TestButton;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.util.ModuleTestCaseDetails;
 import javax.xml.namespace.QName;
 
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETARTIFACTVALIDITYTESTS_SPEC3_20_PARAMETERARTIFACTS_ACTIONPARAMETERS;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETARTIFACTVALIDITYTESTS_SPEC3_20_PARAMETERARTIFACTS_MUTABLERENDERPARAMETERS;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETARTIFACTVALIDITYTESTS_SPEC3_20_PARAMETERARTIFACTS_RENDERPARAMETERS;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETARTIFACTVALIDITYTESTS_SPEC3_20_PARAMETERARTIFACTS_RESOURCEPARAMETERS;
-import static javax.portlet.PortletSession.PORTLET_SCOPE;
-import static javax.portlet.ResourceURL.PAGE;
-import static javax.portlet.tck.portlets.Utils.ACTIONPHASE;
-import static javax.portlet.tck.portlets.Utils.EVENTPHASE;
-import static javax.portlet.tck.portlets.Utils.HEADERPHASE;
-import static javax.portlet.tck.portlets.Utils.RENDERPHASE;
-import static javax.portlet.tck.portlets.Utils.ACTIONPARAMETERSARTIFACTKEY;
-import static javax.portlet.tck.portlets.Utils.MUTABLERENDERPARAMETERSARTIFACTKEY;
-import static javax.portlet.tck.portlets.Utils.RENDERPARAMETERSARTIFACTKEY;
-import static javax.portlet.tck.portlets.Utils.RESOURCEPARAMETERSARTIFACTKEY;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETARTIFACTVALIDITYTESTS_SPEC3_20_PARAMETERARTIFACTS_ACTIONPARAMETERS;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETARTIFACTVALIDITYTESTS_SPEC3_20_PARAMETERARTIFACTS_MUTABLERENDERPARAMETERS;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETARTIFACTVALIDITYTESTS_SPEC3_20_PARAMETERARTIFACTS_RENDERPARAMETERS;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETARTIFACTVALIDITYTESTS_SPEC3_20_PARAMETERARTIFACTS_RESOURCEPARAMETERS;
+import static jakarta.portlet.PortletSession.PORTLET_SCOPE;
+import static jakarta.portlet.ResourceURL.PAGE;
+import static jakarta.portlet.tck.portlets.Utils.ACTIONPHASE;
+import static jakarta.portlet.tck.portlets.Utils.EVENTPHASE;
+import static jakarta.portlet.tck.portlets.Utils.HEADERPHASE;
+import static jakarta.portlet.tck.portlets.Utils.RENDERPHASE;
+import static jakarta.portlet.tck.portlets.Utils.ACTIONPARAMETERSARTIFACTKEY;
+import static jakarta.portlet.tck.portlets.Utils.MUTABLERENDERPARAMETERSARTIFACTKEY;
+import static jakarta.portlet.tck.portlets.Utils.RENDERPARAMETERSARTIFACTKEY;
+import static jakarta.portlet.tck.portlets.Utils.RESOURCEPARAMETERSARTIFACTKEY;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case

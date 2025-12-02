@@ -16,7 +16,7 @@
  *  under the License.
  */
 
-package javax.portlet.tck.beans;
+package jakarta.portlet.tck.beans;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -1193,13 +1193,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETACTION_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETACTION_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETACTION_ATTRIBUTES7,
-            "For includes from the processAction method, The request attribute javax.portlet.request must be set to the javax.portlet.ActionRequest object");
+            "For includes from the processAction method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ActionRequest object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETACTION_ATTRIBUTES8,
-            "For includes from the processAction method, The request attribute javax.portlet.response must be set to the javax.portlet.ActionResponse object");
+            "For includes from the processAction method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ActionResponse object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETEVENT_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an include");
@@ -1280,13 +1280,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETEVENT_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETEVENT_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETEVENT_ATTRIBUTES7,
-            "For includes from the processEvent method, The request attribute javax.portlet.request must be set to the javax.portlet.EventRequest object");
+            "For includes from the processEvent method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.EventRequest object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETEVENT_ATTRIBUTES8,
-            "For includes from the processEvent method, The request attribute javax.portlet.response must be set to the javax.portlet.EventResponse object");
+            "For includes from the processEvent method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.EventResponse object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETRENDER_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an include");
@@ -1369,13 +1369,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETRENDER_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETRENDER_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETRENDER_ATTRIBUTES7,
-            "For includes from the render method, The request attribute javax.portlet.request must be set to the javax.portlet.RenderRequest object");
+            "For includes from the render method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.RenderRequest object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETRENDER_ATTRIBUTES8,
-            "For includes from the render method, The request attribute javax.portlet.response must be set to the javax.portlet.RenderResponse object");
+            "For includes from the render method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.RenderResponse object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETRESOURCE_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an include");
@@ -1458,13 +1458,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETRESOURCE_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETRESOURCE_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETRESOURCE_ATTRIBUTES7,
-            "For includes from the serveResource method, The request attribute javax.portlet.request must be set to the javax.portlet.ResourceRequest object");
+            "For includes from the serveResource method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ResourceRequest object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_INCLUDESERVLETRESOURCE_ATTRIBUTES8,
-            "For includes from the serveResource method, The request attribute javax.portlet.response must be set to the javax.portlet.ResourceResponse object");
+            "For includes from the serveResource method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ResourceResponse object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETACTION_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -1545,13 +1545,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETACTION_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETACTION_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETACTION_ATTRIBUTES7,
-            "For forwards from the processAction method, The request attribute javax.portlet.request must be set to the javax.portlet.ActionRequest object");
+            "For forwards from the processAction method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ActionRequest object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETACTION_ATTRIBUTES8,
-            "For forwards from the processAction method, The request attribute javax.portlet.response must be set to the javax.portlet.ActionResponse object");
+            "For forwards from the processAction method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ActionResponse object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETEVENT_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -1632,13 +1632,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETEVENT_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETEVENT_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETEVENT_ATTRIBUTES7,
-            "For forwards from the processEvent method, The request attribute javax.portlet.request must be set to the javax.portlet.EventRequest object");
+            "For forwards from the processEvent method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.EventRequest object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETEVENT_ATTRIBUTES8,
-            "For forwards from the processEvent method, The request attribute javax.portlet.response must be set to the javax.portlet.EventResponse object");
+            "For forwards from the processEvent method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.EventResponse object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETRENDER_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -1719,13 +1719,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETRENDER_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETRENDER_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETRENDER_ATTRIBUTES7,
-            "For forwards from the render method, The request attribute javax.portlet.request must be set to the javax.portlet.RenderRequest object");
+            "For forwards from the render method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.RenderRequest object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETRENDER_ATTRIBUTES8,
-            "For forwards from the render method, The request attribute javax.portlet.response must be set to the javax.portlet.RenderResponse object");
+            "For forwards from the render method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.RenderResponse object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETRESOURCE_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -1806,13 +1806,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETRESOURCE_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETRESOURCE_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETRESOURCE_ATTRIBUTES7,
-            "For forwards from the serveResource method, The request attribute javax.portlet.request must be set to the javax.portlet.ResourceRequest object");
+            "For forwards from the serveResource method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ResourceRequest object");
       tcd.put(
             V2DISPATCHERTESTS_SPEC2_19_FORWARDSERVLETRESOURCE_ATTRIBUTES8,
-            "For forwards from the serveResource method, The request attribute javax.portlet.response must be set to the javax.portlet.ResourceResponse object");
+            "For forwards from the serveResource method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ResourceResponse object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPACTION_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an include");
@@ -1893,13 +1893,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPACTION_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPACTION_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPACTION_ATTRIBUTES7,
-            "For includes from the processAction method, The request attribute javax.portlet.request must be set to the javax.portlet.ActionRequest object");
+            "For includes from the processAction method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ActionRequest object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPACTION_ATTRIBUTES8,
-            "For includes from the processAction method, The request attribute javax.portlet.response must be set to the javax.portlet.ActionResponse object");
+            "For includes from the processAction method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ActionResponse object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPEVENT_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an include");
@@ -1980,13 +1980,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPEVENT_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPEVENT_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPEVENT_ATTRIBUTES7,
-            "For includes from the processEvent method, The request attribute javax.portlet.request must be set to the javax.portlet.EventRequest object");
+            "For includes from the processEvent method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.EventRequest object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPEVENT_ATTRIBUTES8,
-            "For includes from the processEvent method, The request attribute javax.portlet.response must be set to the javax.portlet.EventResponse object");
+            "For includes from the processEvent method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.EventResponse object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPRENDER_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an include");
@@ -2069,13 +2069,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPRENDER_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPRENDER_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPRENDER_ATTRIBUTES7,
-            "For includes from the render method, The request attribute javax.portlet.request must be set to the javax.portlet.RenderRequest object");
+            "For includes from the render method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.RenderRequest object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPRENDER_ATTRIBUTES8,
-            "For includes from the render method, The request attribute javax.portlet.response must be set to the javax.portlet.RenderResponse object");
+            "For includes from the render method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.RenderResponse object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPRESOURCE_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an include");
@@ -2158,13 +2158,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPRESOURCE_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPRESOURCE_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPRESOURCE_ATTRIBUTES7,
-            "For includes from the serveResource method, The request attribute javax.portlet.request must be set to the javax.portlet.ResourceRequest object");
+            "For includes from the serveResource method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ResourceRequest object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_INCLUDEJSPRESOURCE_ATTRIBUTES8,
-            "For includes from the serveResource method, The request attribute javax.portlet.response must be set to the javax.portlet.ResourceResponse object");
+            "For includes from the serveResource method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ResourceResponse object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -2245,13 +2245,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES7,
-            "For forwards from the processAction method, The request attribute javax.portlet.request must be set to the javax.portlet.ActionRequest object");
+            "For forwards from the processAction method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ActionRequest object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES8,
-            "For forwards from the processAction method, The request attribute javax.portlet.response must be set to the javax.portlet.ActionResponse object");
+            "For forwards from the processAction method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ActionResponse object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPEVENT_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -2332,13 +2332,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPEVENT_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPEVENT_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPEVENT_ATTRIBUTES7,
-            "For forwards from the processEvent method, The request attribute javax.portlet.request must be set to the javax.portlet.EventRequest object");
+            "For forwards from the processEvent method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.EventRequest object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPEVENT_ATTRIBUTES8,
-            "For forwards from the processEvent method, The request attribute javax.portlet.response must be set to the javax.portlet.EventResponse object");
+            "For forwards from the processEvent method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.EventResponse object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPRENDER_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -2419,13 +2419,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPRENDER_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPRENDER_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPRENDER_ATTRIBUTES7,
-            "For forwards from the render method, The request attribute javax.portlet.request must be set to the javax.portlet.RenderRequest object");
+            "For forwards from the render method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.RenderRequest object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPRENDER_ATTRIBUTES8,
-            "For forwards from the render method, The request attribute javax.portlet.response must be set to the javax.portlet.RenderResponse object");
+            "For forwards from the render method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.RenderResponse object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPRESOURCE_DISPATCH1,
             "If the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -2506,13 +2506,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPRESOURCE_ATTRIBUTES5C,
             "If the request dispatcher is obtained through the getRequestDispatcher method, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPRESOURCE_ATTRIBUTES6,
-            "The request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "The request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPRESOURCE_ATTRIBUTES7,
-            "For forwards from the serveResource method, The request attribute javax.portlet.request must be set to the javax.portlet.ResourceRequest object");
+            "For forwards from the serveResource method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ResourceRequest object");
       tcd.put(
             V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPRESOURCE_ATTRIBUTES8,
-            "For forwards from the serveResource method, The request attribute javax.portlet.response must be set to the javax.portlet.ResourceResponse object");
+            "For forwards from the serveResource method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ResourceResponse object");
       tcd.put(V2DISPATCHERTESTS3S_SPEC2_19_INCLUDESERVLETACTION_DISPATCH4,
             "The parameters associated with a request dispatcher are scoped only for the duration of the include or forward call");
       tcd.put(V2DISPATCHERTESTS3S_SPEC2_19_INCLUDESERVLETEVENT_DISPATCH4,
@@ -2689,13 +2689,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet included by the target of an include, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETACTION_ATTRIBUTES6,
-            "In a servlet included by the target of an include, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet included by the target of an include, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETACTION_ATTRIBUTES7,
-            "In a servlet included by the target of an include, for includes from the processAction method, The request attribute javax.portlet.request must be set to the javax.portlet.ActionRequest object");
+            "In a servlet included by the target of an include, for includes from the processAction method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ActionRequest object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETACTION_ATTRIBUTES8,
-            "In a servlet included by the target of an include, for includes from the processAction method, The request attribute javax.portlet.response must be set to the javax.portlet.ActionResponse object");
+            "In a servlet included by the target of an include, for includes from the processAction method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ActionResponse object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_DISPATCH1,
             "In a servlet included by the target of an include, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an include");
@@ -2776,13 +2776,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet included by the target of an include, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES6,
-            "In a servlet included by the target of an include, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet included by the target of an include, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES7,
-            "In a servlet included by the target of an include, for includes from the processEvent method, The request attribute javax.portlet.request must be set to the javax.portlet.EventRequest object");
+            "In a servlet included by the target of an include, for includes from the processEvent method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.EventRequest object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES8,
-            "In a servlet included by the target of an include, for includes from the processEvent method, The request attribute javax.portlet.response must be set to the javax.portlet.EventResponse object");
+            "In a servlet included by the target of an include, for includes from the processEvent method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.EventResponse object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETRENDER_DISPATCH1,
             "In a servlet included by the target of an include, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an include");
@@ -2865,13 +2865,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet included by the target of an include, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETRENDER_ATTRIBUTES6,
-            "In a servlet included by the target of an include, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet included by the target of an include, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETRENDER_ATTRIBUTES7,
-            "In a servlet included by the target of an include, for includes from the render method, The request attribute javax.portlet.request must be set to the javax.portlet.RenderRequest object");
+            "In a servlet included by the target of an include, for includes from the render method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.RenderRequest object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETRENDER_ATTRIBUTES8,
-            "In a servlet included by the target of an include, for includes from the render method, The request attribute javax.portlet.response must be set to the javax.portlet.RenderResponse object");
+            "In a servlet included by the target of an include, for includes from the render method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.RenderResponse object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETRESOURCE_DISPATCH1,
             "In a servlet included by the target of an include, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an include");
@@ -2954,13 +2954,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet included by the target of an include, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETRESOURCE_ATTRIBUTES6,
-            "In a servlet included by the target of an include, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet included by the target of an include, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETRESOURCE_ATTRIBUTES7,
-            "In a servlet included by the target of an include, for includes from the serveResource method, The request attribute javax.portlet.request must be set to the javax.portlet.ResourceRequest object");
+            "In a servlet included by the target of an include, for includes from the serveResource method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ResourceRequest object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETRESOURCE_ATTRIBUTES8,
-            "In a servlet included by the target of an include, for includes from the serveResource method, The request attribute javax.portlet.response must be set to the javax.portlet.ResourceResponse object");
+            "In a servlet included by the target of an include, for includes from the serveResource method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ResourceResponse object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_DISPATCH1,
             "In a servlet forwarded to by the target of an include, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -3041,13 +3041,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet forwarded to by the target of an include, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES6,
-            "In a servlet forwarded to by the target of an include, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet forwarded to by the target of an include, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES7,
-            "In a servlet forwarded to by the target of an include, for forwards from the processAction method, The request attribute javax.portlet.request must be set to the javax.portlet.ActionRequest object");
+            "In a servlet forwarded to by the target of an include, for forwards from the processAction method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ActionRequest object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES8,
-            "In a servlet forwarded to by the target of an include, for forwards from the processAction method, The request attribute javax.portlet.response must be set to the javax.portlet.ActionResponse object");
+            "In a servlet forwarded to by the target of an include, for forwards from the processAction method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ActionResponse object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETEVENT_DISPATCH1,
             "In a servlet forwarded to by the target of an include, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -3128,13 +3128,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet forwarded to by the target of an include, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETEVENT_ATTRIBUTES6,
-            "In a servlet forwarded to by the target of an include, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet forwarded to by the target of an include, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETEVENT_ATTRIBUTES7,
-            "In a servlet forwarded to by the target of an include, for forwards from the processEvent method, The request attribute javax.portlet.request must be set to the javax.portlet.EventRequest object");
+            "In a servlet forwarded to by the target of an include, for forwards from the processEvent method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.EventRequest object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETEVENT_ATTRIBUTES8,
-            "In a servlet forwarded to by the target of an include, for forwards from the processEvent method, The request attribute javax.portlet.response must be set to the javax.portlet.EventResponse object");
+            "In a servlet forwarded to by the target of an include, for forwards from the processEvent method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.EventResponse object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETRENDER_DISPATCH1,
             "In a servlet forwarded to by the target of an include, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -3215,13 +3215,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet forwarded to by the target of an include, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETRENDER_ATTRIBUTES6,
-            "In a servlet forwarded to by the target of an include, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet forwarded to by the target of an include, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETRENDER_ATTRIBUTES7,
-            "In a servlet forwarded to by the target of an include, for forwards from the render method, The request attribute javax.portlet.request must be set to the javax.portlet.RenderRequest object");
+            "In a servlet forwarded to by the target of an include, for forwards from the render method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.RenderRequest object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETRENDER_ATTRIBUTES8,
-            "In a servlet forwarded to by the target of an include, for forwards from the render method, The request attribute javax.portlet.response must be set to the javax.portlet.RenderResponse object");
+            "In a servlet forwarded to by the target of an include, for forwards from the render method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.RenderResponse object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETRESOURCE_DISPATCH1,
             "In a servlet forwarded to by the target of an include, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -3302,13 +3302,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet forwarded to by the target of an include, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETRESOURCE_ATTRIBUTES6,
-            "In a servlet forwarded to by the target of an include, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet forwarded to by the target of an include, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETRESOURCE_ATTRIBUTES7,
-            "In a servlet forwarded to by the target of an include, for forwards from the serveResource method, The request attribute javax.portlet.request must be set to the javax.portlet.ResourceRequest object");
+            "In a servlet forwarded to by the target of an include, for forwards from the serveResource method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ResourceRequest object");
       tcd.put(
             V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETRESOURCE_ATTRIBUTES8,
-            "In a servlet forwarded to by the target of an include, for forwards from the serveResource method, The request attribute javax.portlet.response must be set to the javax.portlet.ResourceResponse object");
+            "In a servlet forwarded to by the target of an include, for forwards from the serveResource method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ResourceResponse object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETACTION_DISPATCH1,
             "In a servlet included by the target of a forward, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during a forward");
@@ -3389,13 +3389,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet included by the target of a forward, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETACTION_ATTRIBUTES6,
-            "In a servlet included by the target of a forward, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet included by the target of a forward, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETACTION_ATTRIBUTES7,
-            "In a servlet included by the target of a forward, for includes from the processAction method, The request attribute javax.portlet.request must be set to the javax.portlet.ActionRequest object");
+            "In a servlet included by the target of a forward, for includes from the processAction method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ActionRequest object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETACTION_ATTRIBUTES8,
-            "In a servlet included by the target of a forward, for includes from the processAction method, The request attribute javax.portlet.response must be set to the javax.portlet.ActionResponse object");
+            "In a servlet included by the target of a forward, for includes from the processAction method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ActionResponse object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETEVENT_DISPATCH1,
             "In a servlet included by the target of a forward, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during a forward");
@@ -3476,13 +3476,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet included by the target of a forward, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETEVENT_ATTRIBUTES6,
-            "In a servlet included by the target of a forward, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet included by the target of a forward, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETEVENT_ATTRIBUTES7,
-            "In a servlet included by the target of a forward, for includes from the processEvent method, The request attribute javax.portlet.request must be set to the javax.portlet.EventRequest object");
+            "In a servlet included by the target of a forward, for includes from the processEvent method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.EventRequest object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETEVENT_ATTRIBUTES8,
-            "In a servlet included by the target of a forward, for includes from the processEvent method, The request attribute javax.portlet.response must be set to the javax.portlet.EventResponse object");
+            "In a servlet included by the target of a forward, for includes from the processEvent method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.EventResponse object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETRENDER_DISPATCH1,
             "In a servlet included by the target of a forward, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during a forward");
@@ -3565,13 +3565,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet included by the target of a forward, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETRENDER_ATTRIBUTES6,
-            "In a servlet included by the target of a forward, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet included by the target of a forward, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETRENDER_ATTRIBUTES7,
-            "In a servlet included by the target of a forward, for includes from the render method, The request attribute javax.portlet.request must be set to the javax.portlet.RenderRequest object");
+            "In a servlet included by the target of a forward, for includes from the render method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.RenderRequest object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETRENDER_ATTRIBUTES8,
-            "In a servlet included by the target of a forward, for includes from the render method, The request attribute javax.portlet.response must be set to the javax.portlet.RenderResponse object");
+            "In a servlet included by the target of a forward, for includes from the render method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.RenderResponse object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETRESOURCE_DISPATCH1,
             "In a servlet included by the target of a forward, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during a forward");
@@ -3654,13 +3654,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet included by the target of a forward, the servlet request attribute javax.servlet.forward.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETRESOURCE_ATTRIBUTES6,
-            "In a servlet included by the target of a forward, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet included by the target of a forward, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETRESOURCE_ATTRIBUTES7,
-            "In a servlet included by the target of a forward, for includes from the serveResource method, The request attribute javax.portlet.request must be set to the javax.portlet.ResourceRequest object");
+            "In a servlet included by the target of a forward, for includes from the serveResource method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ResourceRequest object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENINCLUDESERVLETRESOURCE_ATTRIBUTES8,
-            "In a servlet included by the target of a forward, for includes from the serveResource method, The request attribute javax.portlet.response must be set to the javax.portlet.ResourceResponse object");
+            "In a servlet included by the target of a forward, for includes from the serveResource method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ResourceResponse object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETACTION_DISPATCH1,
             "In a servlet forwarded to by the target of a forward, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -3741,13 +3741,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet forwarded to by the target of a forward, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETACTION_ATTRIBUTES6,
-            "In a servlet forwarded to by the target of a forward, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet forwarded to by the target of a forward, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETACTION_ATTRIBUTES7,
-            "In a servlet forwarded to by the target of a forward, for forwards from the processAction method, The request attribute javax.portlet.request must be set to the javax.portlet.ActionRequest object");
+            "In a servlet forwarded to by the target of a forward, for forwards from the processAction method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ActionRequest object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETACTION_ATTRIBUTES8,
-            "In a servlet forwarded to by the target of a forward, for forwards from the processAction method, The request attribute javax.portlet.response must be set to the javax.portlet.ActionResponse object");
+            "In a servlet forwarded to by the target of a forward, for forwards from the processAction method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ActionResponse object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETEVENT_DISPATCH1,
             "In a servlet forwarded to by the target of a forward, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -3828,13 +3828,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet forwarded to by the target of a forward, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETEVENT_ATTRIBUTES6,
-            "In a servlet forwarded to by the target of a forward, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet forwarded to by the target of a forward, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETEVENT_ATTRIBUTES7,
-            "In a servlet forwarded to by the target of a forward, for forwards from the processEvent method, The request attribute javax.portlet.request must be set to the javax.portlet.EventRequest object");
+            "In a servlet forwarded to by the target of a forward, for forwards from the processEvent method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.EventRequest object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETEVENT_ATTRIBUTES8,
-            "In a servlet forwarded to by the target of a forward, for forwards from the processEvent method, The request attribute javax.portlet.response must be set to the javax.portlet.EventResponse object");
+            "In a servlet forwarded to by the target of a forward, for forwards from the processEvent method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.EventResponse object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRENDER_DISPATCH1,
             "In a servlet forwarded to by the target of a forward, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -3915,13 +3915,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet forwarded to by the target of a forward, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRENDER_ATTRIBUTES6,
-            "In a servlet forwarded to by the target of a forward, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet forwarded to by the target of a forward, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRENDER_ATTRIBUTES7,
-            "In a servlet forwarded to by the target of a forward, for forwards from the render method, The request attribute javax.portlet.request must be set to the javax.portlet.RenderRequest object");
+            "In a servlet forwarded to by the target of a forward, for forwards from the render method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.RenderRequest object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRENDER_ATTRIBUTES8,
-            "In a servlet forwarded to by the target of a forward, for forwards from the render method, The request attribute javax.portlet.response must be set to the javax.portlet.RenderResponse object");
+            "In a servlet forwarded to by the target of a forward, for forwards from the render method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.RenderResponse object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_DISPATCH1,
             "In a servlet forwarded to by the target of a forward, if the path provided to getRequestDispatcher method contains query strings, parameters specified in the query strings must be passed to the target servlet during an forward");
@@ -4002,13 +4002,13 @@ public class JSR286DispatcherTestCaseDetails extends TestCaseDetails {
             "In a servlet forwarded to by the target of a forward, the servlet request attribute javax.servlet.include.query_string will not be set");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES6,
-            "In a servlet forwarded to by the target of a forward, the request attribute javax.portlet.config must be set to the javax.portlet.PortletConfig object");
+            "In a servlet forwarded to by the target of a forward, the request attribute jakarta.portlet.config must be set to the jakarta.portlet.PortletConfig object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES7,
-            "In a servlet forwarded to by the target of a forward, for forwards from the serveResource method, The request attribute javax.portlet.request must be set to the javax.portlet.ResourceRequest object");
+            "In a servlet forwarded to by the target of a forward, for forwards from the serveResource method, The request attribute jakarta.portlet.request must be set to the jakarta.portlet.ResourceRequest object");
       tcd.put(
             V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES8,
-            "In a servlet forwarded to by the target of a forward, for forwards from the serveResource method, The request attribute javax.portlet.response must be set to the javax.portlet.ResourceResponse object");
+            "In a servlet forwarded to by the target of a forward, for forwards from the serveResource method, The request attribute jakarta.portlet.response must be set to the jakarta.portlet.ResourceResponse object");
 
    }
 

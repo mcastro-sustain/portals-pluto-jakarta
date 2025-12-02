@@ -2,11 +2,11 @@ PARMS outputPath=C:\Users\IBM_ADMIN\Downloads\TCKTool
 Class / Section;Keywords;Name;Testable;Description
 HeaderPortletTests;;;;
 SPEC3_6_4;HeaderPortlet;renderHeaders;TRUE;renderHeaders() method is called before render() method if the portlet implements HeaderPortlet interface.
-SPEC3_6_4;HeaderPortlet;renderHeaders2;TRUE;The container runtime option javax.portlet.renderHeaders is disregarded for version 3.0 or later.
+SPEC3_6_4;HeaderPortlet;renderHeaders2;TRUE;The container runtime option jakarta.portlet.renderHeaders is disregarded for version 3.0 or later.
 SPEC7_14;RenderRequest;getETag;TRUE;Method getETag(): Returns null if there is no cached response.
 SPEC14;Header Attr;attributes1;TRUE;The portlet can access a map with user information attributes via the request attribute PortletRequest.USER_INFO
 SPEC14;Header Attr;attributes2;TRUE;The PortletRequest.CCPP_PROFILE request attribute must return a javax.ccpp.Profile based on the current portlet request
-SPEC14;Header Attr;attributes3;TRUE;During header processing, the LIFECYCLE_PHASE ("javax.portlet.lifecycle_phase") attribute will contain the string "HEADER_PHASE"
+SPEC14;Header Attr;attributes3;TRUE;During header processing, the LIFECYCLE_PHASE ("jakarta.portlet.lifecycle_phase") attribute will contain the string "HEADER_PHASE"
 SPEC14;Header Req;contentType1;TRUE;The getResponseContentType method returns a String representing the default content type the portlet container assumes for the output
 SPEC14;Header Req;contentType2;TRUE;The getResponseContentTypes method returns an Enumeration of String elements representing the acceptable content types for the output in order of preference
 SPEC14;Header Req;contentType3;TRUE;The first element of the Enumeration returned by the getResponseContentTypes method must equal the value returned by the getResponseContentType method
@@ -22,8 +22,8 @@ SPEC14;Header Req;contentType13;TRUE;The character set of the response can be re
 SPEC14;RenderState_ApiHeader;getPortletMode;TRUE;Method getPortletMode(): Returns current PortletMode 
 SPEC14;RenderState_ApiHeader;getWindowState;TRUE;Method getWindowState(): Returns current WindowState
 SPEC14;RenderState_ApiHeader;getRenderParameters;TRUE;Method getRenderParameters(): Returns an immutable RenderParameters object representing the private and public render parameters
-SPEC14;PortletRequest_ApiHeader;fieldUSER_INFO;TRUE;Has String field USER_INFO with value of "javax.portlet.userinfo" 
-SPEC14;PortletRequest_ApiHeader;fieldCCPP_PROFILE;TRUE;Has String field CCPP_PROFILE with value of "javax.portlet.ccpp" 
+SPEC14;PortletRequest_ApiHeader;fieldUSER_INFO;TRUE;Has String field USER_INFO with value of "jakarta.portlet.userinfo" 
+SPEC14;PortletRequest_ApiHeader;fieldCCPP_PROFILE;TRUE;Has String field CCPP_PROFILE with value of "jakarta.portlet.ccpp" 
 SPEC14;PortletRequest_ApiHeader;fieldBASIC_AUTH;TRUE;Has String field BASIC_AUTH with value of "BASIC" 
 SPEC14;PortletRequest_ApiHeader;fieldFORM_AUTH;TRUE;Has String field FORM_AUTH with value of "FORM" 
 SPEC14;PortletRequest_ApiHeader;fieldCLIENT_CERT_AUTH;TRUE;Has String field CLIENT_CERT_AUTH with value of "CLIENT_CERT" 
@@ -33,11 +33,11 @@ SPEC14;PortletRequest_ApiHeader;fieldEVENT_PHASE;TRUE;Has String field EVENT_PHA
 SPEC14;PortletRequest_ApiHeader;fieldRENDER_PHASE;TRUE;Has String field RENDER_PHASE with value of "RENDER_PHASE" 
 SPEC14;PortletRequest_ApiHeader;fieldRESOURCE_PHASE;TRUE;Has String field RESOURCE_PHASE with value of "RESOURCE_PHASE" 
 SPEC14;PortletRequest_ApiHeader;fieldHEADER_PHASE;TRUE;Has String field HEADER_PHASE with value of "HEADER_PHASE" 
-SPEC14;PortletRequest_ApiHeader;fieldLIFECYCLE_PHASE;TRUE;Has String field LIFECYCLE_PHASE with value of "javax.portlet.lifecycle_phase" 
-SPEC14;PortletRequest_ApiHeader;fieldRENDER_PART;TRUE;Has String field RENDER_PART with value of "javax.portlet.render_part" 
+SPEC14;PortletRequest_ApiHeader;fieldLIFECYCLE_PHASE;TRUE;Has String field LIFECYCLE_PHASE with value of "jakarta.portlet.lifecycle_phase" 
+SPEC14;PortletRequest_ApiHeader;fieldRENDER_PART;TRUE;Has String field RENDER_PART with value of "jakarta.portlet.render_part" 
 SPEC14;PortletRequest_ApiHeader;fieldRENDER_HEADERS;TRUE;Has String field RENDER_HEADERS with value of "RENDER_HEADERS" 
 SPEC14;PortletRequest_ApiHeader;fieldRENDER_MARKUP;TRUE;Has String field RENDER_MARKUP with value of "RENDER_MARKUP" 
-SPEC14;PortletRequest_ApiHeader;fieldACTION_SCOPE_ID;TRUE;Has String field ACTION_SCOPE_ID with value of "javax.portlet.as" 
+SPEC14;PortletRequest_ApiHeader;fieldACTION_SCOPE_ID;TRUE;Has String field ACTION_SCOPE_ID with value of "jakarta.portlet.as" 
 SPEC14;PortletRequest_ApiHeader;isWindowStateAllowed1;TRUE;Method isWindowStateAllowed(WindowState): Returns true if the specified WindowState is allowed
 SPEC14;PortletRequest_ApiHeader;isWindowStateAllowed2;TRUE;Method isWindowStateAllowed(WindowState): Returns false if the specified WindowState is not allowed
 SPEC14;PortletRequest_ApiHeader;isPortletModeAllowed1;TRUE;Method isPortletModeAllowed(PortletMode): Returns true if the specified PortletMode is allowed
@@ -147,7 +147,7 @@ SPEC15;MimeResponse_ApiHeader;fieldPRIVATE_SCOPE ;TRUE;Has String field PRIVATE_
 SPEC15;MimeResponse_ApiHeader;fieldETAG ;TRUE;Has String field ETAG with value of "portlet.ETag"
 SPEC15;MimeResponse_ApiHeader;fieldUSE_CACHED_CONTENT ;TRUE;Has String field USE_CACHED_CONTENT with value of "portlet.use-cached-content"
 SPEC15;MimeResponse_ApiHeader;fieldNAMESPACED_RESPONSE;TRUE;Has String field NAMESPACED_RESPONSE with value of "X-JAVAX-PORTLET-NAMESPACED-RESPONSE"
-SPEC15;MimeResponse_ApiHeader;fieldMARKUP_HEAD_ELEMENT;TRUE;Has String field MARKUP_HEAD_ELEMENT with value of "javax.portlet.markup.head.element"
+SPEC15;MimeResponse_ApiHeader;fieldMARKUP_HEAD_ELEMENT;TRUE;Has String field MARKUP_HEAD_ELEMENT with value of "jakarta.portlet.markup.head.element"
 SPEC15;MimeResponse_ApiHeader;getContentType1;TRUE;Method getContentType(): Returns a String containing the MIME type that can be used with the response
 SPEC15;MimeResponse_ApiHeader;getContentType2;TRUE;Method getContentType(): Returns null if no content type is set
 SPEC15;MimeResponse_ApiHeader;setContentType1;TRUE;Method setContentType(String): Sets the MIME type for the response

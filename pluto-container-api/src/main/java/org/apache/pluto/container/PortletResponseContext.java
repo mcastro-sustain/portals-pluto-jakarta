@@ -18,7 +18,7 @@ package org.apache.pluto.container;
 
 import java.util.Collection;
 
-import javax.portlet.PortletConfig;
+import jakarta.portlet.PortletConfig;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

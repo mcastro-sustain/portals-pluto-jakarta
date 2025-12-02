@@ -16,43 +16,43 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.Enumeration;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.HeaderPortlet;
-import javax.portlet.HeaderRequest;
-import javax.portlet.HeaderResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.annotations.PortletConfiguration;
-import javax.portlet.annotations.Supports;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.util.ModuleTestCaseDetails;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.HeaderPortlet;
+import jakarta.portlet.HeaderRequest;
+import jakarta.portlet.HeaderResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.annotations.PortletConfiguration;
+import jakarta.portlet.annotations.Supports;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.util.ModuleTestCaseDetails;
 
 import org.apache.commons.lang3.StringUtils;
 
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE1;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE2;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE3;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE4;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE5;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE10;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE11;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE13;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_WINDOWID1;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_WINDOWID4;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
-import static javax.portlet.PortletSession.PORTLET_SCOPE;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE1;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE2;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE3;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE4;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE5;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE10;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE11;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE13;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_WINDOWID1;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_WINDOWID4;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.PortletSession.PORTLET_SCOPE;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case
@@ -211,13 +211,13 @@ public class HeaderPortletTests_SPEC14_HeaderReq
                headerRequest.getWindowID(), PORTLET_SCOPE);
          String tr5SessionAttribute = (String) headerRequest.getPortletSession()
                .getAttribute(
-                     "javax.portlet.p." + headerRequest.getWindowID() + "?tr5",
+                     "jakarta.portlet.p." + headerRequest.getWindowID() + "?tr5",
                      APPLICATION_SCOPE);
          if (tr5SessionAttribute != null
                && tr5SessionAttribute.equals(headerRequest.getWindowID())) {
             result.setTcSuccess(true);
          } else {
-            result.appendTcDetail("Couldn't find javax.portlet.p."
+            result.appendTcDetail("Couldn't find jakarta.portlet.p."
                   + headerRequest.getWindowID() + ".tr5 attribute");
          }
          result.writeTo(writer);

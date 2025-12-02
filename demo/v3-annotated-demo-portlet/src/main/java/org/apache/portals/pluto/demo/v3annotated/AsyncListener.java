@@ -24,12 +24,12 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import javax.inject.Inject;
-import javax.portlet.PortletAsyncContext;
-import javax.portlet.PortletAsyncEvent;
-import javax.portlet.PortletAsyncListener;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
+import jakarta.inject.Inject;
+import jakarta.portlet.PortletAsyncContext;
+import jakarta.portlet.PortletAsyncEvent;
+import jakarta.portlet.PortletAsyncListener;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
 
 import org.apache.portals.pluto.demo.v3annotated.AsyncDialogBean.TimeoutType;
 import org.slf4j.Logger;

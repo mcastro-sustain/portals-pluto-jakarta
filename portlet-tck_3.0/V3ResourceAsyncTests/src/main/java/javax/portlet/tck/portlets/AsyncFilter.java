@@ -16,28 +16,28 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3RESOURCEASYNCTESTS_SPEC_21_ASYNC_CDI3;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3RESOURCEASYNCTESTS_SPEC_21_ASYNC_GETDISPATCHERTYPE2;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3RESOURCEASYNCTESTS_SPEC_21_ASYNC_GETDISPATCHERTYPE4;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3RESOURCEASYNCTESTS_SPEC_21_ASYNC_CDI3;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3RESOURCEASYNCTESTS_SPEC_21_ASYNC_GETDISPATCHERTYPE2;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3RESOURCEASYNCTESTS_SPEC_21_ASYNC_GETDISPATCHERTYPE4;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.inject.Inject;
-import javax.portlet.PortletAsyncContext;
-import javax.portlet.PortletException;
-import javax.portlet.PortletSession;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.annotations.PortletLifecycleFilter;
-import javax.portlet.filter.FilterChain;
-import javax.portlet.filter.FilterConfig;
-import javax.portlet.filter.ResourceFilter;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.util.ModuleTestCaseDetails;
-import javax.servlet.DispatcherType;
+import jakarta.inject.Inject;
+import jakarta.portlet.PortletAsyncContext;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.annotations.PortletLifecycleFilter;
+import jakarta.portlet.filter.FilterChain;
+import jakarta.portlet.filter.FilterConfig;
+import jakarta.portlet.filter.ResourceFilter;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.util.ModuleTestCaseDetails;
+import jakarta.servlet.DispatcherType;
 
 /**
  * @author Scott Nicklous
@@ -51,7 +51,7 @@ public class AsyncFilter implements ResourceFilter {
    /*
     * (non-Javadoc)
     * 
-    * @see javax.portlet.filter.PortletFilter#init(javax.portlet.filter.FilterConfig)
+    * @see jakarta.portlet.filter.PortletFilter#init(jakarta.portlet.filter.FilterConfig)
     */
    @Override
    public void init(FilterConfig filterConfig) throws PortletException {
@@ -60,7 +60,7 @@ public class AsyncFilter implements ResourceFilter {
    /*
     * (non-Javadoc)
     * 
-    * @see javax.portlet.filter.PortletFilter#destroy()
+    * @see jakarta.portlet.filter.PortletFilter#destroy()
     */
    @Override
    public void destroy() {
@@ -69,8 +69,8 @@ public class AsyncFilter implements ResourceFilter {
    /*
     * (non-Javadoc)
     * 
-    * @see javax.portlet.filter.ResourceFilter#doFilter(javax.portlet.ResourceRequest, javax.portlet.ResourceResponse,
-    * javax.portlet.filter.FilterChain)
+    * @see jakarta.portlet.filter.ResourceFilter#doFilter(jakarta.portlet.ResourceRequest, jakarta.portlet.ResourceResponse,
+    * jakarta.portlet.filter.FilterChain)
     */
    @Override
    public void doFilter(ResourceRequest req, ResourceResponse resp, FilterChain chain) throws IOException, PortletException {

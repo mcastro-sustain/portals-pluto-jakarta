@@ -16,38 +16,38 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import javax.inject.Inject;
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.ActionURL;
-import javax.portlet.MutableActionParameters;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletSession;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.annotations.ActionMethod;
-import javax.portlet.annotations.RenderMethod;
-import javax.portlet.tck.beans.CompareUtils;
-import javax.portlet.tck.beans.TestButton;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.util.ModuleTestCaseDetails;
+import jakarta.inject.Inject;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.ActionURL;
+import jakarta.portlet.MutableActionParameters;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.annotations.ActionMethod;
+import jakarta.portlet.annotations.RenderMethod;
+import jakarta.portlet.tck.beans.CompareUtils;
+import jakarta.portlet.tck.beans.TestButton;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.util.ModuleTestCaseDetails;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Map;
 
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_ACTIONURL_GETACTIONPARAMETERS;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_ACTIONURL_GETACTIONPARAMETERS2;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_ACTIONURL_GETACTIONPARAMETERS3;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_ACTIONURL_SETPARAMETERB7;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_ACTIONURL_GETACTIONPARAMETERS;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_ACTIONURL_GETACTIONPARAMETERS2;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_ACTIONURL_GETACTIONPARAMETERS3;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_ACTIONURL_SETPARAMETERB7;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case

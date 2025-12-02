@@ -26,11 +26,11 @@ import jakarta.enterprise.context.spi.CreationalContext;
 import jakarta.enterprise.inject.spi.Bean;
 import jakarta.enterprise.inject.spi.BeanManager;
 import jakarta.inject.Inject;
-import javax.portlet.EventPortlet;
-import javax.portlet.GenericPortlet;
-import javax.portlet.HeaderPortlet;
-import javax.portlet.Portlet;
-import javax.portlet.ResourceServingPortlet;
+import jakarta.portlet.EventPortlet;
+import jakarta.portlet.GenericPortlet;
+import jakarta.portlet.HeaderPortlet;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.ResourceServingPortlet;
 
 import org.apache.pluto.container.reconcile.fixtures.TestPortlet1;
 import org.apache.pluto.container.reconcile.fixtures.TestPortlet1AppScoped;

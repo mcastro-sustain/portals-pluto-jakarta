@@ -15,20 +15,20 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package javax.portlet.tck.filter;
+package jakarta.portlet.tck.filter;
 
-import javax.portlet.ActionParameters;
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.MutableActionParameters;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequest;
-import javax.portlet.filter.ActionFilter;
-import javax.portlet.filter.ActionParametersWrapper;
-import javax.portlet.filter.ActionRequestWrapper;
-import javax.portlet.filter.FilterChain;
-import javax.portlet.filter.FilterConfig;
-import javax.portlet.filter.PortletRequestWrapper;
+import jakarta.portlet.ActionParameters;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.MutableActionParameters;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.filter.ActionFilter;
+import jakarta.portlet.filter.ActionParametersWrapper;
+import jakarta.portlet.filter.ActionRequestWrapper;
+import jakarta.portlet.filter.FilterChain;
+import jakarta.portlet.filter.FilterConfig;
+import jakarta.portlet.filter.PortletRequestWrapper;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Enumeration;

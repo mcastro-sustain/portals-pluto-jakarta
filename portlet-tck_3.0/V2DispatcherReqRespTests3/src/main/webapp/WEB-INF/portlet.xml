@@ -24,7 +24,7 @@
    version="2.0" id="V2DispatcherReqRespTests3">
    <portlet>
       <portlet-name>DispatcherReqRespTests3_SPEC2_19_IncludeJSPActionRequest</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPActionRequest</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPActionRequest</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -37,7 +37,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests3_SPEC2_19_IncludeJSPActionResponse</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPActionResponse</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPActionResponse</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -50,7 +50,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests3_SPEC2_19_IncludeJSPEventRequest</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPEventRequest</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPEventRequest</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -66,7 +66,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests3_SPEC2_19_IncludeJSPEventRequest_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPEventRequest_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPEventRequest_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -82,7 +82,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests3_SPEC2_19_IncludeJSPEventResponse</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPEventResponse</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPEventResponse</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -98,7 +98,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests3_SPEC2_19_IncludeJSPEventResponse_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPEventResponse_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPEventResponse_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -114,7 +114,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests3_SPEC2_19_IncludeJSPRenderRequest</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPRenderRequest</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPRenderRequest</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -127,7 +127,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests3_SPEC2_19_IncludeJSPRenderResponse</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPRenderResponse</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPRenderResponse</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -140,7 +140,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests3_SPEC2_19_IncludeJSPResourceRequest</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPResourceRequest</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPResourceRequest</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -153,7 +153,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests3_SPEC2_19_IncludeJSPResourceResponse</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPResourceResponse</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests3_SPEC2_19_IncludeJSPResourceResponse</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

@@ -16,23 +16,23 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETCONTAINERRUNTIMEOPTIONS1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETCONTAINERRUNTIMEOPTIONS2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETCONTAINERRUNTIMEOPTIONS3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETDEFAULTNAMESPACE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETINITPARAMETER1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETINITPARAMETER3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETINITPARAMETERNAMES1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETPORTLETCONTEXT;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETPORTLETNAME;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETPROCESSINGEVENTQNAMES1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETPUBLICRENDERPARAMETERNAMES1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETPUBLISHINGEVENTQNAMES1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETRESOURCEBUNDLE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETSUPPORTEDLOCALES1;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETCONTAINERRUNTIMEOPTIONS1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETCONTAINERRUNTIMEOPTIONS2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETCONTAINERRUNTIMEOPTIONS3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETDEFAULTNAMESPACE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETINITPARAMETER1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETINITPARAMETER3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETINITPARAMETERNAMES1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETPORTLETCONTEXT;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETPORTLETNAME;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETPROCESSINGEVENTQNAMES1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETPUBLICRENDERPARAMETERNAMES1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETPUBLISHINGEVENTQNAMES1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETRESOURCEBUNDLE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_PORTLETCONFIG_APIRENDER_GETSUPPORTEDLOCALES1;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -44,16 +44,16 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.ResourceBundle;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletContext;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletContext;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 import javax.xml.namespace.QName;
 
 /**
@@ -331,9 +331,9 @@ public class PortletTests_PortletConfig_ApiRender implements Portlet {
        * different containers expect different options
        */
       PortletContext portletContext = portletConfig.getPortletContext();
-      String expectedSize = portletContext.getInitParameter("javax.portlet.portletConfig.getContainerRuntimeOptions.EXPECTED_SIZE");
-      String expectedOption = portletContext.getInitParameter("javax.portlet.portletConfig.getContainerRuntimeOptions.EXPECTED_OPTION");
-      String expectedValue = portletContext.getInitParameter("javax.portlet.portletConfig.getContainerRuntimeOptions.EXPECTED_VALUE");
+      String expectedSize = portletContext.getInitParameter("jakarta.portlet.portletConfig.getContainerRuntimeOptions.EXPECTED_SIZE");
+      String expectedOption = portletContext.getInitParameter("jakarta.portlet.portletConfig.getContainerRuntimeOptions.EXPECTED_OPTION");
+      String expectedValue = portletContext.getInitParameter("jakarta.portlet.portletConfig.getContainerRuntimeOptions.EXPECTED_VALUE");
 
       /*
        * TestCase:

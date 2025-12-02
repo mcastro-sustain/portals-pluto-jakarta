@@ -13,37 +13,37 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.GenericPortlet;
-import javax.portlet.PortletException;
-import javax.portlet.PortletMode;
-import javax.portlet.PortletModeException;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderMode;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.JSR286SpecTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.beans.TestSetupLink;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.GenericPortlet;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletMode;
+import jakarta.portlet.PortletModeException;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderMode;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.beans.TestSetupLink;
 
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES3;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES4;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES5;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES6;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES8;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES9;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES7;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES3;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES4;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES5;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES6;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES8;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES9;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES7;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined
@@ -162,17 +162,17 @@ public class AddlPortletTests_SPEC2_8_PortletModes extends GenericPortlet {
     /* TestCase: V2AddlPortletTests_SPEC2_8_PortletModes_declaringPortletModes8 */
     /* Details: "A custom portlet mode can have a localized decoration */
     /* name in the resource bundle with the name of */
-    /* javax.portlet.app.custom-portlet-mode.&lt;name&gt;.decoration-name" */
+    /* jakarta.portlet.app.custom-portlet-mode.&lt;name&gt;.decoration-name" */
     TestResult tr7 =
         tcd.getTestResultFailed(V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES8);
     Locale locale = portletReq.getLocale();
     ResourceBundle res = getResourceBundle(locale);
-    if (res.getString("javax.portlet.app.custom-portlet-mode.custom1.decoration-name")
+    if (res.getString("jakarta.portlet.app.custom-portlet-mode.custom1.decoration-name")
         .equals("decoration")) {
       tr7.setTcSuccess(true);
     } else {
       tr7.appendTcDetail("Failed because custom1 decoration name is"
-          + res.getString("javax.portlet.app.custom-portlet-mode.custom1.decoration-name"));
+          + res.getString("jakarta.portlet.app.custom-portlet-mode.custom1.decoration-name"));
     }
     tr7.writeTo(writer);
 

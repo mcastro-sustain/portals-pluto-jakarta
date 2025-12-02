@@ -17,12 +17,12 @@
  */
 
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 
-import javax.portlet.PortletAsyncEvent;
-import javax.portlet.PortletAsyncListener;
+import jakarta.portlet.PortletAsyncEvent;
+import jakarta.portlet.PortletAsyncListener;
 
 /**
  * @author Scott Nicklous

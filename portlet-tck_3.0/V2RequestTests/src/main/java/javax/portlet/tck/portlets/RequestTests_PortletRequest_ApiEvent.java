@@ -16,124 +16,124 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDUSER_INFO;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDCCPP_PROFILE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDBASIC_AUTH;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDFORM_AUTH;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDCLIENT_CERT_AUTH;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDDIGEST_AUTH;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDACTION_PHASE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDEVENT_PHASE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRENDER_PHASE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRESOURCE_PHASE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDLIFECYCLE_PHASE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRENDER_PART;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRENDER_HEADERS;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRENDER_MARKUP;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDACTION_SCOPE_ID;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISWINDOWSTATEALLOWED1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISWINDOWSTATEALLOWED2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISPORTLETMODEALLOWED1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISPORTLETMODEALLOWED2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETMODE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETWINDOWSTATE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPREFERENCES;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETSESSIONA1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETSESSIONA2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETSESSIONB1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETSESSIONB2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETSESSIONB3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETSESSIONB4;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTY1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTY2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTY3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTIES1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTIES2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTIES3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTYNAMES1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTYNAMES2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTALCONTEXT;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETAUTHTYPE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETAUTHTYPE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETCONTEXTPATH1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETCONTEXTPATH2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETCONTEXTPATH3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETREMOTEUSER1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETREMOTEUSER2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETUSERPRINCIPAL1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETUSERPRINCIPAL2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISUSERINROLE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISUSERINROLE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISUSERINROLE3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETATTRIBUTE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETATTRIBUTE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETATTRIBUTE3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETATTRIBUTENAMES1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETATTRIBUTENAMES2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETER1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETER2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETER3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETER4;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETER5;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERNAMES1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERNAMES2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERVALUES1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERVALUES2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERVALUES3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERVALUES4;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERMAP1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERMAP2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERMAP3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISSECURE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISSECURE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_SETATTRIBUTE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_SETATTRIBUTE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_SETATTRIBUTE3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_REMOVEATTRIBUTE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_REMOVEATTRIBUTE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETREQUESTEDSESSIONID1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETREQUESTEDSESSIONID2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISREQUESTEDSESSIONIDVALID1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISREQUESTEDSESSIONIDVALID2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETRESPONSECONTENTTYPE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETRESPONSECONTENTTYPE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETRESPONSECONTENTTYPES1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETRESPONSECONTENTTYPES2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETLOCALE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETLOCALES;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETSCHEME;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETSERVERNAME;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETSERVERPORT;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETWINDOWID;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETCOOKIES1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETCOOKIES2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPRIVATEPARAMETERMAP1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPRIVATEPARAMETERMAP2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPRIVATEPARAMETERMAP3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPUBLICPARAMETERMAP1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPUBLICPARAMETERMAP2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPUBLICPARAMETERMAP3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_EXISTS;
-import static javax.portlet.tck.constants.Constants.TCKNAMESPACE;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDUSER_INFO;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDCCPP_PROFILE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDBASIC_AUTH;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDFORM_AUTH;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDCLIENT_CERT_AUTH;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDDIGEST_AUTH;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDACTION_PHASE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDEVENT_PHASE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRENDER_PHASE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRESOURCE_PHASE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDLIFECYCLE_PHASE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRENDER_PART;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRENDER_HEADERS;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRENDER_MARKUP;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDACTION_SCOPE_ID;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISWINDOWSTATEALLOWED1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISWINDOWSTATEALLOWED2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISPORTLETMODEALLOWED1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISPORTLETMODEALLOWED2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETMODE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETWINDOWSTATE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPREFERENCES;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETSESSIONA1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETSESSIONA2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETSESSIONB1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETSESSIONB2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETSESSIONB3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTLETSESSIONB4;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTY1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTY2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTY3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTIES1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTIES2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTIES3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTYNAMES1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPROPERTYNAMES2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPORTALCONTEXT;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETAUTHTYPE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETAUTHTYPE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETCONTEXTPATH1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETCONTEXTPATH2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETCONTEXTPATH3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETREMOTEUSER1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETREMOTEUSER2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETUSERPRINCIPAL1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETUSERPRINCIPAL2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISUSERINROLE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISUSERINROLE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISUSERINROLE3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETATTRIBUTE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETATTRIBUTE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETATTRIBUTE3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETATTRIBUTENAMES1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETATTRIBUTENAMES2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETER1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETER2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETER3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETER4;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETER5;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERNAMES1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERNAMES2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERVALUES1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERVALUES2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERVALUES3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERVALUES4;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERMAP1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERMAP2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPARAMETERMAP3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISSECURE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISSECURE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_SETATTRIBUTE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_SETATTRIBUTE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_SETATTRIBUTE3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_REMOVEATTRIBUTE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_REMOVEATTRIBUTE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETREQUESTEDSESSIONID1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETREQUESTEDSESSIONID2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISREQUESTEDSESSIONIDVALID1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISREQUESTEDSESSIONIDVALID2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETRESPONSECONTENTTYPE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETRESPONSECONTENTTYPE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETRESPONSECONTENTTYPES1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETRESPONSECONTENTTYPES2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETLOCALE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETLOCALES;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETSCHEME;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETSERVERNAME;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETSERVERPORT;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETWINDOWID;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETCOOKIES1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETCOOKIES2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPRIVATEPARAMETERMAP1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPRIVATEPARAMETERMAP2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPRIVATEPARAMETERMAP3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPUBLICPARAMETERMAP1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPUBLICPARAMETERMAP2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_GETPUBLICPARAMETERMAP3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_EXISTS;
+import static jakarta.portlet.tck.constants.Constants.TCKNAMESPACE;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceServingPortlet;
-import javax.portlet.tck.beans.TestButton;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceServingPortlet;
+import jakarta.portlet.tck.beans.TestButton;
 import javax.xml.namespace.QName;
 
 import org.slf4j.Logger;
@@ -203,7 +203,7 @@ public class RequestTests_PortletRequest_ApiEvent implements Portlet, ResourceSe
 
       /* TestCase: V2RequestTests_PortletRequest_ApiEvent_fieldUSER_INFO      */
       /* Details: "Has String field USER_INFO with value of                   */
-      /* \"javax.portlet.userinfo\" "                                         */
+      /* \"jakarta.portlet.userinfo\" "                                         */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());
@@ -213,7 +213,7 @@ public class RequestTests_PortletRequest_ApiEvent implements Portlet, ResourceSe
 
       /* TestCase: V2RequestTests_PortletRequest_ApiEvent_fieldCCPP_PROFILE   */
       /* Details: "Has String field CCPP_PROFILE with value of                */
-      /* \"javax.portlet.ccpp\" "                                             */
+      /* \"jakarta.portlet.ccpp\" "                                             */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());
@@ -300,7 +300,7 @@ public class RequestTests_PortletRequest_ApiEvent implements Portlet, ResourceSe
 
       /* TestCase: V2RequestTests_PortletRequest_ApiEvent_fieldLIFECYCLE_PHASE */
       /* Details: "Has String field LIFECYCLE_PHASE with value of             */
-      /* \"javax.portlet.lifecycle_phase\" "                                  */
+      /* \"jakarta.portlet.lifecycle_phase\" "                                  */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());
@@ -310,7 +310,7 @@ public class RequestTests_PortletRequest_ApiEvent implements Portlet, ResourceSe
 
       /* TestCase: V2RequestTests_PortletRequest_ApiEvent_fieldRENDER_PART    */
       /* Details: "Has String field RENDER_PART with value of                 */
-      /* \"javax.portlet.render_part\" "                                      */
+      /* \"jakarta.portlet.render_part\" "                                      */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());
@@ -340,7 +340,7 @@ public class RequestTests_PortletRequest_ApiEvent implements Portlet, ResourceSe
 
       /* TestCase: V2RequestTests_PortletRequest_ApiEvent_fieldACTION_SCOPE_ID */
       /* Details: "Has String field ACTION_SCOPE_ID with value of             */
-      /* \"javax.portlet.as\" "                                               */
+      /* \"jakarta.portlet.as\" "                                               */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());

@@ -129,7 +129,7 @@
 		<profile>
 			<id>pluto</id>
 			<properties>
-				<expected.option>javax.portlet.servletDefaultSessionScope</expected.option>
+				<expected.option>jakarta.portlet.servletDefaultSessionScope</expected.option>
 				<expected.value>PORTLET_SCOPE</expected.value>
 			</properties>
 			<dependencies>
@@ -153,7 +153,7 @@
 		<profile>
 			<id>liferay</id>
 			<properties>
-				<expected.option>javax.portlet.escapeXml</expected.option>
+				<expected.option>jakarta.portlet.escapeXml</expected.option>
 				<expected.value>true</expected.value>
 				<portlet.descriptor.dir>src/main/webapp/WEB-INF/liferay</portlet.descriptor.dir>
 			</properties>

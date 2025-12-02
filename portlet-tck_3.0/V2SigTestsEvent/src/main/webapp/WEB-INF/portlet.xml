@@ -24,7 +24,7 @@
    version="2.0" id="V2SigTestsEvent">
    <portlet>
       <portlet-name>SigTestsEvent_Event_SIGEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsEvent_Event_SIGEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsEvent_Event_SIGEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -40,7 +40,7 @@
 
    <portlet>
       <portlet-name>SigTestsEvent_Event_SIGEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsEvent_Event_SIGEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsEvent_Event_SIGEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -56,7 +56,7 @@
 
    <portlet>
       <portlet-name>SigTestsEvent_EventRequest_SIGEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsEvent_EventRequest_SIGEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsEvent_EventRequest_SIGEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -72,7 +72,7 @@
 
    <portlet>
       <portlet-name>SigTestsEvent_EventRequest_SIGEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsEvent_EventRequest_SIGEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsEvent_EventRequest_SIGEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -88,7 +88,7 @@
 
    <portlet>
       <portlet-name>SigTestsEvent_EventResponse_SIGEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsEvent_EventResponse_SIGEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsEvent_EventResponse_SIGEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -104,7 +104,7 @@
 
    <portlet>
       <portlet-name>SigTestsEvent_EventResponse_SIGEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsEvent_EventResponse_SIGEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsEvent_EventResponse_SIGEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -120,7 +120,7 @@
 
    <portlet>
       <portlet-name>SigTestsEvent_PortletRequest_SIGEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsEvent_PortletRequest_SIGEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsEvent_PortletRequest_SIGEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -136,7 +136,7 @@
 
    <portlet>
       <portlet-name>SigTestsEvent_PortletRequest_SIGEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsEvent_PortletRequest_SIGEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsEvent_PortletRequest_SIGEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -152,7 +152,7 @@
 
    <portlet>
       <portlet-name>SigTestsEvent_PortletResponse_SIGEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsEvent_PortletResponse_SIGEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsEvent_PortletResponse_SIGEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -168,7 +168,7 @@
 
    <portlet>
       <portlet-name>SigTestsEvent_PortletResponse_SIGEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsEvent_PortletResponse_SIGEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsEvent_PortletResponse_SIGEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -184,7 +184,7 @@
 
    <portlet>
       <portlet-name>SigTestsEvent_StateAwareResponse_SIGEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsEvent_StateAwareResponse_SIGEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsEvent_StateAwareResponse_SIGEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -200,7 +200,7 @@
 
    <portlet>
       <portlet-name>SigTestsEvent_StateAwareResponse_SIGEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsEvent_StateAwareResponse_SIGEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsEvent_StateAwareResponse_SIGEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

@@ -16,11 +16,11 @@
  *  under the License.
  */
 
-package javax.portlet.tck.util;
+package jakarta.portlet.tck.util;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.portlet.tck.beans.TestCaseDetails;
+import jakarta.portlet.tck.beans.TestCaseDetails;
 
 /**
  * Defines constants for the test case names and test case details 
@@ -54,7 +54,7 @@ public class ModuleTestCaseDetails extends TestCaseDetails {
       tcd.put(V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES3, "A custom portlet mode may be declared in the @PortletApplication annotation.");
       tcd.put(V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES4, "A custom portlet mode with portalManaged=false may be declared in the @PortletApplication annotation.");
       tcd.put(V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES5, "The PortletRequest.isPortletModeAllowed method must return FALSE for a custom portlet mode with portalManaged=true that is not supported by the portlet container");
-      tcd.put(V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES6, "A custom portlet mode can have a localized decoration name in the resource bundle with the name of javax.portlet.app.custom-portlet-mode.&lt;name&gt;.decoration-name");
+      tcd.put(V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES6, "A custom portlet mode can have a localized decoration name in the resource bundle with the name of jakarta.portlet.app.custom-portlet-mode.&lt;name&gt;.decoration-name");
       tcd.put(V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_WINDOWSTATES_DECLARINGWINDOWSTATES1, "Support for the NORMAL window state does not need to be declared in the @PortletApplication annotation.");
       tcd.put(V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_WINDOWSTATES_DECLARINGWINDOWSTATES2, "Support for the MINIMIZED window state does not need to be declared in the @PortletApplication annotation.");
       tcd.put(V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_WINDOWSTATES_DECLARINGWINDOWSTATES3, "Support for the MAXIMIZED window state does not need to be declared in the @PortletApplication annotation.");

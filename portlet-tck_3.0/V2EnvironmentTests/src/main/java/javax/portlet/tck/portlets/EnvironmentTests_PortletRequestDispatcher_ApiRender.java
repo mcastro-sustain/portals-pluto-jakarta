@@ -13,31 +13,31 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletRequestDispatcher;
-import javax.portlet.PortletResponse;
-import javax.portlet.PortletSession;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletRequestDispatcher;
+import jakarta.portlet.PortletResponse;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
 
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
-import static javax.portlet.tck.constants.Constants.JSP_PREFIX;
-import static javax.portlet.tck.constants.Constants.JSP_SUFFIX;
-import static javax.portlet.tck.constants.Constants.QUERY_STRING;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
-import static javax.portlet.tck.constants.Constants.SERVLET_PREFIX;
-import static javax.portlet.tck.constants.Constants.SERVLET_SUFFIX;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.tck.constants.Constants.JSP_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.JSP_SUFFIX;
+import static jakarta.portlet.tck.constants.Constants.QUERY_STRING;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.SERVLET_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.SERVLET_SUFFIX;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined

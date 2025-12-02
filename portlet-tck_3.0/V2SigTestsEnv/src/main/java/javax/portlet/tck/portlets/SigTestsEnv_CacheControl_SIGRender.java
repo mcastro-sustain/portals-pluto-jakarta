@@ -16,39 +16,39 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASGETETAG;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASGETETAGRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASGETEXPIRATIONTIME;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASGETEXPIRATIONTIMERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASISPUBLICSCOPE;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASISPUBLICSCOPERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETETAG;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETETAGRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETEXPIRATIONTIME;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETEXPIRATIONTIMERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETPUBLICSCOPE;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETPUBLICSCOPERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETUSECACHEDCONTENT;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETUSECACHEDCONTENTRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASUSECACHEDCONTENT;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASUSECACHEDCONTENTRETURNS;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASGETETAG;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASGETETAGRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASGETEXPIRATIONTIME;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASGETEXPIRATIONTIMERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASISPUBLICSCOPE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASISPUBLICSCOPERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETETAG;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETETAGRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETEXPIRATIONTIME;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETEXPIRATIONTIMERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETPUBLICSCOPE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETPUBLICSCOPERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETUSECACHEDCONTENT;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASSETUSECACHEDCONTENTRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASUSECACHEDCONTENT;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_CACHECONTROL_SIGRENDER_HASUSECACHEDCONTENTRETURNS;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names

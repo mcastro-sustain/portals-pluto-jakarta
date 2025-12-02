@@ -23,7 +23,7 @@ limitations under the License.
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://portals.apache.org/pluto" prefix="pluto" %>
-<%@ page import="java.util.*,javax.portlet.*,org.apache.pluto.driver.url.*" %>
+<%@ page import="java.util.*,jakarta.portlet.*,org.apache.pluto.driver.url.*" %>
 <%@ page import="org.apache.pluto.driver.config.*,org.apache.pluto.driver.*" %>
 <%@ page import="org.apache.pluto.driver.util.*" %>
 <%@ page import="org.apache.pluto.container.*,javax.servlet.jsp.*" %>

@@ -14,33 +14,33 @@
  */
 
 
-package javax.portlet.tck.servlets;
+package jakarta.portlet.tck.servlets;
 
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETCREATIONTIME;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETID;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETLASTACCESSTIME;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETMAXINCTIVEINTERVAL;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION7;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION8;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION9;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_ISNEW;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SETMAXINACTIVEINTERVAL;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETCREATIONTIME;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETID;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETLASTACCESSTIME;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETMAXINCTIVEINTERVAL;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION7;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION8;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION9;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_ISNEW;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SETMAXINACTIVEINTERVAL;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.MimeResponse;
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletResponse;
-import javax.portlet.PortletSession;
-import javax.portlet.tck.beans.JSR286SpecTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.constants.Constants;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import jakarta.portlet.MimeResponse;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletResponse;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.constants.Constants;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 /**
  * Servlet for JSR 362 request dispatcher testing. Used by portlet:
@@ -68,8 +68,8 @@ public class AddlEnvironmentTests_SPEC2_18_Sessions_servlet extends HttpServlet 
   protected void processTCKReq(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
-    PortletRequest portletReq = (PortletRequest) request.getAttribute("javax.portlet.request");
-    PortletResponse portletResp = (PortletResponse) request.getAttribute("javax.portlet.response");
+    PortletRequest portletReq = (PortletRequest) request.getAttribute("jakarta.portlet.request");
+    PortletResponse portletResp = (PortletResponse) request.getAttribute("jakarta.portlet.response");
     PortletSession portletSession = portletReq.getPortletSession();
     HttpSession httpSession = request.getSession();
 
@@ -204,7 +204,7 @@ public class AddlEnvironmentTests_SPEC2_18_Sessions_servlet extends HttpServlet 
     TestResult tr25 =
         tcd.getTestResultFailed(V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION7);
     String tr25_success =
-        (String) httpSession.getAttribute("javax.portlet.p." + portletReq.getWindowID() + "?"
+        (String) httpSession.getAttribute("jakarta.portlet.p." + portletReq.getWindowID() + "?"
             + Constants.RESULT_ATTR_PREFIX + "AddlEnvironmentTests_SPEC2_18_Sessions_tr25");
     if (tr25_success != null && tr25_success.equals("true")) {
       tr25.setTcSuccess(true);

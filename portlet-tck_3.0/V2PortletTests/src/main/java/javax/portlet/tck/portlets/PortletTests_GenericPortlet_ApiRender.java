@@ -16,39 +16,39 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_PROCESSACTION2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_DOVIEW1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_DODISPATCH1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_INITA;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_INITB;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_GETTITLE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_GETTITLE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_GETPORTLETCONFIG;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_GETNEXTPOSSIBLEPORTLETMODES1;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_PROCESSACTION2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_DOVIEW1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_DODISPATCH1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_INITA;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_INITB;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_GETTITLE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_GETTITLE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_GETPORTLETCONFIG;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2PORTLETTESTS_GENERICPORTLET_APIRENDER_GETNEXTPOSSIBLEPORTLETMODES1;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Collection;
 import java.util.ResourceBundle;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.EventRequest;
-import javax.portlet.EventResponse;
-import javax.portlet.GenericPortlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletMode;
-import javax.portlet.PortletURL;
-import javax.portlet.ProcessAction;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.TestLink;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.EventRequest;
+import jakarta.portlet.EventResponse;
+import jakarta.portlet.GenericPortlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletMode;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.ProcessAction;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.TestLink;
+import jakarta.portlet.tck.beans.TestResult;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case
@@ -238,12 +238,12 @@ public class PortletTests_GenericPortlet_ApiRender extends GenericPortlet {
       /* TestCase: V2PortletTests_GenericPortlet_ApiRender_getTitle2 */
       /* Details: "Method getTitle(): Returns a String containing the title */
       /* from the portlet resource bundle under the key */
-      /* \"javax.portlet.title\"" */
+      /* \"jakarta.portlet.title\"" */
       TestResult tr5 = tcd.getTestResultFailed(
             V2PORTLETTESTS_GENERICPORTLET_APIRENDER_GETTITLE2);
       ResourceBundle rb2 = ResourceBundle
-            .getBundle("javax.portlet.tck.portlets.TestBundle2");
-      String portletTitle2 = rb2.getString("javax.portlet.title");
+            .getBundle("jakarta.portlet.tck.portlets.TestBundle2");
+      String portletTitle2 = rb2.getString("jakarta.portlet.title");
       if (portletTitle2.equals("TestTitle")) {
          tr5.setTcSuccess(true);
       } else {

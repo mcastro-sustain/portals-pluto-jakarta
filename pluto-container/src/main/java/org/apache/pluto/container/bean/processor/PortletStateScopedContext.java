@@ -25,7 +25,7 @@ import jakarta.enterprise.context.ContextNotActiveException;
 import jakarta.enterprise.context.spi.Context;
 import jakarta.enterprise.context.spi.Contextual;
 import jakarta.enterprise.context.spi.CreationalContext;
-import javax.portlet.annotations.RenderStateScoped;
+import jakarta.portlet.annotations.RenderStateScoped;
 
 /**
  * This is the Context implementation for the RenderStateScoped custom CDI scope.

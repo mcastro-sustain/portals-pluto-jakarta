@@ -32,14 +32,14 @@
  * (TestCaseName)-detail      - a detailed message about the test     
  * 
  */
-package javax.portlet.tck.beans;
+package jakarta.portlet.tck.beans;
 
 import java.io.IOException;
 import java.io.Writer;
 import java.util.Map;
 
-import javax.portlet.ResourceURL;
-import javax.portlet.tck.constants.Constants;
+import jakarta.portlet.ResourceURL;
+import jakarta.portlet.tck.constants.Constants;
 
 /**
  * Formats a resource link for a test case.

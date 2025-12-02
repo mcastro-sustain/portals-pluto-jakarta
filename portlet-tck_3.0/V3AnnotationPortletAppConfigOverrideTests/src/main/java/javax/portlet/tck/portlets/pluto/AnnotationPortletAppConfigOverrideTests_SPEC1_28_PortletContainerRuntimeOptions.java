@@ -16,10 +16,10 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets.pluto;
+package jakarta.portlet.tck.portlets.pluto;
 
-import javax.portlet.annotations.PortletConfiguration;
-import javax.portlet.tck.portlets.AnnotationPortletAppConfigOverrideTests_SPEC1_28_PortletContainerRuntimeOptionsBase;
+import jakarta.portlet.annotations.PortletConfiguration;
+import jakarta.portlet.tck.portlets.AnnotationPortletAppConfigOverrideTests_SPEC1_28_PortletContainerRuntimeOptionsBase;
 import java.util.Map;
 
 /**
@@ -40,10 +40,10 @@ public class AnnotationPortletAppConfigOverrideTests_SPEC1_28_PortletContainerRu
     public boolean isRuntimeOptionsCorrect(
         Map<String, String[]> runtimeOptions) {
 
-        if (runtimeOptions.containsKey("javax.portlet.escapeXml")
-            && runtimeOptions.containsKey("javax.portlet.actionScopedRequestAttributes")
-            && runtimeOptions.get("javax.portlet.escapeXml")[0].equals("true")
-            && runtimeOptions.get("javax.portlet.actionScopedRequestAttributes")[0].equals("true")) {
+        if (runtimeOptions.containsKey("jakarta.portlet.escapeXml")
+            && runtimeOptions.containsKey("jakarta.portlet.actionScopedRequestAttributes")
+            && runtimeOptions.get("jakarta.portlet.escapeXml")[0].equals("true")
+            && runtimeOptions.get("jakarta.portlet.actionScopedRequestAttributes")[0].equals("true")) {
                 return true;
         }
         else {

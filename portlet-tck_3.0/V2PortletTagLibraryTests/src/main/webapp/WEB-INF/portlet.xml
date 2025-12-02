@@ -24,7 +24,7 @@
    version="2.0" id="V2PortletTagLibraryTests">
    <portlet>
       <portlet-name>PortletTagLibraryTests_SPEC2_26_IncludeJSPGeneral</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.PortletTagLibraryTests_SPEC2_26_IncludeJSPGeneral</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.PortletTagLibraryTests_SPEC2_26_IncludeJSPGeneral</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -37,7 +37,7 @@
 
    <portlet>
       <portlet-name>PortletTagLibraryTests_SPEC2_26_IncludeJSPAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.PortletTagLibraryTests_SPEC2_26_IncludeJSPAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.PortletTagLibraryTests_SPEC2_26_IncludeJSPAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -50,7 +50,7 @@
 
    <portlet>
       <portlet-name>PortletTagLibraryTests_SPEC2_26_IncludeJSPEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.PortletTagLibraryTests_SPEC2_26_IncludeJSPEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.PortletTagLibraryTests_SPEC2_26_IncludeJSPEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -66,7 +66,7 @@
 
    <portlet>
       <portlet-name>PortletTagLibraryTests_SPEC2_26_IncludeJSPEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.PortletTagLibraryTests_SPEC2_26_IncludeJSPEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.PortletTagLibraryTests_SPEC2_26_IncludeJSPEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

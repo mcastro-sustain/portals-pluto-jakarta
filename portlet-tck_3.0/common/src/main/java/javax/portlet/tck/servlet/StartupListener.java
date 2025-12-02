@@ -16,16 +16,16 @@
  *  under the License.
  */
 
-package javax.portlet.tck.servlet;
+package jakarta.portlet.tck.servlet;
 
 import java.util.Map;
 
-import javax.portlet.tck.util.ResourceReader;
-import javax.portlet.tck.util.WebConfig;
-import javax.portlet.tck.util.WebConfigScanner;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
+import jakarta.portlet.tck.util.ResourceReader;
+import jakarta.portlet.tck.util.WebConfig;
+import jakarta.portlet.tck.util.WebConfigScanner;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletContextEvent;
+import jakarta.servlet.ServletContextListener;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 

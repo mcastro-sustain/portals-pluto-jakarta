@@ -13,30 +13,30 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.WindowState;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.WindowState;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_WINDOWSTATEEXCEPTION_SIGRENDER_CONSTRUCTOR;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_WINDOWSTATEEXCEPTION_SIGRENDER_CONSTRUCTORA;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_WINDOWSTATEEXCEPTION_SIGRENDER_CONSTRUCTORB;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_WINDOWSTATEEXCEPTION_SIGRENDER_EXTENDSPORTLETEXCEPTION;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_WINDOWSTATEEXCEPTION_SIGRENDER_HASGETSTATE;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_WINDOWSTATEEXCEPTION_SIGRENDER_HASGETSTATERETURNS;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_WINDOWSTATEEXCEPTION_SIGRENDER_CONSTRUCTOR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_WINDOWSTATEEXCEPTION_SIGRENDER_CONSTRUCTORA;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_WINDOWSTATEEXCEPTION_SIGRENDER_CONSTRUCTORB;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_WINDOWSTATEEXCEPTION_SIGRENDER_EXTENDSPORTLETEXCEPTION;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_WINDOWSTATEEXCEPTION_SIGRENDER_HASGETSTATE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_WINDOWSTATEEXCEPTION_SIGRENDER_HASGETSTATERETURNS;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined
@@ -80,7 +80,7 @@ public class SigTestsException_WindowStateException_SIGRender implements Portlet
 
     // Create result objects for the tests
 
-    ClassChecker cc = new ClassChecker(javax.portlet.WindowStateException.class);
+    ClassChecker cc = new ClassChecker(jakarta.portlet.WindowStateException.class);
 
     /* TestCase: V2SigTestsException_WindowStateException_SIGRender_constructor */
     /* Details: "WindowStateException provides constructor */

@@ -16,7 +16,7 @@
  *  under the License.
  */
 
-package javax.portlet.tck.beans;
+package jakarta.portlet.tck.beans;
 
 /**
  * Abstract base class to be extended by the specific checker classes for the wrappers. The extending checker class must

@@ -24,7 +24,7 @@
 
    <portlet>
       <portlet-name>TestModule3_Portlet2</portlet-name>
-      <portlet-class>javax.portlet.tck.TestModule3.portlets.TestModule3_Portlet2</portlet-class>
+      <portlet-class>jakarta.portlet.tck.TestModule3.portlets.TestModule3_Portlet2</portlet-class>
 
       <expiration-cache>0</expiration-cache>
 

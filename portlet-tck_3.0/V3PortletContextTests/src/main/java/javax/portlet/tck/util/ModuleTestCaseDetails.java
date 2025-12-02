@@ -16,12 +16,12 @@
  *  under the License.
  */
 
-package javax.portlet.tck.util;
+package jakarta.portlet.tck.util;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.portlet.tck.beans.TestCaseDetails;
+import jakarta.portlet.tck.beans.TestCaseDetails;
 
 /**
  * Defines constants for the test case names and test case details 

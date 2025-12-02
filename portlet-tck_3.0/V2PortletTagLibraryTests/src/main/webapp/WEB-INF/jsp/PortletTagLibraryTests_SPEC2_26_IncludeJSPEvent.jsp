@@ -26,34 +26,34 @@ limitations under the License.
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <%@ page import="java.io.StringWriter" %>
-<%@ page import="javax.portlet.PortletRequest" %>
-<%@ page import="javax.portlet.PortletResponse" %>
-<%@ page import="javax.portlet.PortletConfig" %>
-<%@ page import="javax.portlet.tck.beans.JSR286SpecTestCaseDetails" %>
-<%@ page import="javax.portlet.tck.beans.TestResult" %>
-<%@ page import="javax.portlet.tck.constants.Constants" %>
+<%@ page import="jakarta.portlet.PortletRequest" %>
+<%@ page import="jakarta.portlet.PortletResponse" %>
+<%@ page import="jakarta.portlet.PortletConfig" %>
+<%@ page import="jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails" %>
+<%@ page import="jakarta.portlet.tck.beans.TestResult" %>
+<%@ page import="jakarta.portlet.tck.constants.Constants" %>
 
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS1" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS2" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS3" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS4" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS5" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS6" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS7" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS8" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS9" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS10" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS11" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS12" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS13" %>
-<%@ page import="static javax.portlet.tck.constants.Constants.THREADID_ATTR" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS1" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS2" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS3" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS4" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS5" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS6" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS7" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS8" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS9" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS10" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS11" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS12" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS13" %>
+<%@ page import="static jakarta.portlet.tck.constants.Constants.THREADID_ATTR" %>
 
 <portlet:defineObjects/>
 
 <%
 
-      PortletRequest portletReq = (PortletRequest) request.getAttribute("javax.portlet.request");
-      PortletResponse portletResp = (PortletResponse) request.getAttribute("javax.portlet.response");
+      PortletRequest portletReq = (PortletRequest) request.getAttribute("jakarta.portlet.request");
+      PortletResponse portletResp = (PortletResponse) request.getAttribute("jakarta.portlet.response");
       long svtTid = Thread.currentThread().getId();
       long reqTid = (Long) portletReq.getAttribute(THREADID_ATTR);
 
@@ -147,7 +147,7 @@ limitations under the License.
       /* Details: "When included in the Event phase, the defineObjects tag    */
       /* defines the variable PortletConfig portletConfig"                    */
       TestResult tr8 = tcd.getTestResultFailed(V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPEVENT_DEFINEOBJECTS9);
-      if(portletConfig!=null && portletConfig.equals((PortletConfig) request.getAttribute("javax.portlet.config"))){
+      if(portletConfig!=null && portletConfig.equals((PortletConfig) request.getAttribute("jakarta.portlet.config"))){
         tr8.setTcSuccess(true);
       }
       tr8.writeTo(writer);

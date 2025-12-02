@@ -24,7 +24,7 @@
    version="2.0" id="V2DispatcherReqRespTests4">
    <portlet>
       <portlet-name>DispatcherReqRespTests4_SPEC2_19_IncludeServletActionRequest</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletActionRequest</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletActionRequest</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -37,7 +37,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests4_SPEC2_19_IncludeServletActionResponse</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletActionResponse</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletActionResponse</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -50,7 +50,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests4_SPEC2_19_IncludeServletEventRequest</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletEventRequest</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletEventRequest</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -66,7 +66,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests4_SPEC2_19_IncludeServletEventRequest_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletEventRequest_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletEventRequest_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -82,7 +82,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests4_SPEC2_19_IncludeServletEventResponse</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletEventResponse</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletEventResponse</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -98,7 +98,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests4_SPEC2_19_IncludeServletEventResponse_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletEventResponse_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletEventResponse_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -114,7 +114,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests4_SPEC2_19_IncludeServletRenderRequest</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletRenderRequest</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletRenderRequest</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -127,7 +127,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests4_SPEC2_19_IncludeServletRenderResponse</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletRenderResponse</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletRenderResponse</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -140,7 +140,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests4_SPEC2_19_IncludeServletResourceRequest</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletResourceRequest</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletResourceRequest</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -153,7 +153,7 @@
 
    <portlet>
       <portlet-name>DispatcherReqRespTests4_SPEC2_19_IncludeServletResourceResponse</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletResourceResponse</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherReqRespTests4_SPEC2_19_IncludeServletResourceResponse</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

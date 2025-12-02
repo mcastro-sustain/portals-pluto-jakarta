@@ -13,35 +13,35 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequest;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.filter.RenderRequestWrapper;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.filter.RenderRequestWrapper;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_CONSTRUCTOR;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASGETETAG;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASGETETAGRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASGETREQUEST;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASGETREQUESTA;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASGETREQUESTRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASGETREQUESTRETURNSA;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASSETREQUEST;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASSETREQUESTRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_IMPLEMENTSRENDERREQUEST;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_CONSTRUCTOR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASGETETAG;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASGETETAGRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASGETREQUEST;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASGETREQUESTA;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASGETREQUESTRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASGETREQUESTRETURNSA;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASSETREQUEST;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_HASSETREQUESTRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSWRAPPER_RENDERREQUESTWRAPPER_SIGRENDER_IMPLEMENTSRENDERREQUEST;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined

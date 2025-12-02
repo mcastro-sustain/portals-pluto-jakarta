@@ -14,24 +14,24 @@
  */
 
 
-package javax.portlet.tck.filters;
+package jakarta.portlet.tck.filters;
 
 import java.io.IOException;
 import java.io.StringWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.PortletException;
-import javax.portlet.filter.ActionFilter;
-import javax.portlet.filter.FilterChain;
-import javax.portlet.filter.FilterConfig;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.constants.Constants;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.filter.ActionFilter;
+import jakarta.portlet.filter.FilterChain;
+import jakarta.portlet.filter.FilterConfig;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.constants.Constants;
 
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2FILTERTESTS_PORTLETFILTER_APIACTIONFILTER_INITACTION1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2FILTERTESTS_PORTLETFILTER_APIACTIONFILTER_INITACTION2;
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2FILTERTESTS_PORTLETFILTER_APIACTIONFILTER_INITACTION1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2FILTERTESTS_PORTLETFILTER_APIACTIONFILTER_INITACTION2;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
 
 /**
  * Filter for JSR 362 request dispatcher testing. Used by portlet:

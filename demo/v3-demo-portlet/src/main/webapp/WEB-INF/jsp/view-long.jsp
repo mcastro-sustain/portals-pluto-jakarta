@@ -19,9 +19,9 @@ limitations under the License.
 <%@ page session="false" %>
 <%@ taglib uri="http://xmlns.jcp.org/portlet_3_0"  prefix="portlet" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page import="java.io.*,java.util.*,javax.portlet.*" %>
-<%@ page import="javax.portlet.MimeResponse.Copy" %>
-<%@ page import="static javax.portlet.MimeResponse.Copy.*" %>
+<%@ page import="java.io.*,java.util.*,jakarta.portlet.*" %>
+<%@ page import="jakarta.portlet.MimeResponse.Copy" %>
+<%@ page import="static jakarta.portlet.MimeResponse.Copy.*" %>
 <%@ page import="static org.apache.portals.pluto.demo.v3.Constants.*" %>
 
 <portlet:defineObjects />

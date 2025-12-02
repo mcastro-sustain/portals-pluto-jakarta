@@ -24,7 +24,7 @@
    version="2.0" id="V2ResponseTests">
    <portlet>
       <portlet-name>ResponseTests_PortletResponse_ApiRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_PortletResponse_ApiRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_PortletResponse_ApiRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -38,7 +38,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_PortletResponse_ApiResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_PortletResponse_ApiResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_PortletResponse_ApiResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -52,7 +52,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_PortletResponse_ApiAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_PortletResponse_ApiAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_PortletResponse_ApiAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -66,7 +66,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_PortletResponse_ApiEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_PortletResponse_ApiEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_PortletResponse_ApiEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -83,7 +83,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_PortletResponse_ApiEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_PortletResponse_ApiEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_PortletResponse_ApiEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -99,7 +99,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_StateAwareResponse_ApiEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_StateAwareResponse_ApiEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_StateAwareResponse_ApiEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -116,7 +116,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_StateAwareResponse_ApiEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_StateAwareResponse_ApiEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_StateAwareResponse_ApiEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -132,7 +132,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_StateAwareResponse_ApiAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_StateAwareResponse_ApiAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_StateAwareResponse_ApiAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -147,7 +147,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_ActionResponse_ApiAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_ActionResponse_ApiAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_ActionResponse_ApiAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -161,7 +161,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_EventResponse_ApiEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_EventResponse_ApiEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_EventResponse_ApiEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -178,7 +178,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_EventResponse_ApiEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_EventResponse_ApiEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_EventResponse_ApiEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -194,7 +194,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_MimeResponse_ApiRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_MimeResponse_ApiRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_MimeResponse_ApiRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -208,7 +208,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_MimeResponse_ApiResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_MimeResponse_ApiResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_MimeResponse_ApiResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -222,7 +222,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_RenderResponse_ApiRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_RenderResponse_ApiRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_RenderResponse_ApiRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -236,7 +236,7 @@
 
    <portlet>
       <portlet-name>ResponseTests_ResourceResponse_ApiResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ResponseTests_ResourceResponse_ApiResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ResponseTests_ResourceResponse_ApiResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

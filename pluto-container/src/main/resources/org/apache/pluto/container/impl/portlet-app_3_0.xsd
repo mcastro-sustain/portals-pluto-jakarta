@@ -313,10 +313,10 @@
 			 The container-runtime-option element contains settings
 			 for the portlet container that the portlet expects to be honored
 			 at runtime. These settings may re-define default portlet container
-			 behavior, like the javax.portlet.escapeXml setting that disables
+			 behavior, like the jakarta.portlet.escapeXml setting that disables
 			 XML encoding of URLs produced by the portlet tag library as
 			 default.
-			 Names with the javax.portlet prefix are reserved for the Java
+			 Names with the jakarta.portlet prefix are reserved for the Java
 			 Portlet Specification.
 			Used in: portlet-app, portlet
 			</documentation>

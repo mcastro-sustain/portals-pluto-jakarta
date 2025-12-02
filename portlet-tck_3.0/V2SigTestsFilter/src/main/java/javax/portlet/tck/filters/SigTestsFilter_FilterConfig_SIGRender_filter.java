@@ -14,30 +14,30 @@
  */
 
 
-package javax.portlet.tck.filters;
+package jakarta.portlet.tck.filters;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.PortletContext;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.filter.FilterChain;
-import javax.portlet.filter.FilterConfig;
-import javax.portlet.filter.RenderFilter;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.PortletContext;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.filter.FilterChain;
+import jakarta.portlet.filter.FilterConfig;
+import jakarta.portlet.filter.RenderFilter;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETFILTERNAME;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETFILTERNAMERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETINITPARAMETER;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETINITPARAMETERNAMES;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETINITPARAMETERNAMESRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETINITPARAMETERRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETPORTLETCONTEXT;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETPORTLETCONTEXTRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETFILTERNAME;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETFILTERNAMERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETINITPARAMETER;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETINITPARAMETERNAMES;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETINITPARAMETERNAMESRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETINITPARAMETERRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETPORTLETCONTEXT;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCONFIG_SIGRENDER_HASGETPORTLETCONTEXTRETURNS;
 
 /**
  * Render filter for signature tests

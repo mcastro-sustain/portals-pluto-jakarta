@@ -13,45 +13,45 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletSecurityException;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletSecurityException;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASADDPROPERTY;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASADDPROPERTYRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASGETPARAMETERMAP;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASGETPARAMETERMAPRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPARAMETER;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPARAMETERA;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPARAMETERRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPARAMETERRETURNSA;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPARAMETERS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPARAMETERSRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPROPERTY;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPROPERTYRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETSECURE;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETSECURERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASTOSTRING;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASTOSTRINGRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASWRITE;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASWRITEA;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASWRITERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASWRITERETURNSA;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASADDPROPERTY;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASADDPROPERTYRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASGETPARAMETERMAP;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASGETPARAMETERMAPRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPARAMETER;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPARAMETERA;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPARAMETERRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPARAMETERRETURNSA;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPARAMETERS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPARAMETERSRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPROPERTY;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETPROPERTYRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETSECURE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASSETSECURERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASTOSTRING;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASTOSTRINGRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASWRITE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASWRITEA;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASWRITERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSURL_BASEURL_SIGRENDERRENURL_HASWRITERETURNSA;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined

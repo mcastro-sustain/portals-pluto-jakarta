@@ -23,8 +23,8 @@ import java.util.Map;
 import java.util.Set;
 
 import jakarta.inject.Inject;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletContext;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletContext;
 import jakarta.ws.rs.RuntimeType;
 import jakarta.ws.rs.core.Configuration;
 import jakarta.ws.rs.core.Feature;

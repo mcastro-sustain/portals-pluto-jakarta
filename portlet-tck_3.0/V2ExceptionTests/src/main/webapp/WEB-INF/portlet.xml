@@ -24,7 +24,7 @@
    version="2.0" id="V2ExceptionTests">
    <portlet>
       <portlet-name>ExceptionTests_PortletModeException_ApiRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ExceptionTests_PortletModeException_ApiRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ExceptionTests_PortletModeException_ApiRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -38,7 +38,7 @@
 
    <portlet>
       <portlet-name>ExceptionTests_UnavailableException_ApiRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ExceptionTests_UnavailableException_ApiRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ExceptionTests_UnavailableException_ApiRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -52,7 +52,7 @@
 
    <portlet>
       <portlet-name>ExceptionTests_ValidatorException_ApiRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ExceptionTests_ValidatorException_ApiRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ExceptionTests_ValidatorException_ApiRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -66,7 +66,7 @@
 
    <portlet>
       <portlet-name>ExceptionTests_WindowStateException_ApiRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.ExceptionTests_WindowStateException_ApiRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.ExceptionTests_WindowStateException_ApiRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

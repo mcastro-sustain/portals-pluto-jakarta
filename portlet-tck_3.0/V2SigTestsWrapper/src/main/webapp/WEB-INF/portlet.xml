@@ -24,7 +24,7 @@
    version="2.0" id="V2SigTestsWrapper">
    <portlet>
       <portlet-name>SigTestsWrapper_ActionRequestWrapper_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsWrapper_ActionRequestWrapper_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsWrapper_ActionRequestWrapper_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -37,7 +37,7 @@
 
    <portlet>
       <portlet-name>SigTestsWrapper_ActionResponseWrapper_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsWrapper_ActionResponseWrapper_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsWrapper_ActionResponseWrapper_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -50,7 +50,7 @@
 
    <portlet>
       <portlet-name>SigTestsWrapper_EventRequestWrapper_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsWrapper_EventRequestWrapper_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsWrapper_EventRequestWrapper_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -63,7 +63,7 @@
 
    <portlet>
       <portlet-name>SigTestsWrapper_EventResponseWrapper_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsWrapper_EventResponseWrapper_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsWrapper_EventResponseWrapper_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -76,7 +76,7 @@
 
    <portlet>
       <portlet-name>SigTestsWrapper_PortletRequestWrapper_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsWrapper_PortletRequestWrapper_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsWrapper_PortletRequestWrapper_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -89,7 +89,7 @@
 
    <portlet>
       <portlet-name>SigTestsWrapper_PortletResponseWrapper_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsWrapper_PortletResponseWrapper_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsWrapper_PortletResponseWrapper_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -102,7 +102,7 @@
 
    <portlet>
       <portlet-name>SigTestsWrapper_RenderRequestWrapper_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsWrapper_RenderRequestWrapper_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsWrapper_RenderRequestWrapper_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -115,7 +115,7 @@
 
    <portlet>
       <portlet-name>SigTestsWrapper_RenderResponseWrapper_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsWrapper_RenderResponseWrapper_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsWrapper_RenderResponseWrapper_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -128,7 +128,7 @@
 
    <portlet>
       <portlet-name>SigTestsWrapper_ResourceRequestWrapper_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsWrapper_ResourceRequestWrapper_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsWrapper_ResourceRequestWrapper_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -141,7 +141,7 @@
 
    <portlet>
       <portlet-name>SigTestsWrapper_ResourceResponseWrapper_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsWrapper_ResourceResponseWrapper_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsWrapper_ResourceResponseWrapper_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

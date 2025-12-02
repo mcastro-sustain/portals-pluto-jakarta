@@ -14,35 +14,35 @@
  */
 
 
-package javax.portlet.tck.filters;
+package jakarta.portlet.tck.filters;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.EventRequest;
-import javax.portlet.EventResponse;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.filter.FilterChain;
-import javax.portlet.filter.FilterConfig;
-import javax.portlet.filter.RenderFilter;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.EventRequest;
+import jakarta.portlet.EventResponse;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.filter.FilterChain;
+import jakarta.portlet.filter.FilterConfig;
+import jakarta.portlet.filter.RenderFilter;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTER;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERA;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERB;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERC;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERRETURNSA;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERRETURNSB;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERRETURNSC;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTER;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERA;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERB;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERC;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERRETURNSA;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERRETURNSB;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTERRETURNSC;
 
 /**
  * Render filter for TCK signature tests

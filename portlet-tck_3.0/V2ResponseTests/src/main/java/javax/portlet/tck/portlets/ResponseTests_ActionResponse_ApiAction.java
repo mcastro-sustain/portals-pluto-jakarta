@@ -16,50 +16,50 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA4;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA5;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA6;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA7;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB10;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB11;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB4;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB5;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB6;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB7;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB8;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB9;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA4;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA5;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA6;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTA7;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB10;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB11;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB4;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB5;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB6;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB7;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB8;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_ACTIONRESPONSE_APIACTION_SENDREDIRECTB9;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletMode;
-import javax.portlet.PortletSession;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.WindowState;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.TestButton;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.constants.Constants;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletMode;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.WindowState;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.TestButton;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.constants.Constants;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names

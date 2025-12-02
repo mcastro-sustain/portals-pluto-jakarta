@@ -13,46 +13,46 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletSession;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestButton;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.constants.Constants;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestButton;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.constants.Constants;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETCHARACTERENCODING;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETCHARACTERENCODINGRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETCONTENTLENGTH;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETCONTENTLENGTHRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETCONTENTTYPE;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETCONTENTTYPERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETMETHOD;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETMETHODRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETPORTLETINPUTSTREAM;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETPORTLETINPUTSTREAMRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETREADER;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETREADERRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASSETCHARACTERENCODING;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASSETCHARACTERENCODINGRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_IMPLEMENTSPORTLETREQUEST;
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETCHARACTERENCODING;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETCHARACTERENCODINGRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETCONTENTLENGTH;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETCONTENTLENGTHRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETCONTENTTYPE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETCONTENTTYPERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETMETHOD;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETMETHODRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETPORTLETINPUTSTREAM;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETPORTLETINPUTSTREAMRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETREADER;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASGETREADERRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASSETCHARACTERENCODING;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_HASSETCHARACTERENCODINGRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSACTION_CLIENTDATAREQUEST_SIGACTION_IMPLEMENTSPORTLETREQUEST;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined

@@ -23,8 +23,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import javax.portlet.BaseURL;
-import javax.portlet.PortletSecurityException;
+import jakarta.portlet.BaseURL;
+import jakarta.portlet.PortletSecurityException;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.jsp.JspException;
 import jakarta.servlet.jsp.JspWriter;

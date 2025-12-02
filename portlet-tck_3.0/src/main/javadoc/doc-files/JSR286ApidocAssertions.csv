@@ -229,8 +229,8 @@ ResourceResponseWrapper;Api Resource;createActionURL;TRUE;Method createActionURL
 ResourceResponseWrapper;Api Resource;createRenderURL;TRUE;Method createRenderURL(): Calls wrapped method
 ResourceResponseWrapper;Api Resource;createResourceURL;TRUE;Method createResourceURL(): Calls wrapped method
 Request Tests;;;;
-PortletRequest;Api Render;fieldUSER_INFO;TRUE;Has String field USER_INFO with value of "javax.portlet.userinfo" 
-PortletRequest;Api Render;fieldCCPP_PROFILE;TRUE;Has String field CCPP_PROFILE with value of "javax.portlet.ccpp" 
+PortletRequest;Api Render;fieldUSER_INFO;TRUE;Has String field USER_INFO with value of "jakarta.portlet.userinfo" 
+PortletRequest;Api Render;fieldCCPP_PROFILE;TRUE;Has String field CCPP_PROFILE with value of "jakarta.portlet.ccpp" 
 PortletRequest;Api Render;fieldBASIC_AUTH;TRUE;Has String field BASIC_AUTH with value of "BASIC" 
 PortletRequest;Api Render;fieldFORM_AUTH;TRUE;Has String field FORM_AUTH with value of "FORM" 
 PortletRequest;Api Render;fieldCLIENT_CERT_AUTH;TRUE;Has String field CLIENT_CERT_AUTH with value of "CLIENT_CERT" 
@@ -239,11 +239,11 @@ PortletRequest;Api Render;fieldACTION_PHASE;TRUE;Has String field ACTION_PHASE w
 PortletRequest;Api Render;fieldEVENT_PHASE;TRUE;Has String field EVENT_PHASE with value of "EVENT_PHASE" 
 PortletRequest;Api Render;fieldRENDER_PHASE;TRUE;Has String field RENDER_PHASE with value of "RENDER_PHASE" 
 PortletRequest;Api Render;fieldRESOURCE_PHASE;TRUE;Has String field RESOURCE_PHASE with value of "RESOURCE_PHASE" 
-PortletRequest;Api Render;fieldLIFECYCLE_PHASE;TRUE;Has String field LIFECYCLE_PHASE with value of "javax.portlet.lifecycle_phase" 
-PortletRequest;Api Render;fieldRENDER_PART;TRUE;Has String field RENDER_PART with value of "javax.portlet.render_part" 
+PortletRequest;Api Render;fieldLIFECYCLE_PHASE;TRUE;Has String field LIFECYCLE_PHASE with value of "jakarta.portlet.lifecycle_phase" 
+PortletRequest;Api Render;fieldRENDER_PART;TRUE;Has String field RENDER_PART with value of "jakarta.portlet.render_part" 
 PortletRequest;Api Render;fieldRENDER_HEADERS;TRUE;Has String field RENDER_HEADERS with value of "RENDER_HEADERS" 
 PortletRequest;Api Render;fieldRENDER_MARKUP;TRUE;Has String field RENDER_MARKUP with value of "RENDER_MARKUP" 
-PortletRequest;Api Render;fieldACTION_SCOPE_ID;TRUE;Has String field ACTION_SCOPE_ID with value of "javax.portlet.as" 
+PortletRequest;Api Render;fieldACTION_SCOPE_ID;TRUE;Has String field ACTION_SCOPE_ID with value of "jakarta.portlet.as" 
 PortletRequest;Api Render;isWindowStateAllowed1;TRUE;Method isWindowStateAllowed(WindowState): Returns true if the specified WindowState is allowed
 PortletRequest;Api Render;isWindowStateAllowed2;TRUE;Method isWindowStateAllowed(WindowState): Returns false if the specified WindowState is not allowed
 PortletRequest;Api Render;isPortletModeAllowed1;TRUE;Method isPortletModeAllowed(PortletMode): Returns true if the specified PortletMode is allowed
@@ -327,8 +327,8 @@ PortletRequest;Api Render;getPublicParameterMap1;TRUE;Method getPublicParameterM
 PortletRequest;Api Render;getPublicParameterMap2;TRUE;Method getPublicParameterMap(): The returned map is immutable
 PortletRequest;Api Render;getPublicParameterMap3;TRUE;Method getPublicParameterMap(): Returns an empty map if no public parameters exist
 PortletRequest;Api Render;exists;TRUE;The P3PUserInfos exists as a public static enum
-PortletRequest;Api Action;fieldUSER_INFO;TRUE;Has String field USER_INFO with value of "javax.portlet.userinfo" 
-PortletRequest;Api Action;fieldCCPP_PROFILE;TRUE;Has String field CCPP_PROFILE with value of "javax.portlet.ccpp" 
+PortletRequest;Api Action;fieldUSER_INFO;TRUE;Has String field USER_INFO with value of "jakarta.portlet.userinfo" 
+PortletRequest;Api Action;fieldCCPP_PROFILE;TRUE;Has String field CCPP_PROFILE with value of "jakarta.portlet.ccpp" 
 PortletRequest;Api Action;fieldBASIC_AUTH;TRUE;Has String field BASIC_AUTH with value of "BASIC" 
 PortletRequest;Api Action;fieldFORM_AUTH;TRUE;Has String field FORM_AUTH with value of "FORM" 
 PortletRequest;Api Action;fieldCLIENT_CERT_AUTH;TRUE;Has String field CLIENT_CERT_AUTH with value of "CLIENT_CERT" 
@@ -337,11 +337,11 @@ PortletRequest;Api Action;fieldACTION_PHASE;TRUE;Has String field ACTION_PHASE w
 PortletRequest;Api Action;fieldEVENT_PHASE;TRUE;Has String field EVENT_PHASE with value of "EVENT_PHASE" 
 PortletRequest;Api Action;fieldRENDER_PHASE;TRUE;Has String field RENDER_PHASE with value of "RENDER_PHASE" 
 PortletRequest;Api Action;fieldRESOURCE_PHASE;TRUE;Has String field RESOURCE_PHASE with value of "RESOURCE_PHASE" 
-PortletRequest;Api Action;fieldLIFECYCLE_PHASE;TRUE;Has String field LIFECYCLE_PHASE with value of "javax.portlet.lifecycle_phase" 
-PortletRequest;Api Action;fieldRENDER_PART;TRUE;Has String field RENDER_PART with value of "javax.portlet.render_part" 
+PortletRequest;Api Action;fieldLIFECYCLE_PHASE;TRUE;Has String field LIFECYCLE_PHASE with value of "jakarta.portlet.lifecycle_phase" 
+PortletRequest;Api Action;fieldRENDER_PART;TRUE;Has String field RENDER_PART with value of "jakarta.portlet.render_part" 
 PortletRequest;Api Action;fieldRENDER_HEADERS;TRUE;Has String field RENDER_HEADERS with value of "RENDER_HEADERS" 
 PortletRequest;Api Action;fieldRENDER_MARKUP;TRUE;Has String field RENDER_MARKUP with value of "RENDER_MARKUP" 
-PortletRequest;Api Action;fieldACTION_SCOPE_ID;TRUE;Has String field ACTION_SCOPE_ID with value of "javax.portlet.as" 
+PortletRequest;Api Action;fieldACTION_SCOPE_ID;TRUE;Has String field ACTION_SCOPE_ID with value of "jakarta.portlet.as" 
 PortletRequest;Api Action;isWindowStateAllowed1;TRUE;Method isWindowStateAllowed(WindowState): Returns true if the specified WindowState is allowed
 PortletRequest;Api Action;isWindowStateAllowed2;TRUE;Method isWindowStateAllowed(WindowState): Returns false if the specified WindowState is not allowed
 PortletRequest;Api Action;isPortletModeAllowed1;TRUE;Method isPortletModeAllowed(PortletMode): Returns true if the specified PortletMode is allowed
@@ -425,8 +425,8 @@ PortletRequest;Api Action;getPublicParameterMap1;TRUE;Method getPublicParameterM
 PortletRequest;Api Action;getPublicParameterMap2;TRUE;Method getPublicParameterMap(): The returned map is immutable
 PortletRequest;Api Action;getPublicParameterMap3;TRUE;Method getPublicParameterMap(): Returns an empty map if no public parameters exist
 PortletRequest;Api Action;exists;TRUE;Method exists(): The P3PUserInfos exist as a public static enum
-PortletRequest;Api Event;fieldUSER_INFO;TRUE;Has String field USER_INFO with value of "javax.portlet.userinfo" 
-PortletRequest;Api Event;fieldCCPP_PROFILE;TRUE;Has String field CCPP_PROFILE with value of "javax.portlet.ccpp" 
+PortletRequest;Api Event;fieldUSER_INFO;TRUE;Has String field USER_INFO with value of "jakarta.portlet.userinfo" 
+PortletRequest;Api Event;fieldCCPP_PROFILE;TRUE;Has String field CCPP_PROFILE with value of "jakarta.portlet.ccpp" 
 PortletRequest;Api Event;fieldBASIC_AUTH;TRUE;Has String field BASIC_AUTH with value of "BASIC" 
 PortletRequest;Api Event;fieldFORM_AUTH;TRUE;Has String field FORM_AUTH with value of "FORM" 
 PortletRequest;Api Event;fieldCLIENT_CERT_AUTH;TRUE;Has String field CLIENT_CERT_AUTH with value of "CLIENT_CERT" 
@@ -435,11 +435,11 @@ PortletRequest;Api Event;fieldACTION_PHASE;TRUE;Has String field ACTION_PHASE wi
 PortletRequest;Api Event;fieldEVENT_PHASE;TRUE;Has String field EVENT_PHASE with value of "EVENT_PHASE" 
 PortletRequest;Api Event;fieldRENDER_PHASE;TRUE;Has String field RENDER_PHASE with value of "RENDER_PHASE" 
 PortletRequest;Api Event;fieldRESOURCE_PHASE;TRUE;Has String field RESOURCE_PHASE with value of "RESOURCE_PHASE" 
-PortletRequest;Api Event;fieldLIFECYCLE_PHASE;TRUE;Has String field LIFECYCLE_PHASE with value of "javax.portlet.lifecycle_phase" 
-PortletRequest;Api Event;fieldRENDER_PART;TRUE;Has String field RENDER_PART with value of "javax.portlet.render_part" 
+PortletRequest;Api Event;fieldLIFECYCLE_PHASE;TRUE;Has String field LIFECYCLE_PHASE with value of "jakarta.portlet.lifecycle_phase" 
+PortletRequest;Api Event;fieldRENDER_PART;TRUE;Has String field RENDER_PART with value of "jakarta.portlet.render_part" 
 PortletRequest;Api Event;fieldRENDER_HEADERS;TRUE;Has String field RENDER_HEADERS with value of "RENDER_HEADERS" 
 PortletRequest;Api Event;fieldRENDER_MARKUP;TRUE;Has String field RENDER_MARKUP with value of "RENDER_MARKUP" 
-PortletRequest;Api Event;fieldACTION_SCOPE_ID;TRUE;Has String field ACTION_SCOPE_ID with value of "javax.portlet.as" 
+PortletRequest;Api Event;fieldACTION_SCOPE_ID;TRUE;Has String field ACTION_SCOPE_ID with value of "jakarta.portlet.as" 
 PortletRequest;Api Event;isWindowStateAllowed1;TRUE;Method isWindowStateAllowed(WindowState): Returns true if the specified WindowState is allowed
 PortletRequest;Api Event;isWindowStateAllowed2;TRUE;Method isWindowStateAllowed(WindowState): Returns false if the specified WindowState is not allowed
 PortletRequest;Api Event;isPortletModeAllowed1;TRUE;Method isPortletModeAllowed(PortletMode): Returns true if the specified PortletMode is allowed
@@ -523,8 +523,8 @@ PortletRequest;Api Event;getPublicParameterMap1;TRUE;Method getPublicParameterMa
 PortletRequest;Api Event;getPublicParameterMap2;TRUE;Method getPublicParameterMap(): The returned map is immutable
 PortletRequest;Api Event;getPublicParameterMap3;TRUE;Method getPublicParameterMap(): Returns an empty map if no public parameters exist
 PortletRequest;Api Event;exists;TRUE;Method exists(): The P3PUserInfos exist as a public static enum
-PortletRequest;Api Resource;fieldUSER_INFO;TRUE;Has String field USER_INFO with value of "javax.portlet.userinfo" 
-PortletRequest;Api Resource;fieldCCPP_PROFILE;TRUE;Has String field CCPP_PROFILE with value of "javax.portlet.ccpp" 
+PortletRequest;Api Resource;fieldUSER_INFO;TRUE;Has String field USER_INFO with value of "jakarta.portlet.userinfo" 
+PortletRequest;Api Resource;fieldCCPP_PROFILE;TRUE;Has String field CCPP_PROFILE with value of "jakarta.portlet.ccpp" 
 PortletRequest;Api Resource;fieldBASIC_AUTH;TRUE;Has String field BASIC_AUTH with value of "BASIC" 
 PortletRequest;Api Resource;fieldFORM_AUTH;TRUE;Has String field FORM_AUTH with value of "FORM" 
 PortletRequest;Api Resource;fieldCLIENT_CERT_AUTH;TRUE;Has String field CLIENT_CERT_AUTH with value of "CLIENT_CERT" 
@@ -533,11 +533,11 @@ PortletRequest;Api Resource;fieldACTION_PHASE;TRUE;Has String field ACTION_PHASE
 PortletRequest;Api Resource;fieldEVENT_PHASE;TRUE;Has String field EVENT_PHASE with value of "EVENT_PHASE" 
 PortletRequest;Api Resource;fieldRENDER_PHASE;TRUE;Has String field RENDER_PHASE with value of "RENDER_PHASE" 
 PortletRequest;Api Resource;fieldRESOURCE_PHASE;TRUE;Has String field RESOURCE_PHASE with value of "RESOURCE_PHASE" 
-PortletRequest;Api Resource;fieldLIFECYCLE_PHASE;TRUE;Has String field LIFECYCLE_PHASE with value of "javax.portlet.lifecycle_phase" 
-PortletRequest;Api Resource;fieldRENDER_PART;TRUE;Has String field RENDER_PART with value of "javax.portlet.render_part" 
+PortletRequest;Api Resource;fieldLIFECYCLE_PHASE;TRUE;Has String field LIFECYCLE_PHASE with value of "jakarta.portlet.lifecycle_phase" 
+PortletRequest;Api Resource;fieldRENDER_PART;TRUE;Has String field RENDER_PART with value of "jakarta.portlet.render_part" 
 PortletRequest;Api Resource;fieldRENDER_HEADERS;TRUE;Has String field RENDER_HEADERS with value of "RENDER_HEADERS" 
 PortletRequest;Api Resource;fieldRENDER_MARKUP;TRUE;Has String field RENDER_MARKUP with value of "RENDER_MARKUP" 
-PortletRequest;Api Resource;fieldACTION_SCOPE_ID;TRUE;Has String field ACTION_SCOPE_ID with value of "javax.portlet.as" 
+PortletRequest;Api Resource;fieldACTION_SCOPE_ID;TRUE;Has String field ACTION_SCOPE_ID with value of "jakarta.portlet.as" 
 PortletRequest;Api Resource;isWindowStateAllowed1;TRUE;Method isWindowStateAllowed(WindowState): Returns true if the specified WindowState is allowed
 PortletRequest;Api Resource;isWindowStateAllowed2;TRUE;Method isWindowStateAllowed(WindowState): Returns false if the specified WindowState is not allowed
 PortletRequest;Api Resource;isPortletModeAllowed1;TRUE;Method isPortletModeAllowed(PortletMode): Returns true if the specified PortletMode is allowed
@@ -661,7 +661,7 @@ ClientDataRequest;Api Resource;getContentType2;TRUE;Method getContentType(): Ret
 ClientDataRequest;Api Resource;getContentLength1;TRUE;Method getContentLength(): Returns the length in bytes of the request body
 ClientDataRequest;Api Resource;getContentLength2;TRUE;Method getContentLength(): Returns -1 if the length is unknown
 ClientDataRequest;Api Resource;getMethod;TRUE;Method getMethod(): Returns a String containing the name of the HTTP method with which the request was made
-ActionRequest;Api Action;fieldACTION_NAME;TRUE;Has String field ACTION_NAME with value of "javax.portlet.action" 
+ActionRequest;Api Action;fieldACTION_NAME;TRUE;Has String field ACTION_NAME with value of "jakarta.portlet.action" 
 ResourceRequest;Api Resource;fieldETAG;TRUE;Has String field ETAG with value of "portlet.ETag" 
 ResourceRequest;Api Resource;getETag2;TRUE;Method getETag(): Returns null if there is no cached response
 ResourceRequest;Api Resource;getResourceID1;TRUE;Method getResourceID(): Returns a String containing the resource ID set on the resource URL
@@ -895,7 +895,7 @@ MimeResponse;Api Render;fieldPRIVATE_SCOPE ;TRUE;Has String field PRIVATE_SCOPE 
 MimeResponse;Api Render;fieldETAG ;TRUE;Has String field ETAG with value of "portlet.ETag"
 MimeResponse;Api Render;fieldUSE_CACHED_CONTENT ;TRUE;Has String field USE_CACHED_CONTENT with value of "portlet.use-cached-content"
 MimeResponse;Api Render;fieldNAMESPACED_RESPONSE;TRUE;Has String field NAMESPACED_RESPONSE with value of "X-JAVAX-PORTLET-NAMESPACED-RESPONSE"
-MimeResponse;Api Render;fieldMARKUP_HEAD_ELEMENT;TRUE;Has String field MARKUP_HEAD_ELEMENT with value of "javax.portlet.markup.head.element"
+MimeResponse;Api Render;fieldMARKUP_HEAD_ELEMENT;TRUE;Has String field MARKUP_HEAD_ELEMENT with value of "jakarta.portlet.markup.head.element"
 MimeResponse;Api Render;getContentType1;TRUE;Method getContentType(): Returns a String containing the MIME type that can be used with the response
 MimeResponse;Api Render;getContentType2;TRUE;Method getContentType(): Returns null if no content type is set
 MimeResponse;Api Render;setContentType1;TRUE;Method setContentType(String): Sets the MIME type for the response
@@ -933,7 +933,7 @@ MimeResponse;Api Resource;fieldPRIVATE_SCOPE ;TRUE;Has String field PRIVATE_SCOP
 MimeResponse;Api Resource;fieldETAG ;TRUE;Has String field ETAG with value of "portlet.ETag"
 MimeResponse;Api Resource;fieldUSE_CACHED_CONTENT ;TRUE;Has String field USE_CACHED_CONTENT with value of "portlet.use-cached-content"
 MimeResponse;Api Resource;fieldNAMESPACED_RESPONSE;TRUE;Has String field NAMESPACED_RESPONSE with value of "X-JAVAX-PORTLET-NAMESPACED-RESPONSE"
-MimeResponse;Api Resource;fieldMARKUP_HEAD_ELEMENT;TRUE;Has String field MARKUP_HEAD_ELEMENT with value of "javax.portlet.markup.head.element"
+MimeResponse;Api Resource;fieldMARKUP_HEAD_ELEMENT;TRUE;Has String field MARKUP_HEAD_ELEMENT with value of "jakarta.portlet.markup.head.element"
 MimeResponse;Api Resource;getContentType1;TRUE;Method getContentType(): Returns a String containing the MIME type that can be used with the response
 MimeResponse;Api Resource;getContentType2;TRUE;Method getContentType(): Returns null if no content type is set
 MimeResponse;Api Resource;setContentType1;TRUE;Method setContentType(String): Sets the MIME type for the response
@@ -1174,7 +1174,7 @@ PortletURL;Api Render Acturl;removePublicRenderParameter2;TRUE;Method removePubl
 ResourceURL;Api Render Resurl;fieldFULL;TRUE;Has String field FULL with value of "cacheLevelFull" 
 ResourceURL;Api Render Resurl;fieldPAGE;TRUE;Has String field PAGE with value of "cacheLevelPage" 
 ResourceURL;Api Render Resurl;fieldPORTLET;TRUE;Has String field PORTLET with value of "cacheLevelPortlet" 
-ResourceURL;Api Render Resurl;fieldSHARED;TRUE;Has String field SHARED with value of "javax.portlet.shared" 
+ResourceURL;Api Render Resurl;fieldSHARED;TRUE;Has String field SHARED with value of "jakarta.portlet.shared" 
 ResourceURL;Api Render Resurl;implementsBaseURL2;TRUE;Method implementsBaseUR(): All tests described for the BaseURL execute correctly with the ResourceURL
 ResourceURL;Api Render Resurl;setResourceID;TRUE;Method setResourceID(String): Sets the specified String as the portlet resource ID
 ResourceURL;Api Render Resurl;getCacheability;TRUE;Method getCacheability(): Returns a String containing the cacheability level set on the resource URL
@@ -1209,7 +1209,7 @@ ValidatorException;Api Render;getFailedKeys1;TRUE;Method getFailedKeys(): Return
 ValidatorException;Api Render;getFailedKeys2;TRUE;Method getFailedKeys(): Returns an empty enmueration if no failed keys are available
 WindowStateException;Api Render;getState;TRUE;Method getState(): Returns the WindowState object causing this exception
 Annotation Tests;;;;
-ProcessAction;Api Action;name;TRUE;Method name(): On an action request, the method is executed if the parameter "javax.portlet.action" matches the name field
+ProcessAction;Api Action;name;TRUE;Method name(): On an action request, the method is executed if the parameter "jakarta.portlet.action" matches the name field
 ProcessEvent;Api Event;qname;TRUE;Method qname(): On an event request, the method is executed if the Event qname matches the qname field
 ProcessEvent;Api Event;name;TRUE;Method name(): On an event request, the method is executed if the Event name matches the name field
 RenderMode;Api Render;name;TRUE;Method name(): On a render request, the method is executed if the portlet mode matches the name field
@@ -1282,7 +1282,7 @@ GenericPortlet;Api Render;render8;TRUE;Method render(RenderRequest, RenderRespon
 GenericPortlet;Api Render;render9;TRUE;Method render(RenderRequest, RenderResponse): If RENDER_PART=RENDER_MARKUP, Calls the DoDispatch(RenderRequest, RenderResponse): method 
 GenericPortlet;Api Render;render10;TRUE;Method render(RenderRequest, RenderResponse): If RENDER_PART=<any other value>, throws PortletException 
 GenericPortlet;Api Render;getTitle1;TRUE;Method getTitle(): If overridden, the String returned by this method is used as the portlet title
-GenericPortlet;Api Render;getTitle2;TRUE;Method getTitle(): Returns a String containing the title from the portlet resource bundle under the key "javax.portlet.title"
+GenericPortlet;Api Render;getTitle2;TRUE;Method getTitle(): Returns a String containing the title from the portlet resource bundle under the key "jakarta.portlet.title"
 GenericPortlet;Api Render;getTitle3;TRUE;Method getTitle(): Returns null if no title is available from the portlet resource bundle
 GenericPortlet;Api Render;doDispatch1;TRUE;Method doDispatch(RenderRequest, RenderResponse): If overridden, is called when markup is to be generated
 GenericPortlet;Api Render;doDispatch2;TRUE;Method doDispatch(RenderRequest, RenderResponse): If not overridden, If the WindowState is minimized, no markup method is called and no markup is generated
@@ -1354,7 +1354,7 @@ CacheControl;Api Resource;useCachedContent2;TRUE;Method useCachedContent(): Retu
 CacheControl;Api Resource;useCachedContent3;TRUE;Method useCachedContent(): Returns false if the use cached content indcator has not been set
 CacheControl;Api Resource;setUseCachedContent1;TRUE;Method setUseCachedContent(boolean): If set to true, the cached content is valid 
 CacheControl;Api Resource;setUseCachedContent2;TRUE;Method setUseCachedContent(boolean): If set to false, the cached content is invalid 
-PortalContext;Api Render;fieldMARKUP_HEAD_ELEMENT_SUPPORT;TRUE;Has String field MARKUP_HEAD_ELEMENT_SUPPORT with value of "javax.portlet.markup.head.element.support" 
+PortalContext;Api Render;fieldMARKUP_HEAD_ELEMENT_SUPPORT;TRUE;Has String field MARKUP_HEAD_ELEMENT_SUPPORT with value of "jakarta.portlet.markup.head.element.support" 
 PortalContext;Api Render;getProperty1;TRUE;Method getProperty(String): Returns a String containing the value for the specified property 
 PortalContext;Api Render;getProperty2;TRUE;Method getProperty(String): Returns null if there is no property defined for the specified name
 PortalContext;Api Render;getProperty3;TRUE;Method getProperty(String): Throws IllegalArgumentException if the specified name is null 

@@ -18,7 +18,7 @@ package org.apache.pluto.tags;
 
 import java.io.IOException;
 
-import javax.portlet.PortletResponse;
+import jakarta.portlet.PortletResponse;
 import jakarta.servlet.jsp.JspException;
 import jakarta.servlet.jsp.JspWriter;
 import jakarta.servlet.jsp.tagext.TagSupport;

@@ -16,32 +16,32 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.ResourceURL.PAGE;
-import static javax.portlet.tck.constants.Constants.QUERY_STRING;
-import static javax.portlet.tck.constants.Constants.SERVLET_PREFIX;
-import static javax.portlet.tck.constants.Constants.SERVLET_SUFFIX;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.ResourceURL.PAGE;
+import static jakarta.portlet.tck.constants.Constants.QUERY_STRING;
+import static jakarta.portlet.tck.constants.Constants.SERVLET_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.SERVLET_SUFFIX;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequestDispatcher;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceServingPortlet;
-import javax.portlet.ResourceURL;
-import javax.portlet.filter.ResourceRequestWrapper;
-import javax.portlet.filter.ResourceResponseWrapper;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequestDispatcher;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceServingPortlet;
+import jakarta.portlet.ResourceURL;
+import jakarta.portlet.filter.ResourceRequestWrapper;
+import jakarta.portlet.filter.ResourceResponseWrapper;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined in the

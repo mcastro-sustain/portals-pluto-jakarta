@@ -32,14 +32,14 @@
  * (TestCaseName)-detail      - a detailed message about the test     
  * 
  */
-package javax.portlet.tck.beans;
+package jakarta.portlet.tck.beans;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
 
-import javax.portlet.tck.constants.Constants;
+import jakarta.portlet.tck.constants.Constants;
 
 /**
  * Encapsulates test results containing the test case name, the test case detail description, 

@@ -24,7 +24,7 @@
    version="2.0" id="V2AddlRequestTests">
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_Action</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_Action</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_Action</portlet-class>
       <!-- Liferay: BEGIN V2AddlRequestTests_SPEC2_11_Action_parameters9 -->
       <init-param>
          <name>check-auth-token</name>
@@ -45,7 +45,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_Event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_Event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_Event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -65,7 +65,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_Event_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_Event_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_Event_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -82,7 +82,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_Render</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_Render</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_Render</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -97,7 +97,7 @@
    
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_Render_parameter11</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_Render_parameter11</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_Render_parameter11</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -111,7 +111,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_Resource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_Resource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_Resource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -126,7 +126,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_RenderAttr</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_RenderAttr</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_RenderAttr</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -139,7 +139,7 @@
    
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_RenderAttr_RenderHeaders</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_RenderAttr_RenderHeaders</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_RenderAttr_RenderHeaders</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -149,14 +149,14 @@
          <title>AddlRequestTests_SPEC2_11_RenderAttr_RenderHeaders</title>
       </portlet-info>
       <container-runtime-option>
-         <name>javax.portlet.renderHeaders</name>
+         <name>jakarta.portlet.renderHeaders</name>
          <value>true</value>
       </container-runtime-option>
    </portlet>
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_ActionAttr</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_ActionAttr</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_ActionAttr</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -169,7 +169,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_EventAttr</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_EventAttr</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_EventAttr</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -185,7 +185,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_EventAttr_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_EventAttr_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_EventAttr_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -201,7 +201,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_ResourceAttr</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_ResourceAttr</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_ResourceAttr</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -214,7 +214,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_ActionReq</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_ActionReq</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_ActionReq</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>*/*</mime-type>
@@ -227,7 +227,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_EventReq</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_EventReq</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_EventReq</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>*/*</mime-type>
@@ -243,7 +243,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_EventReq_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_EventReq_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_EventReq_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>*/*</mime-type>
@@ -259,7 +259,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_RenderReq</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_RenderReq</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_RenderReq</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>*/*</mime-type>
@@ -272,7 +272,7 @@
 
    <portlet>
       <portlet-name>AddlRequestTests_SPEC2_11_ResourceReq</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlRequestTests_SPEC2_11_ResourceReq</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlRequestTests_SPEC2_11_ResourceReq</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>*/*</mime-type>

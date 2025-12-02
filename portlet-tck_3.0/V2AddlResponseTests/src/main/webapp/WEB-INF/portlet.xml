@@ -24,7 +24,7 @@
    version="2.0" id="V2AddlResponseTests">
    <portlet>
       <portlet-name>AddlResponseTests_SPEC2_12_Action</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlResponseTests_SPEC2_12_Action</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlResponseTests_SPEC2_12_Action</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -44,7 +44,7 @@
 
    <portlet>
       <portlet-name>AddlResponseTests_SPEC2_12_Event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlResponseTests_SPEC2_12_Event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlResponseTests_SPEC2_12_Event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -60,7 +60,7 @@
 
    <portlet>
       <portlet-name>AddlResponseTests_SPEC2_12_Event_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlResponseTests_SPEC2_12_Event_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlResponseTests_SPEC2_12_Event_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -76,7 +76,7 @@
 
    <portlet>
       <portlet-name>AddlResponseTests_SPEC2_12_Render</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlResponseTests_SPEC2_12_Render</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlResponseTests_SPEC2_12_Render</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -86,14 +86,14 @@
          <title>AddlResponseTests_SPEC2_12_Render</title>
       </portlet-info>
       <container-runtime-option>
-      	<name>javax.portlet.renderHeaders</name>
+      	<name>jakarta.portlet.renderHeaders</name>
       	<value>true</value>
       </container-runtime-option>
    </portlet>
 
    <portlet>
       <portlet-name>AddlResponseTests_SPEC2_12_Resource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AddlResponseTests_SPEC2_12_Resource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AddlResponseTests_SPEC2_12_Resource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

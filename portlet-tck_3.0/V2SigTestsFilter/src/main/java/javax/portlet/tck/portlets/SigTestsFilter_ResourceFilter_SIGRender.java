@@ -13,30 +13,30 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.filter.PortletFilter;
-import javax.portlet.filter.ResourceFilter;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.filter.PortletFilter;
+import jakarta.portlet.filter.ResourceFilter;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_RESOURCEFILTER_SIGRENDER_HASDOFILTER;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_RESOURCEFILTER_SIGRENDER_HASDOFILTERRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_RESOURCEFILTER_SIGRENDER_IMPLEMENTSPORTLETFILTER;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_RESOURCEFILTER_SIGRENDER_HASDOFILTER;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_RESOURCEFILTER_SIGRENDER_HASDOFILTERRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_RESOURCEFILTER_SIGRENDER_IMPLEMENTSPORTLETFILTER;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined
@@ -84,14 +84,14 @@ public class SigTestsFilter_ResourceFilter_SIGRender implements Portlet {
 
     /* TestCase: V2SigTestsFilter_ResourceFilter_SIGRender_hasDoFilter */
     /* Details: "ResourceFilter has a doFilter(ResourceRequest, */
-    /* ResourceResponse, javax.portlet.filter.FilterChain) throws */
+    /* ResourceResponse, jakarta.portlet.filter.FilterChain) throws */
     /* java.io.IOException, PortletException method " */
     TestResult tr0 = tcd.getTestResultFailed(V2SIGTESTSFILTER_RESOURCEFILTER_SIGRENDER_HASDOFILTER);
     try {
       String name = "doFilter";
       Class<?>[] exceptions = {java.io.IOException.class, PortletException.class};
       Class<?>[] parms =
-          {ResourceRequest.class, ResourceResponse.class, javax.portlet.filter.FilterChain.class};
+          {ResourceRequest.class, ResourceResponse.class, jakarta.portlet.filter.FilterChain.class};
       tr0.setTcSuccess(cc.hasMethod(name, parms, exceptions));
     } catch (Exception e) {
       tr0.appendTcDetail(e.toString());
@@ -100,14 +100,14 @@ public class SigTestsFilter_ResourceFilter_SIGRender implements Portlet {
 
     /* TestCase: V2SigTestsFilter_ResourceFilter_SIGRender_hasDoFilterReturns */
     /* Details: "ResourceFilter method doFilter(ResourceRequest, */
-    /* ResourceResponse, javax.portlet.filter.FilterChain) returns void " */
+    /* ResourceResponse, jakarta.portlet.filter.FilterChain) returns void " */
     TestResult tr1 =
         tcd.getTestResultFailed(V2SIGTESTSFILTER_RESOURCEFILTER_SIGRENDER_HASDOFILTERRETURNS);
     try {
       String name = "doFilter";
       Class<?> retType = void.class;
       Class<?>[] parms =
-          {ResourceRequest.class, ResourceResponse.class, javax.portlet.filter.FilterChain.class};
+          {ResourceRequest.class, ResourceResponse.class, jakarta.portlet.filter.FilterChain.class};
       tr1.setTcSuccess(cc.methodHasReturnType(name, retType, parms));
     } catch (Exception e) {
       tr1.appendTcDetail(e.toString());

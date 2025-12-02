@@ -33,9 +33,9 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import jakarta.enterprise.inject.spi.BeanManager;
-import javax.portlet.annotations.ActionMethod;
-import javax.portlet.annotations.EventMethod;
-import javax.portlet.annotations.PortletQName;
+import jakarta.portlet.annotations.ActionMethod;
+import jakarta.portlet.annotations.EventMethod;
+import jakarta.portlet.annotations.PortletQName;
 import javax.xml.XMLConstants;
 import javax.xml.namespace.QName;
 

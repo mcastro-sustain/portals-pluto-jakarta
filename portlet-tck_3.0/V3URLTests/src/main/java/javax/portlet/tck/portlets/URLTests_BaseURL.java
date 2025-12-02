@@ -16,30 +16,30 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import javax.inject.Inject;
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.BaseURL;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.annotations.RenderMethod;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.util.ModuleTestCaseDetails;
+import jakarta.inject.Inject;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.BaseURL;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.annotations.RenderMethod;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.util.ModuleTestCaseDetails;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_BASEURL_APPEND;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_BASEURL_APPEND2;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_BASEURL_APPEND3;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_BASEURL_APPEND4;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_BASEURL_APPEND;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_BASEURL_APPEND2;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_BASEURL_APPEND3;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_BASEURL_APPEND4;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case

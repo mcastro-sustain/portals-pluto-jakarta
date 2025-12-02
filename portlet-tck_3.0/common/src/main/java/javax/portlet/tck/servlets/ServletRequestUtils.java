@@ -16,12 +16,12 @@
  *  under the License.
  */
 
-package javax.portlet.tck.servlets;
+package jakarta.portlet.tck.servlets;
 
 import java.util.Collections;
 import java.util.Enumeration;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -22,8 +22,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import javax.portlet.Portlet;
-import javax.portlet.PreferencesValidator;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PreferencesValidator;
 import jakarta.xml.bind.JAXBElement;
 
 import org.apache.pluto.container.om.portlet.CustomPortletMode;

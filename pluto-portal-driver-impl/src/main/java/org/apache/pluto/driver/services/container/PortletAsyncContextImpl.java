@@ -20,22 +20,22 @@ package org.apache.pluto.driver.services.container;
 
 import java.util.Set;
 
-import javax.enterprise.inject.spi.Bean;
-import javax.enterprise.inject.spi.BeanManager;
-import javax.portlet.PortletAsyncContext;
-import javax.portlet.PortletException;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.servlet.AsyncContext;
-import javax.servlet.AsyncListener;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletRequestWrapper;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletRequestWrapper;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.enterprise.inject.spi.Bean;
+import jakarta.enterprise.inject.spi.BeanManager;
+import jakarta.portlet.PortletAsyncContext;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.servlet.AsyncContext;
+import jakarta.servlet.AsyncListener;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletRequestWrapper;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequestWrapper;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.apache.pluto.container.PortletAsyncManager;
 import org.apache.pluto.container.PortletResourceRequestContext;
@@ -401,7 +401,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    }
 
    @Override
-   public void addListener(javax.portlet.PortletAsyncListener listener) throws IllegalStateException {
+   public void addListener(jakarta.portlet.PortletAsyncListener listener) throws IllegalStateException {
       if (!isContextActive) {
          throw new IllegalStateException("Listener can only be added when the asynchronous context is active.");
       }
@@ -409,7 +409,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    }
 
    @Override
-   public void addListener(javax.portlet.PortletAsyncListener listener, ResourceRequest request, ResourceResponse response) throws IllegalStateException {
+   public void addListener(jakarta.portlet.PortletAsyncListener listener, ResourceRequest request, ResourceResponse response) throws IllegalStateException {
       if (!isContextActive) {
          throw new IllegalStateException("Listener can only be added when the asynchronous context is active.");
       }
@@ -418,7 +418,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
 
    @SuppressWarnings("unchecked")
    @Override
-   public <T extends javax.portlet.PortletAsyncListener> T createPortletAsyncListener(Class<T> cls) throws PortletException {
+   public <T extends jakarta.portlet.PortletAsyncListener> T createPortletAsyncListener(Class<T> cls) throws PortletException {
       T obj;
       try {
          obj = (T) createInstance(cls);

@@ -16,25 +16,25 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETCHARACTERENCODING1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETCHARACTERENCODING2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETCONTENTLENGTH1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETCONTENTLENGTH2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETCONTENTTYPE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETCONTENTTYPE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETMETHOD;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETPORTLETINPUTSTREAM1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETPORTLETINPUTSTREAM2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETPORTLETINPUTSTREAM3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETREADER1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETREADER2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETREADER3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETREADER5;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_SETCHARACTERENCODING1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_SETCHARACTERENCODING3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_SETCHARACTERENCODING4;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETCHARACTERENCODING1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETCHARACTERENCODING2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETCONTENTLENGTH1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETCONTENTLENGTH2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETCONTENTTYPE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETCONTENTTYPE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETMETHOD;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETPORTLETINPUTSTREAM1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETPORTLETINPUTSTREAM2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETPORTLETINPUTSTREAM3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETREADER1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETREADER2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETREADER3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETREADER5;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_SETCHARACTERENCODING1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_SETCHARACTERENCODING3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_SETCHARACTERENCODING4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -44,20 +44,20 @@ import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceServingPortlet;
-import javax.portlet.ResourceURL;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.ResourceLink;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceServingPortlet;
+import jakarta.portlet.ResourceURL;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.ResourceLink;
+import jakarta.portlet.tck.beans.TestResult;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined in the

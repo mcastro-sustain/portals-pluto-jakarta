@@ -16,7 +16,7 @@
 	version="2.0" id="V2FilterTests">
 	<portlet>
 		<portlet-name>FilterTests_FilterChain_ApiActionFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_FilterChain_ApiActionFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_FilterChain_ApiActionFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -30,7 +30,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_FilterChain_ApiEventFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_FilterChain_ApiEventFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_FilterChain_ApiEventFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -47,7 +47,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_FilterChain_ApiEventFilter_event</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_FilterChain_ApiEventFilter_event</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_FilterChain_ApiEventFilter_event</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -63,7 +63,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_FilterChain_ApiRenderFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_FilterChain_ApiRenderFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_FilterChain_ApiRenderFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -77,7 +77,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_FilterChain_ApiResourceFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_FilterChain_ApiResourceFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_FilterChain_ApiResourceFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -91,7 +91,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_FilterConfig_ApiRenderFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_FilterConfig_ApiRenderFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_FilterConfig_ApiRenderFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -105,7 +105,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_PortletFilter_ApiActionFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_PortletFilter_ApiActionFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_PortletFilter_ApiActionFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -119,7 +119,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_PortletFilter_ApiEventFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_PortletFilter_ApiEventFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_PortletFilter_ApiEventFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -136,7 +136,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_PortletFilter_ApiEventFilter_event</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_PortletFilter_ApiEventFilter_event</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_PortletFilter_ApiEventFilter_event</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -152,7 +152,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_PortletFilter_ApiRenderFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_PortletFilter_ApiRenderFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_PortletFilter_ApiRenderFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -166,7 +166,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_PortletFilter_ApiResourceFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_PortletFilter_ApiResourceFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_PortletFilter_ApiResourceFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -180,7 +180,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_ActionFilter_ApiActionFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_ActionFilter_ApiActionFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_ActionFilter_ApiActionFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -194,7 +194,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_ActionFilter_ApiActionFilter2</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_ActionFilter_ApiActionFilter2</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_ActionFilter_ApiActionFilter2</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -208,7 +208,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_EventFilter_ApiEventFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_EventFilter_ApiEventFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_EventFilter_ApiEventFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -228,7 +228,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_EventFilter_ApiEventFilter_event</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_EventFilter_ApiEventFilter_event</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_EventFilter_ApiEventFilter_event</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -244,7 +244,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_EventFilter_ApiEventFilter_event2</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_EventFilter_ApiEventFilter_event2</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_EventFilter_ApiEventFilter_event2</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -260,7 +260,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_RenderFilter_ApiRenderFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_RenderFilter_ApiRenderFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_RenderFilter_ApiRenderFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -274,7 +274,7 @@
 
 	<portlet>
 		<portlet-name>FilterTests_ResourceFilter_ApiResourceFilter</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.FilterTests_ResourceFilter_ApiResourceFilter</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.FilterTests_ResourceFilter_ApiResourceFilter</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -288,84 +288,84 @@
 
 	<filter>
 		<filter-name>FilterTests_PortletFilter_ApiResourceFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_PortletFilter_ApiResourceFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_PortletFilter_ApiResourceFilter_filter</filter-class>
 		<lifecycle>RESOURCE_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_FilterChain_ApiEventFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_FilterChain_ApiEventFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_FilterChain_ApiEventFilter_filter</filter-class>
 		<lifecycle>EVENT_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_FilterChain_ApiEventFilter_filter2</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_FilterChain_ApiEventFilter_filter2</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_FilterChain_ApiEventFilter_filter2</filter-class>
 		<lifecycle>EVENT_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_PortletFilter_ApiRenderFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_PortletFilter_ApiRenderFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_PortletFilter_ApiRenderFilter_filter</filter-class>
 		<lifecycle>RENDER_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_ResourceFilter_ApiResourceFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_ResourceFilter_ApiResourceFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_ResourceFilter_ApiResourceFilter_filter</filter-class>
 		<lifecycle>RESOURCE_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_ResourceFilter_ApiResourceFilter_filter2</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_ResourceFilter_ApiResourceFilter_filter2</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_ResourceFilter_ApiResourceFilter_filter2</filter-class>
 		<lifecycle>RESOURCE_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_FilterChain_ApiRenderFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_FilterChain_ApiRenderFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_FilterChain_ApiRenderFilter_filter</filter-class>
 		<lifecycle>RENDER_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_FilterChain_ApiRenderFilter_filter2</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_FilterChain_ApiRenderFilter_filter2</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_FilterChain_ApiRenderFilter_filter2</filter-class>
 		<lifecycle>RENDER_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_FilterChain_ApiResourceFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_FilterChain_ApiResourceFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_FilterChain_ApiResourceFilter_filter</filter-class>
 		<lifecycle>RESOURCE_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_FilterChain_ApiResourceFilter_filter2</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_FilterChain_ApiResourceFilter_filter2</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_FilterChain_ApiResourceFilter_filter2</filter-class>
 		<lifecycle>RESOURCE_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_PortletFilter_ApiActionFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_PortletFilter_ApiActionFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_PortletFilter_ApiActionFilter_filter</filter-class>
 		<lifecycle>ACTION_PHASE</lifecycle>
 	</filter>
 
 
 	<filter>
 		<filter-name>FilterTests_PortletFilter_ApiEventFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_PortletFilter_ApiEventFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_PortletFilter_ApiEventFilter_filter</filter-class>
 		<lifecycle>EVENT_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_EventFilter_ApiEventFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_EventFilter_ApiEventFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_EventFilter_ApiEventFilter_filter</filter-class>
 		<lifecycle>EVENT_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_EventFilter_ApiEventFilter_filter2</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_EventFilter_ApiEventFilter_filter2</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_EventFilter_ApiEventFilter_filter2</filter-class>
 		<lifecycle>EVENT_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_EventFilter_ApiEventFilter_filter3</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_EventFilter_ApiEventFilter_filter3</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_EventFilter_ApiEventFilter_filter3</filter-class>
 		<lifecycle>EVENT_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_FilterConfig_ApiRenderFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_FilterConfig_ApiRenderFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_FilterConfig_ApiRenderFilter_filter</filter-class>
 		<lifecycle>RENDER_PHASE</lifecycle>
 		<init-param>
 			<name>TestParm1</name>
@@ -378,45 +378,45 @@
 	</filter>
 	<filter>
 		<filter-name>FilterTests_FilterConfig_ApiRenderFilter_filter2</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_FilterConfig_ApiRenderFilter_filter2</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_FilterConfig_ApiRenderFilter_filter2</filter-class>
 		<lifecycle>RENDER_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_ActionFilter_ApiActionFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_ActionFilter_ApiActionFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_ActionFilter_ApiActionFilter_filter</filter-class>
 		<lifecycle>ACTION_PHASE</lifecycle>
 	</filter>
 
 	<filter>
 		<filter-name>FilterTests_ActionFilter_ApiActionFilter_filter2</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_ActionFilter_ApiActionFilter_filter2</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_ActionFilter_ApiActionFilter_filter2</filter-class>
 		<lifecycle>ACTION_PHASE</lifecycle>
 	</filter>
 
 	<filter>
 		<filter-name>FilterTests_ActionFilter_ApiActionFilter_filter3</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_ActionFilter_ApiActionFilter_filter3</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_ActionFilter_ApiActionFilter_filter3</filter-class>
 		<lifecycle>ACTION_PHASE</lifecycle>
 	</filter>
 
 	<filter>
 		<filter-name>FilterTests_RenderFilter_ApiRenderFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_RenderFilter_ApiRenderFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_RenderFilter_ApiRenderFilter_filter</filter-class>
 		<lifecycle>RENDER_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_RenderFilter_ApiRenderFilter_filter2</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_RenderFilter_ApiRenderFilter_filter2</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_RenderFilter_ApiRenderFilter_filter2</filter-class>
 		<lifecycle>RENDER_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_FilterChain_ApiActionFilter_filter</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_FilterChain_ApiActionFilter_filter</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_FilterChain_ApiActionFilter_filter</filter-class>
 		<lifecycle>ACTION_PHASE</lifecycle>
 	</filter>
 	<filter>
 		<filter-name>FilterTests_FilterChain_ApiActionFilter_filter2</filter-name>
-		<filter-class>javax.portlet.tck.filters.FilterTests_FilterChain_ApiActionFilter_filter2</filter-class>
+		<filter-class>jakarta.portlet.tck.filters.FilterTests_FilterChain_ApiActionFilter_filter2</filter-class>
 		<lifecycle>ACTION_PHASE</lifecycle>
 	</filter>
 

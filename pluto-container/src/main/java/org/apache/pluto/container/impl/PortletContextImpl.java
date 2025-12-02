@@ -25,8 +25,8 @@ import java.util.Enumeration;
 import java.util.List;
 import java.util.Set;
 
-import javax.portlet.PortletContext;
-import javax.portlet.PortletRequestDispatcher;
+import jakarta.portlet.PortletContext;
+import jakarta.portlet.PortletRequestDispatcher;
 import jakarta.servlet.ServletContext;
 
 import org.apache.pluto.container.ContainerInfo;

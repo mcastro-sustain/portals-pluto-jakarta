@@ -24,7 +24,7 @@
    version="2.0" id="V2SigTestsFilter">
    <portlet>
       <portlet-name>SigTestsFilter_ActionFilter_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsFilter_ActionFilter_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsFilter_ActionFilter_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -37,7 +37,7 @@
 
    <portlet>
       <portlet-name>SigTestsFilter_EventFilter_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsFilter_EventFilter_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsFilter_EventFilter_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -50,7 +50,7 @@
 
    <portlet>
       <portlet-name>SigTestsFilter_FilterChain_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsFilter_FilterChain_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsFilter_FilterChain_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -63,7 +63,7 @@
 
    <portlet>
       <portlet-name>SigTestsFilter_FilterConfig_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsFilter_FilterConfig_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsFilter_FilterConfig_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -76,7 +76,7 @@
 
    <portlet>
       <portlet-name>SigTestsFilter_PortletFilter_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsFilter_PortletFilter_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsFilter_PortletFilter_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -89,7 +89,7 @@
 
    <portlet>
       <portlet-name>SigTestsFilter_RenderFilter_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsFilter_RenderFilter_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsFilter_RenderFilter_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -102,7 +102,7 @@
 
    <portlet>
       <portlet-name>SigTestsFilter_ResourceFilter_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsFilter_ResourceFilter_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsFilter_ResourceFilter_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -115,12 +115,12 @@
    
    <filter>
       <filter-name>SigTestsFilter_FilterChain_SIGRender_filter</filter-name>
-      <filter-class>javax.portlet.tck.filters.SigTestsFilter_FilterChain_SIGRender_filter</filter-class>
+      <filter-class>jakarta.portlet.tck.filters.SigTestsFilter_FilterChain_SIGRender_filter</filter-class>
       <lifecycle>RENDER_PHASE</lifecycle>
    </filter>
    <filter>
       <filter-name>SigTestsFilter_FilterConfig_SIGRender_filter</filter-name>
-      <filter-class>javax.portlet.tck.filters.SigTestsFilter_FilterConfig_SIGRender_filter</filter-class>
+      <filter-class>jakarta.portlet.tck.filters.SigTestsFilter_FilterConfig_SIGRender_filter</filter-class>
       <lifecycle>RENDER_PHASE</lifecycle>
    </filter>
 

@@ -27,7 +27,7 @@ import jakarta.interceptor.InvocationContext;
 import jakarta.mvc.MvcContext;
 import jakarta.mvc.security.Csrf;
 import jakarta.mvc.security.CsrfProtected;
-import javax.portlet.ClientDataRequest;
+import jakarta.portlet.ClientDataRequest;
 import jakarta.ws.rs.core.Configuration;
 
 import org.slf4j.Logger;

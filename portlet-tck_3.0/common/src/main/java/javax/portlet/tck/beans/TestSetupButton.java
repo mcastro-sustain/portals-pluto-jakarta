@@ -32,10 +32,10 @@
  * (TestCaseName)-detail      - a detailed message about the test     
  * 
  */
-package javax.portlet.tck.beans;
+package jakarta.portlet.tck.beans;
 
-import javax.portlet.PortletURL;
-import javax.portlet.tck.constants.Constants;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.tck.constants.Constants;
 
 /**
  * Formats a link to set render parameters for a test case.

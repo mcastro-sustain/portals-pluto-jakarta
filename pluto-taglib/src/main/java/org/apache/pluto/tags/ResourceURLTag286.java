@@ -17,21 +17,21 @@
 package org.apache.pluto.tags;
 
 
-import static javax.portlet.ResourceURL.FULL;
-import static javax.portlet.ResourceURL.PAGE;
-import static javax.portlet.ResourceURL.PORTLET;
+import static jakarta.portlet.ResourceURL.FULL;
+import static jakarta.portlet.ResourceURL.PAGE;
+import static jakarta.portlet.ResourceURL.PORTLET;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.portlet.BaseURL;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletResponse;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceURL;
+import jakarta.portlet.BaseURL;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletResponse;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceURL;
 import jakarta.servlet.jsp.JspException;
 
 
@@ -164,7 +164,7 @@ public class ResourceURLTag286 extends BaseURLTag {
 	
    
     /* (non-Javadoc)
-     * @see org.apache.pluto.tags.BaseURLTag#setUrl(javax.portlet.BaseURL)
+     * @see org.apache.pluto.tags.BaseURLTag#setUrl(jakarta.portlet.BaseURL)
      */
     @Override
     protected void setUrl(BaseURL url) {

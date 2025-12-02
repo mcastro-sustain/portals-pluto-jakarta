@@ -13,31 +13,31 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletSession;
-import javax.portlet.PortletSessionUtil;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.PortletSessionUtil;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
-import static javax.portlet.PortletSession.PORTLET_SCOPE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODEATTRIBUTENAME1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODEATTRIBUTENAME2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODESCOPE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODESCOPE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODESCOPE3;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.PortletSession.PORTLET_SCOPE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODEATTRIBUTENAME1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODEATTRIBUTENAME2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODESCOPE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODESCOPE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODESCOPE3;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined
@@ -88,12 +88,12 @@ public class EnvironmentTests_PortletSessionUtil_ApiRender implements Portlet {
     /* an encoded name in PORTLET_SCOPE" */
     TestResult tr0 = tcd
         .getTestResultFailed(V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODEATTRIBUTENAME1);
-    portletReq.getPortletSession().setAttribute("javax.portlet.p.id?tr0", "true", PORTLET_SCOPE);
-    if (PortletSessionUtil.decodeAttributeName("javax.portlet.p.id?tr0").equals("tr0")) {
+    portletReq.getPortletSession().setAttribute("jakarta.portlet.p.id?tr0", "true", PORTLET_SCOPE);
+    if (PortletSessionUtil.decodeAttributeName("jakarta.portlet.p.id?tr0").equals("tr0")) {
       tr0.setTcSuccess(true);
     } else {
       tr0.appendTcDetail("Failed because decoded attribute name is not tr0 but "
-          + PortletSessionUtil.decodeAttributeName("javax.portlet.p.id?tr0"));
+          + PortletSessionUtil.decodeAttributeName("jakarta.portlet.p.id?tr0"));
     }
     tr0.writeTo(writer);
 
@@ -103,13 +103,13 @@ public class EnvironmentTests_PortletSessionUtil_ApiRender implements Portlet {
     /* APPLICATION_SCOPE " */
     TestResult tr1 = tcd
         .getTestResultFailed(V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODEATTRIBUTENAME2);
-    portletReq.getPortletSession().setAttribute("javax.portlet.p.id?tr1", "true",
+    portletReq.getPortletSession().setAttribute("jakarta.portlet.p.id?tr1", "true",
         APPLICATION_SCOPE);
-    if (PortletSessionUtil.decodeAttributeName("javax.portlet.p.id?tr1").equals("tr1")) {
+    if (PortletSessionUtil.decodeAttributeName("jakarta.portlet.p.id?tr1").equals("tr1")) {
       tr1.setTcSuccess(true);
     } else {
       tr1.appendTcDetail("Failed because decoded attribute name is not tr1 but "
-          + PortletSessionUtil.decodeAttributeName("javax.portlet.p.id?tr1"));
+          + PortletSessionUtil.decodeAttributeName("jakarta.portlet.p.id?tr1"));
     }
     tr1.writeTo(writer);
 
@@ -118,7 +118,7 @@ public class EnvironmentTests_PortletSessionUtil_ApiRender implements Portlet {
     /* attribute scope for the input encoded attribute name" */
     TestResult tr2 =
         tcd.getTestResultFailed(V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODESCOPE1);
-    if (PortletSessionUtil.decodeScope("javax.portlet.p.id?tr0") == PortletSession.PORTLET_SCOPE) {
+    if (PortletSessionUtil.decodeScope("jakarta.portlet.p.id?tr0") == PortletSession.PORTLET_SCOPE) {
       tr2.setTcSuccess(true);
     }
     tr2.writeTo(writer);
@@ -140,7 +140,7 @@ public class EnvironmentTests_PortletSessionUtil_ApiRender implements Portlet {
     /* PORTLET_SCOPE" */
     TestResult tr4 =
         tcd.getTestResultFailed(V2ENVIRONMENTTESTS_PORTLETSESSIONUTIL_APIRENDER_DECODESCOPE3);
-    if (PortletSessionUtil.decodeScope("javax.portlet.p.id?tr0") == PortletSession.PORTLET_SCOPE) {
+    if (PortletSessionUtil.decodeScope("jakarta.portlet.p.id?tr0") == PortletSession.PORTLET_SCOPE) {
       tr4.setTcSuccess(true);
     }
     tr4.writeTo(writer);

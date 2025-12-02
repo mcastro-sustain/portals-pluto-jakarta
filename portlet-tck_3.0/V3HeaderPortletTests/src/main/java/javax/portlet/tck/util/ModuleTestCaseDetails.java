@@ -16,11 +16,11 @@
  *  under the License.
  */
 
-package javax.portlet.tck.util;
+package jakarta.portlet.tck.util;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.portlet.tck.beans.TestCaseDetails;
+import jakarta.portlet.tck.beans.TestCaseDetails;
 
 /**
  * Defines constants for the test case names and test case details 
@@ -237,11 +237,11 @@ public class ModuleTestCaseDetails extends TestCaseDetails {
    static {
 
       tcd.put(V3HEADERPORTLETTESTS_SPEC3_6_4_HEADERPORTLET_RENDERHEADERS, "renderHeaders() method is called before render() method if the portlet implements HeaderPortlet interface.");
-      tcd.put(V3HEADERPORTLETTESTS_SPEC3_6_4_HEADERPORTLET_RENDERHEADERS2, "The container runtime option javax.portlet.renderHeaders is disregarded for version 3.0 or later.");
+      tcd.put(V3HEADERPORTLETTESTS_SPEC3_6_4_HEADERPORTLET_RENDERHEADERS2, "The container runtime option jakarta.portlet.renderHeaders is disregarded for version 3.0 or later.");
       tcd.put(V3HEADERPORTLETTESTS_SPEC7_14_RENDERREQUEST_GETETAG, "Method getETag(): Returns null if there is no cached response.");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_HEADERATTR_ATTRIBUTES1, "The portlet can access a map with user information attributes via the request attribute PortletRequest.USER_INFO");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_HEADERATTR_ATTRIBUTES2, "The PortletRequest.CCPP_PROFILE request attribute must return a javax.ccpp.Profile based on the current portlet request");
-      tcd.put(V3HEADERPORTLETTESTS_SPEC14_HEADERATTR_ATTRIBUTES3, "During header processing, the LIFECYCLE_PHASE (\"javax.portlet.lifecycle_phase\") attribute will contain the string \"HEADER_PHASE\"");
+      tcd.put(V3HEADERPORTLETTESTS_SPEC14_HEADERATTR_ATTRIBUTES3, "During header processing, the LIFECYCLE_PHASE (\"jakarta.portlet.lifecycle_phase\") attribute will contain the string \"HEADER_PHASE\"");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE1, "The getResponseContentType method returns a String representing the default content type the portlet container assumes for the output");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE2, "The getResponseContentTypes method returns an Enumeration of String elements representing the acceptable content types for the output in order of preference");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_HEADERREQ_CONTENTTYPE3, "The first element of the Enumeration returned by the getResponseContentTypes method must equal the value returned by the getResponseContentType method");
@@ -255,8 +255,8 @@ public class ModuleTestCaseDetails extends TestCaseDetails {
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_RENDERSTATE_APIHEADER_GETPORTLETMODE, "Method getPortletMode(): Returns current PortletMode");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_RENDERSTATE_APIHEADER_GETWINDOWSTATE, "Method getWindowState(): Returns current WindowState");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_RENDERSTATE_APIHEADER_GETRENDERPARAMETERS, "Method getRenderParameters(): Returns an immutable RenderParameters object representing the private and public render parameters");
-      tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDUSER_INFO, "Has String field USER_INFO with value of \"javax.portlet.userinfo\" ");
-      tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDCCPP_PROFILE, "Has String field CCPP_PROFILE with value of \"javax.portlet.ccpp\" ");
+      tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDUSER_INFO, "Has String field USER_INFO with value of \"jakarta.portlet.userinfo\" ");
+      tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDCCPP_PROFILE, "Has String field CCPP_PROFILE with value of \"jakarta.portlet.ccpp\" ");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDBASIC_AUTH, "Has String field BASIC_AUTH with value of \"BASIC\" ");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDFORM_AUTH, "Has String field FORM_AUTH with value of \"FORM\" ");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDCLIENT_CERT_AUTH, "Has String field CLIENT_CERT_AUTH with value of \"CLIENT_CERT\" ");
@@ -266,11 +266,11 @@ public class ModuleTestCaseDetails extends TestCaseDetails {
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDRENDER_PHASE, "Has String field RENDER_PHASE with value of \"RENDER_PHASE\" ");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDRESOURCE_PHASE, "Has String field RESOURCE_PHASE with value of \"RESOURCE_PHASE\" ");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDHEADER_PHASE, "Has String field HEADER_PHASE with value of \"HEADER_PHASE\" ");
-      tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDLIFECYCLE_PHASE, "Has String field LIFECYCLE_PHASE with value of \"javax.portlet.lifecycle_phase\" ");
-      tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDRENDER_PART, "Has String field RENDER_PART with value of \"javax.portlet.render_part\" ");
+      tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDLIFECYCLE_PHASE, "Has String field LIFECYCLE_PHASE with value of \"jakarta.portlet.lifecycle_phase\" ");
+      tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDRENDER_PART, "Has String field RENDER_PART with value of \"jakarta.portlet.render_part\" ");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDRENDER_HEADERS, "Has String field RENDER_HEADERS with value of \"RENDER_HEADERS\" ");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDRENDER_MARKUP, "Has String field RENDER_MARKUP with value of \"RENDER_MARKUP\" ");
-      tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDACTION_SCOPE_ID, "Has String field ACTION_SCOPE_ID with value of \"javax.portlet.as\" ");
+      tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_FIELDACTION_SCOPE_ID, "Has String field ACTION_SCOPE_ID with value of \"jakarta.portlet.as\" ");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_ISWINDOWSTATEALLOWED1, "Method isWindowStateAllowed(WindowState): Returns true if the specified WindowState is allowed");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_ISWINDOWSTATEALLOWED2, "Method isWindowStateAllowed(WindowState): Returns false if the specified WindowState is not allowed");
       tcd.put(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_ISPORTLETMODEALLOWED1, "Method isPortletModeAllowed(PortletMode): Returns true if the specified PortletMode is allowed");
@@ -374,7 +374,7 @@ public class ModuleTestCaseDetails extends TestCaseDetails {
       tcd.put(V3HEADERPORTLETTESTS_SPEC15_MIMERESPONSE_APIHEADER_FIELDETAG , "Has String field ETAG with value of \"portlet.ETag\"");
       tcd.put(V3HEADERPORTLETTESTS_SPEC15_MIMERESPONSE_APIHEADER_FIELDUSE_CACHED_CONTENT , "Has String field USE_CACHED_CONTENT with value of \"portlet.use-cached-content\"");
       tcd.put(V3HEADERPORTLETTESTS_SPEC15_MIMERESPONSE_APIHEADER_FIELDNAMESPACED_RESPONSE, "Has String field NAMESPACED_RESPONSE with value of \"X-JAVAX-PORTLET-NAMESPACED-RESPONSE\"");
-      tcd.put(V3HEADERPORTLETTESTS_SPEC15_MIMERESPONSE_APIHEADER_FIELDMARKUP_HEAD_ELEMENT, "Has String field MARKUP_HEAD_ELEMENT with value of \"javax.portlet.markup.head.element\"");
+      tcd.put(V3HEADERPORTLETTESTS_SPEC15_MIMERESPONSE_APIHEADER_FIELDMARKUP_HEAD_ELEMENT, "Has String field MARKUP_HEAD_ELEMENT with value of \"jakarta.portlet.markup.head.element\"");
       tcd.put(V3HEADERPORTLETTESTS_SPEC15_MIMERESPONSE_APIHEADER_GETCONTENTTYPE1, "Method getContentType(): Returns a String containing the MIME type that can be used with the response");
       tcd.put(V3HEADERPORTLETTESTS_SPEC15_MIMERESPONSE_APIHEADER_GETCONTENTTYPE2, "Method getContentType(): Returns null if no content type is set");
       tcd.put(V3HEADERPORTLETTESTS_SPEC15_MIMERESPONSE_APIHEADER_SETCONTENTTYPE1, "Method setContentType(String): Sets the MIME type for the response");

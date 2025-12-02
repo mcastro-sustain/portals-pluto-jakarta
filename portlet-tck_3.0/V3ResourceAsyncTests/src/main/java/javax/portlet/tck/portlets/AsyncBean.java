@@ -17,9 +17,9 @@
  */
 
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import javax.portlet.annotations.PortletRequestScoped;
+import jakarta.portlet.annotations.PortletRequestScoped;
 
 /**
  * Portlet request scoped bean for tck tests

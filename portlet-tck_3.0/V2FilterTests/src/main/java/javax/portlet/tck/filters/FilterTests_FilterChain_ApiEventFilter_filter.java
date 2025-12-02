@@ -14,16 +14,16 @@
  */
 
 
-package javax.portlet.tck.filters;
+package jakarta.portlet.tck.filters;
 
 import java.io.IOException;
 
-import javax.portlet.EventRequest;
-import javax.portlet.EventResponse;
-import javax.portlet.PortletException;
-import javax.portlet.filter.EventFilter;
-import javax.portlet.filter.FilterChain;
-import javax.portlet.filter.FilterConfig;
+import jakarta.portlet.EventRequest;
+import jakarta.portlet.EventResponse;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.filter.EventFilter;
+import jakarta.portlet.filter.FilterChain;
+import jakarta.portlet.filter.FilterConfig;
 
 /**
  * Filter for JSR 362 request dispatcher testing. Used by portlet:

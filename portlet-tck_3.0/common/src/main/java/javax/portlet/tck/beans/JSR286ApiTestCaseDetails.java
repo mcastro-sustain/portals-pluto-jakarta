@@ -16,7 +16,7 @@
  *  under the License.
  */
 
-package javax.portlet.tck.beans;
+package jakarta.portlet.tck.beans;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -1942,9 +1942,9 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
       tcd.put(V2WRAPPERTESTS_RESOURCERESPONSEWRAPPER_APIRESOURCE_CREATERESOURCEURL,
             "Method createResourceURL(): Calls wrapped method");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_FIELDUSER_INFO,
-            "Has String field USER_INFO with value of \"javax.portlet.userinfo\" ");
+            "Has String field USER_INFO with value of \"jakarta.portlet.userinfo\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_FIELDCCPP_PROFILE,
-            "Has String field CCPP_PROFILE with value of \"javax.portlet.ccpp\" ");
+            "Has String field CCPP_PROFILE with value of \"jakarta.portlet.ccpp\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_FIELDBASIC_AUTH,
             "Has String field BASIC_AUTH with value of \"BASIC\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_FIELDFORM_AUTH,
@@ -1962,15 +1962,15 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_FIELDRESOURCE_PHASE,
             "Has String field RESOURCE_PHASE with value of \"RESOURCE_PHASE\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_FIELDLIFECYCLE_PHASE,
-            "Has String field LIFECYCLE_PHASE with value of \"javax.portlet.lifecycle_phase\" ");
+            "Has String field LIFECYCLE_PHASE with value of \"jakarta.portlet.lifecycle_phase\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_FIELDRENDER_PART,
-            "Has String field RENDER_PART with value of \"javax.portlet.render_part\" ");
+            "Has String field RENDER_PART with value of \"jakarta.portlet.render_part\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_FIELDRENDER_HEADERS,
             "Has String field RENDER_HEADERS with value of \"RENDER_HEADERS\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_FIELDRENDER_MARKUP,
             "Has String field RENDER_MARKUP with value of \"RENDER_MARKUP\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_FIELDACTION_SCOPE_ID,
-            "Has String field ACTION_SCOPE_ID with value of \"javax.portlet.as\" ");
+            "Has String field ACTION_SCOPE_ID with value of \"jakarta.portlet.as\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_ISWINDOWSTATEALLOWED1,
             "Method isWindowStateAllowed(WindowState): Returns true if the specified WindowState is allowed");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_ISWINDOWSTATEALLOWED2,
@@ -2146,9 +2146,9 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
             "Method getPublicParameterMap(): Returns an empty map if no public parameters exist");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRENDER_EXISTS, "The P3PUserInfos exists as a public static enum");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_FIELDUSER_INFO,
-            "Has String field USER_INFO with value of \"javax.portlet.userinfo\" ");
+            "Has String field USER_INFO with value of \"jakarta.portlet.userinfo\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_FIELDCCPP_PROFILE,
-            "Has String field CCPP_PROFILE with value of \"javax.portlet.ccpp\" ");
+            "Has String field CCPP_PROFILE with value of \"jakarta.portlet.ccpp\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_FIELDBASIC_AUTH,
             "Has String field BASIC_AUTH with value of \"BASIC\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_FIELDFORM_AUTH,
@@ -2166,15 +2166,15 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_FIELDRESOURCE_PHASE,
             "Has String field RESOURCE_PHASE with value of \"RESOURCE_PHASE\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_FIELDLIFECYCLE_PHASE,
-            "Has String field LIFECYCLE_PHASE with value of \"javax.portlet.lifecycle_phase\" ");
+            "Has String field LIFECYCLE_PHASE with value of \"jakarta.portlet.lifecycle_phase\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_FIELDRENDER_PART,
-            "Has String field RENDER_PART with value of \"javax.portlet.render_part\" ");
+            "Has String field RENDER_PART with value of \"jakarta.portlet.render_part\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_FIELDRENDER_HEADERS,
             "Has String field RENDER_HEADERS with value of \"RENDER_HEADERS\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_FIELDRENDER_MARKUP,
             "Has String field RENDER_MARKUP with value of \"RENDER_MARKUP\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_FIELDACTION_SCOPE_ID,
-            "Has String field ACTION_SCOPE_ID with value of \"javax.portlet.as\" ");
+            "Has String field ACTION_SCOPE_ID with value of \"jakarta.portlet.as\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_ISWINDOWSTATEALLOWED1,
             "Method isWindowStateAllowed(WindowState): Returns true if the specified WindowState is allowed");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_ISWINDOWSTATEALLOWED2,
@@ -2351,9 +2351,9 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIACTION_EXISTS,
             "Method exists(): The P3PUserInfos exist as a public static enum");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDUSER_INFO,
-            "Has String field USER_INFO with value of \"javax.portlet.userinfo\" ");
+            "Has String field USER_INFO with value of \"jakarta.portlet.userinfo\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDCCPP_PROFILE,
-            "Has String field CCPP_PROFILE with value of \"javax.portlet.ccpp\" ");
+            "Has String field CCPP_PROFILE with value of \"jakarta.portlet.ccpp\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDBASIC_AUTH,
             "Has String field BASIC_AUTH with value of \"BASIC\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDFORM_AUTH,
@@ -2371,15 +2371,15 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRESOURCE_PHASE,
             "Has String field RESOURCE_PHASE with value of \"RESOURCE_PHASE\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDLIFECYCLE_PHASE,
-            "Has String field LIFECYCLE_PHASE with value of \"javax.portlet.lifecycle_phase\" ");
+            "Has String field LIFECYCLE_PHASE with value of \"jakarta.portlet.lifecycle_phase\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRENDER_PART,
-            "Has String field RENDER_PART with value of \"javax.portlet.render_part\" ");
+            "Has String field RENDER_PART with value of \"jakarta.portlet.render_part\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRENDER_HEADERS,
             "Has String field RENDER_HEADERS with value of \"RENDER_HEADERS\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDRENDER_MARKUP,
             "Has String field RENDER_MARKUP with value of \"RENDER_MARKUP\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_FIELDACTION_SCOPE_ID,
-            "Has String field ACTION_SCOPE_ID with value of \"javax.portlet.as\" ");
+            "Has String field ACTION_SCOPE_ID with value of \"jakarta.portlet.as\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISWINDOWSTATEALLOWED1,
             "Method isWindowStateAllowed(WindowState): Returns true if the specified WindowState is allowed");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_ISWINDOWSTATEALLOWED2,
@@ -2556,9 +2556,9 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIEVENT_EXISTS,
             "Method exists(): The P3PUserInfos exist as a public static enum");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRESOURCE_FIELDUSER_INFO,
-            "Has String field USER_INFO with value of \"javax.portlet.userinfo\" ");
+            "Has String field USER_INFO with value of \"jakarta.portlet.userinfo\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRESOURCE_FIELDCCPP_PROFILE,
-            "Has String field CCPP_PROFILE with value of \"javax.portlet.ccpp\" ");
+            "Has String field CCPP_PROFILE with value of \"jakarta.portlet.ccpp\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRESOURCE_FIELDBASIC_AUTH,
             "Has String field BASIC_AUTH with value of \"BASIC\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRESOURCE_FIELDFORM_AUTH,
@@ -2576,15 +2576,15 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRESOURCE_FIELDRESOURCE_PHASE,
             "Has String field RESOURCE_PHASE with value of \"RESOURCE_PHASE\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRESOURCE_FIELDLIFECYCLE_PHASE,
-            "Has String field LIFECYCLE_PHASE with value of \"javax.portlet.lifecycle_phase\" ");
+            "Has String field LIFECYCLE_PHASE with value of \"jakarta.portlet.lifecycle_phase\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRESOURCE_FIELDRENDER_PART,
-            "Has String field RENDER_PART with value of \"javax.portlet.render_part\" ");
+            "Has String field RENDER_PART with value of \"jakarta.portlet.render_part\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRESOURCE_FIELDRENDER_HEADERS,
             "Has String field RENDER_HEADERS with value of \"RENDER_HEADERS\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRESOURCE_FIELDRENDER_MARKUP,
             "Has String field RENDER_MARKUP with value of \"RENDER_MARKUP\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRESOURCE_FIELDACTION_SCOPE_ID,
-            "Has String field ACTION_SCOPE_ID with value of \"javax.portlet.as\" ");
+            "Has String field ACTION_SCOPE_ID with value of \"jakarta.portlet.as\" ");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRESOURCE_ISWINDOWSTATEALLOWED1,
             "Method isWindowStateAllowed(WindowState): Returns true if the specified WindowState is allowed");
       tcd.put(V2REQUESTTESTS_PORTLETREQUEST_APIRESOURCE_ISWINDOWSTATEALLOWED2,
@@ -2845,7 +2845,7 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
       tcd.put(V2REQUESTTESTS_CLIENTDATAREQUEST_APIRESOURCE_GETMETHOD,
             "Method getMethod(): Returns a String containing the name of the HTTP method with which the request was made");
       tcd.put(V2REQUESTTESTS_ACTIONREQUEST_APIACTION_FIELDACTION_NAME,
-            "Has String field ACTION_NAME with value of \"javax.portlet.action\" ");
+            "Has String field ACTION_NAME with value of \"jakarta.portlet.action\" ");
       tcd.put(V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_FIELDETAG,
             "Has String field ETAG with value of \"portlet.ETag\" ");
       tcd.put(V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETETAG2,
@@ -3334,7 +3334,7 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
       tcd.put(V2RESPONSETESTS_MIMERESPONSE_APIRENDER_FIELDNAMESPACED_RESPONSE,
             "Has String field NAMESPACED_RESPONSE with value of \"X-JAVAX-PORTLET-NAMESPACED-RESPONSE\"");
       tcd.put(V2RESPONSETESTS_MIMERESPONSE_APIRENDER_FIELDMARKUP_HEAD_ELEMENT,
-            "Has String field MARKUP_HEAD_ELEMENT with value of \"javax.portlet.markup.head.element\"");
+            "Has String field MARKUP_HEAD_ELEMENT with value of \"jakarta.portlet.markup.head.element\"");
       tcd.put(V2RESPONSETESTS_MIMERESPONSE_APIRENDER_GETCONTENTTYPE1,
             "Method getContentType(): Returns a String containing the MIME type that can be used with the response");
       tcd.put(V2RESPONSETESTS_MIMERESPONSE_APIRENDER_GETCONTENTTYPE2,
@@ -3399,7 +3399,7 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
       tcd.put(V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDNAMESPACED_RESPONSE,
             "Has String field NAMESPACED_RESPONSE with value of \"X-JAVAX-PORTLET-NAMESPACED-RESPONSE\"");
       tcd.put(V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDMARKUP_HEAD_ELEMENT,
-            "Has String field MARKUP_HEAD_ELEMENT with value of \"javax.portlet.markup.head.element\"");
+            "Has String field MARKUP_HEAD_ELEMENT with value of \"jakarta.portlet.markup.head.element\"");
       tcd.put(V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETCONTENTTYPE1,
             "Method getContentType(): Returns a String containing the MIME type that can be used with the response");
       tcd.put(V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETCONTENTTYPE2,
@@ -3727,7 +3727,7 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
       tcd.put(V2URLTESTS_RESOURCEURL_APIRENDERRESURL_FIELDPORTLET,
             "Has String field PORTLET with value of \"cacheLevelPortlet\" ");
       tcd.put(V2URLTESTS_RESOURCEURL_APIRENDERRESURL_FIELDSHARED,
-            "Has String field SHARED with value of \"javax.portlet.shared\" ");
+            "Has String field SHARED with value of \"jakarta.portlet.shared\" ");
       tcd.put(
             V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL4,
             "A resource parameter with the same name as a public render parameter appears before the public render parameter in the values array");
@@ -3840,7 +3840,7 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
             "Method getState(): Returns the WindowState object causing this exception");
       tcd.put(
             V2ANNOTATIONTESTS_PROCESSACTION_APIACTION_NAME,
-            "Method name(): On an action request, the method is executed if the parameter \"javax.portlet.action\" matches the name field");
+            "Method name(): On an action request, the method is executed if the parameter \"jakarta.portlet.action\" matches the name field");
       tcd.put(V2ANNOTATIONTESTS_PROCESSEVENT_APIEVENT_QNAME,
             "Method qname(): On an event request, the method is executed if the Event qname matches the qname field");
       tcd.put(V2ANNOTATIONTESTS_PROCESSEVENT_APIEVENT_NAME,
@@ -3964,7 +3964,7 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
             "Method getTitle(): If overridden, the String returned by this method is used as the portlet title");
       tcd.put(
             V2PORTLETTESTS_GENERICPORTLET_APIRENDER_GETTITLE2,
-            "Method getTitle(): Returns a String containing the title from the portlet resource bundle under the key \"javax.portlet.title\"");
+            "Method getTitle(): Returns a String containing the title from the portlet resource bundle under the key \"jakarta.portlet.title\"");
       tcd.put(V2PORTLETTESTS_GENERICPORTLET_APIRENDER_DODISPATCH1,
             "Method doDispatch(RenderRequest, RenderResponse): If overridden, is called when markup is to be generated");
       tcd.put(V2PORTLETTESTS_GENERICPORTLET_APIRENDER_DOVIEW1,
@@ -4076,7 +4076,7 @@ public class JSR286ApiTestCaseDetails extends TestCaseDetails {
       tcd.put(V2ENVIRONMENTTESTS_CACHECONTROL_APIRESOURCE_SETUSECACHEDCONTENT2,
             "Method setUseCachedContent(boolean): If set to false, the cached content is invalid");
       tcd.put(V2ENVIRONMENTTESTS_PORTALCONTEXT_APIRENDER_FIELDMARKUP_HEAD_ELEMENT_SUPPORT,
-            "Has String field MARKUP_HEAD_ELEMENT_SUPPORT with value of \"javax.portlet.markup.head.element.support\" ");
+            "Has String field MARKUP_HEAD_ELEMENT_SUPPORT with value of \"jakarta.portlet.markup.head.element.support\" ");
       tcd.put(V2ENVIRONMENTTESTS_PORTALCONTEXT_APIRENDER_GETPROPERTY1,
             "Method getProperty(String): Returns a String containing the value for the specified property");
       tcd.put(V2ENVIRONMENTTESTS_PORTALCONTEXT_APIRENDER_GETPROPERTY2,

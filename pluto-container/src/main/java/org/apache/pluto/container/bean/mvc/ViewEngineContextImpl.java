@@ -22,8 +22,8 @@ import java.util.Locale;
 
 import jakarta.mvc.Models;
 import jakarta.mvc.engine.ViewEngineContext;
-import javax.portlet.MimeResponse;
-import javax.portlet.PortletRequest;
+import jakarta.portlet.MimeResponse;
+import jakarta.portlet.PortletRequest;
 import jakarta.ws.rs.container.ResourceInfo;
 import jakarta.ws.rs.core.Configuration;
 import jakarta.ws.rs.core.MediaType;

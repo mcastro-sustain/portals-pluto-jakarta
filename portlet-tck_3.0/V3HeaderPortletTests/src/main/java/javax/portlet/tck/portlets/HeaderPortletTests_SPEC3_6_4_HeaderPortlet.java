@@ -16,31 +16,31 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.Map;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.HeaderPortlet;
-import javax.portlet.HeaderRequest;
-import javax.portlet.HeaderResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.annotations.PortletConfiguration;
-import javax.portlet.annotations.RuntimeOption;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.util.ModuleTestCaseDetails;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.HeaderPortlet;
+import jakarta.portlet.HeaderRequest;
+import jakarta.portlet.HeaderResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.annotations.PortletConfiguration;
+import jakarta.portlet.annotations.RuntimeOption;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.util.ModuleTestCaseDetails;
 
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC3_6_4_HEADERPORTLET_RENDERHEADERS;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC3_6_4_HEADERPORTLET_RENDERHEADERS2;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC3_6_4_HEADERPORTLET_RENDERHEADERS;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC3_6_4_HEADERPORTLET_RENDERHEADERS2;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case
@@ -52,7 +52,7 @@ import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
  */
 
 @PortletConfiguration(portletName = "HeaderPortletTests_SPEC3_6_4_HeaderPortlet",
-   runtimeOptions = {@RuntimeOption(name = "javax.portlet.renderHeaders", values = { "true" })}
+   runtimeOptions = {@RuntimeOption(name = "jakarta.portlet.renderHeaders", values = { "true" })}
 )
 public class HeaderPortletTests_SPEC3_6_4_HeaderPortlet
       implements Portlet, HeaderPortlet {
@@ -116,7 +116,7 @@ public class HeaderPortletTests_SPEC3_6_4_HeaderPortlet
        * TestCase: V3HeaderPortletTests_SPEC3_6_4_HeaderPortlet_renderHeaders2
        */
       /*
-       * Details: "The container runtime option javax.portlet.renderHeaders is
+       * Details: "The container runtime option jakarta.portlet.renderHeaders is
        * disregarded for version 3.0 or later."
        */
       {
@@ -125,12 +125,12 @@ public class HeaderPortletTests_SPEC3_6_4_HeaderPortlet
          Map<String, String[]> runtimeOptions = portletConfig
                .getContainerRuntimeOptions();
          String[] renderHeaders = runtimeOptions
-               .get("javax.portlet.renderHeaders");
+               .get("jakarta.portlet.renderHeaders");
          if (renderHeaders == null || renderHeaders.length == 0) {
             result.setTcSuccess(true);
          } else {
             result.appendTcDetail(
-                  "Failed because javax.portlet.renderHeaders is found equal to "
+                  "Failed because jakarta.portlet.renderHeaders is found equal to "
                         + renderHeaders[0]);
          }
          result.writeTo(writer);

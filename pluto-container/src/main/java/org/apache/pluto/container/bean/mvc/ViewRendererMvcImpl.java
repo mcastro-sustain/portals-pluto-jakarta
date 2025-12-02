@@ -27,10 +27,10 @@ import jakarta.mvc.Models;
 import jakarta.mvc.binding.ParamError;
 import jakarta.mvc.engine.ViewEngine;
 import jakarta.mvc.engine.ViewEngineException;
-import javax.portlet.MimeResponse;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequest;
+import jakarta.portlet.MimeResponse;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequest;
 import jakarta.ws.rs.core.Configuration;
 
 import org.slf4j.Logger;

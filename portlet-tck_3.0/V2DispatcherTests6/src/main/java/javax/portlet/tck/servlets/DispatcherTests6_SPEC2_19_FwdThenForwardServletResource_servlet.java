@@ -16,62 +16,62 @@
  *  under the License.
  */
 
-package javax.portlet.tck.servlets;
+package jakarta.portlet.tck.servlets;
 
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES1;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES1A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES1B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES1C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES2;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES2A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES2B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES2C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES3;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES3A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES3B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES3C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES4;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES4A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES4B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES4C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES5;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES5A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES5B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES5C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES6;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES7;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES8;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_DISPATCH1;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_DISPATCH2;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_DISPATCH3;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_INVOKE2;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_INVOKE4;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_INVOKE7;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_CONTEXT_PATH;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_PATH_INFO;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_QUERY_STRING;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_REQUEST_URI;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_SERVLET_PATH;
-import static javax.portlet.tck.constants.Constants.SERVLET_INCFWD;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES1;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES1A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES1B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES1C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES2;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES2A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES2B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES2C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES3;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES3A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES3B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES3C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES4;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES4A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES4B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES4C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES5;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES5A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES5B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES5C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES6;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES7;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES8;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_DISPATCH1;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_DISPATCH2;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_DISPATCH3;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_INVOKE2;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_INVOKE4;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_INVOKE7;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_CONTEXT_PATH;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_PATH_INFO;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_QUERY_STRING;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_REQUEST_URI;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_SERVLET_PATH;
+import static jakarta.portlet.tck.constants.Constants.SERVLET_INCFWD;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.MimeResponse;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.CompareUtils;
-import javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.portlet.MimeResponse;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.CompareUtils;
+import jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * Servlet for JSR 362 request dispatcher testing. Used by portlet:
@@ -108,9 +108,9 @@ public class DispatcherTests6_SPEC2_19_FwdThenForwardServletResource_servlet ext
       String fsfcPath_info = (String) request.getAttribute(ATTR_DISPATCH_PATH_INFO);
       String fsfcQuery_string = (String) request.getAttribute(ATTR_DISPATCH_QUERY_STRING);
 
-      PortletRequest portletReq = (PortletRequest) request.getAttribute("javax.portlet.request");
-      PortletResponse portletResp = (PortletResponse) request.getAttribute("javax.portlet.response");
-      PortletConfig portletConfig = (PortletConfig) request.getAttribute("javax.portlet.config");
+      PortletRequest portletReq = (PortletRequest) request.getAttribute("jakarta.portlet.request");
+      PortletResponse portletResp = (PortletResponse) request.getAttribute("jakarta.portlet.response");
+      PortletConfig portletConfig = (PortletConfig) request.getAttribute("jakarta.portlet.config");
       long svtTid = Thread.currentThread().getId();
       long reqTid = (Long) portletReq.getAttribute(THREADID_ATTR);
 
@@ -567,8 +567,8 @@ public class DispatcherTests6_SPEC2_19_FwdThenForwardServletResource_servlet ext
 
       /* TestCase: V2DispatcherTests6_SPEC2_19_FwdThenForwardServletResource_attributes6 */
       /* Details: "In a servlet forwarded to by the target of a forward, */
-      /* the request attribute javax.portlet.config must be set to the */
-      /* javax.portlet.PortletConfig object" */
+      /* the request attribute jakarta.portlet.config must be set to the */
+      /* jakarta.portlet.PortletConfig object" */
       TestResult tr26 = tcd.getTestResultFailed(V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES6);
       try {
          ClassChecker cc = new ClassChecker(portletConfig.getClass());
@@ -582,8 +582,8 @@ public class DispatcherTests6_SPEC2_19_FwdThenForwardServletResource_servlet ext
       /* TestCase: V2DispatcherTests6_SPEC2_19_FwdThenForwardServletResource_attributes7 */
       /* Details: "In a servlet forwarded to by the target of a forward, */
       /* for forwards from the serveResource method, The request attribute */
-      /* javax.portlet.request must be set to the */
-      /* javax.portlet.ResourceRequest object" */
+      /* jakarta.portlet.request must be set to the */
+      /* jakarta.portlet.ResourceRequest object" */
       TestResult tr27 = tcd.getTestResultFailed(V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES7);
       try {
          ClassChecker cc = new ClassChecker(portletReq.getClass());
@@ -597,8 +597,8 @@ public class DispatcherTests6_SPEC2_19_FwdThenForwardServletResource_servlet ext
       /* TestCase: V2DispatcherTests6_SPEC2_19_FwdThenForwardServletResource_attributes8 */
       /* Details: "In a servlet forwarded to by the target of a forward, */
       /* for forwards from the serveResource method, The request attribute */
-      /* javax.portlet.response must be set to the */
-      /* javax.portlet.ResourceResponse object" */
+      /* jakarta.portlet.response must be set to the */
+      /* jakarta.portlet.ResourceResponse object" */
       TestResult tr28 = tcd.getTestResultFailed(V2DISPATCHERTESTS6_SPEC2_19_FWDTHENFORWARDSERVLETRESOURCE_ATTRIBUTES8);
       try {
          ClassChecker cc = new ClassChecker(portletResp.getClass());

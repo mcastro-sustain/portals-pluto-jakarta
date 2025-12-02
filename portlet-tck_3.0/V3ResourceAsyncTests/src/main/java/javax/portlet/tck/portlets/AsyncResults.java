@@ -17,12 +17,12 @@
  */
 
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.beans.TestResult;
 
 /**
  * Class for temporary storage of test results that are produced in two execution phases.

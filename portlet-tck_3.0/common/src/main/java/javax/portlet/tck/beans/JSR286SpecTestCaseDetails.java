@@ -16,7 +16,7 @@
  *  under the License.
  */
 
-package javax.portlet.tck.beans;
+package jakarta.portlet.tck.beans;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -745,13 +745,13 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             "The resource bundle defined in the deployment descriptor &lt;resource-bundle&gt; element can be obtained through the PortletConfig object");
       tcd.put(
             V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE2,
-            "If the resource bundle contains a \"javax.portlet.title\" property, the value defined in the bundle is returned by the corresponding getString method call");
+            "If the resource bundle contains a \"jakarta.portlet.title\" property, the value defined in the bundle is returned by the corresponding getString method call");
       tcd.put(
             V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE3,
-            "If the resource bundle contains a \"javax.portlet.short-title\" property, the value defined in the bundle is returned by the corresponding getString method call");
+            "If the resource bundle contains a \"jakarta.portlet.short-title\" property, the value defined in the bundle is returned by the corresponding getString method call");
       tcd.put(
             V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE4,
-            "If the resource bundle contains a \"javax.portlet.keywords\" property, the value defined in the bundle is returned by the corresponding getString method call");
+            "If the resource bundle contains a \"jakarta.portlet.keywords\" property, the value defined in the bundle is returned by the corresponding getString method call");
       tcd.put(
             V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETPUBLISHINGEVENTQNAMES3,
             "getPublishingEventQnames - If the event was defined using the &lt;name&gt; element rather than the &lt;qname&gt; element, default namespace defined with the &lt;default-namespace&gt; element must be added as the event namespace");
@@ -792,13 +792,13 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             "If no resource bundle is defined, the value defined in the deployment descriptor &lt;keywords&gt; element is returned by the corresponding getString method call");
       tcd.put(
             V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG3_GETRESOURCEBUNDLE5,
-            "If the resource bundle does not contain a \"javax.portlet.title\" property, the value defined in the deployment descriptor &lt;title&gt; element is returned by the corresponding getString method call");
+            "If the resource bundle does not contain a \"jakarta.portlet.title\" property, the value defined in the deployment descriptor &lt;title&gt; element is returned by the corresponding getString method call");
       tcd.put(
             V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG3_GETRESOURCEBUNDLE6,
-            "If the resource bundle does not contain a \"javax.portlet.short-title\" property, the value defined in the deployment descriptor &lt;short-title&gt; element is returned by the corresponding getString method call");
+            "If the resource bundle does not contain a \"jakarta.portlet.short-title\" property, the value defined in the deployment descriptor &lt;short-title&gt; element is returned by the corresponding getString method call");
       tcd.put(
             V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG3_GETRESOURCEBUNDLE7,
-            "If the resource bundle does not contain a \"javax.portlet.keywords\" property, the value defined in the deployment descriptor &lt;keywords&gt; element is returned by the corresponding getString method call");
+            "If the resource bundle does not contain a \"jakarta.portlet.keywords\" property, the value defined in the deployment descriptor &lt;keywords&gt; element is returned by the corresponding getString method call");
       tcd.put(V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES1,
             "Support for the VIEW mode does not need to be declared in the deployment descriptor");
       tcd.put(V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES2,
@@ -819,7 +819,7 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             "A custom portlet mode with &lt;portal-managed&gt;false&lt;/portal-managed&gt; corresponds to the VIEW mode from the portal point of view");
       tcd.put(
             V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES8,
-            "A custom portlet mode can have a localized decoration name in the resource bundle with the name of javax.portlet.app.custom-portlet-mode.&lt;name&gt;.decoration-name");
+            "A custom portlet mode can have a localized decoration name in the resource bundle with the name of jakarta.portlet.app.custom-portlet-mode.&lt;name&gt;.decoration-name");
       tcd.put(V2ADDLPORTLETTESTS_SPEC2_8_PORTLETMODES_DECLARINGPORTLETMODES9,
             "The portlet must not be invoked in a mode that has not been declared to be supported for a given markup type");
       tcd.put(V2ADDLPORTLETTESTS_SPEC2_9_WINDOWSTATES_DECLARINGWINDOWSTATES1,
@@ -1052,13 +1052,13 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             "The getContainerRuntimeOptions method returns an enumeration of type String containing the keys of all container runtime options that the current portlet container supports.");
       tcd.put(
             V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES1,
-            "The container runtime option \"javax.portlet.actionScopedRequestAttributes\" must be supported by the portlet container");
+            "The container runtime option \"jakarta.portlet.actionScopedRequestAttributes\" must be supported by the portlet container");
       tcd.put(
             V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES2,
             "If the actionScopedRequestAttributes option is set to TRUE, request attributes that are set in an action persist until a new action occurs");
       tcd.put(
             V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES3,
-            "If the option is set to TRUE and an attribute is set during an action request, the portlet container sets a render parameter with the name PortletRequest.ACTION_SCOPE_ID (\"javax.portlet.as\")");
+            "If the option is set to TRUE and an attribute is set during an action request, the portlet container sets a render parameter with the name PortletRequest.ACTION_SCOPE_ID (\"jakarta.portlet.as\")");
       tcd.put(
             V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES4,
             "If the option is set to TRUE and an attribute is set during an action request, the attribute can be accessed in an event request that was initiated by the same action request");
@@ -1085,10 +1085,10 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             "If the option is set to TRUE, receiving an event with an existing scope ID after the first render for this scope had occurred starts a new action scope with a new scope ID, all previous attributes are no longer accessible, new attributes can be stored");
       tcd.put(
             V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES11,
-            "The render parameter PortletRequest.ACTION_SCOPE_ID (\"javax.portlet.as\") can be removed from a render URL");
+            "The render parameter PortletRequest.ACTION_SCOPE_ID (\"jakarta.portlet.as\") can be removed from a render URL");
       tcd.put(
             V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES12,
-            "The render parameter PortletRequest.ACTION_SCOPE_ID (\"javax.portlet.as\") can be removed from a resource URL");
+            "The render parameter PortletRequest.ACTION_SCOPE_ID (\"jakarta.portlet.as\") can be removed from a resource URL");
       tcd.put(
             V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES13,
             "The actionScopedRequestAttributes option can be set to TRUE");
@@ -1172,7 +1172,7 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             "Any Object stored in the session using the PORTLET_SCOPE must be available to the portlet during requests for the same portlet window that stored the object");
       tcd.put(
             V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SCOPE5,
-            "The PORTLET_SCOPE object must be stored in the APPLICATION_SCOPE with the attribute name 'javax.portlet.p.&lt;ID&gt;?&lt;ATTRIBUTE_NAME&gt;', where &lt;ID&gt; must be equal to the ID returned by the PortletRequest.getWindowID()");
+            "The PORTLET_SCOPE object must be stored in the APPLICATION_SCOPE with the attribute name 'jakarta.portlet.p.&lt;ID&gt;?&lt;ATTRIBUTE_NAME&gt;', where &lt;ID&gt; must be equal to the ID returned by the PortletRequest.getWindowID()");
       tcd.put(V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SETATTRIBUTE1,
             "The setAttribute method can bind an object to the session in PORTLET_SCOPE");
       tcd.put(V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SETATTRIBUTE2,
@@ -1357,16 +1357,16 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             "The PortletRequest.CCPP_PROFILE request attribute must return a javax.ccpp.Profile based on the current portlet request");
       tcd.put(
             V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES3,
-            "If the portlet container runtime option javax.portlet.renderHeaders is set to TRUE, the RENDER_PART attribute will be set when the render method is called");
+            "If the portlet container runtime option jakarta.portlet.renderHeaders is set to TRUE, the RENDER_PART attribute will be set when the render method is called");
       tcd.put(
             V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES4,
-            "If the portlet container runtime option javax.portlet.renderHeaders is set to TRUE, render method will be called first with the RENDER_PART attribute set to \"RENDER_HEADERS\"");
+            "If the portlet container runtime option jakarta.portlet.renderHeaders is set to TRUE, render method will be called first with the RENDER_PART attribute set to \"RENDER_HEADERS\"");
       tcd.put(
             V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES5,
-            "If the portlet container runtime option javax.portlet.renderHeaders is set to TRUE, render method will be called a second time with the RENDER_PART attribute set to \"RENDER_MARKUP\"");
+            "If the portlet container runtime option jakarta.portlet.renderHeaders is set to TRUE, render method will be called a second time with the RENDER_PART attribute set to \"RENDER_MARKUP\"");
       tcd.put(
             V2ADDLREQUESTTESTS_SPEC2_11_RENDERATTR_ATTRIBUTES8,
-            "During render processing, the LIFECYCLE_PHASE (\"javax.portlet.lifecycle_phase\") attribute will contain the string \"RENDER_PHASE\"");
+            "During render processing, the LIFECYCLE_PHASE (\"jakarta.portlet.lifecycle_phase\") attribute will contain the string \"RENDER_PHASE\"");
       tcd.put(V2ADDLREQUESTTESTS_SPEC2_11_ACTIONATTR_ATTRIBUTES1,
             "The portlet can access a map with user information attributes via the request attribute PortletRequest.USER_INFO");
       tcd.put(
@@ -1374,7 +1374,7 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             "The PortletRequest.CCPP_PROFILE request attribute must return a javax.ccpp.Profile based on the current portlet request");
       tcd.put(
             V2ADDLREQUESTTESTS_SPEC2_11_ACTIONATTR_ATTRIBUTES6,
-            "During action processing, the LIFECYCLE_PHASE (\"javax.portlet.lifecycle_phase\") attribute will contain the string \"ACTION_PHASE\"");
+            "During action processing, the LIFECYCLE_PHASE (\"jakarta.portlet.lifecycle_phase\") attribute will contain the string \"ACTION_PHASE\"");
       tcd.put(V2ADDLREQUESTTESTS_SPEC2_11_EVENTATTR_ATTRIBUTES1,
             "The portlet can access a map with user information attributes via the request attribute PortletRequest.USER_INFO");
       tcd.put(
@@ -1382,7 +1382,7 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             "The PortletRequest.CCPP_PROFILE request attribute must return a javax.ccpp.Profile based on the current portlet request");
       tcd.put(
             V2ADDLREQUESTTESTS_SPEC2_11_EVENTATTR_ATTRIBUTES7,
-            "During event processing, the LIFECYCLE_PHASE (\"javax.portlet.lifecycle_phase\") attribute will contain the string \"EVENT_PHASE\"");
+            "During event processing, the LIFECYCLE_PHASE (\"jakarta.portlet.lifecycle_phase\") attribute will contain the string \"EVENT_PHASE\"");
       tcd.put(V2ADDLREQUESTTESTS_SPEC2_11_RESOURCEATTR_ATTRIBUTES1,
             "The portlet can access a map with user information attributes via the request attribute PortletRequest.USER_INFO");
       tcd.put(
@@ -1390,7 +1390,7 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             "The PortletRequest.CCPP_PROFILE request attribute must return a javax.ccpp.Profile based on the current portlet request");
       tcd.put(
             V2ADDLREQUESTTESTS_SPEC2_11_RESOURCEATTR_ATTRIBUTES9,
-            "During resource processing, the LIFECYCLE_PHASE (\"javax.portlet.lifecycle_phase\") attribute will contain the string \"RESOURCE_PHASE\"");
+            "During resource processing, the LIFECYCLE_PHASE (\"jakarta.portlet.lifecycle_phase\") attribute will contain the string \"RESOURCE_PHASE\"");
       tcd.put(
             V2ADDLREQUESTTESTS_SPEC2_11_ACTIONREQ_CONTENTTYPE1,
             "The getResponseContentType method returns a String representing the default content type the portlet container assumes for the output");
@@ -1659,9 +1659,9 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPGENERAL_NAMESPACE,
             "The namespace tag produces a unique string value for the current portlet equal to the value returned by the PortletResponse.getNamespace method");
       tcd.put(V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPGENERAL_ESCAPEXML1,
-            "The container runtime option \"javax.portlet.escapeXml\" can be used to set the default escapeXML setting to true");
+            "The container runtime option \"jakarta.portlet.escapeXml\" can be used to set the default escapeXML setting to true");
       tcd.put(V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPGENERAL_ESCAPEXML2,
-            "The container runtime option \"javax.portlet.escapeXml\" can be used to set the default escapeXML setting to false");
+            "The container runtime option \"jakarta.portlet.escapeXml\" can be used to set the default escapeXML setting to false");
       tcd.put(
             V2PORTLETTAGLIBRARYTESTS_SPEC2_26_INCLUDEJSPACTION_DEFINEOBJECTS1,
             "When included in the Action phase, the defineObjects tag defines the variable RenderRequest renderRequest to be null or undefined");
@@ -1837,7 +1837,7 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             V2PORTLETTAGLIBRARYTESTS2_SPEC2_26_INCLUDEJSPRENDER_ACTIONURL27,
             "If the optional actionURL \"name\" attribute is set, the provided name string is used by GenericPortlet to dispatch the request to the coresponding annotated method");
       tcd.put(V2PORTLETTAGLIBRARYTESTS2_SPEC2_26_INCLUDEJSPRENDER_ACTIONURL28,
-            "Setting the \"name\" attribute will add a parameter to the action URL with the name of \"javax.portlet.action\"");
+            "Setting the \"name\" attribute will add a parameter to the action URL with the name of \"jakarta.portlet.action\"");
       tcd.put(
             V2PORTLETTAGLIBRARYTESTS2_SPEC2_26_INCLUDEJSPRENDER_ACTIONURL29,
             "If this tag is used in markup provided by a serveResource call that was directly or indirectly triggered via a resource URL of type FULL, a JspException with the IllegalStateException that caused this error is thrown");
@@ -1949,7 +1949,7 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             V2PORTLETTAGLIBRARYTESTS2_SPEC2_26_INCLUDEJSPRENDER_RESOURCEURL21,
             "If the optional resourceURL \"id\" attribute is set, the provided id string is used by GenericPortlet to dispatch the request to the coresponding annotated method");
       tcd.put(V2PORTLETTAGLIBRARYTESTS2_SPEC2_26_INCLUDEJSPRENDER_RESOURCEURL22,
-            "Setting the \"id\" attribute will add a parameter to the action URL with the id of \"javax.portlet.action\"");
+            "Setting the \"id\" attribute will add a parameter to the action URL with the id of \"jakarta.portlet.action\"");
       tcd.put(V2PORTLETTAGLIBRARYTESTS2_SPEC2_26_INCLUDEJSPRENDER_RESOURCEURL23,
             "If the optional resourceURL \"cacheability\" attribute is set, the cacheability is set accordingly");
       tcd.put(V2PORTLETTAGLIBRARYTESTS2_SPEC2_26_INCLUDEJSPRENDER_RESOURCEURL24,
@@ -2140,7 +2140,7 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             V2PORTLETTAGLIBRARYTESTS3_SPEC2_26_INCLUDEJSPRESOURCE_ACTIONURL27,
             "If the optional actionURL \"name\" attribute is set, the provided name string is used by GenericPortlet to dispatch the request to the coresponding annotated method");
       tcd.put(V2PORTLETTAGLIBRARYTESTS3_SPEC2_26_INCLUDEJSPRESOURCE_ACTIONURL28,
-            "Setting the \"name\" attribute will add a parameter to the action URL with the name of \"javax.portlet.action\"");
+            "Setting the \"name\" attribute will add a parameter to the action URL with the name of \"jakarta.portlet.action\"");
       tcd.put(
             V2PORTLETTAGLIBRARYTESTS3_SPEC2_26_INCLUDEJSPRESOURCE_ACTIONURL29,
             "If this tag is used in markup provided by a serveResource call that was directly or indirectly triggered via a resource URL of type FULL, a JspException with the IllegalStateException that caused this error is thrown");
@@ -2252,7 +2252,7 @@ public class JSR286SpecTestCaseDetails extends TestCaseDetails {
             V2PORTLETTAGLIBRARYTESTS3_SPEC2_26_INCLUDEJSPRESOURCE_RESOURCEURL21,
             "If the optional resourceURL \"id\" attribute is set, the provided id string is used by GenericPortlet to dispatch the request to the coresponding annotated method");
       tcd.put(V2PORTLETTAGLIBRARYTESTS3_SPEC2_26_INCLUDEJSPRESOURCE_RESOURCEURL22,
-            "Setting the \"id\" attribute will add a parameter to the action URL with the id of \"javax.portlet.action\"");
+            "Setting the \"id\" attribute will add a parameter to the action URL with the id of \"jakarta.portlet.action\"");
       tcd.put(V2PORTLETTAGLIBRARYTESTS3_SPEC2_26_INCLUDEJSPRESOURCE_RESOURCEURL23,
             "If the optional resourceURL \"cacheability\" attribute is set, the cacheability is set accordingly");
       tcd.put(V2PORTLETTAGLIBRARYTESTS3_SPEC2_26_INCLUDEJSPRESOURCE_RESOURCEURL24,

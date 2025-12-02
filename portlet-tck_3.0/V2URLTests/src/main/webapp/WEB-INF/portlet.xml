@@ -24,7 +24,7 @@
    version="2.0" id="V2URLTests">
    <portlet>
       <portlet-name>URLTests_BaseURL_ApiRenderRenurl</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.URLTests_BaseURL_ApiRenderRenurl</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.URLTests_BaseURL_ApiRenderRenurl</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -38,7 +38,7 @@
 
    <portlet>
       <portlet-name>URLTests_BaseURL_ApiRenderActurl</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.URLTests_BaseURL_ApiRenderActurl</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.URLTests_BaseURL_ApiRenderActurl</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -52,7 +52,7 @@
 
    <portlet>
       <portlet-name>URLTests_BaseURL_ApiRenderResurl</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.URLTests_BaseURL_ApiRenderResurl</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.URLTests_BaseURL_ApiRenderResurl</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -66,7 +66,7 @@
 
    <portlet>
       <portlet-name>URLTests_PortletURL_ApiRenderRenurl</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.URLTests_PortletURL_ApiRenderRenurl</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.URLTests_PortletURL_ApiRenderRenurl</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -82,7 +82,7 @@
 
    <portlet>
       <portlet-name>URLTests_PortletURL_ApiRenderActurl</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.URLTests_PortletURL_ApiRenderActurl</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.URLTests_PortletURL_ApiRenderActurl</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -98,7 +98,7 @@
 
    <portlet>
       <portlet-name>URLTests_ResourceURL_ApiRenderResurl</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.URLTests_ResourceURL_ApiRenderResurl</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.URLTests_ResourceURL_ApiRenderResurl</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -112,7 +112,7 @@
 
    <portlet>
       <portlet-name>URLTests_PortletURLGenerationListener_ApiRenderActurl</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.URLTests_PortletURLGenerationListener_ApiRenderActurl</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.URLTests_PortletURLGenerationListener_ApiRenderActurl</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -128,7 +128,7 @@
 
    <portlet>
       <portlet-name>URLTests_PortletURLGenerationListener_ApiRenderRenurl</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.URLTests_PortletURLGenerationListener_ApiRenderRenurl</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.URLTests_PortletURLGenerationListener_ApiRenderRenurl</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -144,7 +144,7 @@
 
    <portlet>
       <portlet-name>URLTests_PortletURLGenerationListener_ApiRenderResurl</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.URLTests_PortletURLGenerationListener_ApiRenderResurl</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.URLTests_PortletURLGenerationListener_ApiRenderResurl</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -160,7 +160,7 @@
 
    <filter>
       <filter-name>plutoTckPortletFilter</filter-name>
-      <filter-class>javax.portlet.tck.filter.PlutoTckPortletFilter</filter-class>
+      <filter-class>jakarta.portlet.tck.filter.PlutoTckPortletFilter</filter-class>
       <lifecycle>ACTION_PHASE</lifecycle>
    </filter>
    <filter-mapping>
@@ -173,9 +173,9 @@
       <qname>tck:tckPRP1</qname>
    </public-render-parameter>
    <listener>
-      <listener-class>javax.portlet.tck.listeners.TestPortletURLGenerationListener</listener-class>
+      <listener-class>jakarta.portlet.tck.listeners.TestPortletURLGenerationListener</listener-class>
    </listener>
    <listener>
-      <listener-class>javax.portlet.tck.listeners.TestPortletURLGenerationListener2</listener-class>
+      <listener-class>jakarta.portlet.tck.listeners.TestPortletURLGenerationListener2</listener-class>
    </listener>
 </portlet-app>

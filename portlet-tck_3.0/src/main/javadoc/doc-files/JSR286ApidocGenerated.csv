@@ -599,11 +599,11 @@ WindowStateException;SIG Render;extendsPortletException;TRUE;WindowStateExceptio
 WindowStateException;SIG Render;hasGetState;TRUE;WindowStateException has a getState()  method 
 WindowStateException;SIG Render;hasGetStateReturns;TRUE;WindowStateException method getState() returns WindowState 
 Sig Tests Filter;;;; 32 tests.
-ActionFilter;SIG Render;hasDoFilter;TRUE;ActionFilter has a doFilter(ActionRequest, ActionResponse, javax.portlet.filter.FilterChain) throws java.io.IOException, PortletException method 
-ActionFilter;SIG Render;hasDoFilterReturns;TRUE;ActionFilter method doFilter(ActionRequest, ActionResponse, javax.portlet.filter.FilterChain) returns void 
+ActionFilter;SIG Render;hasDoFilter;TRUE;ActionFilter has a doFilter(ActionRequest, ActionResponse, jakarta.portlet.filter.FilterChain) throws java.io.IOException, PortletException method 
+ActionFilter;SIG Render;hasDoFilterReturns;TRUE;ActionFilter method doFilter(ActionRequest, ActionResponse, jakarta.portlet.filter.FilterChain) returns void 
 ActionFilter;SIG Render;implementsPortletFilter;TRUE;ActionFilter implements PortletFilter 
-EventFilter;SIG Render;hasDoFilter;TRUE;EventFilter has a doFilter(EventRequest, EventResponse, javax.portlet.filter.FilterChain) throws java.io.IOException, PortletException method 
-EventFilter;SIG Render;hasDoFilterReturns;TRUE;EventFilter method doFilter(EventRequest, EventResponse, javax.portlet.filter.FilterChain) returns void 
+EventFilter;SIG Render;hasDoFilter;TRUE;EventFilter has a doFilter(EventRequest, EventResponse, jakarta.portlet.filter.FilterChain) throws java.io.IOException, PortletException method 
+EventFilter;SIG Render;hasDoFilterReturns;TRUE;EventFilter method doFilter(EventRequest, EventResponse, jakarta.portlet.filter.FilterChain) returns void 
 EventFilter;SIG Render;implementsPortletFilter;TRUE;EventFilter implements PortletFilter 
 FilterChain;SIG Render;hasDoFilter;TRUE;FilterChain has a doFilter(ActionRequest, ActionResponse) throws java.io.IOException, PortletException method 
 FilterChain;SIG Render;hasDoFilterA;TRUE;FilterChain has a doFilter(EventRequest, EventResponse) throws java.io.IOException, PortletException method 
@@ -623,13 +623,13 @@ FilterConfig;SIG Render;hasGetPortletContext;TRUE;FilterConfig has a getPortletC
 FilterConfig;SIG Render;hasGetPortletContextReturns;TRUE;FilterConfig method getPortletContext() returns PortletContext 
 PortletFilter;SIG Render;hasDestroy;TRUE;PortletFilter has a destroy()  method 
 PortletFilter;SIG Render;hasDestroyReturns;TRUE;PortletFilter method destroy() returns void 
-PortletFilter;SIG Render;hasInit;TRUE;PortletFilter has a init(javax.portlet.filter.FilterConfig) throws PortletException method 
-PortletFilter;SIG Render;hasInitReturns;TRUE;PortletFilter method init(javax.portlet.filter.FilterConfig) returns void 
-RenderFilter;SIG Render;hasDoFilter;TRUE;RenderFilter has a doFilter(RenderRequest, RenderResponse, javax.portlet.filter.FilterChain) throws java.io.IOException, PortletException method 
-RenderFilter;SIG Render;hasDoFilterReturns;TRUE;RenderFilter method doFilter(RenderRequest, RenderResponse, javax.portlet.filter.FilterChain) returns void 
+PortletFilter;SIG Render;hasInit;TRUE;PortletFilter has a init(jakarta.portlet.filter.FilterConfig) throws PortletException method 
+PortletFilter;SIG Render;hasInitReturns;TRUE;PortletFilter method init(jakarta.portlet.filter.FilterConfig) returns void 
+RenderFilter;SIG Render;hasDoFilter;TRUE;RenderFilter has a doFilter(RenderRequest, RenderResponse, jakarta.portlet.filter.FilterChain) throws java.io.IOException, PortletException method 
+RenderFilter;SIG Render;hasDoFilterReturns;TRUE;RenderFilter method doFilter(RenderRequest, RenderResponse, jakarta.portlet.filter.FilterChain) returns void 
 RenderFilter;SIG Render;implementsPortletFilter;TRUE;RenderFilter implements PortletFilter 
-ResourceFilter;SIG Render;hasDoFilter;TRUE;ResourceFilter has a doFilter(ResourceRequest, ResourceResponse, javax.portlet.filter.FilterChain) throws java.io.IOException, PortletException method 
-ResourceFilter;SIG Render;hasDoFilterReturns;TRUE;ResourceFilter method doFilter(ResourceRequest, ResourceResponse, javax.portlet.filter.FilterChain) returns void 
+ResourceFilter;SIG Render;hasDoFilter;TRUE;ResourceFilter has a doFilter(ResourceRequest, ResourceResponse, jakarta.portlet.filter.FilterChain) throws java.io.IOException, PortletException method 
+ResourceFilter;SIG Render;hasDoFilterReturns;TRUE;ResourceFilter method doFilter(ResourceRequest, ResourceResponse, jakarta.portlet.filter.FilterChain) returns void 
 ResourceFilter;SIG Render;implementsPortletFilter;TRUE;ResourceFilter implements PortletFilter 
 Sig Tests Render;;;; 241 tests.
 MimeResponse;SIG Render;fieldCACHE_SCOPE;TRUE;RenderResponse has String field CACHE_SCOPE 

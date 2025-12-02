@@ -32,13 +32,13 @@
  * (TestCaseName)-detail      - a detailed message about the test     
  * 
  */
-package javax.portlet.tck.beans;
+package jakarta.portlet.tck.beans;
 
 import java.io.IOException;
 import java.io.Writer;
 
-import javax.portlet.PortletURL;
-import javax.portlet.tck.constants.Constants;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.tck.constants.Constants;
 
 /**
  * Formats a submit button in a form for a test case. When clicked, an HTTP POST request is sent.

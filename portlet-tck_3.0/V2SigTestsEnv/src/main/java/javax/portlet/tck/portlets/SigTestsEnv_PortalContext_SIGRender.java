@@ -13,34 +13,34 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_FIELDMARKUP_HEAD_ELEMENT_SUPPORT;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETPORTALINFO;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETPORTALINFORETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETPROPERTY;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETPROPERTYNAMES;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETPROPERTYNAMESRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETPROPERTYRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETSUPPORTEDPORTLETMODES;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETSUPPORTEDPORTLETMODESRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETSUPPORTEDWINDOWSTATES;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETSUPPORTEDWINDOWSTATESRETURNS;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_FIELDMARKUP_HEAD_ELEMENT_SUPPORT;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETPORTALINFO;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETPORTALINFORETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETPROPERTY;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETPROPERTYNAMES;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETPROPERTYNAMESRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETPROPERTYRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETSUPPORTEDPORTLETMODES;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETSUPPORTEDPORTLETMODESRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETSUPPORTEDWINDOWSTATES;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTALCONTEXT_SIGRENDER_HASGETSUPPORTEDWINDOWSTATESRETURNS;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined

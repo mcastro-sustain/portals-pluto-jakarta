@@ -13,32 +13,32 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletSession;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.JSR286SpecTestCaseDetails;
-import javax.portlet.tck.beans.TestButton;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails;
+import jakarta.portlet.tck.beans.TestButton;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONATTR_ATTRIBUTES1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONATTR_ATTRIBUTES2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONATTR_ATTRIBUTES6;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONATTR_ATTRIBUTES1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONATTR_ATTRIBUTES2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONATTR_ATTRIBUTES6;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined
@@ -94,7 +94,7 @@ public class AddlRequestTests_SPEC2_11_ActionAttr implements Portlet {
 
     /* TestCase: V2AddlRequestTests_SPEC2_11_ActionAttr_attributes6 */
     /* Details: "During action processing, the LIFECYCLE_PHASE */
-    /* (\"javax.portlet.lifecycle_phase\") attribute will contain the */
+    /* (\"jakarta.portlet.lifecycle_phase\") attribute will contain the */
     /* string \"ACTION_PHASE\"" */
     TestResult tr2 = tcd.getTestResultFailed(V2ADDLREQUESTTESTS_SPEC2_11_ACTIONATTR_ATTRIBUTES6);
     if (portletReq.getAttribute(PortletRequest.LIFECYCLE_PHASE).equals("ACTION_PHASE")) {
@@ -148,7 +148,7 @@ public class AddlRequestTests_SPEC2_11_ActionAttr implements Portlet {
 
     /* TestCase: V2AddlRequestTests_SPEC2_11_ActionAttr_attributes6 */
     /* Details: "During action processing, the LIFECYCLE_PHASE */
-    /* (\"javax.portlet.lifecycle_phase\") attribute will contain the */
+    /* (\"jakarta.portlet.lifecycle_phase\") attribute will contain the */
     /* string \"ACTION_PHASE\"" */
     {
       PortletURL aurl = portletResp.createActionURL();

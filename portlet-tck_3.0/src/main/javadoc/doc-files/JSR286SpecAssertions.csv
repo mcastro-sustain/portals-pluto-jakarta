@@ -58,9 +58,9 @@ SPEC2_5;Render GenericPortlet;renderDispatching18;APITEST;doDispatch - If an ann
 SPEC2_5;Render GenericPortlet;renderDispatching19;APITEST;doDispatch - If an annotated method cannot be found, and the portlet mode is HELP, the doHelp method is called
 SPEC2_5;Render GenericPortlet;renderDispatching20;APITEST;doDispatch - If an annotated method cannot be found  and the portlet mode is not VIEW, EDIT, or HELP, a PortletException is thrown
 SPEC2_6;Render Config;getResourceBundle1;TRUE;The resource bundle defined in the deployment descriptor <resource-bundle> element can be obtained through the PortletConfig object
-SPEC2_6;Render Config;getResourceBundle2;TRUE;If the resource bundle contains a "javax.portlet.title" property, the value defined in the bundle is returned by the corresponding getString method call
-SPEC2_6;Render Config;getResourceBundle3;TRUE;If the resource bundle contains a "javax.portlet.short-title" property, the value defined in the bundle is returned by the corresponding getString method call
-SPEC2_6;Render Config;getResourceBundle4;TRUE;If the resource bundle contains a "javax.portlet.keywords" property, the value defined in the bundle is returned by the corresponding getString method call
+SPEC2_6;Render Config;getResourceBundle2;TRUE;If the resource bundle contains a "jakarta.portlet.title" property, the value defined in the bundle is returned by the corresponding getString method call
+SPEC2_6;Render Config;getResourceBundle3;TRUE;If the resource bundle contains a "jakarta.portlet.short-title" property, the value defined in the bundle is returned by the corresponding getString method call
+SPEC2_6;Render Config;getResourceBundle4;TRUE;If the resource bundle contains a "jakarta.portlet.keywords" property, the value defined in the bundle is returned by the corresponding getString method call
 SPEC2_6;Render Config;getDefaultNamespace1;APITEST;The getDefaultNamespace method returns the default namespace set in the <default-namespace> element of the portlet application deployment descriptor
 SPEC2_6;Render Config;getPublicRenderParameterNames1;APITEST;The getPublicRenderParameterNames method returns an Enumeration of the public render parameters set in the <supported-publishing-event> element of the portlet application deployment descriptor
 SPEC2_6;Render Config;getPublishingEventQnames1;APITEST;The getPublishingEventQnames method returns an Enumeration of the public render parameters set in the <supported-publishing-event> element of the portlet application deployment descriptor
@@ -87,9 +87,9 @@ SPEC2_6;Render Config 2;getResourceBundle9;TRUE;If no resource bundle is defined
 SPEC2_6;Render Config 2;getResourceBundle10;TRUE;If no resource bundle is defined, the value defined in the deployment descriptor <keywords> element is returned by the corresponding getString method call
 SPEC2_6;Render Config 2;getDefaultNamespace2;APITEST;The getDefaultNamespace method returns the value XMLConstants.NULL_NS_URI if no <default-namespace> element is set in the portlet application deployment descriptor
 SPEC2_6;Render Config 2;getPublicRenderParameterNames2;APITEST;The getPublicRenderParameterNames method returns an empty Enumeration if no <supported-publishing-event> element is set in the portlet application deployment descriptor
-SPEC2_6;Render Config 3;getResourceBundle5;TRUE;If the resource bundle does not contain a "javax.portlet.title" property, the value defined in the deployment descriptor <title> element is returned by the corresponding getString method call
-SPEC2_6;Render Config 3;getResourceBundle6;TRUE;If the resource bundle does not contain a "javax.portlet.short-title" property, the value defined in the deployment descriptor <short-title> element is returned by the corresponding getString method call
-SPEC2_6;Render Config 3;getResourceBundle7;TRUE;If the resource bundle does not contain a "javax.portlet.keywords" property, the value defined in the deployment descriptor <keywords> element is returned by the corresponding getString method call
+SPEC2_6;Render Config 3;getResourceBundle5;TRUE;If the resource bundle does not contain a "jakarta.portlet.title" property, the value defined in the deployment descriptor <title> element is returned by the corresponding getString method call
+SPEC2_6;Render Config 3;getResourceBundle6;TRUE;If the resource bundle does not contain a "jakarta.portlet.short-title" property, the value defined in the deployment descriptor <short-title> element is returned by the corresponding getString method call
+SPEC2_6;Render Config 3;getResourceBundle7;TRUE;If the resource bundle does not contain a "jakarta.portlet.keywords" property, the value defined in the deployment descriptor <keywords> element is returned by the corresponding getString method call
 SPEC2_8;Portlet Modes;declaringPortletModes1;TRUE;Support for the VIEW mode does not need to be declared in the deployment descriptor
 SPEC2_8;Portlet Modes;declaringPortletModes2;TRUE;Support for the HELP mode must be declared in the deployment descriptor
 SPEC2_8;Portlet Modes;declaringPortletModes3;TRUE;A custom portlet mode may be declared in the deployment descriptor
@@ -97,7 +97,7 @@ SPEC2_8;Portlet Modes;declaringPortletModes4;TRUE;A custom portlet mode with <po
 SPEC2_8;Portlet Modes;declaringPortletModes5;TRUE;The PortletRequest.isPortletModeAllowed method must return FALSE for a custom portlet mode with <portal-managed>true</portal-managed> that is not supported by the portlet container
 SPEC2_8;Portlet Modes;declaringPortletModes6;TRUE;The portlet container must ignore all custom portlet modes in the deployment descriptor with <portal-managed>true</portal-managed> that is not supported by the portlet container
 SPEC2_8;Portlet Modes;declaringPortletModes7;TRUE;A custom portlet mode with <portal-managed>false</portal-managed> corresponds to the VIEW mode from the portal point of view
-SPEC2_8;Portlet Modes;declaringPortletModes8;TRUE;A custom portlet mode can have a localized decoration name in the resource bundle with the name of javax.portlet.app.custom-portlet-mode.<name>.decoration-name
+SPEC2_8;Portlet Modes;declaringPortletModes8;TRUE;A custom portlet mode can have a localized decoration name in the resource bundle with the name of jakarta.portlet.app.custom-portlet-mode.<name>.decoration-name
 SPEC2_8;Portlet Modes;declaringPortletModes9;TRUE;The portlet must not be invoked in a mode that has not been declared to be supported for a given markup type
 SPEC2_9;Window States;declaringWindowStates1;TRUE;Support for the NORMAL window state does not need to be declared in the deployment descriptor
 SPEC2_9;Window States;declaringWindowStates2;TRUE;Support for the MINIMIZED window state does not need to be declared in the deployment descriptor
@@ -276,20 +276,20 @@ SPEC2_10;Context;log;TRUE;The PortletContext.log method provides the same functi
 SPEC2_10;Context;removeAttribute;TRUE;The PortletContext.removeAttribute method provides the same functionality as the ServletContext.removeAttribute method
 SPEC2_10;Context;setAttribute;TRUE;The PortletContext.setAttribute method provides the same functionality as the ServletContext.setAttribute method
 SPEC2_10;Context Options;containerRuntimeOptions1;TRUE;The getContainerRuntimeOptions method returns an enumeration of type String containing the keys of all container runtime options that the current portlet container supports.
-SPEC2_10;Context Options;escapeXML1;OPTION;The container runtime option "javax.portlet.escapeXml" can be (but is not required to be) supported by the portlet container
+SPEC2_10;Context Options;escapeXML1;OPTION;The container runtime option "jakarta.portlet.escapeXml" can be (but is not required to be) supported by the portlet container
 SPEC2_10;Context Options;escapeXML2;OPTION;If the escapeXML option is supported and set to TRUE, URLs written to the output stream by the tag library will be URL escaped
 SPEC2_10;Context Options;escapeXML3;OPTION;If the escapeXML option is supported and set to FALSE, URLs written to the output stream by the tag library will not be URL escaped
-SPEC2_10;Context Options;renderHeaders1;OPTION;The container runtime option "javax.portlet.renderHeaders" can be (but is not required to be) supported by the portlet container
+SPEC2_10;Context Options;renderHeaders1;OPTION;The container runtime option "jakarta.portlet.renderHeaders" can be (but is not required to be) supported by the portlet container
 SPEC2_10;Context Options;renderHeaders2;OPTION;If the renderHeaders option is supported and set to TRUE, the render method should be called once with the RENDER_PART attribute set to "RENDER_HEADERS"
 SPEC2_10;Context Options;renderHeaders3;OPTION;If the renderHeaders option is supported and set to TRUE, the render method should be called a second time with the RENDER_PART attribute set to "RENDER_MARKUP"
 SPEC2_10;Context Options;renderHeaders4;OPTION;If the renderHeaders option is supported and set to FALSE, the render method should be called once with the RENDER_PART attribute not set
-SPEC2_10;Context Options;servletDefaultSessionScope1;OPTION;The container runtime option "javax.portlet.servletDefaultSessionScope" can be (but is not required to be) supported by the portlet container
+SPEC2_10;Context Options;servletDefaultSessionScope1;OPTION;The container runtime option "jakarta.portlet.servletDefaultSessionScope" can be (but is not required to be) supported by the portlet container
 SPEC2_10;Context Options;servletDefaultSessionScope2;OPTION;If the servletDefaultSessionScope option is supported and set to PORTLET_SCOPE, the session variable of included / forwarded servlets or JSPs maps to the portlet session scope
 SPEC2_10;Context Options;servletDefaultSessionScope3;OPTION;If the servletDefaultSessionScope option is supported and set to APPLICATION_SCOPE, the session variable of included / forwarded servlets or JSPs maps to the application session scope
 SPEC2_10;Context Options;servletDefaultSessionScope4;OPTION;If the servletDefaultSessionScope option is supported and not explicitly set, the session variable of included / forwarded servlets or JSPs maps to the application session scope
-SPEC2_10;Context Options;actionScopedRequestAttributes1;TRUE;The container runtime option "javax.portlet.actionScopedRequestAttributes" must be supported by the portlet container
+SPEC2_10;Context Options;actionScopedRequestAttributes1;TRUE;The container runtime option "jakarta.portlet.actionScopedRequestAttributes" must be supported by the portlet container
 SPEC2_10;Context Options;actionScopedRequestAttributes2;TRUE;If the actionScopedRequestAttributes option is set to TRUE, request attributes that are set in an action persist until a new action occurs
-SPEC2_10;Context Options;actionScopedRequestAttributes3;TRUE;If the option is set to TRUE and an attribute is set during an action request, the portlet container sets a render parameter with the name PortletRequest.ACTION_SCOPE_ID ("javax.portlet.as")
+SPEC2_10;Context Options;actionScopedRequestAttributes3;TRUE;If the option is set to TRUE and an attribute is set during an action request, the portlet container sets a render parameter with the name PortletRequest.ACTION_SCOPE_ID ("jakarta.portlet.as")
 SPEC2_10;Context Options;actionScopedRequestAttributes4;TRUE;If the option is set to TRUE and an attribute is set during an action request, the attribute can be accessed in an event request that was initiated by the same action request
 SPEC2_10;Context Options;actionScopedRequestAttributes5;TRUE;If the option is set to TRUE and an attribute is set during an action request, the attribute can be accessed in a subsequent render request
 SPEC2_10;Context Options;actionScopedRequestAttributes6;TRUE;If the option is set to TRUE, a request attribute set during an event request is persisted in the same manner as an attribute set during action processing
@@ -297,8 +297,8 @@ SPEC2_10;Context Options;actionScopedRequestAttributes7;TRUE;If the option is se
 SPEC2_10;Context Options;actionScopedRequestAttributes8;TRUE;If the option is set to TRUE, receiving a render without an existing scope ID starts a new action scope with a new scope ID, all previous attributes are no longer accessible, new attributes can be stored
 SPEC2_10;Context Options;actionScopedRequestAttributes9;TRUE;If the option is set to TRUE, receiving an event without an existing scope ID starts a new action scope with a new scope ID, all previous attributes are no longer accessible, new attributes can be stored
 SPEC2_10;Context Options;actionScopedRequestAttributes0;TRUE;If the option is set to TRUE, receiving an event with an existing scope ID after the first render for this scope had occurred starts a new action scope with a new scope ID, all previous attributes are no longer accessible, new attributes can be stored
-SPEC2_10;Context Options;actionScopedRequestAttributes11;TRUE;The render parameter PortletRequest.ACTION_SCOPE_ID ("javax.portlet.as") can be removed from a URL in a PortletURLGenerationListener
-SPEC2_10;Context Options;actionScopedRequestAttributes12;TRUE;The render parameter PortletRequest.ACTION_SCOPE_ID ("javax.portlet.as") can be removed from a ResourceURL in a PortletURLGenerationListener
+SPEC2_10;Context Options;actionScopedRequestAttributes11;TRUE;The render parameter PortletRequest.ACTION_SCOPE_ID ("jakarta.portlet.as") can be removed from a URL in a PortletURLGenerationListener
+SPEC2_10;Context Options;actionScopedRequestAttributes12;TRUE;The render parameter PortletRequest.ACTION_SCOPE_ID ("jakarta.portlet.as") can be removed from a ResourceURL in a PortletURLGenerationListener
 SPEC2_10;Context Options;actionScopedRequestAttributes13;TRUE;If the actionScopedRequestAttributes option is set to FALSE, request attributes that are set in an action are released at the end of the request
 SPEC2_10;Context Options;actionScopedRequestAttributes14;FALSE;The actionScopedRequestAttributes option can take two additional values - a string which must be "numberOfCachedScopes" followed by an integer <number of cached scopes>
 SPEC2_17;Preferences;values1;APITEST;The method getValue returns the String value of the specified portlet preference
@@ -390,7 +390,7 @@ SPEC2_18;Sessions;scope1;TRUE;PortletSession objects must be scoped at the portl
 SPEC2_18;Sessions;scope2;TRUE;The portlet container must not share the PortletSession object or the attributes stored in it among different portlet applications or among different user sessions
 SPEC2_18;Sessions;scope3;TRUE;Any object stored in the session using the APPLICATION_SCOPE is available to any portlet that belongs to the same portlet application and that handles a request in the same session
 SPEC2_18;Sessions;scope4;TRUE;Any Object stored in the session using the PORTLET_SCOPE must be available to the portlet during requests for the same portlet window that stored the object
-SPEC2_18;Sessions;scope5;TRUE;The PORTLET_SCOPE object must be stored in the APPLICATION_SCOPE with the attribute name 'javax.portlet.p.<ID>?<ATTRIBUTE_NAME>', where <ID> must be equal to the ID returned by the PortletRequest.getWindowID()
+SPEC2_18;Sessions;scope5;TRUE;The PORTLET_SCOPE object must be stored in the APPLICATION_SCOPE with the attribute name 'jakarta.portlet.p.<ID>?<ATTRIBUTE_NAME>', where <ID> must be equal to the ID returned by the PortletRequest.getWindowID()
 SPEC2_18;Sessions;setAttribute1;TRUE;The setAttribute method can bind an object to the session in PORTLET_SCOPE
 SPEC2_18;Sessions;setAttribute2;TRUE;The setAttribute method that does not take a scope parameter binds an object to the session in PORTLET_SCOPE
 SPEC2_18;Sessions;setAttribute3;TRUE;The setAttribute method can bind an object to the session in APPLICATION_SCOPE
@@ -423,7 +423,7 @@ SPEC2_18;Sessions;invalidate;TRUE;The PortletSession.invalidate method provides 
 SPEC2_18;Sessions;isNew;TRUE;The PortletSession.isNew method provides the same functionality as the corresponding HttpSession.isNew method
 SPEC2_18;Sessions;setMaxInactiveInterval;TRUE;The PortletSession.setMaxInactiveInterval method provides the same functionality as the corresponding HttpSession.setMaxInactiveInterval method
 SPEC2_21;User Attributes;userAttributes1;OPTION;User attributes can be defined in the deployment descriptor
-SPEC2_21;User Attributes;userAttributes2;OPTION;The request attribute with the name PortletRequest.USER_INFO "javax.portlet.userinfo" provides a Map<String, String> containing user attributes that were successfully mapped to user attributes supported by the portal
+SPEC2_21;User Attributes;userAttributes2;OPTION;The request attribute with the name PortletRequest.USER_INFO "jakarta.portlet.userinfo" provides a Map<String, String> containing user attributes that were successfully mapped to user attributes supported by the portal
 SPEC2_21;User Attributes;userAttributes3;OPTION;If there are no user attributes available, the getAttribute(PortletRequest.USER_INFO) call must return an empty Map object
 SPEC2_24;Security;security1;OPTION;The <security-role-ref> element in the portlet deployment descriptor maps a role name to an application security role that the user may be mapped into
 SPEC2_24;Security;security2;OPTION;The PortletRequest.isUserInRole method uses the role name from this mapping to determine the return value
@@ -518,19 +518,19 @@ SPEC2_11;Render PRP;publicRenderParameters9;TRUE;The portlet container must only
 SPEC2_11;Render PRP;publicRenderParameters10;TRUE;If the portlet was the target of a render URL on which a specific public render parameter is set, the portlet must receive at least this render parameter
 SPEC2_11;Render Attr;attributes1;TRUE;The portlet can access a map with user information attributes via the request attribute PortletRequest.USER_INFO
 SPEC2_11;Render Attr;attributes2;TRUE;The PortletRequest.CCPP_PROFILE request attribute must return a javax.ccpp.Profile based on the current portlet request
-SPEC2_11;Render Attr;attributes3;TRUE;If the portlet container runtime option javax.portlet.renderHeaders is set to TRUE, the RENDER_PART attribute will be set when the render method is called
-SPEC2_11;Render Attr;attributes4;TRUE;If the portlet container runtime option javax.portlet.renderHeaders is set to TRUE, render method will be called first with the RENDER_PART attribute set to "RENDER_HEADERS"
-SPEC2_11;Render Attr;attributes5;TRUE;If the portlet container runtime option javax.portlet.renderHeaders is set to TRUE, render method will be called a second time with the RENDER_PART attribute set to "RENDER_MARKUP"
-SPEC2_11;Render Attr;attributes8;TRUE;During render processing, the LIFECYCLE_PHASE ("javax.portlet.lifecycle_phase") attribute will contain the string "RENDER_PHASE"
+SPEC2_11;Render Attr;attributes3;TRUE;If the portlet container runtime option jakarta.portlet.renderHeaders is set to TRUE, the RENDER_PART attribute will be set when the render method is called
+SPEC2_11;Render Attr;attributes4;TRUE;If the portlet container runtime option jakarta.portlet.renderHeaders is set to TRUE, render method will be called first with the RENDER_PART attribute set to "RENDER_HEADERS"
+SPEC2_11;Render Attr;attributes5;TRUE;If the portlet container runtime option jakarta.portlet.renderHeaders is set to TRUE, render method will be called a second time with the RENDER_PART attribute set to "RENDER_MARKUP"
+SPEC2_11;Render Attr;attributes8;TRUE;During render processing, the LIFECYCLE_PHASE ("jakarta.portlet.lifecycle_phase") attribute will contain the string "RENDER_PHASE"
 SPEC2_11;Action Attr;attributes1;TRUE;The portlet can access a map with user information attributes via the request attribute PortletRequest.USER_INFO
 SPEC2_11;Action Attr;attributes2;TRUE;The PortletRequest.CCPP_PROFILE request attribute must return a javax.ccpp.Profile based on the current portlet request
-SPEC2_11;Action Attr;attributes6;TRUE;During action processing, the LIFECYCLE_PHASE ("javax.portlet.lifecycle_phase") attribute will contain the string "ACTION_PHASE"
+SPEC2_11;Action Attr;attributes6;TRUE;During action processing, the LIFECYCLE_PHASE ("jakarta.portlet.lifecycle_phase") attribute will contain the string "ACTION_PHASE"
 SPEC2_11;Event Attr;attributes1;TRUE;The portlet can access a map with user information attributes via the request attribute PortletRequest.USER_INFO
 SPEC2_11;Event Attr;attributes2;TRUE;The PortletRequest.CCPP_PROFILE request attribute must return a javax.ccpp.Profile based on the current portlet request
-SPEC2_11;Event Attr;attributes7;TRUE;During event processing, the LIFECYCLE_PHASE ("javax.portlet.lifecycle_phase") attribute will contain the string "EVENT_PHASE"
+SPEC2_11;Event Attr;attributes7;TRUE;During event processing, the LIFECYCLE_PHASE ("jakarta.portlet.lifecycle_phase") attribute will contain the string "EVENT_PHASE"
 SPEC2_11;Resource Attr;attributes1;TRUE;The portlet can access a map with user information attributes via the request attribute PortletRequest.USER_INFO
 SPEC2_11;Resource Attr;attributes2;TRUE;The PortletRequest.CCPP_PROFILE request attribute must return a javax.ccpp.Profile based on the current portlet request
-SPEC2_11;Resource Attr;attributes9;TRUE;During resource processing, the LIFECYCLE_PHASE ("javax.portlet.lifecycle_phase") attribute will contain the string "RESOURCE_PHASE"
+SPEC2_11;Resource Attr;attributes9;TRUE;During resource processing, the LIFECYCLE_PHASE ("jakarta.portlet.lifecycle_phase") attribute will contain the string "RESOURCE_PHASE"
 SPEC2_11;Attr;contextPath1;FALSE;If the portlet application is rooted at the default context, the context path must be an empty string
 SPEC2_11;Attr;contextPath2;FALSE;If the portlet application is not rooted at the default context, the context path must be a string starting with "/"
 SPEC2_11;Attr;contextPath3;FALSE;If the portlet application is not rooted at the default context, the context path string does not end with "/"
@@ -739,8 +739,8 @@ SPEC2_26;Include JSP General;defineObjects1;TRUE;The portlet-container must prov
 SPEC2_26;Include JSP General;defineObjects2;TRUE;In order to obtain version 2 support, the tag library must be specified as <%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 SPEC2_26;Include JSP General;defineObjects4;TRUE;The defineObjects tag must not define any attribute and it must not contain any body content
 SPEC2_26;Include JSP General;namespace;TRUE;The namespace tag produces a unique string value for the current portlet equal to the value returned by the PortletResponse.getNamespace method
-SPEC2_26;Include JSP General;escapeXML1;TRUE;The container runtime option "javax.portlet.escapeXml" can be used to set the default escapeXML setting to true
-SPEC2_26;Include JSP General;escapeXML2;TRUE;The container runtime option "javax.portlet.escapeXml" can be used to set the default escapeXML setting to false
+SPEC2_26;Include JSP General;escapeXML1;TRUE;The container runtime option "jakarta.portlet.escapeXml" can be used to set the default escapeXML setting to true
+SPEC2_26;Include JSP General;escapeXML2;TRUE;The container runtime option "jakarta.portlet.escapeXml" can be used to set the default escapeXML setting to false
 SPEC2_26;Include JSP Action;defineObjects1;TRUE;When included in the Action phase, the defineObjects tag defines the variable RenderRequest renderRequest to be null or undefined
 SPEC2_26;Include JSP Action;defineObjects2;TRUE;When included in the Action phase, the defineObjects tag defines the variable ResourceRequest resourceRequest to be null or undefined
 SPEC2_26;Include JSP Action;defineObjects3;TRUE;When included in the Action phase, the defineObjects tag defines the variable ActionRequest actionRequest to the corresponding object
@@ -807,7 +807,7 @@ SPEC2_26;Include JSP Render;actionURL24;FALSE;If the optional actionURL "escapeX
 SPEC2_26;Include JSP Render;actionURL25;TRUE;If the optional actionURL "escapeXML" attribute is set to false, the characters "<>&'\"" are not converted to their entity codes
 SPEC2_26;Include JSP Render;actionURL26;TRUE;The "escapeXML" attribute default value is true
 SPEC2_26;Include JSP Render;actionURL27;TRUE;If the optional actionURL "name" attribute is set, the provided name string is used by GenericPortlet to dispatch the request to the coresponding annotated method
-SPEC2_26;Include JSP Render;actionURL28;TRUE;Setting the "name" attribute will add a parameter to the action URL with the name of "javax.portlet.action"
+SPEC2_26;Include JSP Render;actionURL28;TRUE;Setting the "name" attribute will add a parameter to the action URL with the name of "jakarta.portlet.action"
 SPEC2_26;Include JSP Render;actionURL29;TRUE;If this tag is used in markup provided by a serveResource call that was directly or indirectly triggered via a resource URL of type FULL, a JspException with the IllegalStateException that caused this error is thrown
 SPEC2_26;Include JSP Render;actionURL30;TRUE;If this tag is used in markup provided by a serveResource call that was directly or indirectly triggered via a resource URL of type PORTLET, a JspException with the IllegalStateException that caused this error is thrown
 SPEC2_26;Include JSP Render;renderURL1;TRUE;The portlet renderURL tag creates a URL that must point to the current portlet and must trigger an render request with the supplied parameters
@@ -855,7 +855,7 @@ SPEC2_26;Include JSP Render;resourceURL18;FALSE;If the optional resourceURL "esc
 SPEC2_26;Include JSP Render;resourceURL19;TRUE;If the optional resourceURL "escapeXML" attribute is set to false, the characters "<>&'\"" are not converted to their entity codes
 SPEC2_26;Include JSP Render;resourceURL20;TRUE;The "escapeXML" attribute default value is true
 SPEC2_26;Include JSP Render;resourceURL21;TRUE;If the optional resourceURL "id" attribute is set, the provided id string is used by GenericPortlet to dispatch the request to the coresponding annotated method
-SPEC2_26;Include JSP Render;resourceURL22;TRUE;Setting the "id" attribute will add a parameter to the action URL with the id of "javax.portlet.action"
+SPEC2_26;Include JSP Render;resourceURL22;TRUE;Setting the "id" attribute will add a parameter to the action URL with the id of "jakarta.portlet.action"
 SPEC2_26;Include JSP Render;resourceURL23;TRUE;If the optional resourceURL "cacheability" attribute is set, the cacheability is set accordingly
 SPEC2_26;Include JSP Render;resourceURL24;TRUE;If the optional resourceURL "cacheability" attribute is not set, the current cacheability setting is retained
 SPEC2_26;Include JSP Render;resourceURL25;TRUE;If the cacheability is set to PAGE in a Resource phase include with cacheability = FULL, a JspException with the IllegalStateException that caused this error is thrown
@@ -937,7 +937,7 @@ SPEC2_26;Include JSP Resource;actionURL24;FALSE;If the optional actionURL "escap
 SPEC2_26;Include JSP Resource;actionURL25;TRUE;If the optional actionURL "escapeXML" attribute is set to false, the characters "<>&'\"" are not converted to their entity codes
 SPEC2_26;Include JSP Resource;actionURL26;TRUE;The "escapeXML" attribute default value is true
 SPEC2_26;Include JSP Resource;actionURL27;TRUE;If the optional actionURL "name" attribute is set, the provided name string is used by GenericPortlet to dispatch the request to the coresponding annotated method
-SPEC2_26;Include JSP Resource;actionURL28;TRUE;Setting the "name" attribute will add a parameter to the action URL with the name of "javax.portlet.action"
+SPEC2_26;Include JSP Resource;actionURL28;TRUE;Setting the "name" attribute will add a parameter to the action URL with the name of "jakarta.portlet.action"
 SPEC2_26;Include JSP Resource;actionURL29;TRUE;If this tag is used in markup provided by a serveResource call that was directly or indirectly triggered via a resource URL of type FULL, a JspException with the IllegalStateException that caused this error is thrown
 SPEC2_26;Include JSP Resource;actionURL30;TRUE;If this tag is used in markup provided by a serveResource call that was directly or indirectly triggered via a resource URL of type PORTLET, a JspException with the IllegalStateException that caused this error is thrown
 SPEC2_26;Include JSP Resource;renderURL1;TRUE;The portlet renderURL tag creates a URL that must point to the current portlet and must trigger an render request with the supplied parameters
@@ -985,7 +985,7 @@ SPEC2_26;Include JSP Resource;resourceURL18;FALSE;If the optional resourceURL "e
 SPEC2_26;Include JSP Resource;resourceURL19;TRUE;If the optional resourceURL "escapeXML" attribute is set to false, the characters "<>&'\"" are not converted to their entity codes
 SPEC2_26;Include JSP Resource;resourceURL20;TRUE;The "escapeXML" attribute default value is true
 SPEC2_26;Include JSP Resource;resourceURL21;TRUE;If the optional resourceURL "id" attribute is set, the provided id string is used by GenericPortlet to dispatch the request to the coresponding annotated method
-SPEC2_26;Include JSP Resource;resourceURL22;TRUE;Setting the "id" attribute will add a parameter to the action URL with the id of "javax.portlet.action"
+SPEC2_26;Include JSP Resource;resourceURL22;TRUE;Setting the "id" attribute will add a parameter to the action URL with the id of "jakarta.portlet.action"
 SPEC2_26;Include JSP Resource;resourceURL23;TRUE;If the optional resourceURL "cacheability" attribute is set, the cacheability is set accordingly
 SPEC2_26;Include JSP Resource;resourceURL24;TRUE;If the optional resourceURL "cacheability" attribute is not set, the current cacheability setting is retained
 SPEC2_26;Include JSP Resource;resourceURL25;TRUE;If the cacheability is set to PAGE in a Resource phase include with cacheability = FULL, a JspException with the IllegalStateException that caused this error is thrown

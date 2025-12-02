@@ -17,33 +17,33 @@
  */
 
 
-package javax.portlet.tck.servlets;
+package jakarta.portlet.tck.servlets;
 
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_CONTAINSHEADER;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_ENCODEREDIRECTURL;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_ENCODEREDIRECTURL1;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_ENCODEURL;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_ENCODEURL1;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_GETBUFFERSIZE;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_GETCHARACTERENCODING;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_GETCONTENTTYPE;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_GETLOCALE;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_ISCOMMITTED;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_CONTAINSHEADER;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_ENCODEREDIRECTURL;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_ENCODEREDIRECTURL1;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_ENCODEURL;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_ENCODEURL1;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_GETBUFFERSIZE;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_GETCHARACTERENCODING;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_GETCONTENTTYPE;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_GETLOCALE;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS2_SPEC2_19_FORWARDSERVLETRENDERRESPONSE_ISCOMMITTED;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Locale;
 
-import javax.portlet.MimeResponse;
-import javax.portlet.PortletResponse;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.CompareUtils;
-import javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.portlet.MimeResponse;
+import jakarta.portlet.PortletResponse;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.CompareUtils;
+import jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * Servlet for JSR 362 request dispatcher testing.
@@ -72,7 +72,7 @@ public class DispatcherReqRespTests2_SPEC2_19_ForwardServletRenderResponse_servl
    protected void processTCKReq(HttpServletRequest request, HttpServletResponse response)
          throws ServletException, IOException {
 
-      PortletResponse portletResp = (PortletResponse) request.getAttribute("javax.portlet.response");
+      PortletResponse portletResp = (PortletResponse) request.getAttribute("jakarta.portlet.response");
 
       PrintWriter writer = ((MimeResponse)portletResp).getWriter();
 

@@ -16,7 +16,7 @@
  *  under the License.
  */
 
-package javax.portlet.tck.driver;
+package jakarta.portlet.tck.driver;
 
 import static org.junit.Assert.*;
 
@@ -45,7 +45,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import javax.portlet.tck.constants.Constants;
+import jakarta.portlet.tck.constants.Constants;
 import org.junit.Assume;
 
 

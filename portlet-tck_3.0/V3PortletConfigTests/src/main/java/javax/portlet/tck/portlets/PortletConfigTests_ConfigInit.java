@@ -16,23 +16,23 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETCONFIGTESTS_CONFIG_INIT;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETCONFIGTESTS_CONFIG_INIT;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.annotations.InitMethod;
-import javax.portlet.annotations.RenderMethod;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.util.ModuleTestCaseDetails;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.annotations.InitMethod;
+import jakarta.portlet.annotations.RenderMethod;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.util.ModuleTestCaseDetails;
 
 /**
  * Implements test to verify that the annotated init method is called.

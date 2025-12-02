@@ -15,12 +15,12 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package javax.portlet.tck.beans;
+package jakarta.portlet.tck.beans;
 
 import java.util.Collection;
 
-import javax.portlet.PortletResponse;
-import javax.servlet.http.Cookie;
+import jakarta.portlet.PortletResponse;
+import jakarta.servlet.http.Cookie;
 
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Element;

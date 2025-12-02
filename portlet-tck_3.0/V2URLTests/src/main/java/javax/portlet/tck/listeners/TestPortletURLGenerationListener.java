@@ -17,12 +17,12 @@
  */
 
 
-package javax.portlet.tck.listeners;
+package jakarta.portlet.tck.listeners;
 
-import javax.portlet.BaseURL;
-import javax.portlet.PortletURL;
-import javax.portlet.PortletURLGenerationListener;
-import javax.portlet.ResourceURL;
+import jakarta.portlet.BaseURL;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.PortletURLGenerationListener;
+import jakarta.portlet.ResourceURL;
 
 /**
  *Test PortletURLGenerationListener

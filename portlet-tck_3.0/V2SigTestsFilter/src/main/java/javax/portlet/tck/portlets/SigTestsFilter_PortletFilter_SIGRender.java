@@ -13,28 +13,28 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.filter.PortletFilter;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.filter.PortletFilter;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASDESTROY;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASDESTROYRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASINIT;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASINITRETURNS;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASDESTROY;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASDESTROYRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASINIT;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASINITRETURNS;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined
@@ -109,13 +109,13 @@ public class SigTestsFilter_PortletFilter_SIGRender implements Portlet {
 
     /* TestCase: V2SigTestsFilter_PortletFilter_SIGRender_hasInit */
     /* Details: "PortletFilter has a */
-    /* init(javax.portlet.filter.FilterConfig) throws PortletException */
+    /* init(jakarta.portlet.filter.FilterConfig) throws PortletException */
     /* method " */
     TestResult tr2 = tcd.getTestResultFailed(V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASINIT);
     try {
       String name = "init";
       Class<?>[] exceptions = {PortletException.class};
-      Class<?>[] parms = {javax.portlet.filter.FilterConfig.class};
+      Class<?>[] parms = {jakarta.portlet.filter.FilterConfig.class};
       tr2.setTcSuccess(cc.hasMethod(name, parms, exceptions));
     } catch (Exception e) {
       tr2.appendTcDetail(e.toString());
@@ -124,13 +124,13 @@ public class SigTestsFilter_PortletFilter_SIGRender implements Portlet {
 
     /* TestCase: V2SigTestsFilter_PortletFilter_SIGRender_hasInitReturns */
     /* Details: "PortletFilter method */
-    /* init(javax.portlet.filter.FilterConfig) returns void " */
+    /* init(jakarta.portlet.filter.FilterConfig) returns void " */
     TestResult tr3 =
         tcd.getTestResultFailed(V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASINITRETURNS);
     try {
       String name = "init";
       Class<?> retType = void.class;
-      Class<?>[] parms = {javax.portlet.filter.FilterConfig.class};
+      Class<?>[] parms = {jakarta.portlet.filter.FilterConfig.class};
       tr3.setTcSuccess(cc.methodHasReturnType(name, retType, parms));
     } catch (Exception e) {
       tr3.appendTcDetail(e.toString());

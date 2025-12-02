@@ -22,17 +22,17 @@ limitations under the License.
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page import="java.io.*,java.util.*,org.slf4j.*" %>
 
-<%@ page import="javax.portlet.*,javax.portlet.filter.*" %>
+<%@ page import="jakarta.portlet.*,jakarta.portlet.filter.*" %>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
-<%@ page import="javax.portlet.tck.beans.*,javax.portlet.tck.constants.*" %>
-<%@ page import="static javax.portlet.tck.constants.Constants.*" %>
-<%@ page import="static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.*" %>
+<%@ page import="jakarta.portlet.tck.beans.*,jakarta.portlet.tck.constants.*" %>
+<%@ page import="static jakarta.portlet.tck.constants.Constants.*" %>
+<%@ page import="static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.*" %>
 
 <%
 
-      PortletRequest portletReq = (PortletRequest) request.getAttribute("javax.portlet.request");
-      PortletResponse portletResp = (PortletResponse) request.getAttribute("javax.portlet.response");
-      PortletConfig portletConfig = (PortletConfig) request.getAttribute("javax.portlet.config");
+      PortletRequest portletReq = (PortletRequest) request.getAttribute("jakarta.portlet.request");
+      PortletResponse portletResp = (PortletResponse) request.getAttribute("jakarta.portlet.response");
+      PortletConfig portletConfig = (PortletConfig) request.getAttribute("jakarta.portlet.config");
       long svtTid = Thread.currentThread().getId();
       long reqTid = (Long) portletReq.getAttribute(THREADID_ATTR);
 
@@ -429,8 +429,8 @@ limitations under the License.
       tr26.writeTo(writer);
 
       /* TestCase: V2DispatcherTests2_SPEC2_19_ForwardJSPEvent_attributes6    */
-      /* Details: "The request attribute javax.portlet.config must be set     */
-      /* to the javax.portlet.PortletConfig object"                           */
+      /* Details: "The request attribute jakarta.portlet.config must be set     */
+      /* to the jakarta.portlet.PortletConfig object"                           */
       TestResult tr27 = tcd.getTestResultFailed(V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPEVENT_ATTRIBUTES6);
       try {
          ClassChecker cc = new ClassChecker(portletConfig.getClass());
@@ -441,8 +441,8 @@ limitations under the License.
 
       /* TestCase: V2DispatcherTests2_SPEC2_19_ForwardJSPEvent_attributes7    */
       /* Details: "For forwards from the processEvent method, The request     */
-      /* attribute javax.portlet.request must be set to the                   */
-      /* javax.portlet.EventRequest object"                                   */
+      /* attribute jakarta.portlet.request must be set to the                   */
+      /* jakarta.portlet.EventRequest object"                                   */
       TestResult tr28 = tcd.getTestResultFailed(V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPEVENT_ATTRIBUTES7);
       try {
          ClassChecker cc = new ClassChecker(portletReq.getClass());
@@ -453,8 +453,8 @@ limitations under the License.
 
       /* TestCase: V2DispatcherTests2_SPEC2_19_ForwardJSPEvent_attributes8    */
       /* Details: "For forwards from the processEvent method, The request     */
-      /* attribute javax.portlet.response must be set to the                  */
-      /* javax.portlet.EventResponse object"                                  */
+      /* attribute jakarta.portlet.response must be set to the                  */
+      /* jakarta.portlet.EventResponse object"                                  */
       TestResult tr29 = tcd.getTestResultFailed(V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPEVENT_ATTRIBUTES8);
       try {
          ClassChecker cc = new ClassChecker(portletResp.getClass());

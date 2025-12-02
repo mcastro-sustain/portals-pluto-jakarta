@@ -16,17 +16,17 @@
  *  under the License.
  */
 
-package javax.portlet.tck.servlets;
+package jakarta.portlet.tck.servlets;
 
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 
-import javax.portlet.PortletRequest;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.portlet.PortletRequest;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * Servlet for JSR 362 request dispatcher testing. Used by portlet: DispatcherTests3S_SPEC2_19_IncludeServletResource
@@ -55,9 +55,9 @@ public class DispatcherTests3S_SPEC2_19_IncludeServletResource_servlet extends H
    protected void processTCKReq(HttpServletRequest request, HttpServletResponse response) throws ServletException,
          IOException {
 
-      PortletRequest portletReq = (PortletRequest) request.getAttribute("javax.portlet.request");
-      request.getAttribute("javax.portlet.response");
-      request.getAttribute("javax.portlet.config");
+      PortletRequest portletReq = (PortletRequest) request.getAttribute("jakarta.portlet.request");
+      request.getAttribute("jakarta.portlet.response");
+      request.getAttribute("jakarta.portlet.config");
       Thread.currentThread().getId();
       portletReq.getAttribute(THREADID_ATTR);
 

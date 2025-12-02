@@ -14,22 +14,22 @@
  */
 
 
-package javax.portlet.tck.filters;
+package jakarta.portlet.tck.filters;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.filter.FilterChain;
-import javax.portlet.filter.FilterConfig;
-import javax.portlet.filter.RenderFilter;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.filter.FilterChain;
+import jakarta.portlet.filter.FilterConfig;
+import jakarta.portlet.filter.RenderFilter;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2FILTERTESTS_RENDERFILTER_APIRENDERFILTER_CANBECONFIGURED2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2FILTERTESTS_RENDERFILTER_APIRENDERFILTER_DOFILTERPROCESSRENDER2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2FILTERTESTS_RENDERFILTER_APIRENDERFILTER_CANBECONFIGURED2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2FILTERTESTS_RENDERFILTER_APIRENDERFILTER_DOFILTERPROCESSRENDER2;
 
 /**
  * Filter for JSR 362 request dispatcher testing. Used by portlet:

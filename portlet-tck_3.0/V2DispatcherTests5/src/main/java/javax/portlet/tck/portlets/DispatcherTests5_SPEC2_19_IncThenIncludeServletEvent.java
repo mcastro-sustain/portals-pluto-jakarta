@@ -16,56 +16,56 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_DISPATCH1;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_DISPATCH2;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_DISPATCH3;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_INVOKE2;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_INVOKE4;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_INVOKE7;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES1;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES1A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES1B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES1C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES2;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES2A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES2B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES2C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES3;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES3A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES3B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES3C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES4;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES4A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES4B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES4C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES5;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES5A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES5B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES5C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES6;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES7;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES8;
-import static javax.portlet.tck.constants.Constants.TCKNAMESPACE;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_DISPATCH1;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_DISPATCH2;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_DISPATCH3;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_INVOKE2;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_INVOKE4;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_INVOKE7;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES1;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES1A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES1B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES1C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES2;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES2A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES2B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES2C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES3;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES3A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES3B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES3C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES4;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES4A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES4B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES4C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES5;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES5A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES5B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES5C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES6;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES7;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENINCLUDESERVLETEVENT_ATTRIBUTES8;
+import static jakarta.portlet.tck.constants.Constants.TCKNAMESPACE;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceServingPortlet;
-import javax.portlet.tck.beans.TestButton;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceServingPortlet;
+import jakarta.portlet.tck.beans.TestButton;
 import javax.xml.namespace.QName;
 
 /**
@@ -411,8 +411,8 @@ public class DispatcherTests5_SPEC2_19_IncThenIncludeServletEvent implements Por
 
       /* TestCase: V2DispatcherTests5_SPEC2_19_IncThenIncludeServletEvent_attributes6 */
       /* Details: "In a servlet included by the target of an include, the */
-      /* request attribute javax.portlet.config must be set to the */
-      /* javax.portlet.PortletConfig object" */
+      /* request attribute jakarta.portlet.config must be set to the */
+      /* jakarta.portlet.PortletConfig object" */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());
@@ -423,8 +423,8 @@ public class DispatcherTests5_SPEC2_19_IncThenIncludeServletEvent implements Por
       /* TestCase: V2DispatcherTests5_SPEC2_19_IncThenIncludeServletEvent_attributes7 */
       /* Details: "In a servlet included by the target of an include, for */
       /* includes from the processEvent method, The request attribute */
-      /* javax.portlet.request must be set to the */
-      /* javax.portlet.EventRequest object" */
+      /* jakarta.portlet.request must be set to the */
+      /* jakarta.portlet.EventRequest object" */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());
@@ -435,8 +435,8 @@ public class DispatcherTests5_SPEC2_19_IncThenIncludeServletEvent implements Por
       /* TestCase: V2DispatcherTests5_SPEC2_19_IncThenIncludeServletEvent_attributes8 */
       /* Details: "In a servlet included by the target of an include, for */
       /* includes from the processEvent method, The request attribute */
-      /* javax.portlet.response must be set to the */
-      /* javax.portlet.EventResponse object" */
+      /* jakarta.portlet.response must be set to the */
+      /* jakarta.portlet.EventResponse object" */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());

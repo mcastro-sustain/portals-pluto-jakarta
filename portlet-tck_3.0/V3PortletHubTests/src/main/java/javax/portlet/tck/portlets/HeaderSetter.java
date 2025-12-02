@@ -17,13 +17,13 @@
  */
 
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 
-import javax.portlet.HeaderRequest;
-import javax.portlet.HeaderResponse;
-import javax.portlet.annotations.HeaderMethod;
+import jakarta.portlet.HeaderRequest;
+import jakarta.portlet.HeaderResponse;
+import jakarta.portlet.annotations.HeaderMethod;
 
 /**
  * Contains header method for all portlets in this portlet app

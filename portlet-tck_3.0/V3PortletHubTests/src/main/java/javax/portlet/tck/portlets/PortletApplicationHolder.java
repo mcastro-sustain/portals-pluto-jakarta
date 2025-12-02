@@ -17,12 +17,12 @@
  */
 
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import javax.portlet.annotations.EventDefinition;
-import javax.portlet.annotations.PortletApplication;
-import javax.portlet.annotations.PortletQName;
-import javax.portlet.annotations.PublicRenderParameterDefinition;
+import jakarta.portlet.annotations.EventDefinition;
+import jakarta.portlet.annotations.PortletApplication;
+import jakarta.portlet.annotations.PortletQName;
+import jakarta.portlet.annotations.PublicRenderParameterDefinition;
 
 /**
  * Class for the portlet application annotation

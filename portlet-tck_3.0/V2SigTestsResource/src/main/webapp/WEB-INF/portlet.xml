@@ -24,7 +24,7 @@
    version="2.0" id="V2SigTestsResource">
    <portlet>
       <portlet-name>SigTestsResource_ClientDataRequest_SIGResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsResource_ClientDataRequest_SIGResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsResource_ClientDataRequest_SIGResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -37,7 +37,7 @@
 
    <portlet>
       <portlet-name>SigTestsResource_MimeResponse_SIGResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsResource_MimeResponse_SIGResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsResource_MimeResponse_SIGResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -50,7 +50,7 @@
 
    <portlet>
       <portlet-name>SigTestsResource_PortletRequest_SIGResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsResource_PortletRequest_SIGResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsResource_PortletRequest_SIGResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -63,7 +63,7 @@
 
    <portlet>
       <portlet-name>SigTestsResource_PortletResponse_SIGResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsResource_PortletResponse_SIGResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsResource_PortletResponse_SIGResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -76,7 +76,7 @@
 
    <portlet>
       <portlet-name>SigTestsResource_ResourceRequest_SIGResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsResource_ResourceRequest_SIGResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsResource_ResourceRequest_SIGResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -89,7 +89,7 @@
 
    <portlet>
       <portlet-name>SigTestsResource_ResourceResponse_SIGResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsResource_ResourceResponse_SIGResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsResource_ResourceResponse_SIGResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

@@ -17,19 +17,19 @@
  */
 
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3RESOURCEASYNCTESTS_SPEC_21_ASYNC_CDI2;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3RESOURCEASYNCTESTS_SPEC_21_ASYNC_CDI2;
 
 import java.io.IOException;
 
-import javax.inject.Inject;
-import javax.portlet.PortletAsyncEvent;
-import javax.portlet.PortletAsyncListener;
-import javax.portlet.ResourceResponse;
-import javax.portlet.annotations.PortletRequestScoped;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.util.ModuleTestCaseDetails;
+import jakarta.inject.Inject;
+import jakarta.portlet.PortletAsyncEvent;
+import jakarta.portlet.PortletAsyncListener;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.annotations.PortletRequestScoped;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.util.ModuleTestCaseDetails;
 
 /**
  * Portlet async listener for TCK tests
@@ -51,28 +51,28 @@ public class AsyncBeanListener implements PortletAsyncListener {
    }
 
    /* (non-Javadoc)
-    * @see javax.portlet.PortletAsyncListener#onComplete(javax.portlet.PortletAsyncEvent)
+    * @see jakarta.portlet.PortletAsyncListener#onComplete(jakarta.portlet.PortletAsyncEvent)
     */
    @Override
    public void onComplete(PortletAsyncEvent evt) throws IOException {
    }
 
    /* (non-Javadoc)
-    * @see javax.portlet.PortletAsyncListener#onError(javax.portlet.PortletAsyncEvent)
+    * @see jakarta.portlet.PortletAsyncListener#onError(jakarta.portlet.PortletAsyncEvent)
     */
    @Override
    public void onError(PortletAsyncEvent evt) throws IOException {
    }
 
    /* (non-Javadoc)
-    * @see javax.portlet.PortletAsyncListener#onStartAsync(javax.portlet.PortletAsyncEvent)
+    * @see jakarta.portlet.PortletAsyncListener#onStartAsync(jakarta.portlet.PortletAsyncEvent)
     */
    @Override
    public void onStartAsync(PortletAsyncEvent evt) throws IOException {
    }
 
    /* (non-Javadoc)
-    * @see javax.portlet.PortletAsyncListener#onTimeout(javax.portlet.PortletAsyncEvent)
+    * @see jakarta.portlet.PortletAsyncListener#onTimeout(jakarta.portlet.PortletAsyncEvent)
     */
    @Override
    public void onTimeout(PortletAsyncEvent evt) throws IOException {

@@ -25,7 +25,7 @@
    
     <portlet>
       <portlet-name>RenderStateTests_SPEC2_12_MutableRenderState</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.RenderStateTests_SPEC2_12_MutableRenderState</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.RenderStateTests_SPEC2_12_MutableRenderState</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

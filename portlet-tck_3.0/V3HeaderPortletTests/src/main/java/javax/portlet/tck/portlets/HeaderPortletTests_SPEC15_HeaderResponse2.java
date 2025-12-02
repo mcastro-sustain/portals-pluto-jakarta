@@ -16,7 +16,7 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -24,26 +24,26 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.nio.charset.Charset;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.HeaderPortlet;
-import javax.portlet.HeaderRequest;
-import javax.portlet.HeaderResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.annotations.Dependency;
-import javax.portlet.annotations.PortletConfiguration;
-import javax.portlet.annotations.Supports;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.util.ModuleTestCaseDetails;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.HeaderPortlet;
+import jakarta.portlet.HeaderRequest;
+import jakarta.portlet.HeaderResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.annotations.Dependency;
+import jakarta.portlet.annotations.PortletConfiguration;
+import jakarta.portlet.annotations.Supports;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.util.ModuleTestCaseDetails;
 
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC15_HEADERRESPONSE_GETPORTLETOUTPUTSTREAM;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC15_HEADERRESPONSE_ADDDEPENDENCY;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC15_HEADERRESPONSE_ADDDEPENDENCY3;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC15_HEADERRESPONSE_GETPORTLETOUTPUTSTREAM;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC15_HEADERRESPONSE_ADDDEPENDENCY;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3HEADERPORTLETTESTS_SPEC15_HEADERRESPONSE_ADDDEPENDENCY3;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names
@@ -55,7 +55,7 @@ import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
 
 @PortletConfiguration(portletName = "HeaderPortletTests_SPEC15_HeaderResponse2", supports = {
       @Supports(mimeType = "text/html") },
-      dependencies = @Dependency(name = "PortletHub", scope = "javax.portlet", version="3.0.0")
+      dependencies = @Dependency(name = "PortletHub", scope = "jakarta.portlet", version="3.0.0")
 )
 public class HeaderPortletTests_SPEC15_HeaderResponse2 implements Portlet, HeaderPortlet {
 
@@ -132,14 +132,14 @@ public class HeaderPortletTests_SPEC15_HeaderResponse2 implements Portlet, Heade
       /* portal."                                                                   */
       {
          TestResult result = tcd.getTestResultFailed(V3HEADERPORTLETTESTS_SPEC15_HEADERRESPONSE_ADDDEPENDENCY);
-         headerResponse.addDependency("PortletHub", "javax.portlet", "3.0.0");
+         headerResponse.addDependency("PortletHub", "jakarta.portlet", "3.0.0");
          result.writeTo(writer);
       }
 
       /* TestCase: V3HeaderPortletTests_SPEC15_HeaderResponse_addDependency2        */
       /* Details: "Method addDependency(String name, String scope, String version)  */
       /* - The dependency added by this method can be shared with other portlets."  */
-      headerResponse.addDependency("PortletHub", "javax.portlet", "3.0.0");
+      headerResponse.addDependency("PortletHub", "jakarta.portlet", "3.0.0");
       
       /* TestCase: V3HeaderPortletTests_SPEC15_HeaderResponse_addDependency3        */
       /* Details: "Method addDependency(String name, String scope, String version)  */

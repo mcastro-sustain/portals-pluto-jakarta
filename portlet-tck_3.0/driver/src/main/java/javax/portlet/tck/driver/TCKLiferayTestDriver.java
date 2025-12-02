@@ -16,7 +16,7 @@
  *  under the License.
  */
 
-package javax.portlet.tck.driver;
+package jakarta.portlet.tck.driver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

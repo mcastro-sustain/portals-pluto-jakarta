@@ -29,8 +29,8 @@ import jakarta.enterprise.inject.spi.AnnotatedConstructor;
 import jakarta.enterprise.inject.spi.AnnotatedField;
 import jakarta.enterprise.inject.spi.AnnotatedMethod;
 import jakarta.enterprise.inject.spi.AnnotatedType;
-import javax.portlet.PortletSession;
-import javax.portlet.annotations.PortletSessionScoped;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.annotations.PortletSessionScoped;
 
 /**
  * A wrapper for a PortletSessionScoped annotated type with APPLICATION_SCOPE

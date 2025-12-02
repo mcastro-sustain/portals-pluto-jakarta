@@ -16,7 +16,7 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 /**
  * A bean to hold result of injected artifact validity tests.

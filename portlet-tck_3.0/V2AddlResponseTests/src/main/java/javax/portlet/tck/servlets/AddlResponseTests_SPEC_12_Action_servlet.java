@@ -16,26 +16,26 @@
  *  under the License.
  */
 
-package javax.portlet.tck.servlets;
+package jakarta.portlet.tck.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.Map;
 
-import javax.portlet.tck.beans.JSR286SpecTestCaseDetails;
-import javax.portlet.tck.beans.TestLink;
-import javax.portlet.tck.beans.TestResult;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails;
+import jakarta.portlet.tck.beans.TestLink;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_ACTION_REDIRECT12;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_ACTION_REDIRECT14;
-import static javax.portlet.tck.constants.Constants.BUTTON_PARAM_NAME;
-import static javax.portlet.tck.constants.Constants.SETUP_ID;
-import static javax.portlet.tck.constants.Constants.TCKPAGE;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_ACTION_REDIRECT12;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLRESPONSETESTS_SPEC2_12_ACTION_REDIRECT14;
+import static jakarta.portlet.tck.constants.Constants.BUTTON_PARAM_NAME;
+import static jakarta.portlet.tck.constants.Constants.SETUP_ID;
+import static jakarta.portlet.tck.constants.Constants.TCKPAGE;
 
 /**
  * Servlet to bounce a redirect back to the test page.

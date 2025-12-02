@@ -215,7 +215,7 @@ limitations under the License.
       <li>Attaches onclick handler to the clear button</li>
       <ul>
          <li>Instead of submitting the form, specific action parameters are submitted</li>
-         <li>The action parameter 'javax.portlet.action' specifies the action name</li>
+         <li>The action parameter 'jakarta.portlet.action' specifies the action name</li>
          <li>In this case, the action name 'clearHistory' causes the server-side clearHistory action method to be called</li>
       </ul>
    </ul>

@@ -22,10 +22,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import javax.portlet.Portlet;
-import javax.portlet.PortletURLGenerationListener;
-import javax.portlet.PreferencesValidator;
-import javax.portlet.filter.PortletFilter;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletURLGenerationListener;
+import jakarta.portlet.PreferencesValidator;
+import jakarta.portlet.filter.PortletFilter;
 import javax.xml.XMLConstants;
 import jakarta.xml.bind.JAXBElement;
 import javax.xml.namespace.QName;

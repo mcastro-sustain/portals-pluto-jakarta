@@ -16,11 +16,11 @@
  *  under the License.
  */
 
-package javax.portlet.tck.util;
+package jakarta.portlet.tck.util;
 
 import java.io.InputStream;
 
-import javax.servlet.ServletContext;
+import jakarta.servlet.ServletContext;
 
 public class ResourceReader {
 

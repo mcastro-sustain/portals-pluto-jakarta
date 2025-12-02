@@ -13,30 +13,30 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_CONSTRUCTOR;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_CONSTRUCTORA;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_EXTENDSPORTLETEXCEPTION;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_HASGETUNAVAILABLESECONDS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_HASGETUNAVAILABLESECONDSRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_HASISPERMANENT;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_HASISPERMANENTRETURNS;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_CONSTRUCTOR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_CONSTRUCTORA;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_EXTENDSPORTLETEXCEPTION;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_HASGETUNAVAILABLESECONDS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_HASGETUNAVAILABLESECONDSRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_HASISPERMANENT;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSEXCEPTION_UNAVAILABLEEXCEPTION_SIGRENDER_HASISPERMANENTRETURNS;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 
 /**
@@ -81,7 +81,7 @@ public class SigTestsException_UnavailableException_SIGRender implements Portlet
 
     // Create result objects for the tests
 
-    ClassChecker cc = new ClassChecker(javax.portlet.UnavailableException.class);
+    ClassChecker cc = new ClassChecker(jakarta.portlet.UnavailableException.class);
 
     /* TestCase: V2SigTestsException_UnavailableException_SIGRender_constructor */
     /* Details: "UnavailableException provides constructor */

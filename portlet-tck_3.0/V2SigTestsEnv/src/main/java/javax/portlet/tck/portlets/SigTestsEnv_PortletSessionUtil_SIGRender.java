@@ -13,28 +13,28 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTLETSESSIONUTIL_SIGRENDER_CONSTRUCTOR;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTLETSESSIONUTIL_SIGRENDER_HASDECODEATTRIBUTENAME;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTLETSESSIONUTIL_SIGRENDER_HASDECODEATTRIBUTENAMERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTLETSESSIONUTIL_SIGRENDER_HASDECODESCOPE;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTLETSESSIONUTIL_SIGRENDER_HASDECODESCOPERETURNS;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTLETSESSIONUTIL_SIGRENDER_CONSTRUCTOR;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTLETSESSIONUTIL_SIGRENDER_HASDECODEATTRIBUTENAME;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTLETSESSIONUTIL_SIGRENDER_HASDECODEATTRIBUTENAMERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTLETSESSIONUTIL_SIGRENDER_HASDECODESCOPE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSENV_PORTLETSESSIONUTIL_SIGRENDER_HASDECODESCOPERETURNS;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined
@@ -78,7 +78,7 @@ public class SigTestsEnv_PortletSessionUtil_SIGRender implements Portlet {
 
     // Create result objects for the tests
 
-    ClassChecker cc = new ClassChecker(javax.portlet.PortletSessionUtil.class);
+    ClassChecker cc = new ClassChecker(jakarta.portlet.PortletSessionUtil.class);
 
     /* TestCase: V2SigTestsEnv_PortletSessionUtil_SIGRender_constructor */
     /* Details: "PortletSessionUtil provides constructor */

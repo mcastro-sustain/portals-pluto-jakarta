@@ -18,11 +18,11 @@
     under the License.     
 -->
 <web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-   <display-name>javax.portlet-tck-DispatcherReqRespTests5S</display-name>
+   <display-name>jakarta.portlet-tck-DispatcherReqRespTests5S</display-name>
 
    <servlet>
       <servlet-name>DispatcherReqRespTests5S_SPEC2_19_ForwardServletActionRequest_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_ForwardServletActionRequest_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_ForwardServletActionRequest_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -35,7 +35,7 @@
 
    <servlet>
       <servlet-name>DispatcherReqRespTests5S_SPEC2_19_ForwardServletActionResponse_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_ForwardServletActionResponse_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_ForwardServletActionResponse_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -48,7 +48,7 @@
 
    <servlet>
       <servlet-name>DispatcherReqRespTests5S_SPEC2_19_ForwardServletRenderRequest_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_ForwardServletRenderRequest_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_ForwardServletRenderRequest_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -61,7 +61,7 @@
 
    <servlet>
       <servlet-name>DispatcherReqRespTests5S_SPEC2_19_ForwardServletRenderResponse_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_ForwardServletRenderResponse_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_ForwardServletRenderResponse_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -74,7 +74,7 @@
 
    <servlet>
       <servlet-name>DispatcherReqRespTests5S_SPEC2_19_ForwardServletResourceRequest_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_ForwardServletResourceRequest_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_ForwardServletResourceRequest_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -87,7 +87,7 @@
 
    <servlet>
       <servlet-name>DispatcherReqRespTests5S_SPEC2_19_ForwardServletResourceResponse_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_ForwardServletResourceResponse_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_ForwardServletResourceResponse_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -100,7 +100,7 @@
 
    <servlet>
       <servlet-name>DispatcherReqRespTests5S_SPEC2_19_IncludeServletActionRequest_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_IncludeServletActionRequest_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_IncludeServletActionRequest_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -113,7 +113,7 @@
 
    <servlet>
       <servlet-name>DispatcherReqRespTests5S_SPEC2_19_IncludeServletRenderRequest_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_IncludeServletRenderRequest_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_IncludeServletRenderRequest_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -126,7 +126,7 @@
 
    <servlet>
       <servlet-name>DispatcherReqRespTests5S_SPEC2_19_IncludeServletRenderResponse_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_IncludeServletRenderResponse_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_IncludeServletRenderResponse_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -139,7 +139,7 @@
 
    <servlet>
       <servlet-name>DispatcherReqRespTests5S_SPEC2_19_IncludeServletResourceRequest_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_IncludeServletResourceRequest_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_IncludeServletResourceRequest_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>
@@ -152,7 +152,7 @@
 
    <servlet>
       <servlet-name>DispatcherReqRespTests5S_SPEC2_19_IncludeServletResourceResponse_servlet</servlet-name>
-      <servlet-class>javax.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_IncludeServletResourceResponse_servlet</servlet-class>
+      <servlet-class>jakarta.portlet.tck.servlets.DispatcherReqRespTests5S_SPEC2_19_IncludeServletResourceResponse_servlet</servlet-class>
       <init-param>
          <param-name>iparm1</param-name>
          <param-value>value1</param-value>

@@ -16,10 +16,10 @@
  */
 package org.apache.pluto.container.impl;
 
-import javax.portlet.CacheControl;
-import javax.portlet.PortalContext;
-import javax.portlet.PortletContext;
-import javax.portlet.PortletSession;
+import jakarta.portlet.CacheControl;
+import jakarta.portlet.PortalContext;
+import jakarta.portlet.PortletContext;
+import jakarta.portlet.PortletSession;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 

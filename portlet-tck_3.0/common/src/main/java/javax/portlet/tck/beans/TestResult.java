@@ -32,10 +32,10 @@
  * (TestCaseName)-detail      - a detailed message about the test     
  * 
  */
-package javax.portlet.tck.beans;
+package jakarta.portlet.tck.beans;
 
 
-import javax.portlet.tck.constants.Constants;
+import jakarta.portlet.tck.constants.Constants;
 
 import java.io.IOException;
 import java.io.PrintWriter;

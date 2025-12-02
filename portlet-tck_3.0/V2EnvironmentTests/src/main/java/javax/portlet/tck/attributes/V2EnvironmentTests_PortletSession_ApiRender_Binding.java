@@ -13,10 +13,10 @@
  * the License.
  */
 
-package javax.portlet.tck.attributes;
+package jakarta.portlet.tck.attributes;
 
-import javax.servlet.http.HttpSessionBindingEvent;
-import javax.servlet.http.HttpSessionBindingListener;
+import jakarta.servlet.http.HttpSessionBindingEvent;
+import jakarta.servlet.http.HttpSessionBindingListener;
 import java.io.Serializable;
 
 /**

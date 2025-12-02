@@ -24,16 +24,16 @@ import java.io.StringWriter;
 import java.util.Collections;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-import javax.inject.Inject;
-import javax.portlet.PortletAsyncContext;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequestDispatcher;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.annotations.ServeResourceMethod;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+import jakarta.inject.Inject;
+import jakarta.portlet.PortletAsyncContext;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequestDispatcher;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.annotations.ServeResourceMethod;
 
 import org.apache.portals.pluto.demo.v3annotated.AsyncDialogBean.OutputType;
 import org.slf4j.Logger;
@@ -129,7 +129,7 @@ public class AsyncPortlet {
 
          trace(resourceRequest, "Resource method: ");
          
-         PortletConfig portletConfig = (PortletConfig) resourceRequest.getAttribute("javax.portlet.config");
+         PortletConfig portletConfig = (PortletConfig) resourceRequest.getAttribute("jakarta.portlet.config");
          String portletName = "Could not get PortletConfig";
          if (portletConfig != null) {
             portletName = portletConfig.getPortletName();

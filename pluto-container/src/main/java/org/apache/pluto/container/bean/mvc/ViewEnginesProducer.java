@@ -23,7 +23,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Produces;
 import jakarta.enterprise.inject.spi.BeanManager;
 import jakarta.mvc.engine.ViewEngine;
-import javax.portlet.PortletContext;
+import jakarta.portlet.PortletContext;
 import jakarta.ws.rs.core.Configuration;
 
 

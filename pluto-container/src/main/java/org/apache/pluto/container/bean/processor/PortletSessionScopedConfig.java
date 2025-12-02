@@ -27,8 +27,8 @@ import java.util.Set;
 import jakarta.enterprise.context.spi.Contextual;
 import jakarta.enterprise.inject.spi.Bean;
 import jakarta.enterprise.inject.spi.BeanManager;
-import javax.portlet.PortletSession;
-import javax.portlet.annotations.PortletSessionScoped;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.annotations.PortletSessionScoped;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

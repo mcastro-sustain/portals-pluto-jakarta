@@ -16,40 +16,40 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.ActionURL;
-import javax.portlet.EventRequest;
-import javax.portlet.EventResponse;
-import javax.portlet.MutableRenderParameters;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderParameters;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.annotations.ActionMethod;
-import javax.portlet.annotations.CustomPortletMode;
-import javax.portlet.annotations.CustomWindowState;
-import javax.portlet.annotations.EventDefinition;
-import javax.portlet.annotations.EventMethod;
-import javax.portlet.annotations.PortletApplication;
-import javax.portlet.annotations.PortletConfiguration;
-import javax.portlet.annotations.PortletQName;
-import javax.portlet.annotations.PublicRenderParameterDefinition;
-import javax.portlet.annotations.RuntimeOption;
-import javax.portlet.tck.beans.TestButton;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.util.ModuleTestCaseDetails;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.ActionURL;
+import jakarta.portlet.EventRequest;
+import jakarta.portlet.EventResponse;
+import jakarta.portlet.MutableRenderParameters;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderParameters;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.annotations.ActionMethod;
+import jakarta.portlet.annotations.CustomPortletMode;
+import jakarta.portlet.annotations.CustomWindowState;
+import jakarta.portlet.annotations.EventDefinition;
+import jakarta.portlet.annotations.EventMethod;
+import jakarta.portlet.annotations.PortletApplication;
+import jakarta.portlet.annotations.PortletConfiguration;
+import jakarta.portlet.annotations.PortletQName;
+import jakarta.portlet.annotations.PublicRenderParameterDefinition;
+import jakarta.portlet.annotations.RuntimeOption;
+import jakarta.portlet.tck.beans.TestButton;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.util.ModuleTestCaseDetails;
 import javax.xml.namespace.QName;
 
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_EVENTCONFIGURATION_DECLARINGEVENTS1;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_EVENTCONFIGURATION_DECLARINGEVENTS2;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_EVENTCONFIGURATION_DECLARINGEVENTS1;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_EVENTCONFIGURATION_DECLARINGEVENTS2;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names
@@ -60,8 +60,8 @@ import static javax.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAP
  */
 @PortletApplication(
    runtimeOptions = {
-      @RuntimeOption(name = "javax.portlet.escapeXml", values = { "true" }),
-      @RuntimeOption(name = "javax.portlet.actionScopedRequestAttributes", values = { "true" })
+      @RuntimeOption(name = "jakarta.portlet.escapeXml", values = { "true" }),
+      @RuntimeOption(name = "jakarta.portlet.actionScopedRequestAttributes", values = { "true" })
    },
    customPortletModes={
       @CustomPortletMode(

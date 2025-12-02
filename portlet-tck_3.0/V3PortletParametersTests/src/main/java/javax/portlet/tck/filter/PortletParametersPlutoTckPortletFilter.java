@@ -15,9 +15,9 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package javax.portlet.tck.filter;
+package jakarta.portlet.tck.filter;
 
-import javax.portlet.annotations.PortletLifecycleFilter;
+import jakarta.portlet.annotations.PortletLifecycleFilter;
 
 @PortletLifecycleFilter(
 	filterName = "portletParametersPlutoTckPortletFilter",

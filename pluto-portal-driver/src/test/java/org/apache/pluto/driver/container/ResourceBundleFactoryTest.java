@@ -58,9 +58,9 @@ public class ResourceBundleFactoryTest extends PlutoTestCase {
         ResourceBundleFactory factory = new ResourceBundleFactory(validDD, validDD.getPortletInfo());
         ResourceBundle bundle = factory.getResourceBundle(Locale.getDefault());
 
-        Assert.assertEquals("Bundle Title", bundle.getString("javax.portlet.title"));
-        Assert.assertEquals("Bundle Short Title", bundle.getString("javax.portlet.short-title"));
-        Assert.assertEquals("Bundle Keywords", bundle.getString("javax.portlet.keywords"));
+        Assert.assertEquals("Bundle Title", bundle.getString("jakarta.portlet.title"));
+        Assert.assertEquals("Bundle Short Title", bundle.getString("jakarta.portlet.short-title"));
+        Assert.assertEquals("Bundle Keywords", bundle.getString("jakarta.portlet.keywords"));
     }
 
     public void testGetResourceBundleNoBundle() {
@@ -68,18 +68,18 @@ public class ResourceBundleFactoryTest extends PlutoTestCase {
         ResourceBundleFactory factory = new ResourceBundleFactory(validDD, validDD.getPortletInfo());
         ResourceBundle bundle = factory.getResourceBundle(Locale.getDefault());
 
-        Assert.assertEquals("Info Title", bundle.getString("javax.portlet.title"));
-        Assert.assertEquals("Info Short Title", bundle.getString("javax.portlet.short-title"));
-        Assert.assertEquals("Info Keywords", bundle.getString("javax.portlet.keywords"));
+        Assert.assertEquals("Info Title", bundle.getString("jakarta.portlet.title"));
+        Assert.assertEquals("Info Short Title", bundle.getString("jakarta.portlet.short-title"));
+        Assert.assertEquals("Info Keywords", bundle.getString("jakarta.portlet.keywords"));
     }
 
     public void testGetResourceBundleNoInfo() {
         ResourceBundleFactory factory = new ResourceBundleFactory(validDD, validDD.getPortletInfo());
         ResourceBundle bundle = factory.getResourceBundle(Locale.getDefault());
 
-        Assert.assertEquals("Bundle Title", bundle.getString("javax.portlet.title"));
-        Assert.assertEquals("Bundle Short Title", bundle.getString("javax.portlet.short-title"));
-        Assert.assertEquals("Bundle Keywords", bundle.getString("javax.portlet.keywords"));
+        Assert.assertEquals("Bundle Title", bundle.getString("jakarta.portlet.title"));
+        Assert.assertEquals("Bundle Short Title", bundle.getString("jakarta.portlet.short-title"));
+        Assert.assertEquals("Bundle Keywords", bundle.getString("jakarta.portlet.keywords"));
     }
 
     public void testGetResourceBundleNoBundleNullValues() {
@@ -91,7 +91,7 @@ public class ResourceBundleFactoryTest extends PlutoTestCase {
         ResourceBundle bundle = factory.getResourceBundle(Locale.getDefault());
 
         try {
-            Assert.assertEquals(null, bundle.getString("javax.portlet.title"));
+            Assert.assertEquals(null, bundle.getString("jakarta.portlet.title"));
             fail("Exception should have been thrown.");
         }
         catch(Throwable t) {
@@ -99,7 +99,7 @@ public class ResourceBundleFactoryTest extends PlutoTestCase {
         }
 
         try {
-            Assert.assertEquals(null, bundle.getString("javax.portlet.short-title"));
+            Assert.assertEquals(null, bundle.getString("jakarta.portlet.short-title"));
             fail("Exception should have been throw.");
         }
         catch(Throwable t) {
@@ -107,7 +107,7 @@ public class ResourceBundleFactoryTest extends PlutoTestCase {
         }
 
         try {
-            Assert.assertEquals(null, bundle.getString("javax.portlet.keywords"));
+            Assert.assertEquals(null, bundle.getString("jakarta.portlet.keywords"));
             fail("Exception should have been thrown.");
         }
         catch(Throwable t) {
@@ -119,9 +119,9 @@ public class ResourceBundleFactoryTest extends PlutoTestCase {
     public static class TestResourceBundle extends ListResourceBundle {
 
         private Object[][] contents = {
-            {"javax.portlet.title", "Bundle Title"},
-            {"javax.portlet.short-title", "Bundle Short Title"},
-            {"javax.portlet.keywords", "Bundle Keywords"}
+            {"jakarta.portlet.title", "Bundle Title"},
+            {"jakarta.portlet.short-title", "Bundle Short Title"},
+            {"jakarta.portlet.keywords", "Bundle Keywords"}
         };
 
         protected Object[][] getContents() {

@@ -19,10 +19,10 @@ package org.apache.pluto.container.bean.mvc;
 import jakarta.mvc.engine.ViewEngine;
 import jakarta.mvc.engine.ViewEngineContext;
 import jakarta.mvc.engine.ViewEngineException;
-import javax.portlet.PortletContext;
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletRequestDispatcher;
-import javax.portlet.PortletResponse;
+import jakarta.portlet.PortletContext;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletRequestDispatcher;
+import jakarta.portlet.PortletResponse;
 import jakarta.ws.rs.core.Configuration;
 
 

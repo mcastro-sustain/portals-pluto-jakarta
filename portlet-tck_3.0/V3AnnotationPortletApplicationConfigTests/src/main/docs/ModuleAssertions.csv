@@ -6,7 +6,7 @@ SPEC1_28;PortletModes;declaringPortletModes2;TRUE;Support for the HELP mode must
 SPEC1_28;PortletModes;declaringPortletModes3;TRUE;A custom portlet mode may be declared in the @PortletApplication annotation.
 SPEC1_28;PortletModes;declaringPortletModes4;TRUE;A custom portlet mode with portalManaged=true may be declared in the @PortletApplication annotation.
 SPEC1_28;PortletModes;declaringPortletModes5;TRUE;The PortletRequest.isPortletModeAllowed method must return FALSE for a custom portlet mode with portalManaged=true that is not supported by the portlet container
-SPEC1_28;PortletModes;declaringPortletModes6;TRUE;A custom portlet mode can have a localized decoration name in the resource bundle with the name of javax.portlet.app.custom-portlet-mode.<name>.decoration-name
+SPEC1_28;PortletModes;declaringPortletModes6;TRUE;A custom portlet mode can have a localized decoration name in the resource bundle with the name of jakarta.portlet.app.custom-portlet-mode.<name>.decoration-name
 SPEC1_28;WindowStates;declaringWindowStates1;TRUE;Support for the NORMAL window state does not need to be declared in the @PortletApplication annotation.
 SPEC1_28;WindowStates;declaringWindowStates2;TRUE;Support for the MINIMIZED window state does not need to be declared in the @PortletApplication annotation.
 SPEC1_28;WindowStates;declaringWindowStates3;TRUE;Support for the MAXIMIZED window state does not need to be declared in the @PortletApplication annotation.

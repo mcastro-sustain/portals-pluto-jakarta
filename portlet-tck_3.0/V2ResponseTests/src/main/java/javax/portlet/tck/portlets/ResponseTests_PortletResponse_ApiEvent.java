@@ -16,41 +16,41 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYA1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYA2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYB1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYB3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYB4;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYC1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYC2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_SETPROPERTY1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_SETPROPERTY3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ENCODEURL1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ENCODEURL2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_GETNAMESPACE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_CREATEELEMENT1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_CREATEELEMENT2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_CREATEELEMENT3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_CREATEELEMENT4;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_CREATEELEMENT5;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_CREATEELEMENT6;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
-import static javax.portlet.tck.constants.Constants.TCKNAMESPACE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYA1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYA2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYB1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYB3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYB4;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYC1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ADDPROPERTYC2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_SETPROPERTY1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_SETPROPERTY3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ENCODEURL1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_ENCODEURL2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_GETNAMESPACE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_CREATEELEMENT1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_CREATEELEMENT2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_CREATEELEMENT3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_CREATEELEMENT4;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_CREATEELEMENT5;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_PORTLETRESPONSE_APIEVENT_CREATEELEMENT6;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.constants.Constants.TCKNAMESPACE;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.TestButton;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.TestButton;
 import javax.xml.namespace.QName;
 
 /**

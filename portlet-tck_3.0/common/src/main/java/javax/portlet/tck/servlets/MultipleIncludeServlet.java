@@ -17,17 +17,17 @@
  */
 
 
-package javax.portlet.tck.servlets;
+package jakarta.portlet.tck.servlets;
 
-import static javax.portlet.tck.constants.Constants.MULTIPLE_INCLUDE_ATTR;
-import static javax.portlet.tck.constants.Constants.MULTIPLE_INCLUDE_VAL;
+import static jakarta.portlet.tck.constants.Constants.MULTIPLE_INCLUDE_ATTR;
+import static jakarta.portlet.tck.constants.Constants.MULTIPLE_INCLUDE_VAL;
 
 import java.io.IOException;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

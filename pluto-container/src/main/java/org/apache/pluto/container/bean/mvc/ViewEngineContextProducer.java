@@ -19,8 +19,8 @@ package org.apache.pluto.container.bean.mvc;
 import jakarta.enterprise.context.Dependent;
 import jakarta.enterprise.inject.Produces;
 import jakarta.mvc.engine.ViewEngineContext;
-import javax.portlet.MimeResponse;
-import javax.portlet.PortletRequest;
+import jakarta.portlet.MimeResponse;
+import jakarta.portlet.PortletRequest;
 import jakarta.ws.rs.core.Configuration;
 
 

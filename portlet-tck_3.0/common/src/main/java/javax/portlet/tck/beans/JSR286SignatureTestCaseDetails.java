@@ -16,7 +16,7 @@
  *  under the License.
  */
 
-package javax.portlet.tck.beans;
+package jakarta.portlet.tck.beans;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -2696,15 +2696,15 @@ public class JSR286SignatureTestCaseDetails extends TestCaseDetails {
             "WindowStateException method getState() returns WindowState");
       tcd.put(
             V2SIGTESTSFILTER_ACTIONFILTER_SIGRENDER_HASDOFILTER,
-            "ActionFilter has a doFilter(ActionRequest, ActionResponse, javax.portlet.filter.FilterChain) throws java.io.IOException, PortletException method");
+            "ActionFilter has a doFilter(ActionRequest, ActionResponse, jakarta.portlet.filter.FilterChain) throws java.io.IOException, PortletException method");
       tcd.put(V2SIGTESTSFILTER_ACTIONFILTER_SIGRENDER_HASDOFILTERRETURNS,
-            "ActionFilter method doFilter(ActionRequest, ActionResponse, javax.portlet.filter.FilterChain) returns void");
+            "ActionFilter method doFilter(ActionRequest, ActionResponse, jakarta.portlet.filter.FilterChain) returns void");
       tcd.put(V2SIGTESTSFILTER_ACTIONFILTER_SIGRENDER_IMPLEMENTSPORTLETFILTER, "ActionFilter implements PortletFilter");
       tcd.put(
             V2SIGTESTSFILTER_EVENTFILTER_SIGRENDER_HASDOFILTER,
-            "EventFilter has a doFilter(EventRequest, EventResponse, javax.portlet.filter.FilterChain) throws java.io.IOException, PortletException method");
+            "EventFilter has a doFilter(EventRequest, EventResponse, jakarta.portlet.filter.FilterChain) throws java.io.IOException, PortletException method");
       tcd.put(V2SIGTESTSFILTER_EVENTFILTER_SIGRENDER_HASDOFILTERRETURNS,
-            "EventFilter method doFilter(EventRequest, EventResponse, javax.portlet.filter.FilterChain) returns void");
+            "EventFilter method doFilter(EventRequest, EventResponse, jakarta.portlet.filter.FilterChain) returns void");
       tcd.put(V2SIGTESTSFILTER_EVENTFILTER_SIGRENDER_IMPLEMENTSPORTLETFILTER, "EventFilter implements PortletFilter");
       tcd.put(V2SIGTESTSFILTER_FILTERCHAIN_SIGRENDER_HASDOFILTER,
             "FilterChain has a doFilter(ActionRequest, ActionResponse) throws java.io.IOException, PortletException method");
@@ -2741,20 +2741,20 @@ public class JSR286SignatureTestCaseDetails extends TestCaseDetails {
       tcd.put(V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASDESTROYRETURNS,
             "PortletFilter method destroy() returns void");
       tcd.put(V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASINIT,
-            "PortletFilter has a init(javax.portlet.filter.FilterConfig) throws PortletException method");
+            "PortletFilter has a init(jakarta.portlet.filter.FilterConfig) throws PortletException method");
       tcd.put(V2SIGTESTSFILTER_PORTLETFILTER_SIGRENDER_HASINITRETURNS,
-            "PortletFilter method init(javax.portlet.filter.FilterConfig) returns void");
+            "PortletFilter method init(jakarta.portlet.filter.FilterConfig) returns void");
       tcd.put(
             V2SIGTESTSFILTER_RENDERFILTER_SIGRENDER_HASDOFILTER,
-            "RenderFilter has a doFilter(RenderRequest, RenderResponse, javax.portlet.filter.FilterChain) throws java.io.IOException, PortletException method");
+            "RenderFilter has a doFilter(RenderRequest, RenderResponse, jakarta.portlet.filter.FilterChain) throws java.io.IOException, PortletException method");
       tcd.put(V2SIGTESTSFILTER_RENDERFILTER_SIGRENDER_HASDOFILTERRETURNS,
-            "RenderFilter method doFilter(RenderRequest, RenderResponse, javax.portlet.filter.FilterChain) returns void");
+            "RenderFilter method doFilter(RenderRequest, RenderResponse, jakarta.portlet.filter.FilterChain) returns void");
       tcd.put(V2SIGTESTSFILTER_RENDERFILTER_SIGRENDER_IMPLEMENTSPORTLETFILTER, "RenderFilter implements PortletFilter");
       tcd.put(
             V2SIGTESTSFILTER_RESOURCEFILTER_SIGRENDER_HASDOFILTER,
-            "ResourceFilter has a doFilter(ResourceRequest, ResourceResponse, javax.portlet.filter.FilterChain) throws java.io.IOException, PortletException method");
+            "ResourceFilter has a doFilter(ResourceRequest, ResourceResponse, jakarta.portlet.filter.FilterChain) throws java.io.IOException, PortletException method");
       tcd.put(V2SIGTESTSFILTER_RESOURCEFILTER_SIGRENDER_HASDOFILTERRETURNS,
-            "ResourceFilter method doFilter(ResourceRequest, ResourceResponse, javax.portlet.filter.FilterChain) returns void");
+            "ResourceFilter method doFilter(ResourceRequest, ResourceResponse, jakarta.portlet.filter.FilterChain) returns void");
       tcd.put(V2SIGTESTSFILTER_RESOURCEFILTER_SIGRENDER_IMPLEMENTSPORTLETFILTER,
             "ResourceFilter implements PortletFilter");
       tcd.put(V2SIGTESTSRENDER_MIMERESPONSE_SIGRENDER_FIELDCACHE_SCOPE, "RenderResponse has String field CACHE_SCOPE");

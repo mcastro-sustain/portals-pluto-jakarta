@@ -16,65 +16,65 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_DISPATCH1;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_DISPATCH2;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_DISPATCH3;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_INVOKE2;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_INVOKE4;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_INVOKE7;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES1;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES1A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES1B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES1C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES2;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES2A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES2B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES2C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES3;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES3A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES3B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES3C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES4;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES4A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES4B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES4C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES5;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES5A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES5B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES5C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES6;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES7;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES8;
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_ACTION;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_TARGET;
-import static javax.portlet.tck.constants.Constants.EXTRA_PATH;
-import static javax.portlet.tck.constants.Constants.QUERY_STRING;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
-import static javax.portlet.tck.constants.Constants.SERVLET_INCFWD;
-import static javax.portlet.tck.constants.Constants.SERVLET_PREFIX;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_DISPATCH1;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_DISPATCH2;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_DISPATCH3;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_INVOKE2;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_INVOKE4;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_INVOKE7;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES1;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES1A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES1B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES1C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES2;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES2A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES2B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES2C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES3;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES3A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES3B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES3C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES4;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES4A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES4B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES4C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES5;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES5A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES5B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES5C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES6;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES7;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS5_SPEC2_19_INCTHENFORWARDSERVLETACTION_ATTRIBUTES8;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_ACTION;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_TARGET;
+import static jakarta.portlet.tck.constants.Constants.EXTRA_PATH;
+import static jakarta.portlet.tck.constants.Constants.QUERY_STRING;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.SERVLET_INCFWD;
+import static jakarta.portlet.tck.constants.Constants.SERVLET_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequestDispatcher;
-import javax.portlet.PortletSession;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceServingPortlet;
-import javax.portlet.tck.beans.TestButton;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequestDispatcher;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceServingPortlet;
+import jakarta.portlet.tck.beans.TestButton;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined in the
@@ -458,8 +458,8 @@ public class DispatcherTests5_SPEC2_19_IncThenForwardServletAction implements Po
 
       /* TestCase: V2DispatcherTests5_SPEC2_19_IncThenForwardServletAction_attributes6 */
       /* Details: "In a servlet forwarded to by the target of an include, */
-      /* the request attribute javax.portlet.config must be set to the */
-      /* javax.portlet.PortletConfig object" */
+      /* the request attribute jakarta.portlet.config must be set to the */
+      /* jakarta.portlet.PortletConfig object" */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());
@@ -470,8 +470,8 @@ public class DispatcherTests5_SPEC2_19_IncThenForwardServletAction implements Po
       /* TestCase: V2DispatcherTests5_SPEC2_19_IncThenForwardServletAction_attributes7 */
       /* Details: "In a servlet forwarded to by the target of an include, */
       /* for forwards from the processAction method, The request attribute */
-      /* javax.portlet.request must be set to the */
-      /* javax.portlet.ActionRequest object" */
+      /* jakarta.portlet.request must be set to the */
+      /* jakarta.portlet.ActionRequest object" */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());
@@ -482,8 +482,8 @@ public class DispatcherTests5_SPEC2_19_IncThenForwardServletAction implements Po
       /* TestCase: V2DispatcherTests5_SPEC2_19_IncThenForwardServletAction_attributes8 */
       /* Details: "In a servlet forwarded to by the target of an include, */
       /* for forwards from the processAction method, The request attribute */
-      /* javax.portlet.response must be set to the */
-      /* javax.portlet.ActionResponse object" */
+      /* jakarta.portlet.response must be set to the */
+      /* jakarta.portlet.ActionResponse object" */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());

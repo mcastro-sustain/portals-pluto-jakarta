@@ -37,7 +37,7 @@ import jakarta.enterprise.inject.spi.BeanManager;
 import jakarta.enterprise.inject.spi.BeforeBeanDiscovery;
 import jakarta.enterprise.inject.spi.Extension;
 import jakarta.enterprise.inject.spi.ProcessAnnotatedType;
-import javax.portlet.PortletConfig;
+import jakarta.portlet.PortletConfig;
 
 import org.apache.pluto.container.bean.mvc.MvcExtension;
 import org.slf4j.Logger;

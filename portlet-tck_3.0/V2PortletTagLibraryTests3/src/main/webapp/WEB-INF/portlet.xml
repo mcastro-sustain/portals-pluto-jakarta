@@ -24,7 +24,7 @@
    version="2.0" id="V2PortletTagLibraryTests3">
    <portlet>
       <portlet-name>PortletTagLibraryTests3_SPEC2_26_IncludeJSPResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.PortletTagLibraryTests3_SPEC2_26_IncludeJSPResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.PortletTagLibraryTests3_SPEC2_26_IncludeJSPResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -37,7 +37,7 @@
    
    <portlet>
       <portlet-name>PortletTagLibraryTests3_SPEC2_26_IncludeJSPResource_tr39</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.PortletTagLibraryTests3_SPEC2_26_IncludeJSPResource_tr39</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.PortletTagLibraryTests3_SPEC2_26_IncludeJSPResource_tr39</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -50,7 +50,7 @@
    
    <portlet>
       <portlet-name>PortletTagLibraryTests3_SPEC2_26_IncludeJSPResource_tr40</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.PortletTagLibraryTests3_SPEC2_26_IncludeJSPResource_tr40</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.PortletTagLibraryTests3_SPEC2_26_IncludeJSPResource_tr40</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

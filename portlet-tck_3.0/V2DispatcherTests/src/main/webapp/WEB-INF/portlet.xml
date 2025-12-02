@@ -17,7 +17,7 @@
 >
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_DispatchServletRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_DispatchServletRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_DispatchServletRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -30,7 +30,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_DispatchServletAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_DispatchServletAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_DispatchServletAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -43,7 +43,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_DispatchServletEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_DispatchServletEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_DispatchServletEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -59,7 +59,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_DispatchServletEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_DispatchServletEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_DispatchServletEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -75,7 +75,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_DispatchServletResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_DispatchServletResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_DispatchServletResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -88,7 +88,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_IncludeServletAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_IncludeServletAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_IncludeServletAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -101,7 +101,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_IncludeServletEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_IncludeServletEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_IncludeServletEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -117,7 +117,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_IncludeServletEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_IncludeServletEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_IncludeServletEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -133,7 +133,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_IncludeServletRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_IncludeServletRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_IncludeServletRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -146,7 +146,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_IncludeServletResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_IncludeServletResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_IncludeServletResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -159,7 +159,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_ForwardServletAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_ForwardServletAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_ForwardServletAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -172,7 +172,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_ForwardServletEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_ForwardServletEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_ForwardServletEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -188,7 +188,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_ForwardServletEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_ForwardServletEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_ForwardServletEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -204,7 +204,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_ForwardServletRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_ForwardServletRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_ForwardServletRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -217,7 +217,7 @@
 
    <portlet>
       <portlet-name>DispatcherTests_SPEC2_19_ForwardServletResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.DispatcherTests_SPEC2_19_ForwardServletResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.DispatcherTests_SPEC2_19_ForwardServletResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -230,17 +230,17 @@
 
    <event-definition>
       <qname>tck:DispatcherTests_SPEC2_19_DispatchServletEvent</qname>
-      <value-type>javax.portlet.tck.beans.TckParameters</value-type>
+      <value-type>jakarta.portlet.tck.beans.TckParameters</value-type>
    </event-definition>
 
    <event-definition>
       <qname>tck:DispatcherTests_SPEC2_19_IncludeServletEvent</qname>
-      <value-type>javax.portlet.tck.beans.TckParameters</value-type>
+      <value-type>jakarta.portlet.tck.beans.TckParameters</value-type>
    </event-definition>
 
    <event-definition>
       <qname>tck:DispatcherTests_SPEC2_19_ForwardServletEvent</qname>
-      <value-type>javax.portlet.tck.beans.TckParameters</value-type>
+      <value-type>jakarta.portlet.tck.beans.TckParameters</value-type>
    </event-definition>
 
    <public-render-parameter>

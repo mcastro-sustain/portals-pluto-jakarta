@@ -27,7 +27,7 @@
    
     <portlet>
       <portlet-name>AnnotationPortletAppConfigOverrideTests_SPEC1_28_DefaultNamespaceURI</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AnnotationPortletAppConfigOverrideTests_SPEC1_28_DefaultNamespaceURI</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AnnotationPortletAppConfigOverrideTests_SPEC1_28_DefaultNamespaceURI</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -41,7 +41,7 @@
    
    <portlet>
       <portlet-name>AnnotationPortletAppConfigOverrideTests_SPEC1_28_PublicRenderParameters2</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.AnnotationPortletAppConfigOverrideTests_SPEC1_28_PublicRenderParameters2</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.AnnotationPortletAppConfigOverrideTests_SPEC1_28_PublicRenderParameters2</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -97,7 +97,7 @@
 	</public-render-parameter>
 
    <container-runtime-option>
-		<name>javax.portlet.escapeXml</name>
+		<name>jakarta.portlet.escapeXml</name>
 		<value>true</value>
 	</container-runtime-option>
 

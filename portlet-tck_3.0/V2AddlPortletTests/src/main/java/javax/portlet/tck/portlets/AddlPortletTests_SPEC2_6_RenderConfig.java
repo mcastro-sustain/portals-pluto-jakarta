@@ -13,7 +13,7 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -23,23 +23,23 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.ResourceBundle;
 
-import javax.portlet.*;
-import javax.portlet.tck.beans.JSR286SpecTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.*;
+import jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 import javax.xml.namespace.QName;
 
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE3;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE4;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETPUBLISHINGEVENTQNAMES4;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETPROCESSINGEVENTQNAMES4;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETCONTAINERRUNTIMEOPTIONS6;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETCONTAINERRUNTIMEOPTIONS7;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETCONTAINERRUNTIMEOPTIONS8;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETCONTAINERRUNTIMEOPTIONS9;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETDEFAULTNAMESPACE2;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE3;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE4;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETPUBLISHINGEVENTQNAMES4;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETPROCESSINGEVENTQNAMES4;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETCONTAINERRUNTIMEOPTIONS6;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETCONTAINERRUNTIMEOPTIONS7;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETCONTAINERRUNTIMEOPTIONS8;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETCONTAINERRUNTIMEOPTIONS9;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETDEFAULTNAMESPACE2;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 import static javax.xml.XMLConstants.NULL_NS_URI;
 
 /**
@@ -108,42 +108,42 @@ public class AddlPortletTests_SPEC2_6_RenderConfig implements Portlet {
 
     /* TestCase: V2AddlPortletTests_SPEC2_6_RenderConfig_getResourceBundle2 */
     /* Details: "If the resource bundle contains a */
-    /* \"javax.portlet.title\" property, the value defined in the bundle */
+    /* \"jakarta.portlet.title\" property, the value defined in the bundle */
     /* is returned by the corresponding getString method call" */
     TestResult tr1 =
         tcd.getTestResultFailed(V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE2);
-    if (res.getString("javax.portlet.title").equals("AddlPortletTests_SPEC2_6_RenderConfig")) {
+    if (res.getString("jakarta.portlet.title").equals("AddlPortletTests_SPEC2_6_RenderConfig")) {
       tr1.setTcSuccess(true);
     } else {
-      tr1.appendTcDetail("Failed because title is " + res.getString("javax.portlet.title"));
+      tr1.appendTcDetail("Failed because title is " + res.getString("jakarta.portlet.title"));
     }
     tr1.writeTo(writer);
 
     /* TestCase: V2AddlPortletTests_SPEC2_6_RenderConfig_getResourceBundle3 */
     /* Details: "If the resource bundle contains a */
-    /* \"javax.portlet.short-title\" property, the value defined in the */
+    /* \"jakarta.portlet.short-title\" property, the value defined in the */
     /* bundle is returned by the corresponding getString method call" */
     TestResult tr2 =
         tcd.getTestResultFailed(V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE3);
-    if (res.getString("javax.portlet.short-title")
+    if (res.getString("jakarta.portlet.short-title")
         .equals("AddlPortletTests_SPEC2_6_RenderConfig_a")) {
       tr2.setTcSuccess(true);
     } else {
       tr2.appendTcDetail(
-          "Failed because short-title is " + res.getString("javax.portlet.short-title"));
+          "Failed because short-title is " + res.getString("jakarta.portlet.short-title"));
     }
     tr2.writeTo(writer);
 
     /* TestCase: V2AddlPortletTests_SPEC2_6_RenderConfig_getResourceBundle4 */
     /* Details: "If the resource bundle contains a */
-    /* \"javax.portlet.keywords\" property, the value defined in the */
+    /* \"jakarta.portlet.keywords\" property, the value defined in the */
     /* bundle is returned by the corresponding getString method call" */
     TestResult tr3 =
         tcd.getTestResultFailed(V2ADDLPORTLETTESTS_SPEC2_6_RENDERCONFIG_GETRESOURCEBUNDLE4);
-    if (res.getString("javax.portlet.keywords").equals("AddlPortletTests_SPEC2_6_RenderConfig_b")) {
+    if (res.getString("jakarta.portlet.keywords").equals("AddlPortletTests_SPEC2_6_RenderConfig_b")) {
       tr3.setTcSuccess(true);
     } else {
-      tr3.appendTcDetail("Failed because keyword is " + res.getString("javax.portlet.keywords"));
+      tr3.appendTcDetail("Failed because keyword is " + res.getString("jakarta.portlet.keywords"));
     }
     tr3.writeTo(writer);
 
@@ -191,8 +191,8 @@ public class AddlPortletTests_SPEC2_6_RenderConfig implements Portlet {
      * different containers expect different options
      */
     PortletContext portletContext = portletConfig.getPortletContext();
-    String expectedOption = portletContext.getInitParameter("javax.portlet.portletConfig.getContainerRuntimeOptions.EXPECTED_OPTION");
-    String expectedValue = portletContext.getInitParameter("javax.portlet.portletConfig.getContainerRuntimeOptions.EXPECTED_VALUE");
+    String expectedOption = portletContext.getInitParameter("jakarta.portlet.portletConfig.getContainerRuntimeOptions.EXPECTED_OPTION");
+    String expectedValue = portletContext.getInitParameter("jakarta.portlet.portletConfig.getContainerRuntimeOptions.EXPECTED_VALUE");
 
     /* TestCase: V2AddlPortletTests_SPEC2_6_RenderConfig_getContainerRuntimeOptions6 */
     /* Details: "The returned Map contains values defined in the */

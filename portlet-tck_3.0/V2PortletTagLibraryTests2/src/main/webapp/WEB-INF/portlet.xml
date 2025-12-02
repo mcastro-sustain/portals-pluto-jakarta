@@ -24,7 +24,7 @@
    version="2.0" id="V2PortletTagLibraryTests2">
    <portlet>
       <portlet-name>PortletTagLibraryTests2_SPEC2_26_IncludeJSPRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.PortletTagLibraryTests2_SPEC2_26_IncludeJSPRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.PortletTagLibraryTests2_SPEC2_26_IncludeJSPRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

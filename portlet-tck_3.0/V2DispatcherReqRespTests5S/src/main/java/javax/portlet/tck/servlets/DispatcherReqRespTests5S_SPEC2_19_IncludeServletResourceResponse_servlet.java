@@ -17,28 +17,28 @@
  */
 
 
-package javax.portlet.tck.servlets;
+package jakarta.portlet.tck.servlets;
 
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_GETOUTPUTSTREAM;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SENDERROR;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SENDREDIRECT;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SETCHARACTERENCODING;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SETCONTENTLENGTH;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SETCONTENTTYPE;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SETLOCALE;
-import static javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SETSTATUS;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_GETOUTPUTSTREAM;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SENDERROR;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SENDREDIRECT;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SETCHARACTERENCODING;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SETCONTENTLENGTH;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SETCONTENTTYPE;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SETLOCALE;
+import static jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails.V2DISPATCHERREQRESPTESTS5S_SPEC2_19_INCLUDESERVLETRESOURCERESPONSE_SETSTATUS;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.MimeResponse;
-import javax.portlet.PortletResponse;
-import javax.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.portlet.MimeResponse;
+import jakarta.portlet.PortletResponse;
+import jakarta.portlet.tck.beans.JSR286DispatcherReqRespTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * Servlet for JSR 362 request dispatcher testing.
@@ -66,7 +66,7 @@ public class DispatcherReqRespTests5S_SPEC2_19_IncludeServletResourceResponse_se
    protected void processTCKReq(HttpServletRequest request, HttpServletResponse response)
          throws ServletException, IOException {
 
-      PortletResponse portletResp = (PortletResponse) request.getAttribute("javax.portlet.response");
+      PortletResponse portletResp = (PortletResponse) request.getAttribute("jakarta.portlet.response");
 
       PrintWriter writer = ((MimeResponse)portletResp).getWriter();
 

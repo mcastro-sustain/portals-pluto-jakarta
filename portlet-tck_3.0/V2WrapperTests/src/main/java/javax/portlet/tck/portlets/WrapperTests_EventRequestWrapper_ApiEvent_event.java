@@ -16,35 +16,35 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_EVENTREQUESTWRAPPER_APIEVENT_GETREQUEST;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_EVENTREQUESTWRAPPER_APIEVENT_SETREQUEST;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_EVENTREQUESTWRAPPER_APIEVENT_GETEVENT1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_EVENTREQUESTWRAPPER_APIEVENT_GETMETHOD;
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_EVENTREQUESTWRAPPER_APIEVENT_GETREQUEST;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_EVENTREQUESTWRAPPER_APIEVENT_SETREQUEST;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_EVENTREQUESTWRAPPER_APIEVENT_GETEVENT1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2WRAPPERTESTS_EVENTREQUESTWRAPPER_APIEVENT_GETMETHOD;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.EventPortlet;
-import javax.portlet.EventRequest;
-import javax.portlet.EventResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.filter.EventRequestWrapper;
-import javax.portlet.tck.beans.EventRequestWrapperChecker;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.constants.Constants;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.EventPortlet;
+import jakarta.portlet.EventRequest;
+import jakarta.portlet.EventResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.filter.EventRequestWrapper;
+import jakarta.portlet.tck.beans.EventRequestWrapperChecker;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.constants.Constants;
 
 /**
  * This is the event processing portlet for the test cases. This portlet

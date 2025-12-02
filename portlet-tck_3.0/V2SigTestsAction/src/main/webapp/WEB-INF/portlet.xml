@@ -24,7 +24,7 @@
    version="2.0" id="V2SigTestsAction">
    <portlet>
       <portlet-name>SigTestsAction_ActionRequest_SIGAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsAction_ActionRequest_SIGAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsAction_ActionRequest_SIGAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -37,7 +37,7 @@
 
    <portlet>
       <portlet-name>SigTestsAction_ActionResponse_SIGAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsAction_ActionResponse_SIGAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsAction_ActionResponse_SIGAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -50,7 +50,7 @@
 
    <portlet>
       <portlet-name>SigTestsAction_ClientDataRequest_SIGAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsAction_ClientDataRequest_SIGAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsAction_ClientDataRequest_SIGAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -63,7 +63,7 @@
 
    <portlet>
       <portlet-name>SigTestsAction_PortletRequest_SIGAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsAction_PortletRequest_SIGAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsAction_PortletRequest_SIGAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -76,7 +76,7 @@
 
    <portlet>
       <portlet-name>SigTestsAction_PortletResponse_SIGAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsAction_PortletResponse_SIGAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsAction_PortletResponse_SIGAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -89,7 +89,7 @@
 
    <portlet>
       <portlet-name>SigTestsAction_StateAwareResponse_SIGAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsAction_StateAwareResponse_SIGAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsAction_StateAwareResponse_SIGAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

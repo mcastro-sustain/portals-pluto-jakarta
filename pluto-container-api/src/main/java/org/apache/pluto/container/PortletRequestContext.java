@@ -21,10 +21,10 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import javax.portlet.ActionParameters;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletSession;
-import javax.portlet.RenderParameters;
+import jakarta.portlet.ActionParameters;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.RenderParameters;
 import jakarta.servlet.DispatcherType;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.http.Cookie;

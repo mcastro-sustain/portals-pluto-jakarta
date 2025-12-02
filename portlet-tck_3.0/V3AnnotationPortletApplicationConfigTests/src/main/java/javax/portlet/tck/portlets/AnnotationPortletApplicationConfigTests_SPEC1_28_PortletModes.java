@@ -16,30 +16,30 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletMode;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.annotations.PortletConfiguration;
-import javax.portlet.annotations.Supports;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.util.ModuleTestCaseDetails;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletMode;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.annotations.PortletConfiguration;
+import jakarta.portlet.annotations.Supports;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.util.ModuleTestCaseDetails;
 
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES3;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES4;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES5;
-import static javax.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES6;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES3;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES4;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES5;
+import static jakarta.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES6;
 
 
 /**
@@ -51,7 +51,7 @@ import static javax.portlet.tck.util.ModuleTestCaseDetails.V3ANNOTATIONPORTLETAP
  */
 
 @PortletConfiguration(
-   resourceBundle = "javax.portlet.tck.portlets.portlet-mode-resource",
+   resourceBundle = "jakarta.portlet.tck.portlets.portlet-mode-resource",
    portletName = "AnnotationPortletApplicationConfigTests_SPEC1_28_PortletModes",
    supports={
       @Supports(portletModes={"view", "custom1", "custom2"})   
@@ -122,17 +122,17 @@ public class AnnotationPortletApplicationConfigTests_SPEC1_28_PortletModes imple
       /* TestCase: V3AnnotationPortletApplicationConfigTests_SPEC1_28_PortletModes_declaringPortletModes6 */
       /* Details: "A custom portlet mode can have a localized decoration name in    */
       /* the resource bundle with the name of                                       */
-      /* javax.portlet.app.custom-portlet-mode.&lt;name&gt;.decoration-name"        */
+      /* jakarta.portlet.app.custom-portlet-mode.&lt;name&gt;.decoration-name"        */
       {
          TestResult result = tcd.getTestResultFailed(V3ANNOTATIONPORTLETAPPLICATIONCONFIGTESTS_SPEC1_28_PORTLETMODES_DECLARINGPORTLETMODES6);
          Locale locale = portletReq.getLocale();
          ResourceBundle res = portletConfig.getResourceBundle(locale);
-         if (res.containsKey("javax.portlet.app.custom-portlet-mode.custom1.decoration-name")
-               && res.getString("javax.portlet.app.custom-portlet-mode.custom1.decoration-name")
+         if (res.containsKey("jakarta.portlet.app.custom-portlet-mode.custom1.decoration-name")
+               && res.getString("jakarta.portlet.app.custom-portlet-mode.custom1.decoration-name")
              .equals("decoration")) {
             result.setTcSuccess(true);
          } else {
-            result.appendTcDetail("Failed because javax.portlet.app.custom-portlet-mode.custom1.decoration-name is not found");
+            result.appendTcDetail("Failed because jakarta.portlet.app.custom-portlet-mode.custom1.decoration-name is not found");
          }
          result.writeTo(writer);
       }

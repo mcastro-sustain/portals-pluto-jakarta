@@ -16,9 +16,9 @@
  *  under the License.
  */
 
-package javax.portlet.tck.util;
+package jakarta.portlet.tck.util;
 
-import javax.portlet.tck.beans.TestCaseDetails;
+import jakarta.portlet.tck.beans.TestCaseDetails;
 import java.util.HashMap;
 import java.util.Map;
 

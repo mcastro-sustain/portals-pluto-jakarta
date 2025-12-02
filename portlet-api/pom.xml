@@ -130,7 +130,7 @@
                         jakarta.enterprise.context;resolution:=optional,
                         jakarta.inject;resolution:=optional,*
                      </Import-Package>
-							<Provide-Capability>osgi.contract; osgi.contract=JavaPortlet; version:List&lt;Version&gt;="3,2,1"; uses:="javax.portlet,javax.portlet.annotations,javax.portlet.filter"</Provide-Capability>
+							<Provide-Capability>osgi.contract; osgi.contract=JavaPortlet; version:List&lt;Version&gt;="3,2,1"; uses:="jakarta.portlet,jakarta.portlet.annotations,jakarta.portlet.filter"</Provide-Capability>
 						</instructions>
 					</configuration>
 				</plugin>

@@ -18,19 +18,19 @@ package org.apache.pluto.container;
 
 import java.io.IOException;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.EventRequest;
-import javax.portlet.EventResponse;
-import javax.portlet.HeaderRequest;
-import javax.portlet.HeaderResponse;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletResponse;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.EventRequest;
+import jakarta.portlet.EventResponse;
+import jakarta.portlet.HeaderRequest;
+import jakarta.portlet.HeaderResponse;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletResponse;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
 
 
 /**
@@ -48,25 +48,25 @@ public interface PortletInvokerService {
      * The key used to bind the <code>PortletRequest</code> to the underlying
      * <code>HttpServletRequest</code>.
      */
-    String PORTLET_REQUEST = "javax.portlet.request";
+    String PORTLET_REQUEST = "jakarta.portlet.request";
 
     /**
      * The key used to bind the <code>PortletResponse</code> to the underlying
      * <code>HttpServletRequest</code>.
      */
-    String PORTLET_RESPONSE = "javax.portlet.response";
+    String PORTLET_RESPONSE = "jakarta.portlet.response";
 
     /**
      * The key used to bind the <code>PortletConfig</code> to the underlying
      * PortletConfig.
      */
-    String PORTLET_CONFIG = "javax.portlet.config";
+    String PORTLET_CONFIG = "jakarta.portlet.config";
 
     /**
      * The key used to bind the <code>MethodIdentifier</code> to the ResourceRequest
      * for asyc processing
      */
-    String ASYNC_METHOD = "javax.portlet.asyncMethod";
+    String ASYNC_METHOD = "jakarta.portlet.asyncMethod";
 
     /**
      * The request attribute key used to retrieve the <code>PortletRequestContext</code> instance
@@ -127,7 +127,7 @@ public interface PortletInvokerService {
     /**
      * The unique method identifier for render requests.  Render requests are
      * requested through a call to the {@link PortletContainer#doEvent(org.apache.pluto.container.PortletWindow,
-     * javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, javax.portlet.Event)}
+     * javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, jakarta.portlet.Event)}
      * method.
      */
     Integer METHOD_EVENT = new Integer(9);

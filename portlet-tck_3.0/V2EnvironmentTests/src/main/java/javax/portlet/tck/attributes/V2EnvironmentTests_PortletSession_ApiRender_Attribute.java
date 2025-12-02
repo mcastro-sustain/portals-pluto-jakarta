@@ -13,11 +13,11 @@
  * the License.
  */
 
-package javax.portlet.tck.attributes;
+package jakarta.portlet.tck.attributes;
 
-import javax.portlet.tck.portlets.EnvironmentTests_PortletSession_ApiRender;
-import javax.servlet.http.HttpSessionAttributeListener;
-import javax.servlet.http.HttpSessionBindingEvent;
+import jakarta.portlet.tck.portlets.EnvironmentTests_PortletSession_ApiRender;
+import jakarta.servlet.http.HttpSessionAttributeListener;
+import jakarta.servlet.http.HttpSessionBindingEvent;
 
 /**
  * Listener for JSR 362 portlet preferences attribute testing. This validator tests for HttpSessionAttributeListener

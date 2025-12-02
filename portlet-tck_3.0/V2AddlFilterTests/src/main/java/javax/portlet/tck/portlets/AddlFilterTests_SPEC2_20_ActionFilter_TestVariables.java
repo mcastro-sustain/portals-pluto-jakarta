@@ -13,7 +13,7 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined

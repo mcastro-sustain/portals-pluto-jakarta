@@ -20,9 +20,9 @@
 package org.apache.pluto.container.bean.processor.fixtures.render;
 
 import java.rmi.RemoteException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.annotations.RenderMethod;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.annotations.RenderMethod;
 
 import org.apache.pluto.container.bean.processor.fixtures.InvocationResults;
 

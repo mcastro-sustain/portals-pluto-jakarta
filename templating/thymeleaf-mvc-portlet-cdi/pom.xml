@@ -22,13 +22,13 @@
 	<description>CDI implementation of the Thymeleaf MVC Portlet API</description>
 	<dependencies>
 		<dependency>
-			<groupId>javax.enterprise</groupId>
+			<groupId>jakarta.enterprise</groupId>
 			<artifactId>cdi-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>javax.mvc</groupId>
-			<artifactId>javax.mvc-api</artifactId>
+			<groupId>jakarta.mvc</groupId>
+			<artifactId>jakarta.mvc-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -37,13 +37,13 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>javax.ws.rs</groupId>
-			<artifactId>javax.ws.rs-api</artifactId>
+			<groupId>jakarta.ws.rs</groupId>
+			<artifactId>jakarta.ws.rs-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>

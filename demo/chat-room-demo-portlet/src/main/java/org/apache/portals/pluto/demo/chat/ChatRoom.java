@@ -21,19 +21,19 @@ package org.apache.portals.pluto.demo.chat;
 
 import java.io.IOException;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.PortletAsyncContext;
-import javax.portlet.PortletException;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.annotations.ActionMethod;
-import javax.portlet.annotations.Dependency;
-import javax.portlet.annotations.PortletConfiguration;
-import javax.portlet.annotations.RenderMethod;
-import javax.portlet.annotations.ServeResourceMethod;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.PortletAsyncContext;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.annotations.ActionMethod;
+import jakarta.portlet.annotations.Dependency;
+import jakarta.portlet.annotations.PortletConfiguration;
+import jakarta.portlet.annotations.RenderMethod;
+import jakarta.portlet.annotations.ServeResourceMethod;
 
 /**
  * Implements simple chat room functionality based on the asynchronous resource request.
@@ -44,7 +44,7 @@ import javax.portlet.annotations.ServeResourceMethod;
 @PortletConfiguration(
     portletName = "BeanPortletDemo",
     dependencies = {
-        @Dependency(name="PortletHub", scope = "javax.portlet", version="3.0.0")
+        @Dependency(name="PortletHub", scope = "jakarta.portlet", version="3.0.0")
     }
 )
 public class ChatRoom {
@@ -100,7 +100,7 @@ public class ChatRoom {
    /**
     * Action method for processing the message entry form.
     * If the action request contains an action parameter with the reserved
-    * name 'javax.portlet.action' and value matching the actionName attribute,
+    * name 'jakarta.portlet.action' and value matching the actionName attribute,
     * the portlet the portlet container routes the request to this method.
     */
    @ActionMethod(portletName="BeanPortletDemo", actionName="addMessage")
@@ -114,7 +114,7 @@ public class ChatRoom {
    /**
     * Action method for processing the history clear button.
     * If the action request contains an action parameter with the reserved
-    * name 'javax.portlet.action' and value matching the actionName attribute,
+    * name 'jakarta.portlet.action' and value matching the actionName attribute,
     * the portlet the portlet container routes the request to this method.
     */
    @ActionMethod(portletName="BeanPortletDemo", actionName="clearHistory")

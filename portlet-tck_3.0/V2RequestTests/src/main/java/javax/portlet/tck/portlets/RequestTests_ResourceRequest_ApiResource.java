@@ -16,21 +16,21 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.ResourceURL.PAGE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_FIELDETAG;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETCACHEABILITY;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETETAG2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETPRIVATERENDERPARAMETERMAP1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETPRIVATERENDERPARAMETERMAP2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETPRIVATERENDERPARAMETERMAP3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETPRIVATERENDERPARAMETERMAP4;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETRESOURCEID1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETRESOURCEID2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETRESPONSECONTENTTYPE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETRESPONSECONTENTTYPES;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.ResourceURL.PAGE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_FIELDETAG;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETCACHEABILITY;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETETAG2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETPRIVATERENDERPARAMETERMAP1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETPRIVATERENDERPARAMETERMAP2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETPRIVATERENDERPARAMETERMAP3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETPRIVATERENDERPARAMETERMAP4;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETRESOURCEID1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETRESOURCEID2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETRESPONSECONTENTTYPE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2REQUESTTESTS_RESOURCEREQUEST_APIRESOURCE_GETRESPONSECONTENTTYPES;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -39,20 +39,20 @@ import java.util.Collections;
 import java.util.Enumeration;
 import java.util.List;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceServingPortlet;
-import javax.portlet.ResourceURL;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceServingPortlet;
+import jakarta.portlet.ResourceURL;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

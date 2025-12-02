@@ -16,11 +16,11 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets.liferay;
+package jakarta.portlet.tck.portlets.liferay;
 
-import javax.portlet.Portlet;
-import javax.portlet.annotations.PortletConfiguration;
-import javax.portlet.tck.portlets.AnnotationPortletApplicationConfigTests_SPEC1_28_PortletContainerRuntimeOptionsBase;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.annotations.PortletConfiguration;
+import jakarta.portlet.tck.portlets.AnnotationPortletApplicationConfigTests_SPEC1_28_PortletContainerRuntimeOptionsBase;
 import java.util.Map;
 
 @PortletConfiguration(
@@ -34,8 +34,8 @@ public class AnnotationPortletApplicationConfigTests_SPEC1_28_PortletContainerRu
 	public boolean isRuntimeOptionsCorrect(
 		Map<String, String[]> runtimeOptions) {
 
-		if (runtimeOptions.containsKey("javax.portlet.escapeXml")
-		   && runtimeOptions.get("javax.portlet.escapeXml")[0].equals("true")) {
+		if (runtimeOptions.containsKey("jakarta.portlet.escapeXml")
+		   && runtimeOptions.get("jakarta.portlet.escapeXml")[0].equals("true")) {
 			return true;
 		}
 

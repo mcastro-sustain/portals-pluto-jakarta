@@ -16,62 +16,62 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDEXPIRATION_CACHE ;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDCACHE_SCOPE ;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDPUBLIC_SCOPE ;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDPRIVATE_SCOPE ;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDETAG ;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDUSE_CACHED_CONTENT ;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDNAMESPACED_RESPONSE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDMARKUP_HEAD_ELEMENT;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETCONTENTTYPE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETCONTENTTYPE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_SETCONTENTTYPE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_SETCONTENTTYPE4;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETCHARACTERENCODING;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETWRITER1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETWRITER2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETLOCALE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_SETBUFFERSIZE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_SETBUFFERSIZE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETBUFFERSIZE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETBUFFERSIZE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FLUSHBUFFER1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_RESETBUFFER1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_RESETBUFFER2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_ISCOMMITTED1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_ISCOMMITTED2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_RESET1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_RESET2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETPORTLETOUTPUTSTREAM1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETPORTLETOUTPUTSTREAM2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_CREATERENDERURL;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_CREATEACTIONURL;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_CREATERESOURCEURL;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETCACHECONTROL;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDEXPIRATION_CACHE ;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDCACHE_SCOPE ;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDPUBLIC_SCOPE ;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDPRIVATE_SCOPE ;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDETAG ;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDUSE_CACHED_CONTENT ;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDNAMESPACED_RESPONSE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDMARKUP_HEAD_ELEMENT;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETCONTENTTYPE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETCONTENTTYPE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_SETCONTENTTYPE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_SETCONTENTTYPE4;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETCHARACTERENCODING;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETWRITER1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETWRITER2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETLOCALE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_SETBUFFERSIZE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_SETBUFFERSIZE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETBUFFERSIZE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETBUFFERSIZE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FLUSHBUFFER1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_RESETBUFFER1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_RESETBUFFER2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_ISCOMMITTED1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_ISCOMMITTED2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_RESET1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_RESET2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETPORTLETOUTPUTSTREAM1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETPORTLETOUTPUTSTREAM2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_CREATERENDERURL;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_CREATEACTIONURL;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_CREATERESOURCEURL;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_GETCACHECONTROL;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Locale;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.CacheControl;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceServingPortlet;
-import javax.portlet.ResourceURL;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.CacheControl;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceServingPortlet;
+import jakarta.portlet.ResourceURL;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names
@@ -183,10 +183,10 @@ public class ResponseTests_MimeResponse_ApiResource implements Portlet, Resource
 
       /* TestCase: V2ResponseTests_MimeResponse_ApiResource_fieldMARKUP_HEAD_ELEMENT */
       /* Details: "Has String field MARKUP_HEAD_ELEMENT with value of         */
-      /* \"javax.portlet.markup.head.element\""                               */
+      /* \"jakarta.portlet.markup.head.element\""                               */
       TestResult tr7 = tcd.getTestResultFailed(V2RESPONSETESTS_MIMERESPONSE_APIRESOURCE_FIELDMARKUP_HEAD_ELEMENT);
       try {
-         tr7.setTcSuccess(cc.hasField("MARKUP_HEAD_ELEMENT", "javax.portlet.markup.head.element"));
+         tr7.setTcSuccess(cc.hasField("MARKUP_HEAD_ELEMENT", "jakarta.portlet.markup.head.element"));
       } catch(Exception e) {tr7.appendTcDetail(e.toString());}
       tr7.writeTo(writer);
 

@@ -13,7 +13,7 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -21,12 +21,12 @@ import java.util.Collections;
 import java.util.Enumeration;
 import java.util.List;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.PortletException;
-import javax.portlet.filter.ActionFilter;
-import javax.portlet.filter.FilterChain;
-import javax.portlet.filter.FilterConfig;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.filter.ActionFilter;
+import jakarta.portlet.filter.FilterChain;
+import jakarta.portlet.filter.FilterConfig;
 
 
 /**

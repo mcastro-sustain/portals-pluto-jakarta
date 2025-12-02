@@ -24,7 +24,7 @@
    version="2.0" id="V2SigTestsRender">
    <portlet>
       <portlet-name>SigTestsRender_MimeResponse_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsRender_MimeResponse_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsRender_MimeResponse_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -37,7 +37,7 @@
 
    <portlet>
       <portlet-name>SigTestsRender_PortletRequest$P3PUserInfos_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsRender_PortletRequest$P3PUserInfos_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsRender_PortletRequest$P3PUserInfos_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -50,7 +50,7 @@
 
    <portlet>
       <portlet-name>SigTestsRender_PortletRequest_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsRender_PortletRequest_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsRender_PortletRequest_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -63,7 +63,7 @@
 
    <portlet>
       <portlet-name>SigTestsRender_PortletResponse_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsRender_PortletResponse_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsRender_PortletResponse_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -76,7 +76,7 @@
 
    <portlet>
       <portlet-name>SigTestsRender_RenderRequest_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsRender_RenderRequest_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsRender_RenderRequest_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -89,7 +89,7 @@
 
    <portlet>
       <portlet-name>SigTestsRender_RenderResponse_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsRender_RenderResponse_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsRender_RenderResponse_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

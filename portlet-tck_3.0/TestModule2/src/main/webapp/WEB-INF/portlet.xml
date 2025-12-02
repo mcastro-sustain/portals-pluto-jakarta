@@ -24,7 +24,7 @@
 
    <portlet>
       <portlet-name>TestModule2_CanCreateRenderURL</portlet-name>
-      <portlet-class>javax.portlet.tck.TestModule2.portlets.TestModule2_CanCreateRenderURL</portlet-class>
+      <portlet-class>jakarta.portlet.tck.TestModule2.portlets.TestModule2_CanCreateRenderURL</portlet-class>
 
       <expiration-cache>0</expiration-cache>
 
@@ -39,7 +39,7 @@
 
    <portlet>
       <portlet-name>TestModule2_CompanionPortlet</portlet-name>
-      <portlet-class>javax.portlet.tck.TestModule2.portlets.TestModule2_CompanionPortlet</portlet-class>
+      <portlet-class>jakarta.portlet.tck.TestModule2.portlets.TestModule2_CompanionPortlet</portlet-class>
 
       <expiration-cache>0</expiration-cache>
 

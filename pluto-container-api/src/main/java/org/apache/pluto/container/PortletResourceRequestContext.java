@@ -19,9 +19,9 @@ package org.apache.pluto.container;
 import java.util.Map;
 
 import jakarta.enterprise.inject.spi.BeanManager;
-import javax.portlet.ResourceParameters;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
+import jakarta.portlet.ResourceParameters;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
 import jakarta.servlet.AsyncContext;
 import jakarta.servlet.DispatcherType;
 import jakarta.servlet.ServletRequest;

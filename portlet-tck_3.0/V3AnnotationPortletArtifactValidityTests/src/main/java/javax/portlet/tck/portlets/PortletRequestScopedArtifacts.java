@@ -16,14 +16,14 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import javax.inject.Inject;
-import javax.portlet.annotations.ContextPath;
-import javax.portlet.annotations.Namespace;
-import javax.portlet.annotations.PortletName;
-import javax.portlet.annotations.PortletRequestScoped;
-import javax.portlet.annotations.WindowId;
+import jakarta.inject.Inject;
+import jakarta.portlet.annotations.ContextPath;
+import jakarta.portlet.annotations.Namespace;
+import jakarta.portlet.annotations.PortletName;
+import jakarta.portlet.annotations.PortletRequestScoped;
+import jakarta.portlet.annotations.WindowId;
 
 @PortletRequestScoped
 public class PortletRequestScopedArtifacts {

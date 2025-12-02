@@ -13,17 +13,17 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
-import static javax.portlet.PortletSession.PORTLET_SCOPE;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONREQ_CONTENTTYPE1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONREQ_CONTENTTYPE2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONREQ_CONTENTTYPE3;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONREQ_CONTENTTYPE6;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONREQ_WINDOWID4;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.PortletSession.PORTLET_SCOPE;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONREQ_CONTENTTYPE1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONREQ_CONTENTTYPE2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONREQ_CONTENTTYPE3;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONREQ_CONTENTTYPE6;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLREQUESTTESTS_SPEC2_11_ACTIONREQ_WINDOWID4;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -32,18 +32,18 @@ import java.util.Collections;
 import java.util.Enumeration;
 import java.util.List;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletSession;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.JSR286SpecTestCaseDetails;
-import javax.portlet.tck.beans.TestButton;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails;
+import jakarta.portlet.tck.beans.TestButton;
+import jakarta.portlet.tck.beans.TestResult;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -139,12 +139,12 @@ public class AddlRequestTests_SPEC2_11_ActionReq implements Portlet {
       /* Details: "The string returned by getWindowID method must be the */
       /* same ID used for scoping portlet-scope session attributes" */
       TestResult tr5 = tcd.getTestResultFailed(V2ADDLREQUESTTESTS_SPEC2_11_ACTIONREQ_WINDOWID4);
-      String tr5SessionAttribute = (String) portletReq.getPortletSession().getAttribute("javax.portlet.p." + portletReq.getWindowID() + "?tr5",
+      String tr5SessionAttribute = (String) portletReq.getPortletSession().getAttribute("jakarta.portlet.p." + portletReq.getWindowID() + "?tr5",
             APPLICATION_SCOPE);
       if (tr5SessionAttribute != null && tr5SessionAttribute.equals(portletReq.getWindowID())) {
          tr5.setTcSuccess(true);
       } else {
-         tr5.appendTcDetail("Couldn't find javax.portlet.p." + portletReq.getWindowID() + ".tr5 attribute");
+         tr5.appendTcDetail("Couldn't find jakarta.portlet.p." + portletReq.getWindowID() + ".tr5 attribute");
       }
       tr5.writeTo(writer);
 

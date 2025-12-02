@@ -13,16 +13,16 @@
  * the License.
  */
 
-package javax.portlet.tck.validator;
+package jakarta.portlet.tck.validator;
 
 import java.util.ArrayList;
 
-import javax.portlet.PortletPreferences;
-import javax.portlet.PreferencesValidator;
-import javax.portlet.ValidatorException;
-import javax.portlet.tck.portlets.EnvironmentTests_PortletPreferences_ApiAction;
-import javax.portlet.tck.portlets.EnvironmentTests_PortletPreferences_ApiEvent_event;
-import javax.portlet.tck.portlets.EnvironmentTests_PortletPreferences_ApiResource;
+import jakarta.portlet.PortletPreferences;
+import jakarta.portlet.PreferencesValidator;
+import jakarta.portlet.ValidatorException;
+import jakarta.portlet.tck.portlets.EnvironmentTests_PortletPreferences_ApiAction;
+import jakarta.portlet.tck.portlets.EnvironmentTests_PortletPreferences_ApiEvent_event;
+import jakarta.portlet.tck.portlets.EnvironmentTests_PortletPreferences_ApiResource;
 
 /**
  * Validator for JSR 362 portlet preferences testing.

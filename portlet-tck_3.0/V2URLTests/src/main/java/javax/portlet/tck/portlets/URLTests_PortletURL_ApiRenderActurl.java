@@ -16,43 +16,43 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletMode;
-import javax.portlet.PortletModeException;
-import javax.portlet.PortletSession;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.WindowState;
-import javax.portlet.WindowStateException;
-import javax.portlet.tck.beans.CompareUtils;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.TestButton;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.beans.TestSetupLink;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletMode;
+import jakarta.portlet.PortletModeException;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.WindowState;
+import jakarta.portlet.WindowStateException;
+import jakarta.portlet.tck.beans.CompareUtils;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.TestButton;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.beans.TestSetupLink;
 
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_SETWINDOWSTATE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_SETPORTLETMODE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_REMOVEPUBLICRENDERPARAMETER1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_SETWINDOWSTATE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_SETPORTLETMODE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_SETPORTLETMODE3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_GETPORTLETMODE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_GETPORTLETMODE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_GETWINDOWSTATE1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_GETWINDOWSTATE2;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_REMOVEPUBLICRENDERPARAMETER2;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_SETWINDOWSTATE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_SETPORTLETMODE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_REMOVEPUBLICRENDERPARAMETER1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_SETWINDOWSTATE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_SETPORTLETMODE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_SETPORTLETMODE3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_GETPORTLETMODE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_GETPORTLETMODE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_GETWINDOWSTATE1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_GETWINDOWSTATE2;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_PORTLETURL_APIRENDERACTURL_REMOVEPUBLICRENDERPARAMETER2;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case

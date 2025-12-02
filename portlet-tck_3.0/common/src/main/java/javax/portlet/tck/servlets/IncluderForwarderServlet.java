@@ -17,23 +17,23 @@
  */
 
 
-package javax.portlet.tck.servlets;
+package jakarta.portlet.tck.servlets;
 
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_ACTION;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_CONTEXT_PATH;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_PATH_INFO;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_QUERY_STRING;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_REQUEST_URI;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_SERVLET_PATH;
-import static javax.portlet.tck.constants.Constants.ATTR_DISPATCH_TARGET;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_ACTION;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_CONTEXT_PATH;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_PATH_INFO;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_QUERY_STRING;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_REQUEST_URI;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_SERVLET_PATH;
+import static jakarta.portlet.tck.constants.Constants.ATTR_DISPATCH_TARGET;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

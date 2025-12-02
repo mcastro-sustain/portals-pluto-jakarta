@@ -18,8 +18,8 @@ package org.apache.pluto.container;
 
 import java.io.IOException;
 
-import javax.portlet.Event;
-import javax.portlet.PortletException;
+import jakarta.portlet.Event;
+import jakarta.portlet.PortletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 

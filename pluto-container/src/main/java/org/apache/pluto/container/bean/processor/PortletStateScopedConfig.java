@@ -30,7 +30,7 @@ import java.util.Set;
 import jakarta.enterprise.context.spi.Contextual;
 import jakarta.enterprise.inject.spi.Bean;
 import jakarta.enterprise.inject.spi.BeanManager;
-import javax.portlet.annotations.RenderStateScoped;
+import jakarta.portlet.annotations.RenderStateScoped;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

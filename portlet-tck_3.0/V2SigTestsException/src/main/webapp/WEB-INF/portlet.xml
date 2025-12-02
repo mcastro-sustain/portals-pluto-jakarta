@@ -24,7 +24,7 @@
    version="2.0" id="V2SigTestsException">
    <portlet>
       <portlet-name>SigTestsException_PortletException_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsException_PortletException_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsException_PortletException_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -37,7 +37,7 @@
 
    <portlet>
       <portlet-name>SigTestsException_PortletModeException_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsException_PortletModeException_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsException_PortletModeException_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -50,7 +50,7 @@
 
    <portlet>
       <portlet-name>SigTestsException_PortletSecurityException_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsException_PortletSecurityException_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsException_PortletSecurityException_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -63,7 +63,7 @@
 
    <portlet>
       <portlet-name>SigTestsException_ReadOnlyException_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsException_ReadOnlyException_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsException_ReadOnlyException_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -76,7 +76,7 @@
 
    <portlet>
       <portlet-name>SigTestsException_UnavailableException_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsException_UnavailableException_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsException_UnavailableException_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -89,7 +89,7 @@
 
    <portlet>
       <portlet-name>SigTestsException_ValidatorException_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsException_ValidatorException_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsException_ValidatorException_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -102,7 +102,7 @@
 
    <portlet>
       <portlet-name>SigTestsException_WindowStateException_SIGRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.SigTestsException_WindowStateException_SIGRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.SigTestsException_WindowStateException_SIGRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

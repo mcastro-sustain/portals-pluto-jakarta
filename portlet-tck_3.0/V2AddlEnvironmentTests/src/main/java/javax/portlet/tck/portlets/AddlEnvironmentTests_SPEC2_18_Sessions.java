@@ -13,57 +13,57 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
-import static javax.portlet.PortletSession.PORTLET_SCOPE;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_DECODEATTRIBUTENAME1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_DECODEATTRIBUTENAME2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETATTRIBUTE1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETATTRIBUTE2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETATTRIBUTE3;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETATTRIBUTENAMES1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETATTRIBUTENAMES2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETATTRIBUTENAMES3;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION11;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION4;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION6;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_INVALIDATE;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_REMOVEATTRIBUTE1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_REMOVEATTRIBUTE2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_REMOVEATTRIBUTE3;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SCOPE1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SCOPE5;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SETATTRIBUTE1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SETATTRIBUTE2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SETATTRIBUTE3;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SCOPE3;
-import static javax.portlet.tck.constants.Constants.BUTTON_PARAM_NAME;
-import static javax.portlet.tck.constants.Constants.JSP_PREFIX;
-import static javax.portlet.tck.constants.Constants.JSP_SUFFIX;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.PortletSession.PORTLET_SCOPE;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_DECODEATTRIBUTENAME1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_DECODEATTRIBUTENAME2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETATTRIBUTE1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETATTRIBUTE2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETATTRIBUTE3;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETATTRIBUTENAMES1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETATTRIBUTENAMES2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_GETATTRIBUTENAMES3;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION11;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION4;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_HTTPSESSION6;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_INVALIDATE;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_REMOVEATTRIBUTE1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_REMOVEATTRIBUTE2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_REMOVEATTRIBUTE3;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SCOPE1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SCOPE5;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SETATTRIBUTE1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SETATTRIBUTE2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SETATTRIBUTE3;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SCOPE3;
+import static jakarta.portlet.tck.constants.Constants.BUTTON_PARAM_NAME;
+import static jakarta.portlet.tck.constants.Constants.JSP_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.JSP_SUFFIX;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequestDispatcher;
-import javax.portlet.PortletSessionUtil;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.tck.beans.JSR286SpecTestCaseDetails;
-import javax.portlet.tck.beans.TestLink;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.beans.TestSetupLink;
-import javax.portlet.tck.constants.Constants;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequestDispatcher;
+import jakarta.portlet.PortletSessionUtil;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails;
+import jakarta.portlet.tck.beans.TestLink;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.beans.TestSetupLink;
+import jakarta.portlet.tck.constants.Constants;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined
@@ -156,7 +156,7 @@ public class AddlEnvironmentTests_SPEC2_18_Sessions implements Portlet {
     /* TestCase: V2AddlEnvironmentTests_SPEC2_18_Sessions_scope5 */
     /* Details: "The PORTLET_SCOPE object must be stored in the */
     /* APPLICATION_SCOPE with the attribute name */
-    /* 'javax.portlet.p.&lt;ID&gt;?&lt;ATTRIBUTE_NAME&gt;', where */
+    /* 'jakarta.portlet.p.&lt;ID&gt;?&lt;ATTRIBUTE_NAME&gt;', where */
     /* &lt;ID&gt; must be equal to the ID returned by the */
     /* PortletRequest.getWindowID()" */
     TestResult tr4 = tcd.getTestResultFailed(V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_SCOPE5);
@@ -164,13 +164,13 @@ public class AddlEnvironmentTests_SPEC2_18_Sessions implements Portlet {
         Constants.RESULT_ATTR_PREFIX + "AddlEnvironmentTests_SPEC2_18_Sessions_tr4", "true",
         PORTLET_SCOPE);
     String tr4_success = (String) portletReq.getPortletSession()
-        .getAttribute("javax.portlet.p." + portletReq.getWindowID() + "?"
+        .getAttribute("jakarta.portlet.p." + portletReq.getWindowID() + "?"
             + Constants.RESULT_ATTR_PREFIX + "AddlEnvironmentTests_SPEC2_18_Sessions_tr4",
             APPLICATION_SCOPE);
     if (tr4_success != null && tr4_success.equals("true")) {
       tr4.setTcSuccess(true);
     } else {
-      tr4.appendTcDetail("Failed becuase there is no attribute with key \"javax.portlet.p."
+      tr4.appendTcDetail("Failed becuase there is no attribute with key \"jakarta.portlet.p."
           + portletReq.getWindowID() + "?" + Constants.RESULT_ATTR_PREFIX
           + "AddlEnvironmentTests_SPEC2_18_Sessions_tr4\"");
     }
@@ -426,12 +426,12 @@ public class AddlEnvironmentTests_SPEC2_18_Sessions implements Portlet {
     /* name retrieved from the HttpSession" */
     TestResult tr17 =
         tcd.getTestResultFailed(V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_DECODEATTRIBUTENAME1);
-    portletReq.getPortletSession().setAttribute("javax.portlet.p.id?tr17", "true", PORTLET_SCOPE);
-    if (PortletSessionUtil.decodeAttributeName("javax.portlet.p.id?tr17").equals("tr17")) {
+    portletReq.getPortletSession().setAttribute("jakarta.portlet.p.id?tr17", "true", PORTLET_SCOPE);
+    if (PortletSessionUtil.decodeAttributeName("jakarta.portlet.p.id?tr17").equals("tr17")) {
       tr17.setTcSuccess(true);
     } else {
       tr17.appendTcDetail("Failed because decoded attribute name is not tr17 but "
-          + PortletSessionUtil.decodeAttributeName("javax.portlet.p.id?tr17"));
+          + PortletSessionUtil.decodeAttributeName("jakarta.portlet.p.id?tr17"));
     }
     tr17.writeTo(writer);
 
@@ -441,13 +441,13 @@ public class AddlEnvironmentTests_SPEC2_18_Sessions implements Portlet {
     /* name retrieved from the PortletSession in APPLICATION_SCOPE" */
     TestResult tr18 =
         tcd.getTestResultFailed(V2ADDLENVIRONMENTTESTS_SPEC2_18_SESSIONS_DECODEATTRIBUTENAME2);
-    portletReq.getPortletSession().setAttribute("javax.portlet.p.id?tr18", "true",
+    portletReq.getPortletSession().setAttribute("jakarta.portlet.p.id?tr18", "true",
         APPLICATION_SCOPE);
-    if (PortletSessionUtil.decodeAttributeName("javax.portlet.p.id?tr18").equals("tr18")) {
+    if (PortletSessionUtil.decodeAttributeName("jakarta.portlet.p.id?tr18").equals("tr18")) {
       tr18.setTcSuccess(true);
     } else {
       tr18.appendTcDetail("Failed because decoded attribute name is not tr18 but "
-          + PortletSessionUtil.decodeAttributeName("javax.portlet.p.id?tr18"));
+          + PortletSessionUtil.decodeAttributeName("jakarta.portlet.p.id?tr18"));
     }
     tr18.writeTo(writer);
 

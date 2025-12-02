@@ -24,7 +24,7 @@
    version="2.0" id="V2WrapperTests">
    <portlet>
       <portlet-name>WrapperTests_ActionRequestWrapper_ApiAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.WrapperTests_ActionRequestWrapper_ApiAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.WrapperTests_ActionRequestWrapper_ApiAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -38,7 +38,7 @@
 
    <portlet>
       <portlet-name>WrapperTests_ActionResponseWrapper_ApiAction</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.WrapperTests_ActionResponseWrapper_ApiAction</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.WrapperTests_ActionResponseWrapper_ApiAction</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -52,7 +52,7 @@
 
    <portlet>
       <portlet-name>WrapperTests_EventRequestWrapper_ApiEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.WrapperTests_EventRequestWrapper_ApiEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.WrapperTests_EventRequestWrapper_ApiEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -69,7 +69,7 @@
 
    <portlet>
       <portlet-name>WrapperTests_EventRequestWrapper_ApiEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.WrapperTests_EventRequestWrapper_ApiEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.WrapperTests_EventRequestWrapper_ApiEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -85,7 +85,7 @@
 
    <portlet>
       <portlet-name>WrapperTests_EventResponseWrapper_ApiEvent</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.WrapperTests_EventResponseWrapper_ApiEvent</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.WrapperTests_EventResponseWrapper_ApiEvent</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -102,7 +102,7 @@
 
    <portlet>
       <portlet-name>WrapperTests_EventResponseWrapper_ApiEvent_event</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.WrapperTests_EventResponseWrapper_ApiEvent_event</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.WrapperTests_EventResponseWrapper_ApiEvent_event</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -118,7 +118,7 @@
 
    <portlet>
       <portlet-name>WrapperTests_PortletRequestWrapper_ApiRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.WrapperTests_PortletRequestWrapper_ApiRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.WrapperTests_PortletRequestWrapper_ApiRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -132,7 +132,7 @@
 
    <portlet>
       <portlet-name>WrapperTests_PortletResponseWrapper_ApiRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.WrapperTests_PortletResponseWrapper_ApiRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.WrapperTests_PortletResponseWrapper_ApiRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -146,7 +146,7 @@
 
    <portlet>
       <portlet-name>WrapperTests_RenderRequestWrapper_ApiRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.WrapperTests_RenderRequestWrapper_ApiRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.WrapperTests_RenderRequestWrapper_ApiRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -160,7 +160,7 @@
 
    <portlet>
       <portlet-name>WrapperTests_RenderResponseWrapper_ApiRender</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.WrapperTests_RenderResponseWrapper_ApiRender</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.WrapperTests_RenderResponseWrapper_ApiRender</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -174,7 +174,7 @@
 
    <portlet>
       <portlet-name>WrapperTests_ResourceRequestWrapper_ApiResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.WrapperTests_ResourceRequestWrapper_ApiResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.WrapperTests_ResourceRequestWrapper_ApiResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>
@@ -188,7 +188,7 @@
 
    <portlet>
       <portlet-name>WrapperTests_ResourceResponseWrapper_ApiResource</portlet-name>
-      <portlet-class>javax.portlet.tck.portlets.WrapperTests_ResourceResponseWrapper_ApiResource</portlet-class>
+      <portlet-class>jakarta.portlet.tck.portlets.WrapperTests_ResourceResponseWrapper_ApiResource</portlet-class>
       <expiration-cache>0</expiration-cache>
       <supports>
          <mime-type>text/html</mime-type>

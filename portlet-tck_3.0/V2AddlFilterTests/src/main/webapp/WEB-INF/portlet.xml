@@ -16,7 +16,7 @@
 	version="2.0" id="V2AddlFilterTests">
 	<portlet>
 		<portlet-name>AddlFilterTests_SPEC2_20_Action</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Action</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Action</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -29,7 +29,7 @@
 
 	<portlet>
 		<portlet-name>AddlFilterTests_SPEC2_20_Render</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Render</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Render</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -42,7 +42,7 @@
 
 	<portlet>
 		<portlet-name>AddlFilterTests_SPEC2_20_Event</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Event</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Event</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -59,7 +59,7 @@
 
 	<portlet>
 		<portlet-name>AddlFilterTests_SPEC2_20_Event_event</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Event_event</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Event_event</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -76,7 +76,7 @@
 
 	<portlet>
 		<portlet-name>AddlFilterTests_SPEC2_20_Resource</portlet-name>
-		<portlet-class>javax.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Resource</portlet-class>
+		<portlet-class>jakarta.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Resource</portlet-class>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
@@ -89,7 +89,7 @@
 
 	<filter>
 		<filter-name>AddlFilterTests_SPEC2_20_Filter1</filter-name>
-		<filter-class>javax.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Filter</filter-class>
+		<filter-class>jakarta.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Filter</filter-class>
 		<lifecycle>ACTION_PHASE</lifecycle>
 		<lifecycle>EVENT_PHASE</lifecycle>
 		<lifecycle>RESOURCE_PHASE</lifecycle>
@@ -105,7 +105,7 @@
 	
 	<filter>
 		<filter-name>AddlFilterTests_SPEC2_20_Filter1a</filter-name>
-		<filter-class>javax.portlet.tck.portlets.AddlFilterTests_SPEC2_20_FilterMultiple</filter-class>
+		<filter-class>jakarta.portlet.tck.portlets.AddlFilterTests_SPEC2_20_FilterMultiple</filter-class>
 		<lifecycle>ACTION_PHASE</lifecycle>
 		<init-param>
 			<name>tr4</name>
@@ -119,19 +119,19 @@
 	
 	<filter>
 		<filter-name>AddlFilterTests_SPEC2_20_Filter2</filter-name>
-		<filter-class>javax.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Filter</filter-class>
+		<filter-class>jakarta.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Filter</filter-class>
 		<lifecycle>RENDER_PHASE</lifecycle>
 	</filter>
 	
 	<filter>
 		<filter-name>AddlFilterTests_SPEC2_20_Filter3</filter-name>
-		<filter-class>javax.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Filter</filter-class>
+		<filter-class>jakarta.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Filter</filter-class>
 		<lifecycle>RESOURCE_PHASE</lifecycle>
 	</filter>
 	
 	<filter>
 		<filter-name>AddlFilterTests_SPEC2_20_Filter4</filter-name>
-		<filter-class>javax.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Filter</filter-class>
+		<filter-class>jakarta.portlet.tck.portlets.AddlFilterTests_SPEC2_20_Filter</filter-class>
 		<lifecycle>EVENT_PHASE</lifecycle>
 	</filter>
 

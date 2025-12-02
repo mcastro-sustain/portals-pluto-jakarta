@@ -16,65 +16,65 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_DISPATCH1;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_DISPATCH2;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_DISPATCH3;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_INVOKE1;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_INVOKE2;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_INVOKE4;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_INVOKE7;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES1;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES1A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES1B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES1C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES2;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES2A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES2B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES2C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES3;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES3A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES3B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES3C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES4;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES4A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES4B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES4C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES5;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES5A;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES5B;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES5C;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES6;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES7;
-import static javax.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES8;
-import static javax.portlet.PortletSession.APPLICATION_SCOPE;
-import static javax.portlet.tck.constants.Constants.JSP_PREFIX;
-import static javax.portlet.tck.constants.Constants.JSP_SUFFIX;
-import static javax.portlet.tck.constants.Constants.QUERY_STRING;
-import static javax.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_DISPATCH1;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_DISPATCH2;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_DISPATCH3;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_INVOKE1;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_INVOKE2;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_INVOKE4;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_INVOKE7;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES1;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES1A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES1B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES1C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES2;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES2A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES2B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES2C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES3;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES3A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES3B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES3C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES4;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES4A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES4B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES4C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES5;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES5A;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES5B;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES5C;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES6;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES7;
+import static jakarta.portlet.tck.beans.JSR286DispatcherTestCaseDetails.V2DISPATCHERTESTS2_SPEC2_19_FORWARDJSPACTION_ATTRIBUTES8;
+import static jakarta.portlet.PortletSession.APPLICATION_SCOPE;
+import static jakarta.portlet.tck.constants.Constants.JSP_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.JSP_SUFFIX;
+import static jakarta.portlet.tck.constants.Constants.QUERY_STRING;
+import static jakarta.portlet.tck.constants.Constants.RESULT_ATTR_PREFIX;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.MimeResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequestDispatcher;
-import javax.portlet.PortletSession;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceServingPortlet;
-import javax.portlet.tck.beans.TestButton;
-import javax.portlet.tck.beans.TestSetupLink;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.MimeResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequestDispatcher;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceServingPortlet;
+import jakarta.portlet.tck.beans.TestButton;
+import jakarta.portlet.tck.beans.TestSetupLink;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined in the
@@ -462,8 +462,8 @@ public class DispatcherTests2_SPEC2_19_ForwardJSPAction implements Portlet, Reso
       }
 
       /* TestCase: V2DispatcherTests2_SPEC2_19_ForwardJSPAction_attributes6 */
-      /* Details: "The request attribute javax.portlet.config must be set */
-      /* to the javax.portlet.PortletConfig object" */
+      /* Details: "The request attribute jakarta.portlet.config must be set */
+      /* to the jakarta.portlet.PortletConfig object" */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());
@@ -473,8 +473,8 @@ public class DispatcherTests2_SPEC2_19_ForwardJSPAction implements Portlet, Reso
 
       /* TestCase: V2DispatcherTests2_SPEC2_19_ForwardJSPAction_attributes7 */
       /* Details: "For forwards from the processAction method, The request */
-      /* attribute javax.portlet.request must be set to the */
-      /* javax.portlet.ActionRequest object" */
+      /* attribute jakarta.portlet.request must be set to the */
+      /* jakarta.portlet.ActionRequest object" */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());
@@ -484,8 +484,8 @@ public class DispatcherTests2_SPEC2_19_ForwardJSPAction implements Portlet, Reso
 
       /* TestCase: V2DispatcherTests2_SPEC2_19_ForwardJSPAction_attributes8 */
       /* Details: "For forwards from the processAction method, The request */
-      /* attribute javax.portlet.response must be set to the */
-      /* javax.portlet.ActionResponse object" */
+      /* attribute jakarta.portlet.response must be set to the */
+      /* jakarta.portlet.ActionResponse object" */
       {
          PortletURL aurl = portletResp.createActionURL();
          aurl.setParameters(portletReq.getPrivateParameterMap());

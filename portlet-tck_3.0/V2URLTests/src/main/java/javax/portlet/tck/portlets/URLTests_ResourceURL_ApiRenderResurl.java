@@ -16,46 +16,46 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceServingPortlet;
-import javax.portlet.ResourceURL;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.CompareUtils;
-import javax.portlet.tck.beans.JSR286ApiTestCaseDetails;
-import javax.portlet.tck.beans.ResourceLink;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.beans.TestSetupLink;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceServingPortlet;
+import jakarta.portlet.ResourceURL;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.CompareUtils;
+import jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails;
+import jakarta.portlet.tck.beans.ResourceLink;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.beans.TestSetupLink;
 
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL4;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL5;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL6;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL8;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_SETRESOURCEID;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_SETCACHEABILITY1;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_SETCACHEABILITY3;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_FIELDFULL;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_FIELDPAGE;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_FIELDPORTLET;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_FIELDSHARED;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL7;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL9;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_GETCACHEABILITY;
-import static javax.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_SETCACHEABILITY2;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL4;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL5;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL6;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL8;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_SETRESOURCEID;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_SETCACHEABILITY1;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_SETCACHEABILITY3;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_FIELDFULL;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_FIELDPAGE;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_FIELDPORTLET;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_FIELDSHARED;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL7;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_RESOURCEURL9;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_GETCACHEABILITY;
+import static jakarta.portlet.tck.beans.JSR286ApiTestCaseDetails.V2URLTESTS_RESOURCEURL_APIRENDERRESURL_SETCACHEABILITY2;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case
@@ -291,11 +291,11 @@ public class URLTests_ResourceURL_ApiRenderResurl
 
       /* TestCase: V2URLTests_ResourceURL_ApiRenderResurl_fieldSHARED */
       /* Details: "Has String field SHARED with value of */
-      /* \"javax.portlet.shared\" " */
+      /* \"jakarta.portlet.shared\" " */
       TestResult tr3 = tcd.getTestResultFailed(
             V2URLTESTS_RESOURCEURL_APIRENDERRESURL_FIELDSHARED);
       try {
-         tr3.setTcSuccess(cc.hasField("SHARED", "javax.portlet.shared"));
+         tr3.setTcSuccess(cc.hasField("SHARED", "jakarta.portlet.shared"));
       } catch (Exception e) {
          tr3.appendTcDetail(e);
       }

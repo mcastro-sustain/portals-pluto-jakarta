@@ -16,12 +16,12 @@
  *  under the License.
  */
 
-package javax.portlet.tck.portlets.pluto;
+package jakarta.portlet.tck.portlets.pluto;
 
-import javax.portlet.Portlet;
-import javax.portlet.annotations.PortletConfiguration;
-import javax.portlet.annotations.SecurityRoleRef;
-import javax.portlet.tck.portlets.AnnotationPortletConfigTests_SPEC2_28_SecurityRoleBase;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.annotations.PortletConfiguration;
+import jakarta.portlet.annotations.SecurityRoleRef;
+import jakarta.portlet.tck.portlets.AnnotationPortletConfigTests_SPEC2_28_SecurityRoleBase;
 
 @PortletConfiguration(
 	portletName = "AnnotationPortletConfigTests_SPEC2_28_SecurityRole",

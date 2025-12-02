@@ -19,7 +19,7 @@
 /**
  * Defines constants used by portlets, test beans, and the test driver. 
  */
-package javax.portlet.tck.constants;
+package jakarta.portlet.tck.constants;
 
 public class Constants {
    public static final String BR = "<br/>";

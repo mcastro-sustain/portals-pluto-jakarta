@@ -13,24 +13,24 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES0;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES1;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES11;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES12;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES13;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES2;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES3;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES4;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES5;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES5A;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES6;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES7;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES8;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES9;
-import static javax.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_CONTAINERRUNTIMEOPTIONS1;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES0;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES1;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES11;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES12;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES13;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES2;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES3;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES4;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES5;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES5A;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES6;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES7;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES8;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES9;
+import static jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails.V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_CONTAINERRUNTIMEOPTIONS1;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -40,30 +40,30 @@ import java.util.Enumeration;
 import java.util.List;
 import java.util.Map;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.EventPortlet;
-import javax.portlet.EventRequest;
-import javax.portlet.EventResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.PortletRequest;
-import javax.portlet.PortletSession;
-import javax.portlet.PortletURL;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceServingPortlet;
-import javax.portlet.ResourceURL;
-import javax.portlet.tck.beans.JSR286SpecTestCaseDetails;
-import javax.portlet.tck.beans.ResourceLink;
-import javax.portlet.tck.beans.TestButton;
-import javax.portlet.tck.beans.TestLink;
-import javax.portlet.tck.beans.TestResult;
-import javax.portlet.tck.beans.TestSetupButton;
-import javax.portlet.tck.constants.Constants;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.EventPortlet;
+import jakarta.portlet.EventRequest;
+import jakarta.portlet.EventResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.PortletSession;
+import jakarta.portlet.PortletURL;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceServingPortlet;
+import jakarta.portlet.ResourceURL;
+import jakarta.portlet.tck.beans.JSR286SpecTestCaseDetails;
+import jakarta.portlet.tck.beans.ResourceLink;
+import jakarta.portlet.tck.beans.TestButton;
+import jakarta.portlet.tck.beans.TestLink;
+import jakarta.portlet.tck.beans.TestResult;
+import jakarta.portlet.tck.beans.TestSetupButton;
+import jakarta.portlet.tck.constants.Constants;
 import javax.xml.namespace.QName;
 
 /**
@@ -88,7 +88,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
       this.portletConfig = config;
 
       List<String> supportedContainerRuntimeOptions = Collections.list(config.getPortletContext().getContainerRuntimeOptions());
-      isActionScopedRequestAttributesSupported = supportedContainerRuntimeOptions.contains("javax.portlet.actionScopedRequestAttributes");
+      isActionScopedRequestAttributesSupported = supportedContainerRuntimeOptions.contains("jakarta.portlet.actionScopedRequestAttributes");
    }
 
    @Override
@@ -120,7 +120,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                }
             }
             else {
-			   result.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+			   result.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
 			   result.setTcSuccess(true);
 			}
 
@@ -238,7 +238,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                }
             }
             else {
-			   result.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+			   result.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
 			   result.setTcSuccess(true);
 			}
             result.writeTo(writer);
@@ -262,7 +262,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                }
             }
 			else {
-			   result.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+			   result.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
 			   result.setTcSuccess(true);
 			}
             result.writeTo(writer);
@@ -300,14 +300,14 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
          }
       }
       else {
-         tr0.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+         tr0.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
          tr0.setTcSuccess(true);
       }
       tr0.writeTo(writer);
 
       /* TestCase: V2AddlEnvironmentTests_SPEC2_10_ContextOptions_actionScopedRequestAttributes1 */
       /* Details: "The container runtime option */
-      /* \"javax.portlet.actionScopedRequestAttributes\" must be supported */
+      /* \"jakarta.portlet.actionScopedRequestAttributes\" must be supported */
       /* by the portlet container" */
       {
          TestResult tr1 = tcd.getTestResultFailed(V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES1);
@@ -318,19 +318,19 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
             }
             else {
                List<String> rtlist = Collections.list(rtEnum);
-               if (rtlist.contains("javax.portlet.actionScopedRequestAttributes")) {
+               if (rtlist.contains("jakarta.portlet.actionScopedRequestAttributes")) {
                   tr1.setTcSuccess(true);
                }
                else {
                   StringBuilder txt = new StringBuilder(128);
-                  txt.append("javax.portlet.actionScopedRequestAttributes is not supported.");
+                  txt.append("jakarta.portlet.actionScopedRequestAttributes is not supported.");
                   txt.append(" Supported options: ").append(rtlist.toString());
                   tr1.appendTcDetail(txt.toString());
                }
             }
          }
          else {
-            tr1.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+            tr1.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
             tr1.setTcSuccess(true);
          }
          tr1.writeTo(writer);
@@ -346,20 +346,20 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                tr13.appendTcDetail("Container runtime options from portletConfig is null.");
             }
             else {
-               String[] vals = options.get("javax.portlet.actionScopedRequestAttributes");
+               String[] vals = options.get("jakarta.portlet.actionScopedRequestAttributes");
                if (vals != null && vals.length > 0 && Boolean.parseBoolean(vals[0]) == true) {
                   tr13.setTcSuccess(true);
                }
                else {
                   StringBuilder txt = new StringBuilder(128);
-                  txt.append("javax.portlet.actionScopedRequestAttributes option is not supported.");
+                  txt.append("jakarta.portlet.actionScopedRequestAttributes option is not supported.");
                   txt.append(" Values for option: ").append((vals == null) ? "null" : Arrays.toString(vals));
                   tr13.appendTcDetail(txt.toString());
                }
             }
          }
          else {
-            tr13.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+            tr13.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
             tr13.setTcSuccess(true);
          }
          tr13.writeTo(writer);
@@ -383,7 +383,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                }
             }
             else {
-               result.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+               result.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
                result.setTcSuccess(true);
             }
             result.writeTo(writer);
@@ -397,7 +397,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
       /* Details: "If the option is set to TRUE and an attribute is set */
       /* during an action request, the portlet container sets a render */
       /* parameter with the name PortletRequest.ACTION_SCOPE_ID */
-      /* (\"javax.portlet.as\")" */
+      /* (\"jakarta.portlet.as\")" */
       {
          String tc = portletReq.getParameter(Constants.BUTTON_PARAM_NAME);
          if (tc != null && tc.equals(V2ADDLENVIRONMENTTESTS_SPEC2_10_CONTEXTOPTIONS_ACTIONSCOPEDREQUESTATTRIBUTES3)) {
@@ -413,7 +413,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                }
             }
             else {
-               result.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+               result.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
                result.setTcSuccess(true);
             }
             result.writeTo(writer);
@@ -462,7 +462,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                }
             }
             else {
-               result.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+               result.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
                result.setTcSuccess(true);
             }
             result.writeTo(writer);
@@ -506,7 +506,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                }
             }
             else {
-               result.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+               result.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
                result.setTcSuccess(true);
             }
             result.writeTo(writer);
@@ -553,7 +553,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                   }
                }
                else {
-                  result.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+                  result.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
                   result.setTcSuccess(true);
                }
                result.writeTo(writer);
@@ -610,7 +610,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                   }
                }
                else {
-                  result.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+                  result.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
                   result.setTcSuccess(true);
                }
                result.writeTo(writer);
@@ -663,7 +663,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                   }
                }
                else {
-                  result.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+                  result.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
                   result.setTcSuccess(true);
                }
                result.writeTo(writer);
@@ -678,7 +678,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
 
       /* TestCase: V2AddlEnvironmentTests_SPEC2_10_ContextOptions_actionScopedRequestAttributes0 */
       /* Details: "The parameter PortletRequest.ACTION_SCOPE_ID */
-      /* (\"javax.portlet.as\") can be removed from an action URL */
+      /* (\"jakarta.portlet.as\") can be removed from an action URL */
       {
          String tc = portletReq.getParameter(Constants.BUTTON_PARAM_NAME);
          if (tc != null) {
@@ -717,7 +717,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                   }
                }
                else {
-                  result.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+                  result.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
                   result.setTcSuccess(true);
                }
                result.writeTo(writer);
@@ -736,7 +736,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
 
       /* TestCase: V2AddlEnvironmentTests_SPEC2_10_ContextOptions_actionScopedRequestAttributes11 */
       /* Details: "The render parameter PortletRequest.ACTION_SCOPE_ID */
-      /* (\"javax.portlet.as\") can be removed from a render URL */
+      /* (\"jakarta.portlet.as\") can be removed from a render URL */
       {
          String tc = portletReq.getParameter(Constants.BUTTON_PARAM_NAME);
          if (tc != null) {
@@ -772,7 +772,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
                   }
                }
                else {
-                  result.appendTcDetail("Portlet container does not support javax.portlet.actionScopedRequestAttributes.");
+                  result.appendTcDetail("Portlet container does not support jakarta.portlet.actionScopedRequestAttributes.");
                   result.setTcSuccess(true);
                }
                result.writeTo(writer);
@@ -791,7 +791,7 @@ public class AddlEnvironmentTests_SPEC2_10_ContextOptions implements Portlet, Re
 
       /* TestCase: V2AddlEnvironmentTests_SPEC2_10_ContextOptions_actionScopedRequestAttributes12 */
       /* Details: "The render parameter PortletRequest.ACTION_SCOPE_ID */
-      /* (\"javax.portlet.as\") can be removed from a ResourceURL */
+      /* (\"jakarta.portlet.as\") can be removed from a ResourceURL */
       {
          String tc = portletReq.getParameter(Constants.BUTTON_PARAM_NAME);
          if (tc != null) {

@@ -23,9 +23,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.portlet.PortletRequest;
-import javax.portlet.ResourceRequest;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.portlet.PortletRequest;
+import jakarta.portlet.ResourceRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * @author Scott Nicklous

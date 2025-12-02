@@ -13,42 +13,42 @@
  * the License.
  */
 
-package javax.portlet.tck.portlets;
+package jakarta.portlet.tck.portlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.portlet.ActionRequest;
-import javax.portlet.ActionResponse;
-import javax.portlet.Portlet;
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletException;
-import javax.portlet.RenderRequest;
-import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
-import javax.portlet.ResourceServingPortlet;
-import javax.portlet.ResourceURL;
-import javax.portlet.tck.beans.ClassChecker;
-import javax.portlet.tck.beans.JSR286SignatureTestCaseDetails;
-import javax.portlet.tck.beans.TestResult;
+import jakarta.portlet.ActionRequest;
+import jakarta.portlet.ActionResponse;
+import jakarta.portlet.Portlet;
+import jakarta.portlet.PortletConfig;
+import jakarta.portlet.PortletException;
+import jakarta.portlet.RenderRequest;
+import jakarta.portlet.RenderResponse;
+import jakarta.portlet.ResourceRequest;
+import jakarta.portlet.ResourceResponse;
+import jakarta.portlet.ResourceServingPortlet;
+import jakarta.portlet.ResourceURL;
+import jakarta.portlet.tck.beans.ClassChecker;
+import jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails;
+import jakarta.portlet.tck.beans.TestResult;
 
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASADDPROPERTY;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASADDPROPERTYA;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASADDPROPERTYB;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASADDPROPERTYRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASADDPROPERTYRETURNSA;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASADDPROPERTYRETURNSB;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASCREATEELEMENT;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASCREATEELEMENTRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASENCODEURL;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASENCODEURLRETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASGETNAMESPACE;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASGETNAMESPACERETURNS;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASSETPROPERTY;
-import static javax.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASSETPROPERTYRETURNS;
-import static javax.portlet.tck.constants.Constants.THREADID_ATTR;
-import static javax.portlet.ResourceURL.PAGE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASADDPROPERTY;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASADDPROPERTYA;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASADDPROPERTYB;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASADDPROPERTYRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASADDPROPERTYRETURNSA;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASADDPROPERTYRETURNSB;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASCREATEELEMENT;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASCREATEELEMENTRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASENCODEURL;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASENCODEURLRETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASGETNAMESPACE;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASGETNAMESPACERETURNS;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASSETPROPERTY;
+import static jakarta.portlet.tck.beans.JSR286SignatureTestCaseDetails.V2SIGTESTSRESOURCE_PORTLETRESPONSE_SIGRESOURCE_HASSETPROPERTYRETURNS;
+import static jakarta.portlet.tck.constants.Constants.THREADID_ATTR;
+import static jakarta.portlet.ResourceURL.PAGE;
 
 /**
  * This portlet implements several test cases for the JSR 362 TCK. The test case names are defined

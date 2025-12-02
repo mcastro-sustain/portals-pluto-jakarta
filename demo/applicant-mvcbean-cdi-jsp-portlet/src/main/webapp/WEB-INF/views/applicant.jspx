@@ -269,7 +269,7 @@ limitations under the License.
 						</div>
 					</fieldset>
 					<input name="${mvc.csrf.name}" value="${mvc.csrf.token}" type="hidden"/>
-					<input name="${namespace}javax.portlet.action" value="submitApplicant" type="hidden"/>
+					<input name="${namespace}jakarta.portlet.action" value="submitApplicant" type="hidden"/>
 					<fmt:message bundle="${i18n}" key="submit" var="submit" />
 					<input class="btn btn-primary" value="${submit}" type="submit"/>
 				</form>
