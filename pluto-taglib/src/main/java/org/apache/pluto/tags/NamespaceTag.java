@@ -37,7 +37,7 @@ public class NamespaceTag extends TagSupport {
 	private static final long serialVersionUID = 286L;
 
     /* (non-Javadoc)
-     * @see javax.servlet.jsp.tagext.Tag#doStartTag()
+     * @see jakarta.servlet.jsp.tagext.Tag#doStartTag()
      */
     public int doStartTag() throws JspException {
     	

@@ -98,7 +98,7 @@ public abstract class BaseURLTag extends TagSupport {
 	}
 
 	/* (non-Javadoc)
-	 * @see javax.servlet.jsp.tagext.TagSupport#doStartTag()
+	 * @see jakarta.servlet.jsp.tagext.TagSupport#doStartTag()
 	 */
 	@Override
 	public int doStartTag() throws JspException{
@@ -118,7 +118,7 @@ public abstract class BaseURLTag extends TagSupport {
 	
 	
 	/* (non-Javadoc)
-	 * @see javax.servlet.jsp.tagext.TagSupport#doEndTag()
+	 * @see jakarta.servlet.jsp.tagext.TagSupport#doEndTag()
 	 */
 	@Override
 	public int doEndTag() throws JspException{
@@ -170,7 +170,7 @@ public abstract class BaseURLTag extends TagSupport {
 	
 
 	/* (non-Javadoc)
-	 * @see javax.servlet.jsp.tagext.TagSupport#release()
+	 * @see jakarta.servlet.jsp.tagext.TagSupport#release()
 	 */
 	@Override
 	public void release(){

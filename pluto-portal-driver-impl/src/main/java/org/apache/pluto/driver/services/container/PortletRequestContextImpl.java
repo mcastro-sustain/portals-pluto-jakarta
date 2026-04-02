@@ -162,7 +162,7 @@ public class PortletRequestContextImpl implements PortletRequestContext {
    }
 
    protected boolean isReservedAttributeName(String name) {
-      return name.startsWith("javax.servlet.");
+      return name.startsWith("jakarta.servlet.");
    }
 
    protected String encodeAttributeName(String name) {
@@ -377,7 +377,7 @@ public class PortletRequestContextImpl implements PortletRequestContext {
          // inactive interval. If so, we should invalidate the underlying
          // HttpSession and recreate a new one (if the create flag is set to
          // true) -- We just cannot depend on the implementation of
-         // javax.servlet.http.HttpSession!
+         // jakarta.servlet.http.HttpSession!
          //
       
          HttpSession httpSession = getServletRequest().getSession(create);

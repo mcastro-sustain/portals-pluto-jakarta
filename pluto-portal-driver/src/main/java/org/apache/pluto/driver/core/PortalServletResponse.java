@@ -23,7 +23,7 @@ import java.io.StringWriter;
 import jakarta.servlet.http.HttpServletResponse;
 
 public class PortalServletResponse
-    extends javax.servlet.http.HttpServletResponseWrapper {
+    extends jakarta.servlet.http.HttpServletResponseWrapper {
 
     private StringWriter buffer = null;
     private PrintWriter writer = null;

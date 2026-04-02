@@ -39,13 +39,13 @@ class JSP21ExpressionEvaluatorProxy extends ExpressionEvaluatorProxy {
 
     static {
         try {
-            jspFactory = Class.forName("javax.servlet.jsp.JspFactory")
+            jspFactory = Class.forName("jakarta.servlet.jsp.JspFactory")
                 .getMethod("getDefaultFactory", new Class[0]).invoke(null);
             jspApplicationContextGetter = 
                 jspFactory.getClass().getMethod("getJspApplicationContext",
                     new Class[] { ServletContext.class });
             expressionFactoryGetter = 
-                Class.forName("javax.servlet.jsp.JspApplicationContext")
+                Class.forName("jakarta.servlet.jsp.JspApplicationContext")
                     .getMethod("getExpressionFactory", new Class[0]);
             elContextGetter = 
                 PageContext.class.getMethod("getELContext", new Class[0]);

@@ -122,7 +122,7 @@ public class PortletAsyncContextListener implements AsyncListener {
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncListener#onComplete(javax.servlet.AsyncEvent)
+    * @see jakarta.servlet.AsyncListener#onComplete(jakarta.servlet.AsyncEvent)
     */
    @Override
    public void onComplete(AsyncEvent evt) throws IOException {
@@ -204,7 +204,7 @@ public class PortletAsyncContextListener implements AsyncListener {
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncListener#onError(javax.servlet.AsyncEvent)
+    * @see jakarta.servlet.AsyncListener#onError(jakarta.servlet.AsyncEvent)
     */
    @Override
    public void onError(AsyncEvent evt) throws IOException {
@@ -246,7 +246,7 @@ public class PortletAsyncContextListener implements AsyncListener {
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncListener#onStartAsync(javax.servlet.AsyncEvent)
+    * @see jakarta.servlet.AsyncListener#onStartAsync(jakarta.servlet.AsyncEvent)
     */
    @Override
    public void onStartAsync(AsyncEvent evt) throws IOException {
@@ -287,7 +287,7 @@ public class PortletAsyncContextListener implements AsyncListener {
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncListener#onTimeout(javax.servlet.AsyncEvent)
+    * @see jakarta.servlet.AsyncListener#onTimeout(jakarta.servlet.AsyncEvent)
     */
    @Override
    public void onTimeout(AsyncEvent evt) throws IOException {

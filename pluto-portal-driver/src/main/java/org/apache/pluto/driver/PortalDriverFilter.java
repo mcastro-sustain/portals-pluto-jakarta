@@ -97,7 +97,7 @@ public class PortalDriverFilter implements Filter {
      *
      * @param request  the incoming ServletRequest.
      * @param response the incoming ServletResponse.
-     * @throws javax.servlet.ServletException if an internal error occurs.
+     * @throws jakarta.servlet.ServletException if an internal error occurs.
      * @throws java.io.IOException            if an error occurs writing to the response.
      */
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain)
@@ -138,7 +138,7 @@ public class PortalDriverFilter implements Filter {
      * @param request
      * @param response
      * @throws java.io.IOException            if an io exception occurs
-     * @throws javax.servlet.ServletException if a servlet exception occurs
+     * @throws jakarta.servlet.ServletException if a servlet exception occurs
      * @return A boolean flag indicating whether or not an action request was
      * processed. A value of true indicates than an action request was 
      * processed while a value of false indicates that an action request was

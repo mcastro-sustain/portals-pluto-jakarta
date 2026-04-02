@@ -16,11 +16,12 @@
  */
 package org.apache.pluto.driver.security;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.security.web.util.matcher.RequestMatcher;
 
@@ -42,20 +43,16 @@ import java.util.regex.Pattern;
 @Configuration
 @EnableWebSecurity
 @Vetoed
-public class PortalSecurityConfigurer extends WebSecurityConfigurerAdapter {
+public class PortalSecurityConfigurer {
 
 	private static RequestMatcher ACTION_REQUEST_MATCHER = new ActionRequestMatcher();
 
-	public PortalSecurityConfigurer() {
-
-		// Disable defaults so that the configure(HttpSecurity) method can selectively enable features that are
-		// relevant to portlets.
-		super(true);
-	}
-
-	@Override
-	protected void configure(HttpSecurity httpSecurity) throws Exception {
-		httpSecurity.csrf().requireCsrfProtectionMatcher(ACTION_REQUEST_MATCHER).and().exceptionHandling().accessDeniedHandler(new PortletAccessDeniedHandler());
+	@Bean
+	public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
+		httpSecurity
+			.csrf(csrf -> csrf.requireCsrfProtectionMatcher(ACTION_REQUEST_MATCHER))
+			.exceptionHandling(ex -> ex.accessDeniedHandler(new PortletAccessDeniedHandler()));
+		return httpSecurity.build();
 	}
 
 	private static class PortletAccessDeniedHandler implements AccessDeniedHandler {

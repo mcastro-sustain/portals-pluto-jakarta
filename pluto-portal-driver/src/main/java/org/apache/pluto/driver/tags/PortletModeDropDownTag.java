@@ -43,7 +43,8 @@ import org.apache.pluto.driver.core.PortalRequestContext;
 import org.apache.pluto.driver.core.PortletWindowImpl;
 import org.apache.pluto.driver.services.portal.PortletWindowConfig;
 import org.apache.pluto.driver.url.PortalURL;
-import org.apache.taglibs.standard.lang.support.ExpressionEvaluatorManager;
+import jakarta.el.ExpressionFactory;
+import jakarta.servlet.jsp.JspFactory;
 
 /**
  * The tag is used to render a portlet mode anchor specified by the portlet ID and mode.
@@ -205,8 +206,11 @@ public class PortletModeDropDownTag extends BodyTagSupport {
      * @throws JspException  if an error occurs.
      */
     private void evaluatePortletId() throws JspException {
-        Object obj = ExpressionEvaluatorManager.evaluate(
-                "portletId", portletId, String.class, this, pageContext);
+        ExpressionFactory factory = JspFactory.getDefaultFactory()
+                .getJspApplicationContext(pageContext.getServletContext())
+                .getExpressionFactory();
+        Object obj = factory.createValueExpression(pageContext.getELContext(), portletId, String.class)
+                .getValue(pageContext.getELContext());
         if (LOG.isDebugEnabled()) {
             LOG.debug("Evaluated portletId to: " + obj);
         }

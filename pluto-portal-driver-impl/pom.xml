@@ -20,9 +20,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.apache.portals.pluto</groupId>
+		<groupId>com.journaltech</groupId>
 		<artifactId>pluto</artifactId>
-		<version>3.1.3-SNAPSHOT</version>
+		<version>3.1.4-jakarta-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>pluto-portal-driver-impl</artifactId>
@@ -30,25 +30,33 @@
 	<name>Apache Pluto Portal Driver Implementation Classes</name>
 	<dependencies>
 		<dependency>
-			<groupId>org.apache.portals.pluto</groupId>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jaxb</groupId>
+			<artifactId>jaxb-runtime</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.journaltech</groupId>
 			<artifactId>pluto-container-api</artifactId>
 			<version>${project.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.portals.pluto</groupId>
+			<groupId>com.journaltech</groupId>
 			<artifactId>pluto-container-driver-api</artifactId>
 			<version>${project.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.portals.pluto</groupId>
+			<groupId>com.journaltech</groupId>
 			<artifactId>pluto-container</artifactId>
 			<version>${project.version}</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.portals.pluto</groupId>
+			<groupId>com.journaltech</groupId>
 			<artifactId>pluto-portal-driver</artifactId>
 			<version>${project.version}</version>
 			<scope>compile</scope>

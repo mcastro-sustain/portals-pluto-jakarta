@@ -35,7 +35,7 @@ public class PortalDriverLogoutServlet extends HttpServlet {
 	 * Processes logout by invalidating the session, creating a new session
 	 * and forwards to the login (home) page.
 	 *
-	 * @see javax.servlet.http.HttpServlet#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+	 * @see jakarta.servlet.http.HttpServlet#doGet(jakarta.servlet.http.HttpServletRequest, jakarta.servlet.http.HttpServletResponse)
 	 */
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		HttpSession session = req.getSession();

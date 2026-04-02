@@ -249,7 +249,7 @@ public class DefaultPortletInvokerService implements PortletInvokerService {
                 }
 
 
-            } catch (javax.servlet.UnavailableException ex) {
+            } catch (jakarta.servlet.UnavailableException ex) {
                 int seconds = ex.isPermanent() ? -1 : ex.getUnavailableSeconds();
                 String message = EXCEPTIONS.getString(
                         "error.portlet.invoker.unavailable",
@@ -261,7 +261,7 @@ public class DefaultPortletInvokerService implements PortletInvokerService {
                 throw new jakarta.portlet.UnavailableException(
                         message, seconds);
 
-            } catch (javax.servlet.ServletException ex) {
+            } catch (jakarta.servlet.ServletException ex) {
                 String message = EXCEPTIONS.getString("error.portlet.invoker");
                 if (LOG.isErrorEnabled()) {
                     LOG.error(message);

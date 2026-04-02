@@ -230,7 +230,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * Called when asynchronous processing is restarted
     * 
-    * @see org.apache.pluto.driver.services.container.PortletAsyncContext#setWrapped(javax.servlet.AsyncContext)
+    * @see org.apache.pluto.driver.services.container.PortletAsyncContext#setWrapped(jakarta.servlet.AsyncContext)
     */
    @Override
    public void setWrapped(AsyncContext actx) {
@@ -242,7 +242,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#addListener(javax.servlet.AsyncListener)
+    * @see jakarta.servlet.AsyncContext#addListener(jakarta.servlet.AsyncListener)
     */
    @Override
    public void addListener(AsyncListener l) {
@@ -255,8 +255,8 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#addListener(javax.servlet.AsyncListener, javax.servlet.ServletRequest,
-    * javax.servlet.ServletResponse)
+    * @see jakarta.servlet.AsyncContext#addListener(jakarta.servlet.AsyncListener, jakarta.servlet.ServletRequest,
+    * jakarta.servlet.ServletResponse)
     */
    @Override
    public void addListener(AsyncListener l, ServletRequest req, ServletResponse resp) {
@@ -269,7 +269,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#complete()
+    * @see jakarta.servlet.AsyncContext#complete()
     */
    @Override
    public void complete() {
@@ -280,7 +280,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#createListener(java.lang.Class)
+    * @see jakarta.servlet.AsyncContext#createListener(java.lang.Class)
     */
    @SuppressWarnings("unchecked")
    @Override
@@ -297,7 +297,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#dispatch()
+    * @see jakarta.servlet.AsyncContext#dispatch()
     */
    @Override
    public void dispatch() {
@@ -309,7 +309,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#dispatch(java.lang.String)
+    * @see jakarta.servlet.AsyncContext#dispatch(java.lang.String)
     */
    @Override
    public void dispatch(String path) {
@@ -326,7 +326,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#dispatch(javax.servlet.ServletContext, java.lang.String)
+    * @see jakarta.servlet.AsyncContext#dispatch(jakarta.servlet.ServletContext, java.lang.String)
     */
    @Override
    public void dispatch(ServletContext sctx, String path) {
@@ -337,7 +337,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#getRequest()
+    * @see jakarta.servlet.AsyncContext#getRequest()
     */
    @Override
    public ServletRequest getRequest() {
@@ -347,7 +347,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#getResponse()
+    * @see jakarta.servlet.AsyncContext#getResponse()
     */
    @Override
    public ServletResponse getResponse() {
@@ -357,7 +357,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#getTimeout()
+    * @see jakarta.servlet.AsyncContext#getTimeout()
     */
    @Override
    public long getTimeout() {
@@ -367,7 +367,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#hasOriginalRequestAndResponse()
+    * @see jakarta.servlet.AsyncContext#hasOriginalRequestAndResponse()
     */
    @Override
    public boolean hasOriginalRequestAndResponse() {
@@ -377,7 +377,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#setTimeout(long)
+    * @see jakarta.servlet.AsyncContext#setTimeout(long)
     */
    @Override
    public void setTimeout(long time) {
@@ -387,7 +387,7 @@ public class PortletAsyncContextImpl implements PortletAsyncManager, AsyncContex
    /*
     * (non-Javadoc)
     * 
-    * @see javax.servlet.AsyncContext#start(java.lang.Runnable)
+    * @see jakarta.servlet.AsyncContext#start(java.lang.Runnable)
     */
    @Override
    public void start(Runnable run) {
